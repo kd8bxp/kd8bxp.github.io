@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>QVGA Display - Random Wire!</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../../..">Random Wire!</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../../../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../../../tutorials/blink/blink/">Blink</a>
+</li>
+                            
+<li >
+    <a href="../../../../tutorials/document/">Document Projects</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../../../tutorials/TI/resources/">TI Launchpad Resources</a>
+</li>
+                            
+<li >
+    <a href="../../../../tutorials/ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-4x4-keypad-matrix-rotary-encoder/README/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-arduino-vga-out/README/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-bmp180-digital-barometric-pressur/README/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-fs1000a-433mhz-transmitters/README/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-hc-05-bluetooth-device/README/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-magnetic-reed-switch-water-sensor/README/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-mifare-rfid-reader-rc522/README/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-nokia-5110-lcd/README/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-pin-control-over-ethernet-oled-de/README/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-skynet-im/README/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-the-spo-512-speech-synthesizer/README/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li class="active">
+    <a href="./">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../TILaunchPad/ti-multi-task/README/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../other/project-hot-wheels-10-525ghz-radar-gun/README/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../robot/HeroJr-StarWarsDay/README/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../tutorials/robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../robot/L298MotorDrive/README/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../../robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../../..">Sherlock Holmes</a>
+</li>
+                            
+<li >
+    <a href="../../../..">Pen and Paper RPG Games</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../..">X Minus One</a>
+</li>
+            
+<li >
+    <a href="../../../..">The Orville</a>
+</li>
+            
+<li >
+    <a href="../../../..">Forbidden Planet (C-57D)</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../../..">DC Comics</a>
+</li>
+                            
+<li >
+    <a href="../../../..">Lord of the Rings</a>
+</li>
+                            
+<li >
+    <a href="../../../..">Noris Methology</a>
+</li>
+                            
+<li >
+    <a href="../../../..">More Stuff</a>
+</li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="../../../../leroy/">About Me</a>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../../arduino-project-the-spo-512-speech-synthesizer/README/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../../esp8266/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#original-document-found-at">Original document found at:</a></li>
+        <li class="main "><a href="#qvga-display-22-tft-spi-240320">QVGA DISPLAY 2.2 TFT SPI 240×320</a></li>
+            <li><a href="#update-23052016-using-the-sd-card-modul">Update 23.05.2016 – Using the SD card modul</a></li>
+            <li><a href="#qvga-display-22-tft-spi-240320_1">QVGA Display 2.2 TFT SPI 240×320</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="original-document-found-at"><strong>Original document found at:</strong></h1>
+<p>https://playground2014.wordpress.com/arduino/qvga-display-2-2-tft-spi-240x320/</p>
+<h1 id="qvga-display-22-tft-spi-240320"><strong>QVGA DISPLAY 2.2 TFT SPI 240×320</strong></h1>
+<h2 id="update-23052016-using-the-sd-card-modul"><strong>Update 23.05.2016 – Using the SD card modul</strong></h2>
+<p>In the first tutorial (see below), I described the display. Please, read
+this tutorial first, so you understand this part better.</p>
+<p>This display has backside a SD card slot. Normally, this modul is not
+connected. To use it, you must solder 4 pins.</p>
+<p><strong>And now, be carefull! This pins works with 3.3V too! If you connect
+this to 5V (arduino pins directly) you destroy your SD card!</strong></p>
+<p>You must use the level converter!</p>
+<p>We can connect multiple devices at the same time to the SPI interface.
+So, we connect the display and the SD card modul to this interface. Be
+sure, you connect the SD modul ports with the low level side!</p>
+<p><img alt="20160523_191632" src="..//media/image4.jpg" />{width="5.5in"
+height="3.111111111111111in"}</p>
+<p><img alt="qvga_tft_display1" src="..//media/image3.png" />{width="5.5in"
+height="3.111111111111111in"}</p>
+<p>And now, let us use the SD card module.</p>
+<p>In the first tutorial, you used already two ADAFRUIT libraries. Now, we
+need a third library, named “SD.h”.</p>
+<p>You will find two great examples in your arduino IDE – “graphicstest”
+and “spitfbitmap”. Both runs without changes!</p>
+<p>Try it! The necessary bitmap for the second sketch is in the example
+folder. Look there and copy it to your SD card (directly into the root
+directory).</p>
+<p>/***************************************************\
+This is an example sketch for the Adafruit 2.2" SPI display.\
+This library works with the Adafruit 2.2" TFT Breakout w/SD card\
+----&gt; http://www.adafruit.com/products/1480\
+\
+Check out the links above for our tutorials and wiring diagrams\
+These displays use SPI to communicate, 4 or 5 pins are required to\
+interface (RST is optional)\
+Adafruit invests time and resources providing this open source code,\
+please support Adafruit and open-source hardware by purchasing\
+products from Adafruit!\
+\
+Written by Limor Fried/Ladyada for Adafruit Industries.\
+MIT license, all text above must be included in any redistribution\
+****************************************************/\
+\
+#include &lt;Adafruit_GFX.h&gt; // Core graphics library\
+#include "Adafruit_ILI9340.h" // Hardware-specific library\
+#include &lt;SPI.h&gt;\
+#include &lt;SD.h&gt;\
+\
+// TFT display and SD card will share the hardware SPI interface.\
+// Hardware SPI pins are specific to the Arduino board type and\
+// cannot be remapped to alternate pins. For Arduino Uno,\
+// Duemilanove, etc., pin 11 = MOSI, pin 12 = MISO, pin 13 = SCK.\
+#define TFT_RST 8\
+#define TFT_DC 9\
+#define TFT_CS 10\
+#define SD_CS 4\
+\
+Adafruit_ILI9340 tft = Adafruit_ILI9340(TFT_CS, TFT_DC, TFT_RST);\
+\
+...</p>
+<h2 id="qvga-display-22-tft-spi-240320_1"><strong>QVGA Display 2.2 TFT SPI 240×320</strong></h2>
+<p>In this tutorial I show you, how you can use the TFT SPI display.</p>
+<p>First, what is SPI?</p>
+<p>SPI is the abbreviation for “Serial Peripheral Interface”. For this type
+of communication, we need the following data ports:</p>
+<p>MISO = Master In, Slave Out</p>
+<p>MOSI = Master Out, Slave In</p>
+<p>SCK = Serial Clock</p>
+<p>SS = Slave Select</p>
+<p>Our Arduino has already this port definition:</p>
+<p>Port 11 = MOSI</p>
+<p>Port 12 = MISO</p>
+<p>Port 13 = SCK</p>
+<p>Port 10 = SS</p>
+<p>This is the set to communicate via SPI.</p>
+<p>We need two additional ports for our display:</p>
+<p>Port 9 = Data / Command selection</p>
+<p>Port 8 = Reset (Low Level active)</p>
+<p>So far, so good, but there is one problem:</p>
+<p>The TFT display works with 3.3 V. Ok, this no problem, our arduino has
+this voltage. <strong>But we need 3.3V at the data ports too!</strong> And here works
+the arduino with 5V.</p>
+<p>With 5V on ports 10, 11, 12 and 13 the display will be dark, no chance!</p>
+<p>We solve the problem with a level converter. There are a lot of IC,
+example the CD4050. I use in this tutorial two breakout boards from
+sparkfun.</p>
+<p><strong>Annotations:</strong></p>
+<p>The LED pin is connected with 3.3V, Vcc too.</p>
+<p><strong>Some Details:</strong></p>
+<p><img alt="2014-08-03 11.43.21" src="..//media/image2.jpg" />{width="4.166666666666667in"
+height="2.3472222222222223in"}
+<img alt="level_converter" src="..//media/image6.jpg" />{width="2.8055555555555554in"
+height="2.361111111111111in"}
+<img alt="TFT_SPI" src="..//media/image1.jpg" />{width="4.166666666666667in"
+height="2.3472222222222223in"}
+<img alt="QVGA_TFT_Display" src="..//media/image5.png" />{width="4.166666666666667in"
+height="2.3472222222222223in"}</p>
+<p><strong>The code:</strong></p>
+<p>/***************************************************\
+This is an example sketch for the Adafruit 2.2" SPI display.\
+This library works with the Adafruit 2.2" TFT Breakout w/SD card\
+----&gt; http://www.adafruit.com/products/1480\
+\
+Check out the links above for our tutorials and wiring diagrams\
+These displays use SPI to communicate, 4 or 5 pins are required to\
+interface (RST is optional)\
+Adafruit invests time and resources providing this open source code,\
+please support Adafruit and open-source hardware by purchasing\
+products from Adafruit!\
+\
+Written by Limor Fried/Ladyada for Adafruit Industries.\
+MIT license, all text above must be included in any redistribution\
+****************************************************/\
+\
+#include "SPI.h"\
+#include "Adafruit_GFX.h"\
+#include "Adafruit_ILI9340.h"\
+\
+#if defined(__SAM3X8E__)\
+#undef __FlashStringHelper::F(string_literal)\
+#define F(string_literal) string_literal\
+#endif\
+\
+// These are the pins used for the UNO\
+// for Due/Mega/Leonardo use the hardware SPI pins (which are
+different)\
+#define _sclk 13\
+#define _miso 12\
+#define _mosi 11\
+#define _cs 10\
+#define _dc 9\
+#define _rst 8\
+\
+Adafruit_ILI9340 tft = Adafruit_ILI9340(_cs, _dc, _rst);\
+\
+void setup() {\
+tft.begin();\
+\
+tft.setRotation(1);\
+testText();\
+}\
+\
+void loop(void) {\
+\
+}\
+\
+\
+unsigned long testText() {\
+tft.fillScreen(ILI9340_BLACK);\
+tft.setCursor(20, 20);\
+tft.setTextColor(ILI9340_RED); tft.setTextSize(4);\
+tft.println("Thank you!");\
+tft.setCursor(20, 70);\
+tft.setTextColor(ILI9340_YELLOW); tft.setTextSize(2);\
+tft.print("Adafruit tft.setTextColor(ILI9340_WHITE);\
+tft.print(" &amp; ");\
+tft.setTextColor(ILI9340_GREEN);\
+tft.println("Sparkfun");\
+tft.setTextColor(ILI9340_WHITE);\
+tft.setTextSize(2);\
+tft.println();\
+tft.println("It's crazy! The display ");\
+tft.println("works! ");\
+tft.println();\
+tft.print("Thank");\
+tft.setTextColor(ILI9340_YELLOW);\
+tft.println("Adafruit");\
+tft.setTextColor(ILI9340_WHITE);\
+tft.println("for the perfect libraries");\
+tft.print("&amp; thank you ");\
+tft.setTextColor(ILI9340_GREEN);\
+tft.print("Sparkfun tft.setTextColor(ILI9340_WHITE);\
+tft.println("for");\
+tft.println("the really simple to use");\
+tft.println("Level Converter! ");\
+}</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../../../..';</script>
+        <script data-main="../../../../mkdocs/js/search.js" src="../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
