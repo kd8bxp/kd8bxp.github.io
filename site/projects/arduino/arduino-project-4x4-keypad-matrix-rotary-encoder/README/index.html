@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>4x4 Keypad Matrix - Random Wire!</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../../..">Random Wire!</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../../../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../../../tutorials/blink/blink/">Blink</a>
+</li>
+                            
+<li >
+    <a href="../../../../tutorials/document/">Document Projects</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../../../tutorials/TI/resources/">TI Launchpad Resources</a>
+</li>
+                            
+<li >
+    <a href="../../../../tutorials/ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../chatterbot/">Chatter Bot</a>
+</li>
+            
+<li class="active">
+    <a href="./">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-arduino-vga-out/README/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-bmp180-digital-barometric-pressur/README/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-fs1000a-433mhz-transmitters/README/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-hc-05-bluetooth-device/README/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-magnetic-reed-switch-water-sensor/README/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-mifare-rfid-reader-rc522/README/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-nokia-5110-lcd/README/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-pin-control-over-ethernet-oled-de/README/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-skynet-im/README/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../arduino-project-the-spo-512-speech-synthesizer/README/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../TILaunchPad/ti-multi-task/README/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../other/project-hot-wheels-10-525ghz-radar-gun/README/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../robot/HeroJr-StarWarsDay/README/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../tutorials/robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../robot/L298MotorDrive/README/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../../robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../../..">Sherlock Holmes</a>
+</li>
+                            
+<li >
+    <a href="../../../..">Pen and Paper RPG Games</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../..">X Minus One</a>
+</li>
+            
+<li >
+    <a href="../../../..">The Orville</a>
+</li>
+            
+<li >
+    <a href="../../../..">Forbidden Planet (C-57D)</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../../..">DC Comics</a>
+</li>
+                            
+<li >
+    <a href="../../../..">Lord of the Rings</a>
+</li>
+                            
+<li >
+    <a href="../../../..">Noris Methology</a>
+</li>
+                            
+<li >
+    <a href="../../../..">More Stuff</a>
+</li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="../../../../leroy/">About Me</a>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../../chatterbot/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../arduino-project-arduino-vga-out/README/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>20140625 4x4 Keypad Matrix &amp; Rotary Encoder with switch</p>
+<p>My final project for the week was to use a 4x4 keypad matrix, and a
+rotary encoder with switch.</p>
+<p><img alt="" src="../media/image03.jpg" />{width="6.5in" height="3.6527777777777777in"}</p>
+<p>The 4x4 16 Key matrix is pretty easy to use, it does take 8 I/O lines,
+but works well, and the code to make it work is pretty small. A lot of
+information about it can be found here:</p>
+<p><a href="https://sites.google.com/site/arduinomega2560projects/home/level-2/4x4-matrix-16-key-membrane"><em>https://sites.google.com/site/arduinomega2560projects/home/level-2/4x4-matrix-16-key-membrane</em></a></p>
+<p>I did end up modifying the code slightly, They were using a Mega, but I
+think the code would have needed to be modified slightly even if they
+had hooked up a UNO. 1st they used Pin 13 twice (one time to turn on/off
+the LED, and again they used it to read the keypad, this of course
+didn’t work). SO I ended up moving the line from pin 13 to pin 5. Next
+thing it’s not as clear as it could be which pins on the keypad to hook
+to which pins on the arduino.</p>
+<p>I am going to use his picture and try to explain it a bit better:</p>
+<p><img alt="" src="../media/image05.jpg" />{width="3.526042213473316in" height="2.78125in"}</p>
+<p>1 2 3 4 5 6 7 8</p>
+<p>as you can see there are 8 pins on the keypad. Looking from the left to
+the right lets # them 1 to 8, (I made the picture bigger, so it looks
+distorted, and my numbers may or may not line up the way I want, but I
+tried).</p>
+<p>I am using an UNO, but from what I can tell this should work on any
+variation of Arduino.</p>
+<p>Keypad Pins   Arduino Pins</p>
+<hr />
+<p>1             9
+  2             8
+  3             7
+  4             6
+  5             5 (This is my modification)
+  6             12
+  7             11
+  8             10</p>
+<p>This setup seems to work with the (modified) sketch and library found on
+the website.</p>
+<p>My other modifications were an addition of pinMode(13, OUTPUT); to set
+the Led, the * and # on the keypad will turn on and off the LED, this
+seemed to be a needed change with the way the sketch was written.</p>
+<p>The sketch setups an array with the numbers and letters in the “correct”
+locations, as you push a button it reads the ROWs and COLs and then
+using the array it outputs the number or letter.</p>
+<hr />
+<p>/* Keypadtest.pde</p>
+<p>*</p>
+<p>* Demonstrate the simplest use of the keypad library.</p>
+<p>*</p>
+<p>* The first step is to connect your keypad to the</p>
+<p>* Arduino using the pin numbers listed below in</p>
+<p>* rowPins[] and colPins[]. If you want to use different</p>
+<p>* pins then you can change the numbers below to</p>
+<p>* match your setup.</p>
+<p>*</p>
+<p>*/</p>
+<p>#include &lt;Keypad.h&gt;</p>
+<p>const byte ROWS = 4; // Four rows</p>
+<p>const byte COLS = 4; // four columns</p>
+<p>// Define the Keymap</p>
+<p>char keys[ROWS][COLS] = {</p>
+<p>{'1','2','3','A'},</p>
+<p>{'4','5','6','B'},</p>
+<p>{'7','8','9','C'},</p>
+<p>{'*','0','#','D'}</p>
+<p>};</p>
+<p>// Connect keypad ROW0, ROW1, ROW2 and ROW3 to these Arduino pins.</p>
+<p>byte rowPins[ROWS] = { 9, 8, 7, 6 };</p>
+<p>// Connect keypad COL0, COL1 and COL2 to these Arduino pins.</p>
+<p>byte colPins[COLS] = { 5, 12, 11, 10 };</p>
+<p>// Create the Keypad</p>
+<p>Keypad kpd = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );</p>
+<p>#define ledpin 13</p>
+<p>void setup()</p>
+<p>{</p>
+<p>// digitalWrite(ledpin, HIGH);</p>
+<p>pinMode(13, OUTPUT);</p>
+<p>Serial.begin(9600);</p>
+<p>}</p>
+<p>void loop()</p>
+<p>{</p>
+<p>char key = kpd.getKey();</p>
+<p>if(key) // Check for a valid key.</p>
+<p>{</p>
+<p>switch (key)</p>
+<p>{</p>
+<p>case '*':</p>
+<p>digitalWrite(13, LOW);</p>
+<p>break;</p>
+<p>case '#':</p>
+<p>digitalWrite(13, HIGH);</p>
+<p>break;</p>
+<p>default:</p>
+<p>Serial.println(key);</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<hr />
+<hr />
+<p>Above is my modified code.</p>
+<p>The Rotary switch is something a little different, from this website,
+<a href="http://bildr.org/2012/08/rotary-encoder-arduino/"><em>http://bildr.org/2012/08/rotary-encoder-arduino/</em></a></p>
+<p>it’s output this a 2 digit binary code, that will go 00, 01, 10, 11, so
+if you are rotating the switch and starting at 01 you can either have a
+00 or 11 depending on direction of the switch. so by adding the previous
+encoded value to the beginning of the current encoded value we get 1 of
+8 possible numbers (0001, 0010, 0100, 0111, 1000, 1011, 1110, 1101)
+1101, 0100, 0010, 1011 all mean clockwise movement, 1110, 0111, 0001,
+1000 are all counter-clockwise. Easy enough, now we just need to read
+the switches, The sketch uses interrupts to handle this, and it seems to
+a good way to handle it.</p>
+<p>While the website, explained how these worked pretty well, it didn’t
+have hook up instructions for the encoder Jim got, it took a little
+trail and error, but since are only 5 pins, it wasn’t that hard to
+figure out.</p>
+<p><img alt="" src="../media/image04.jpg" />{width="2.4722222222222223in"
+height="1.9861111111111112in"}</p>
+<p>As you can see in this picture it’s pins are labeled,</p>
+<p>2 of the labels ended up making since:</p>
+<p>GND - Ground &amp; SW - is the Switch (Pin 4 on the Arduino)</p>
+<p>Rotary Switch Pin   Arduino</p>
+<hr />
+<p>Gnd                 ground
+  +                   2
+  SW                  4
+  DT                <br />
+  CLK                 3</p>
+<p>The rotary encoder Jim got has a switch, so I used the code for that
+section.</p>
+<p>One line of code did need to be changed, In void loop() the
+if(digitalRead(encoderSwitchPin2).... should just be
+(encoderSwitchPin)... That was the only error I found in the code.</p>
+<hr />
+<p>//From bildr article: http://bildr.org/2012/08/rotary-encoder-arduino/</p>
+<p>//these pins can not be changed 2/3 are special pins</p>
+<p>int encoderPin1 = 2;</p>
+<p>int encoderPin2 = 3;</p>
+<p>int encoderSwitchPin = 4; //push button switch</p>
+<p>volatile int lastEncoded = 0;</p>
+<p>volatile long encoderValue = 0;</p>
+<p>long lastencoderValue = 0;</p>
+<p>int lastMSB = 0;</p>
+<p>int lastLSB = 0;</p>
+<p>void setup() {</p>
+<p>Serial.begin (9600);</p>
+<p>pinMode(encoderPin1, INPUT);</p>
+<p>pinMode(encoderPin2, INPUT);</p>
+<p>pinMode(encoderSwitchPin, INPUT);</p>
+<p>digitalWrite(encoderPin1, HIGH); //turn pullup resistor on</p>
+<p>digitalWrite(encoderPin2, HIGH); //turn pullup resistor on</p>
+<p>digitalWrite(encoderSwitchPin, HIGH); //turn pullup resistor on</p>
+<p>//call updateEncoder() when any high/low changed seen</p>
+<p>//on interrupt 0 (pin 2), or interrupt 1 (pin 3)</p>
+<p>attachInterrupt(0, updateEncoder, CHANGE);</p>
+<p>attachInterrupt(1, updateEncoder, CHANGE);</p>
+<p>}</p>
+<p>void loop(){</p>
+<p>//Do stuff here</p>
+<p>if(digitalRead(encoderSwitchPin)){</p>
+<p>//button is not being pushed</p>
+<p>}else{</p>
+<p>//button is being pushed</p>
+<p>}</p>
+<p>Serial.println(encoderValue);</p>
+<p>delay(1000); //just here to slow down the output, and show it will work even during a delay</p>
+<p>}</p>
+<p>void updateEncoder(){</p>
+<p>int MSB = digitalRead(encoderPin1); //MSB = most significant bit</p>
+<p>int LSB = digitalRead(encoderPin2); //LSB = least significant bit</p>
+<p>int encoded = (MSB &lt;&lt; 1) |LSB; //converting the 2 pin value to single number</p>
+<p>int sum = (lastEncoded &lt;&lt; 2) | encoded; //adding it to the previous encoded value</p>
+<p>if(sum == 0b1101 || sum == 0b0100 || sum == 0b0010 || sum == 0b1011) encoderValue ++;</p>
+<p>if(sum == 0b1110 || sum == 0b0111 || sum == 0b0001 || sum == 0b1000) encoderValue --;</p>
+<p>lastEncoded = encoded; //store this value for next time</p>
+<p>}</p>
+<hr />
+<hr />
+<p>The above code has been modified.</p>
+<p>My next step was to make both the Keypad &amp; the Rotary Encoder work
+together, I combined the code from both, made a couple of small changes
+to how the rotary encoder worked, you now can change the rotary
+switches, but the changes are not displayed until you push the switch
+button. The keypad will work with out the button being pushed, and the
+LED on pin 13 will turn on and off with the use of * and # keys.</p>
+<p>This is what I came up with:</p>
+<hr />
+<p>/* Keypadtest.pde</p>
+<p>*</p>
+<p>* Demonstrate the simplest use of the keypad library.</p>
+<p>*</p>
+<p>* The first step is to connect your keypad to the</p>
+<p>* Arduino using the pin numbers listed below in</p>
+<p>* rowPins[] and colPins[]. If you want to use different</p>
+<p>* pins then you can change the numbers below to</p>
+<p>* match your setup.</p>
+<p>*</p>
+<p>*/</p>
+<p>#include &lt;Keypad.h&gt;</p>
+<p>int encoderPin1 = 2;</p>
+<p>int encoderPin2 = 3;</p>
+<p>int encoderSwitchPin = 4; //push button switch</p>
+<p>volatile int lastEncoded = 0;</p>
+<p>volatile long encoderValue = 0;</p>
+<p>long lastencoderValue = 0;</p>
+<p>int lastMSB = 0;</p>
+<p>int lastLSB = 0;</p>
+<p>const byte ROWS = 4; // Four rows</p>
+<p>const byte COLS = 4; // four columns</p>
+<p>// Define the Keymap</p>
+<p>char keys[ROWS][COLS] = {</p>
+<p>{'1','2','3','A'},</p>
+<p>{'4','5','6','B'},</p>
+<p>{'7','8','9','C'},</p>
+<p>{'*','0','#','D'}</p>
+<p>};</p>
+<p>// Connect keypad ROW0, ROW1, ROW2 and ROW3 to these Arduino pins.</p>
+<p>byte rowPins[ROWS] = { 9, 8, 7, 6 };</p>
+<p>// Connect keypad COL0, COL1 and COL2 to these Arduino pins.</p>
+<p>byte colPins[COLS] = { 5, 12, 11, 10 };</p>
+<p>// Create the Keypad</p>
+<p>Keypad kpd = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );</p>
+<p>#define ledpin 13</p>
+<p>void setup()</p>
+<p>{</p>
+<p>// digitalWrite(ledpin, HIGH);</p>
+<p>pinMode(13, OUTPUT);</p>
+<p>Serial.begin(9600);</p>
+<p>pinMode(encoderPin1, INPUT);</p>
+<p>pinMode(encoderPin2, INPUT);</p>
+<p>pinMode(encoderSwitchPin, INPUT);</p>
+<p>digitalWrite(encoderPin1, HIGH); //turn pullup resistor on</p>
+<p>digitalWrite(encoderPin2, HIGH); //turn pullup resistor on</p>
+<p>digitalWrite(encoderSwitchPin, HIGH); //turn pullup resistor on</p>
+<p>//call updateEncoder() when any high/low changed seen</p>
+<p>//on interrupt 0 (pin 2), or interrupt 1 (pin 3)</p>
+<p>attachInterrupt(0, updateEncoder, CHANGE);</p>
+<p>attachInterrupt(1, updateEncoder, CHANGE);</p>
+<p>}</p>
+<p>void loop()</p>
+<p>{</p>
+<p>if(digitalRead(encoderSwitchPin)){</p>
+<p>//button is not being pushed</p>
+<p>}else{</p>
+<p>Serial.println("Rotary Encoder Button Pushed");</p>
+<p>//button is being pushed</p>
+<p>Serial.print("Rotary Encoder: ");</p>
+<p>Serial.println(encoderValue);</p>
+<p>delay(100); //just here to slow down the output, and show it will work even during a delay</p>
+<p>}</p>
+<p>char key = kpd.getKey();</p>
+<p>if(key) // Check for a valid key.</p>
+<p>{</p>
+<p>switch (key)</p>
+<p>{</p>
+<p>case '*':</p>
+<p>digitalWrite(13, LOW);</p>
+<p>break;</p>
+<p>case '#':</p>
+<p>digitalWrite(13, HIGH);</p>
+<p>break;</p>
+<p>default:</p>
+<p>Serial.println(key);</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>void updateEncoder(){</p>
+<p>int MSB = digitalRead(encoderPin1); //MSB = most significant bit</p>
+<p>int LSB = digitalRead(encoderPin2); //LSB = least significant bit</p>
+<p>int encoded = (MSB &lt;&lt; 1) |LSB; //converting the 2 pin value to single number</p>
+<p>int sum = (lastEncoded &lt;&lt; 2) | encoded; //adding it to the previous encoded value</p>
+<p>if(sum == 0b1101 || sum == 0b0100 || sum == 0b0010 || sum == 0b1011) encoderValue ++;</p>
+<p>if(sum == 0b1110 || sum == 0b0111 || sum == 0b0001 || sum == 0b1000) encoderValue --;</p>
+<p>lastEncoded = encoded; //store this value for next time</p>
+<p>}</p>
+<hr />
+<hr />
+<p>So there you have it, a whole week of Binary and BCD!</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../../../..';</script>
+        <script data-main="../../../../mkdocs/js/search.js" src="../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
