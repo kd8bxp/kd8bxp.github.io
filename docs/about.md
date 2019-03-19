@@ -1,2 +1,0 @@
-#301 Moved Permanently
-*301 Moved Permanently
