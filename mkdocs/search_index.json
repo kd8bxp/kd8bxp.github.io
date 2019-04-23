@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
+            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nOld Code Bender Sketches\n  \n\n\nArduino Libraries\n\n\nWord100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock. \nWord100 Library\n  \n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
             "title": "Home"
         },
         {
@@ -17,8 +17,13 @@
         },
         {
             "location": "/#other-projects",
-            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog",
+            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog  Old Code Bender Sketches",
             "title": "Other Projects"
+        },
+        {
+            "location": "/#arduino-libraries",
+            "text": "Word100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock.  Word100 Library",
+            "title": "Arduino Libraries"
         },
         {
             "location": "/#credits",
@@ -206,6 +211,26 @@
             "title": "Step 4: Wiring"
         },
         {
+            "location": "/tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/",
+            "text": "1.54\" TFT Game Pad with TouchScreen\n\n\nPhysical Resolution : 240x240 (The software Resolution is set to 480x480 for the more larger display area)\n\nWith touch function (The game don't have touch function. Because the Retropie OS don't support touch)\n\nProvide Raspbian and Retropie OS images and drivers\n\nSupport Raspberry Pi 2B/3B+/Zero W  \n\n\nSetup Link\n\n\nspotpear.com\n\n\nSetup Info (if link above disappears)\n\n\nUsing your own Raspbian OS install worked the best for me. Download, and install the OS as normal, setup your wifi, and ssh (if you want it).  \n\n\nNext download the \nLCD-show-190115.tar.gz\n drivers.\n\ncopy the above file to your SD card, and untar using\n\ntar xvf LCD-show.tar.gz\n\ncd LCD-show\n\nfor the 1.54\" screen run, the LCD154-show script to install, the raspberry pi will reboot.\n\nsudo ./LCD154-show  \n\n\nThat it. \n\nA keypad test program is also provided, and can also be found here: \nkeytest.zip",
+            "title": "1.54\" TFT Touch Screen"
+        },
+        {
+            "location": "/tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/#154-tft-game-pad-with-touchscreen",
+            "text": "Physical Resolution : 240x240 (The software Resolution is set to 480x480 for the more larger display area) \nWith touch function (The game don't have touch function. Because the Retropie OS don't support touch) \nProvide Raspbian and Retropie OS images and drivers \nSupport Raspberry Pi 2B/3B+/Zero W",
+            "title": "1.54\" TFT Game Pad with TouchScreen"
+        },
+        {
+            "location": "/tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/#setup-link",
+            "text": "spotpear.com",
+            "title": "Setup Link"
+        },
+        {
+            "location": "/tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/#setup-info-if-link-above-disappears",
+            "text": "Using your own Raspbian OS install worked the best for me. Download, and install the OS as normal, setup your wifi, and ssh (if you want it).    Next download the  LCD-show-190115.tar.gz  drivers. \ncopy the above file to your SD card, and untar using \ntar xvf LCD-show.tar.gz \ncd LCD-show \nfor the 1.54\" screen run, the LCD154-show script to install, the raspberry pi will reboot. \nsudo ./LCD154-show    That it.  \nA keypad test program is also provided, and can also be found here:  keytest.zip",
+            "title": "Setup Info (if link above disappears)"
+        },
+        {
             "location": "/tutorials/TI/resources/",
             "text": "TI Launchpad Resources\n\n\nMSP32:\n\n\nhttp://www.ti.com/tool/MSP-EXP432P401R?DCMP=ep-mcu-msp-432-en&HQS=beginmsp432launchpad#project0\n\nhttp://www2.keil.com/mdk5/\n\nhttp://dev.ti.com/tirex/#/DevTool/MSP-EXP432P401R\n\nhttp://www.ti.com/tool/energia\n\nhttp://energia.nu/\n\nhttp://energia.nu/guide/multitasking/\n\nhttp://dev.ti.com/tirex/#/Search/out%20of%20box%20experience?link=MSP432%20Pre-Production,%20Black%20LP%2FDevelopment%20Tools%2FMSP-EXP432P401R%20-%20Rev%201.0%20(Black)%2FDocuments  \n\n\nOut of the Box Demo:\n\n\nOut of the Box Demo\n  \n\n\nMore Resources:\n\n\nLady Adas DHT Library\n\nhttp://forum.43oh.com/topic/2826-ladyadas-dht-library-lcd/\n\nhttp://forum.43oh.com/topic/1312-nokia-5110-display/\n\nhttp://forum.43oh.com/topic/1769-nokia-5110-c-template-class/\n\nhttp://forum.43oh.com/topic/5920-energia-library-dht11-dht22-temperature-and-humidity-sensors/\n\nhttps://andres.svbtle.com/how-to-add-energia-support-to-utft-library\n\nhttps://github.com/andresv/UTFT-Energia\n\nhttps://github.com/search?utf8=%E2%9C%93&q=energia  \n\n\nBoth Energia and Arduino info:\n\n\nNo Libraries needed:\n\n\nPing Sensor\n\n\nSuper Mario Song",
             "title": "TI Launchpad Resources"
@@ -244,6 +269,16 @@
             "location": "/tutorials/ESP-MESH/ESP-MESH/#esp-mesh-board",
             "text": "This board isn't listed on the WIKI. Here is what I learned so far. (2/19/2019).     Select Generic ESP8285 from the Arduino Boards manager.    As the IDE is compiling the sketch, hold the flash button, release it when the IDE is waiting for the board.    The RGB LED on board    RED is pin 12    BLUE is pin 13    GREEN is pin 14    digitalWrite HIGH will turn the LED off    digitalWrite LOW will turn the LED on    analogWrite (PWM) works from 0 to 1024.      PainlessMesh  for the ESP8266/ESP32 board work with no problems.    The \"HelloMesh\" example included with the ESP8266 boards also works, but you have to remember to set an IP address for each node.",
             "title": "ESP-MESH Board"
+        },
+        {
+            "location": "/tutorials/MQTT-Services/brokers/",
+            "text": "Shiftr MQTT Broker\n\n\nShftr.io has a html api, with webhooks, it is a little hard to setup, but works with IFTTT (with a little effort).\n\n\nShiftr.io",
+            "title": "Brokers"
+        },
+        {
+            "location": "/tutorials/MQTT-Services/brokers/#shiftr-mqtt-broker",
+            "text": "Shftr.io has a html api, with webhooks, it is a little hard to setup, but works with IFTTT (with a little effort).  Shiftr.io",
+            "title": "Shiftr MQTT Broker"
         },
         {
             "location": "/projects/arduino/chatterbot/",
@@ -677,7 +712,7 @@
         },
         {
             "location": "/",
-            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
+            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nOld Code Bender Sketches\n  \n\n\nArduino Libraries\n\n\nWord100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock. \nWord100 Library\n  \n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
             "title": "Sherlock Holmes"
         },
         {
@@ -692,8 +727,13 @@
         },
         {
             "location": "/#other-projects",
-            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog",
+            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog  Old Code Bender Sketches",
             "title": "Other Projects"
+        },
+        {
+            "location": "/#arduino-libraries",
+            "text": "Word100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock.  Word100 Library",
+            "title": "Arduino Libraries"
         },
         {
             "location": "/#credits",
@@ -707,7 +747,7 @@
         },
         {
             "location": "/",
-            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
+            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nOld Code Bender Sketches\n  \n\n\nArduino Libraries\n\n\nWord100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock. \nWord100 Library\n  \n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
             "title": "Pen and Paper RPG Games"
         },
         {
@@ -722,8 +762,13 @@
         },
         {
             "location": "/#other-projects",
-            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog",
+            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog  Old Code Bender Sketches",
             "title": "Other Projects"
+        },
+        {
+            "location": "/#arduino-libraries",
+            "text": "Word100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock.  Word100 Library",
+            "title": "Arduino Libraries"
         },
         {
             "location": "/#credits",
@@ -737,7 +782,7 @@
         },
         {
             "location": "/",
-            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
+            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nOld Code Bender Sketches\n  \n\n\nArduino Libraries\n\n\nWord100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock. \nWord100 Library\n  \n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
             "title": "X Minus One"
         },
         {
@@ -752,8 +797,13 @@
         },
         {
             "location": "/#other-projects",
-            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog",
+            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog  Old Code Bender Sketches",
             "title": "Other Projects"
+        },
+        {
+            "location": "/#arduino-libraries",
+            "text": "Word100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock.  Word100 Library",
+            "title": "Arduino Libraries"
         },
         {
             "location": "/#credits",
@@ -767,7 +817,7 @@
         },
         {
             "location": "/",
-            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
+            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nOld Code Bender Sketches\n  \n\n\nArduino Libraries\n\n\nWord100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock. \nWord100 Library\n  \n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
             "title": "The Orville"
         },
         {
@@ -782,8 +832,13 @@
         },
         {
             "location": "/#other-projects",
-            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog",
+            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog  Old Code Bender Sketches",
             "title": "Other Projects"
+        },
+        {
+            "location": "/#arduino-libraries",
+            "text": "Word100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock.  Word100 Library",
+            "title": "Arduino Libraries"
         },
         {
             "location": "/#credits",
@@ -797,7 +852,7 @@
         },
         {
             "location": "/",
-            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
+            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nOld Code Bender Sketches\n  \n\n\nArduino Libraries\n\n\nWord100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock. \nWord100 Library\n  \n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
             "title": "Forbidden Planet (C-57D)"
         },
         {
@@ -812,8 +867,13 @@
         },
         {
             "location": "/#other-projects",
-            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog",
+            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog  Old Code Bender Sketches",
             "title": "Other Projects"
+        },
+        {
+            "location": "/#arduino-libraries",
+            "text": "Word100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock.  Word100 Library",
+            "title": "Arduino Libraries"
         },
         {
             "location": "/#credits",
@@ -827,7 +887,7 @@
         },
         {
             "location": "/",
-            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
+            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nOld Code Bender Sketches\n  \n\n\nArduino Libraries\n\n\nWord100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock. \nWord100 Library\n  \n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
             "title": "DC Comics"
         },
         {
@@ -842,8 +902,13 @@
         },
         {
             "location": "/#other-projects",
-            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog",
+            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog  Old Code Bender Sketches",
             "title": "Other Projects"
+        },
+        {
+            "location": "/#arduino-libraries",
+            "text": "Word100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock.  Word100 Library",
+            "title": "Arduino Libraries"
         },
         {
             "location": "/#credits",
@@ -857,7 +922,7 @@
         },
         {
             "location": "/",
-            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
+            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nOld Code Bender Sketches\n  \n\n\nArduino Libraries\n\n\nWord100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock. \nWord100 Library\n  \n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
             "title": "Lord of the Rings"
         },
         {
@@ -872,8 +937,13 @@
         },
         {
             "location": "/#other-projects",
-            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog",
+            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog  Old Code Bender Sketches",
             "title": "Other Projects"
+        },
+        {
+            "location": "/#arduino-libraries",
+            "text": "Word100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock.  Word100 Library",
+            "title": "Arduino Libraries"
         },
         {
             "location": "/#credits",
@@ -887,7 +957,7 @@
         },
         {
             "location": "/",
-            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
+            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nOld Code Bender Sketches\n  \n\n\nArduino Libraries\n\n\nWord100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock. \nWord100 Library\n  \n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
             "title": "Noris Methology"
         },
         {
@@ -902,8 +972,13 @@
         },
         {
             "location": "/#other-projects",
-            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog",
+            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog  Old Code Bender Sketches",
             "title": "Other Projects"
+        },
+        {
+            "location": "/#arduino-libraries",
+            "text": "Word100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock.  Word100 Library",
+            "title": "Arduino Libraries"
         },
         {
             "location": "/#credits",
@@ -917,7 +992,7 @@
         },
         {
             "location": "/",
-            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
+            "text": "This is Random Wire!\n\n\nHere you'll find some of most of my hobbies.\n\nEverything ranging from Arduino/Robotics, to Sherlock Holmes and\n\nThe Orville, and maybe even some Ham Radio Stuff.  \n\n\nSupport Me\n\n\nIf you find this or any of my projects useful or enjoyable please support me.\nAnything I do get goes to buy more parts and make more/better projects.\n\n\nPatreon\n\n\nKo-fi\n\n\nPayPal\n  \n\n\nOther Projects\n\n\nKD8BXP's Youtube Channel\n\n\nKD8BXP's Blog\n\n\nOld Code Bender Sketches\n  \n\n\nArduino Libraries\n\n\nWord100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock. \nWord100 Library\n  \n\n\nCredits\n\n\nCopyright (c) 2017/2018/2019 LeRoy Miller\n\n\nLicense\n\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses>",
             "title": "More Stuff"
         },
         {
@@ -932,8 +1007,13 @@
         },
         {
             "location": "/#other-projects",
-            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog",
+            "text": "KD8BXP's Youtube Channel  KD8BXP's Blog  Old Code Bender Sketches",
             "title": "Other Projects"
+        },
+        {
+            "location": "/#arduino-libraries",
+            "text": "Word100 A library for the 100+ Word Shield, Little Buddy Talker, Big Buddy Talker, and updated for EZ-Comms Shield, made by Patrick Thomas Mitchell from Engineering Shock.  Word100 Library",
+            "title": "Arduino Libraries"
         },
         {
             "location": "/#credits",

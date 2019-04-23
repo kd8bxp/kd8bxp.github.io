@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,19 @@
         
     <url>
      <loc>/tutorials/blink/blink/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/tutorials/document/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -31,13 +37,19 @@
         
     <url>
      <loc>/tutorials/TI/resources/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/tutorials/ESP-MESH/ESP-MESH/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -105,7 +117,7 @@
         
     <url>
      <loc>/projects/robot/RobotNavigationusingRFID/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -115,7 +127,7 @@
         
     <url>
      <loc>/hamradio/hotspot/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -125,13 +137,13 @@
         
     <url>
      <loc>/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -143,25 +155,25 @@
         
     <url>
      <loc>/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -170,7 +182,7 @@
     
     <url>
      <loc>/leroy/</loc>
-     <lastmod>2019-03-19</lastmod>
+     <lastmod>2019-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
