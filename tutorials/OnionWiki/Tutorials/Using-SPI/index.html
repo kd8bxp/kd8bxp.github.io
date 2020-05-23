@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Using the GPIOs for SPI Communication - Random Wire!</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#using-the-gpios-for-spi-communication">Using the GPIOs for SPI Communication</a></li>
+        <li class="main "><a href="#what-is-spi">What is SPI?</a></li>
+        <li class="main "><a href="#the-command-line-tool">The Command Line Tool</a></li>
+            <li><a href="#installing-the-tool">Installing the Tool</a></li>
+            <li><a href="#setup-an-spi-device">Setup an SPI Device</a></li>
+            <li><a href="#read-a-byte">Read a Byte</a></li>
+            <li><a href="#write-a-byte">Write a Byte</a></li>
+        <li class="main "><a href="#moving-beyond-the-command-line">Moving Beyond the Command Line</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="using-the-gpios-for-spi-communication">Using the GPIOs for SPI Communication</h1>
+<p>The Omega supports running the SPI protocol through the GPIOs, making it handy to communicate with an SPI-enabled peripherals. To implement SPI communication, the Omega has a C library, a Python module, and a command-line tool. This article will focus on the command line program, <code>spi-tool</code></p>
+<p>[[<em>TOC</em>]]</p>
+<h1 id="what-is-spi">What is SPI?</h1>
+<p>The Serial Peripheral Interface (SPI) is a four-wire synchronous communication protocol, largely used to connect microprocessors or microcontrollers to sensors, memory, and other peripherals. </p>
+<p>The four signals are:</p>
+<table>
+<thead>
+<tr>
+<th>SPI Signal</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SCK</td>
+<td>System Clock</td>
+</tr>
+<tr>
+<td>MOSI</td>
+<td>Master Out, Slave In - Data sent from the Master to the Slave</td>
+</tr>
+<tr>
+<td>MISO</td>
+<td>Master In, Slave Out - Data sent from the Slave to the Master</td>
+</tr>
+<tr>
+<td>CS/SS</td>
+<td>Chip Select/Slave Select</td>
+</tr>
+</tbody>
+</table>
+<p>The fact that it is a <em>synchronous</em> data bus means that one of the lines is a clock, used to synchronize the bits being sent on the data lines. </p>
+<p>The protocol is based on the Master-Slave architecture, so the Master will generate the System Clock and the Slave Select signals. In systems with multiple slaves, there will be multiple Slave Select signals.</p>
+<p>For more details on SPI, check out the <a href="https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus">Wikipedia article</a>.</p>
+<h1 id="the-command-line-tool">The Command Line Tool</h1>
+<p>The <code>spi-tool</code> command line utility allows the user to read and write single bytes from an SPI device. In order for an SPI device to be used, it must first be registered with the system. The utility can perform that action as well; giving the SPI device a bus number and device ID. This bus number and device ID must then be used again when transferring data with the SPI device.</p>
+<h2 id="installing-the-tool">Installing the Tool</h2>
+<p>The utility is not included by default in the Omega's firmware, to install it:</p>
+<pre><code>opkg update
+opkg install spi-tool
+</code></pre>
+
+<p>Try running <code>spi-tool -h</code> for a print-out of the tool's usage, or continue reading down below.</p>
+<h2 id="setup-an-spi-device">Setup an SPI Device</h2>
+<p>Since the SPI signals are sent through the GPIOs, the Omega's Operating System needs to be told which signals correspond to which GPIOs along with other SPI parameters.</p>
+<p>The <code>spi-tool</code> utility allows you to easily register an SPI device with the system:</p>
+<pre><code>spi-tool -b &lt;bus number&gt; -d &lt;device ID&gt; [options] setup
+
+</code></pre>
+
+<p>This device registration will persist until the Omega is powered down or rebooted.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>bus number</code> and <code>device ID</code> arguments are required every time. The values of these two parameters don't mean anything, they just serve as identifiers for the device.</p>
+<p><strong>Options</strong></p>
+<p>The following options are available, allowing you to change the SPI setup:</p>
+<pre><code>  --frequency &lt;Hz&gt;         Set max SPI frequency
+  --delay &lt;us&gt;             Set delay after the last bit transfered before optionally deselecting the device before the next transfer.
+  --bpw &lt;number&gt;           Set number of bits per word
+  --sck &lt;gpio&gt;             Set GPIO for SPI SCK signal
+  --mosi &lt;gpio&gt;            Set GPIO for SPI MOSI signal
+  --miso &lt;gpio&gt;            Set GPIO for SPI MISO signal
+  --cs &lt;gpio&gt;              Set GPIO for SPI CS signal
+  --3wire                  SI/SO signals shared
+  --no-cs                  No chip select signal
+  --cs-high                Set chip select to active high
+  --lsb                    Transmit Least Significant Bit first
+</code></pre>
+
+<p><strong>Defaults</strong></p>
+<p>By default, if none of the options are changed, the following values will be used:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>speed</td>
+<td>100000 Hz (100 kHz)</td>
+</tr>
+<tr>
+<td>delay</td>
+<td>0</td>
+</tr>
+<tr>
+<td>bitsPerWord</td>
+<td>0 (Corresponds to 8 bits per  word)</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>SPI Mode 0</td>
+</tr>
+<tr>
+<td>SCK GPIO</td>
+<td>GPIO6</td>
+</tr>
+<tr>
+<td>MOSI GPIO</td>
+<td>GPIO18</td>
+</tr>
+<tr>
+<td>MISO GPIO</td>
+<td>GPIO1</td>
+</tr>
+<tr>
+<td>CS GPIO</td>
+<td>GPIO7</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples</strong></p>
+<p>Setup an SPI device with the default options to bus 0, with device ID 1:</p>
+<pre><code>spi-tool -b 0 -d 1 setup
+</code></pre>
+
+<p>Setup an SPI device, bus 1, device ID 2, with a max speed of 400 kHz and a GPIO13 selected for the SCK signals:</p>
+<pre><code>spi-tool -b 1 -d 2 --speed 400000 --sck 13 setup
+</code></pre>
+
+<p>Setup an SPI device, bus 2, device ID 3, with a max speed of 320 kHz, the CS signal active-high, and using a three-wire setup:</p>
+<pre><code>spi-tool -b 2 -d 3 --speed 320000 --cs-high --3wire setup
+</code></pre>
+
+<h2 id="read-a-byte">Read a Byte</h2>
+<p>Finally, interacting with the SPI device! To read a single byte from a registered SPI device:</p>
+<pre><code>spi-tool -b &lt;bus number&gt; -d &lt;device ID&gt; [options] read &lt;address&gt;
+</code></pre>
+
+<p>This command will print the byte read from the specified address on the SPI device.</p>
+<p><strong>Arguments and Options</strong></p>
+<p>The <code>bus number</code> and <code>device ID</code> need to correspond to the values used to register the device! Additionally, any options used in the registration of the device need to be repeated in this command.</p>
+<p>The <code>address</code> argument indicates the address from which to read on the SPI device.</p>
+<p><strong>Examples</strong></p>
+<p>Read a byte from address 0x11 from device 1 on bus 0 (registered above):</p>
+<pre><code>root@Omega-ABCD:~# spi-tool -b 0 -d 1 read 0x11
+&gt; SPI Read from addr 0x11: 0x81
+</code></pre>
+
+<p>Read a byte from address 0x00 from device 2 on bus 1 (registered above):</p>
+<pre><code>root@Omega-ABCD:~# spi-tool -b 1 -d 2 --speed 400000 --sck 13 read 0x00
+&gt; SPI Read from addr 0x00: 0xf8
+</code></pre>
+
+<p>Read a byte from address 0xaf from device 3 on bus 2 (registered above):</p>
+<pre><code>root@Omega-ABCD:~# spi-tool -b 2 -d 3 --speed 320000 --cs-high --3wire read 0xaf
+&gt; SPI Read from addr 0xaf: 0xbe
+</code></pre>
+
+<h2 id="write-a-byte">Write a Byte</h2>
+<p>Along with reading, you can also use <code>spi-tool</code> to write to the SPI device:</p>
+<pre><code>spi-tool -b &lt;bus number&gt; -d &lt;device ID&gt; [options] write &lt;address&gt; &lt;value&gt;
+</code></pre>
+
+<p><strong>Arguments and Options</strong></p>
+<p>The <code>bus number</code> and <code>device ID</code> need to correspond to the values used to register the device! Additionally, any options used in the registration of the device need to be repeated in this command.</p>
+<p>The <code>address</code> and <code>value</code> arguments indicate the address on the SPI device to be written, and the value to write, respectively. </p>
+<p><strong>Examples</strong></p>
+<p>Write 0x42 to address 0x12 to device 1 on bus 0 (registered above):</p>
+<pre><code>root@Omega-ABCD:~# spi-tool -b 0 -d 1 write 0x12 0x42
+&gt; SPI Write to addr 0x12: 0x42
+</code></pre>
+
+<p>Write 0xfa to address 0x09 on device 2 on bus 1 (registered above):</p>
+<pre><code>root@Omega-ABCD:~# spi-tool -b 1 -d 2 --speed 400000 --sck 13 write 0x09 0xfa
+&gt; SPI Write to addr 0x09: 0xfa
+</code></pre>
+
+<p>Write 0x01 to address 0xbf on device 3 on bus 2 (registered above):</p>
+<pre><code>root@Omega-ABCD:~# spi-tool -b 2 -d 3 --speed 320000 --cs-high --3wire write 0xbf 0x01
+&gt; SPI Write to addr 0xbf: 0x01
+</code></pre>
+
+<h1 id="moving-beyond-the-command-line">Moving Beyond the Command Line</h1>
+<p>The <code>spi-tool</code> utility allows for some basic interaction with SPI devices using the command line. With interesting projects and use-cases, you will require additional interaction with the SPI device that might not be suited to the command line.</p>
+<p>Well, you're in luck! There is an <a href="../../Documentation/Libraries/SPI-Library">Onion developed C library and Python module</a> that gives you the flexibility to use SPI devices however you want!</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

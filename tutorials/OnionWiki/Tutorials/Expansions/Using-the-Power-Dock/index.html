@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Using the Power Dock - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#using-the-power-dock">Using the Power Dock</a></li>
+        <li class="main "><a href="#the-hardware">The Hardware</a></li>
+            <li><a href="#the-power-dock-at-a-glance">The Power Dock at a Glance</a></li>
+            <li><a href="#the-power-switch">The Power Switch</a></li>
+            <li><a href="#indicator-leds">Indicator LEDs</a></li>
+            <li><a href="#the-battery">The Battery</a></li>
+            <li><a href="#reset-button">Reset Button</a></li>
+            <li><a href="#micro-usb-port">Micro-USB Port</a></li>
+            <li><a href="#usb-host-port">USB Host Port</a></li>
+            <li><a href="#differences-from-the-expansion-dock">Differences from the Expansion Dock</a></li>
+        <li class="main "><a href="#usage-modes">Usage Modes</a></li>
+            <li><a href="#battery-mode">Battery Mode</a></li>
+            <li><a href="#charging-mode">Charging Mode</a></li>
+            <li><a href="#stationary-mode">Stationary Mode</a></li>
+        <li class="main "><a href="#application-to-check-battery-level">Application to Check Battery Level</a></li>
+            <li><a href="#install">Install</a></li>
+            <li><a href="#usage">Usage</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="using-the-power-dock">Using the Power Dock</h1>
+<p>Bring your next project on the go with the Power Dock! Equipped with on-board battery management, the Power Dock allows you to recharge and monitor battery levels, while providing a header to connect Onion Expansions.</p>
+<p><img alt="Power Dock" src="http://i.imgur.com/pwA5CeNl.jpg" /></p>
+<p>[[<em>TOC</em>]]</p>
+<!-- SECTION -->
+
+<!-- The Hardware -->
+
+<h1 id="the-hardware">The Hardware</h1>
+<p>Your Power Dock has a 30 pin Expansion Header, allowing you to use all of your existing Onion Expansions. It provides the Omega with the 3.3V it needs to run, while also providing 5V for the Expansions and USB Host port.</p>
+<p>The Power Dock is flexible: it can run off just a battery or just by drawing power from the Micro USB port. Charging the battery requires having both the battery and the Micro USB plugged in, don't worry, the Omega will still work with no interruptions during charging.</p>
+<h2 id="the-power-dock-at-a-glance">The Power Dock at a Glance</h2>
+<p><img alt="Power Dock Labeled" src="http://i.imgur.com/L98vslO.png" /></p>
+<h2 id="the-power-switch">The Power Switch</h2>
+<p>The power switch controls power to the Omega, regardless of whether it is powered from the battery or Micro-USB cable. The power switch has no effect on the battery charging, so <strong>the battery will charge regardless of the switch position</strong>. </p>
+<p>The blue Power LED indicates if there is power flowing to the Omega.</p>
+<h2 id="indicator-leds">Indicator LEDs</h2>
+<p>The power dock contains 4 LEDs that indicate the current battery level and charging status. The LED closest to the Micro-USB port indicates the lowest battery level and the LED furthest away from the Micro-USB port indicates the highest battery level. </p>
+<p>Lowest Battery Level:</p>
+<p><img alt="Lowest Indicator Level" src="http://i.imgur.com/nSp3ylGl.jpg" /></p>
+<p>Highest Battery Level:</p>
+<p><img alt="Highest Indicator Level" src="http://i.imgur.com/m9CPAfel.jpg" /></p>
+<h2 id="the-battery">The Battery</h2>
+<p>The Power Dock is designed for use with a <strong>3.7V LiPo Battery</strong> with a standard 2-pin JST-PH connector (2mm spacing between pins). </p>
+<p>Expect a 1500mAh battery to last about 10 hours, in some cases, up to 12 hours. </p>
+<!-- It should take Y hours to fully charge it up again.  -->
+
+<p><strong>Warning:</strong> Do not attempt to charge your battery with anything other that the Power Dock or a charger designed specifically for LiPo Batteries!</p>
+<h2 id="reset-button">Reset Button</h2>
+<p>The Reset Button can be used to reboot the Omega or perform a factor restore of the firmware.
+A Reset Button can be found on the Expansion Dock and Mini Dock:</p>
+<p>For reference, the Reset Button is connected to Omega's GPIO11. GPIO11 is the Omega's Active-High Soft Reset input.</p>
+<h3 id="reboot">Reboot</h3>
+<p>Momentarily pressing the reset button and letting go will initiate a reboot of the Omega OS.</p>
+<h3 id="factory-restore">Factory Restore</h3>
+<p>Pressing and holding the reset button for 10 seconds and releasing will trigger a factory restore.</p>
+<p><strong>Warning:</strong> This will reset your Omega to the default filesystem of the last firmware update, this <strong>will delete ALL of your data!</strong></p>
+<h2 id="micro-usb-port">Micro-USB Port</h2>
+<p>The Micro-USB Port is used to supply the Power Dock with ... power! Connect it to a computer or a USB wall adapter.</p>
+<h3 id="no-usb-to-serial-chip">No USB to Serial Chip</h3>
+<p>There is no USB-to-Serial Chip on the Power Dock. This means that you will <strong>not</strong> be able to connect to the Omega serially over the Micro-USB port. </p>
+<p>Instead, connect to your <a href="https://wiki.onion.io/Tutorials/Connecting-to-Omega-via-SSH">Omega wirelessly via SSH</a>.</p>
+<h2 id="usb-host-port">USB Host Port</h2>
+<p>The USB Host Port is connected to the Omega and can be used to interface USB peripherals with the Omega. A large variety of devices are supported out of the box, including webcams, keyboards, flash drives, hard drives, etc.</p>
+<h2 id="differences-from-the-expansion-dock">Differences from the Expansion Dock</h2>
+<p>Note some of the differences between the Expansion Dock and the Power Dock:</p>
+<p><img alt="Hardware Differences" src="http://i.imgur.com/fYUrTNHl.jpg" /></p>
+<p>The main differences are:
+  * Addition of battery management circuits and battery level indicator LEDs
+  * Addition of 2-pin JST-PH connector for batteries
+  * All circuit components are surface-mount 
+  * No USB-to-Serial Chip
+  * No RGB LED</p>
+<!-- SECTION -->
+
+<!-- Usage Modes -->
+
+<h1 id="usage-modes">Usage Modes</h1>
+<p>The Power Dock operates in three different modes.</p>
+<!-- Usage Modes: Battery Mode -->
+
+<h2 id="battery-mode">Battery Mode</h2>
+<p>This is the most important mode; when the Omega and Power Dock are running completely off the battery. The LED Indicators will be turned off by default to conserve battery life, however they can be turned on for five seconds via a command from the Omega.</p>
+<p><img alt="Toggle Indicator LEDs on" src="http://i.imgur.com/DDKiAsP.gif" /></p>
+<p>When the battery is approaching depletion the Indicator LEDs will begin flashing the low battery warning:</p>
+<p><img alt="indicator flashing low battery" src="http://i.imgur.com/W8LPY77.gif" /></p>
+<!-- Usage Modes: Charging Mode -->
+
+<h2 id="charging-mode">Charging Mode</h2>
+<p>When both the battery and Micro-USB cable are connected to the Power Dock, the battery will be charging. The Omega can still be powered on while the battery is charging, but it doesn't have to be; the battery will charge in this mode regardless of what the Omega is doing. You can even disconnect your Omega and the battery will still charge!</p>
+<p>The Indicator LEDs will show the current charge level of the battery:
+  * A solid LED means the battery has charged up to that level
+  * A flashing LED means the battery is currently charging this level</p>
+<p><strong>For best results, use a short Micro-USB cable when charging.</strong></p>
+<p>Take a look at the animations below for more details on the battery level indicators:</p>
+<p>Battery is <strong>25%</strong> charged, charging up to <strong>50%</strong>:</p>
+<p><img alt="charging - 25% full" src="http://i.imgur.com/MsLDmLB.gif" /></p>
+<p>Battery is <strong>50%</strong> charged, charging up to <strong>75%</strong>:</p>
+<p><img alt="charging - 50% full" src="http://i.imgur.com/UjZR5iz.gif" /></p>
+<p>Battery is <strong>75%</strong> charged, charging up to <strong>100%</strong>:</p>
+<p><img alt="charging - 75% full" src="http://i.imgur.com/nt65BBB.gif" /></p>
+<!-- Usage Modes: Stationary Mode -->
+
+<h2 id="stationary-mode">Stationary Mode</h2>
+<p>The Power Dock will still work when the battery is disconnected and the Power Dock is receiving power just from the Micro USB cable. The Battery Level Indicator LEDs will be flashing erattically, this is expected:</p>
+<p><img alt="Flickering indicators" src="http://i.imgur.com/GQz7dvT.gif" /></p>
+<p>The Power Dock essentially acts like the Expansion Dock in this mode.</p>
+<!-- SECTION -->
+
+<!-- power-dock application -->
+
+<h1 id="application-to-check-battery-level">Application to Check Battery Level</h1>
+<p>The <code>power-dock</code> application allows you to turn on the indicator LEDs on the Power Dock. It will only take effect when the Omega and Power Dock are being powered just by the battery.</p>
+<h2 id="install">Install</h2>
+<p>To install the power-dock application, run the following commands:</p>
+<pre><code>opkg update
+opkg install power-dock
+</code></pre>
+
+<h2 id="usage">Usage</h2>
+<p>The application will turn on the Battery Level Indicator LEDs, allowing you to visually check the battery charge level. To do this simply enter the following command:</p>
+<pre><code>power-dock
+</code></pre>
+
+<p><img alt="Toggle Indicator LEDs on" src="http://i.imgur.com/DDKiAsP.gif" /></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

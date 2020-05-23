@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Homemade Stock Ticker - Random Wire!</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#homemade-stock-ticker">Homemade Stock Ticker</a></li>
+        <li class="main "><a href="#overview">Overview</a></li>
+        <li class="main "><a href="#background-info">Background Info</a></li>
+        <li class="main "><a href="#the-actual-process">The Actual Process</a></li>
+            <li><a href="#step-1-connect-your-omega-expansion-dock-and-oled-expansion">Step 1: Connect your Omega, Expansion Dock, and OLED Expansion</a></li>
+            <li><a href="#step-2-setup-wifi">Step 2: Setup Wifi</a></li>
+            <li><a href="#step-3-update-and-install-python">Step 3: Update and Install Python</a></li>
+            <li><a href="#step-4-create-our-python-and-shell-scripts">Step 4: Create our Python and Shell scripts</a></li>
+            <li><a href="#step-5-change-permissions">Step 5: Change Permissions</a></li>
+            <li><a href="#step-6-execute-script">Step 6: Execute Script</a></li>
+        <li class="main "><a href="#using-the-project">Using the Project</a></li>
+            <li><a href="#going-further">Going Further</a></li>
+            <li><a href="#related-tutorials">Related Tutorials</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="homemade-stock-ticker">Homemade Stock Ticker</h1>
+<p>The main goal of this project is to demonstrate the Omega's capabilities in a practical webscraping application. We will be making a stock ticker using our Omega to retrieve prices and the OLED Expansion to display them. </p>
+<p><img alt="Final Picture" src="http://i.imgur.com/tHtyzJS.jpg" /></p>
+<p>We will be using python to do our webscraping as it provides us with a convenient set of tools to retrieve and parse web data as well as a shell script to print our stock information onto the OLED display.</p>
+<p>[[<em>TOC</em>]]</p>
+<h1 id="overview">Overview</h1>
+<p>Tutorial Difficulty:</p>
+<p><strong>Beginner</strong></p>
+<p>Time Required:</p>
+<p><strong>15 minutes</strong></p>
+<p>Required Materials:</p>
+<ul>
+<li>
+<p>The Omega</p>
+</li>
+<li>
+<p>The Expansion Dock</p>
+</li>
+<li>
+<p>OLED Expansions</p>
+</li>
+</ul>
+<p>Useful Experience:</p>
+<ul>
+<li>
+<p>Using the OLED Expansion</p>
+</li>
+<li>
+<p>Using Python</p>
+</li>
+<li>
+<p>Using Shell Scripts</p>
+</li>
+<li>
+<p>Scheduling with Cron</p>
+</li>
+</ul>
+<h1 id="background-info">Background Info</h1>
+<p>Stock Tickers are used display the most recent selling price for a stock on the market. Historically, they have been the most fundamental tool used by "wall streeters" for tracking performance. There are plethora of free stock ticker services for your computer, phone, tablet ...etc. However, we will provide you with the back bone to make a highly customizable stock ticker on a dedicated mini-computer (Omega) and display(OLED Exp) in under 15 min!</p>
+<h1 id="the-actual-process">The Actual Process</h1>
+<p>Pre-requisite: If you haven't already follow the get started <a href="https://onion.io/getstarted">guide</a> to setup your Omega.</p>
+<h2 id="step-1-connect-your-omega-expansion-dock-and-oled-expansion">Step 1: Connect your Omega, Expansion Dock, and OLED Expansion</h2>
+<p>Firstly, connect your OMEGA and your OLED Expansion to your Expansion Dock. Refer to the picture below.</p>
+<p><img alt="Assemble" src="http://i.imgur.com/RExtrmt.jpg" /></p>
+<p><img alt="Assembled" src="http://i.imgur.com/ZsmySUf.jpg" /></p>
+<h2 id="step-2-setup-wifi">Step 2: Setup Wifi</h2>
+<p>You will need to setup wifi so that we can install python and fetch stock data from google. Go ahead and enter the wifisetup command into your omega. </p>
+<pre><code>wifisetup</code></pre>
+
+<p>Follow the instructions and give the Omega access to your wifi network.  </p>
+<h2 id="step-3-update-and-install-python">Step 3: Update and Install Python</h2>
+<p>We will need to install the full version of Python so that we have access to some libraries necessary for webscraping. If you have already installed python skip to the next step. To do this simply enter,</p>
+<pre><code>opkg update
+opkg install python
+</code></pre>
+
+<p>You may or may not need to clear some space on your Omega for the installation. If you are doing this right out of the box, you should be fine.</p>
+<h2 id="step-4-create-our-python-and-shell-scripts">Step 4: Create our Python and Shell scripts</h2>
+<p>Navigate to your "/" directory. Create your shell script file by executing the following command.</p>
+<pre><code>cat &gt; stock.sh
+</code></pre>
+
+<p>You will be prompted to enter the contents of the file. Copy the following code into the file. </p>
+<pre><code>
+#!/bin/sh
+
+
+
+oled-exp -c
+
+echo $1 &gt; /root/ticker.txt
+
+
+
+VAR=$(python ./stock_script.py)
+
+
+
+oled-exp -i
+
+
+oled-exp write $VAR
+</code></pre>
+
+<p>You can save and exit the command by entering CTRL + D. Firstly, we add the the shell to our path so that we can run the file as an executeable. We then clear the display using <em>oled-exp -c</em>. We write the ticker of interest to the following file <code>/root/ticker.txt</code>. Next we run our python script and store the output to our string variable, VAR. Then we initialize the display and write the value of VAR, which is our ticker and price. </p>
+<p>Now lets do the same with our python script.</p>
+<pre><code>cat &gt; stock_script.py
+</code></pre>
+
+<pre><code class="python">
+#!/usr/bin/env python
+
+import urllib
+
+import json
+
+myfile = open('/root/ticker.txt', 'r')
+
+rg=myfile.read()
+
+site=&quot;http://www.google.com/finance/info?q=&quot;+rg
+
+jfile=urllib.urlopen(site)
+
+jsfile=jfile.read()
+
+
+
+jsfile=jsfile.replace(&quot;\n&quot;,&quot;&quot;)
+
+jsfile=jsfile.replace(&quot;/&quot;,&quot;&quot;)
+
+jsfile=jsfile.replace(&quot;]&quot;,&quot;&quot;)
+
+jsfile=jsfile.replace(&quot;[&quot;,&quot;&quot;)
+
+a=json.loads(jsfile)
+
+ticker=a['t']
+
+price=a['l_fix']
+
+info=ticker+&quot;:&quot;+price
+
+print info
+
+</code></pre>
+
+<p>To start we added python to our environment so that it is executable from the command line or a shell script. Next we imported urllib and json libraries, these will allows us to webscrape information and parse the data for our desired information respectively. Next we open the file that stores our desired ticker and store it as a string variable. Then we append that to our URL. Then we will generate the URL and open the file from the web, <em>urllib.urllopen(site)</em>. We will store it as a string using <em>jfile.read()</em>. Next we will clean it up using the <em>replace</em> functions so that it can be parsed by the json library. We use the <em>json.load(jsfile)</em> to create a dictionary. Then we retrieve the values of interest using the keys for ticker and price. We append the two and spit the output to our shell script.</p>
+<h2 id="step-5-change-permissions">Step 5: Change Permissions</h2>
+<p>Make both files we just created executable by entering this:</p>
+<pre><code>chmod +x stock.sh stock_script.py </code></pre>
+
+<h2 id="step-6-execute-script">Step 6: Execute Script</h2>
+<p>Now let's see how Apple is doing.</p>
+<pre><code>./stock.sh AAPL</code></pre>
+
+<p><img alt="Final Picture" src="http://i.imgur.com/7SdtT7s.jpg" /></p>
+<h1 id="using-the-project">Using the Project</h1>
+<p>Parts of this project can and are encouraged to be used in other projects.</p>
+<h2 id="going-further">Going Further</h2>
+<p>To take the project one step further, let's create a stream by having the Omega run the same script once every minute. To do this we will use the <em>cron</em> tool. <em>cron</em> allows us to schedule jobs(commands/programs/script) for execution at a fixed time. First lets schedule our sript to run every minute. To do this, enter the command:</p>
+<pre><code>crontab -e
+</code></pre>
+
+<p>You will be taken to the vi-editor of the scheduling file which can be found in /etc/crontabs/root. Add the following line to your file and make sure to end the file with an empty line or #.</p>
+<pre><code>*/1 * * * * /stock.sh AAPL
+</code></pre>
+
+<p>You can save and quit the editor by entering ZZ. </p>
+<p>Using this project as a template, we can go even further with webscraping projects. Maybe build a new headline streamer or an upto date weather tracker. </p>
+<h2 id="related-tutorials">Related Tutorials</h2>
+<p>If you enjoyed this project, you should check this out <a href="https://wiki.onion.io/Projects/OLED-QR-Code-Generator">OLED-QR-Code-Generator</a>. </p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

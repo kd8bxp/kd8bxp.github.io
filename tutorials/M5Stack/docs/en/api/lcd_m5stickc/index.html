@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../../img/favicon.ico">
+        <title>TFT Screen - Random Wire!</title>
+        <link href="../../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#tft-screen">TFT Screen</a></li>
+            <li><a href="#screenbreath">ScreenBreath()</a></li>
+            <li><a href="#fillscreen">fillScreen()</a></li>
+            <li><a href="#settextcolor">setTextColor()</a></li>
+            <li><a href="#setcursor">setCursor()</a></li>
+            <li><a href="#drawpixel">drawPixel()</a></li>
+            <li><a href="#drawline">drawLine()</a></li>
+            <li><a href="#drawtriangle">drawTriangle()</a></li>
+            <li><a href="#filltriangle">fillTriangle()</a></li>
+            <li><a href="#drawrect">drawRect()</a></li>
+            <li><a href="#fillrect">fillRect()</a></li>
+            <li><a href="#drawroundrect">drawRoundRect()</a></li>
+            <li><a href="#print">print()</a></li>
+            <li><a href="#usage-docsify-ignore">Usage {docsify-ignore}</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="tft-screen">TFT Screen</h1>
+<p><em>The M5StickC screen resolution is <strong>80x160</strong>, the top left corner of the screen as the origin (0,0)</em></p>
+<h2 id="screenbreath">ScreenBreath()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>void ScreenBreath(uint8_t brightness);</mark></p>
+<p><strong>Description: Adjust the brightness of the screen backlight.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>brightness</td>
+<td>TFT backlight brightness ( 值: 7 - 15 )</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5StickC.h&gt;
+
+uint8_t i = 7;
+
+void setup() {
+  M5.begin();
+  M5.Lcd.fillScreen(WHITE);
+}
+void loop() {
+  M5.Axp.ScreenBreath(i++);
+  if (i &gt; 15) i = 7;
+  delay(500);
+}
+</code></pre>
+
+<hr />
+<h2 id="fillscreen">fillScreen()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>fillScreen(uint16_t color);</mark></p>
+<p><strong>Description: Fills the entire screen with the specified color.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>color value</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5StickC.h&gt;
+
+void setup() {
+  M5.begin();
+  M5.Lcd.fillScreen(BLUE);
+}
+void loop() {}
+</code></pre>
+
+<hr />
+<h2 id="settextcolor">setTextColor()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>setTextColor(uint16_t color, [uint16_t backgroundcolor]);</mark></p>
+<p><strong>Description: Sets the foreground color and background color of the displayed text.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>foreground color</td>
+</tr>
+<tr>
+<td>backgroundcolor</td>
+<td>background color</td>
+</tr>
+</tbody>
+</table>
+<p><em>If the function's backgroundcolor value is not given, the current background color is used.</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5StickC.h&gt;
+
+void setup() {
+  M5.begin();
+  M5.Lcd.setTextColor(RED, WHITE);
+  M5.Lcd.println(&quot;Hello, M5Stack world!!&quot;);
+}
+void loop() {}
+</code></pre>
+
+<hr />
+<h2 id="setcursor">setCursor()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>setCursor(int16_t x0, int16_t y0, uint8_t font);</mark></p>
+<p><strong>Description: Move the cursor position to (x0, y0).</strong></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5StickC.h&gt;
+
+void setup() {
+  M5.begin();
+  M5.Lcd.setCursor(7, 20, 2);
+  M5.Lcd.println(&quot;scan done&quot;);
+  M5.Lcd.setCursor(5, 60, 4);
+  M5.Lcd.printf(&quot;50 AP&quot;);
+}
+void loop(){}
+</code></pre>
+
+<hr />
+<h2 id="drawpixel">drawPixel()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawPixel(int16_t x, int16_t y, [uint16_t color]);</mark></p>
+<p><strong>Description: Draw a pixel at the position (x, y).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>pixel color</td>
+</tr>
+</tbody>
+</table>
+<p><em>If the function's color value is not given, the current background color is used.</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5StickC.h&gt;
+
+void setup() {
+  M5.begin();
+  M5.Lcd.drawPixel(22, 22, RED);
+}
+void loop() {}
+</code></pre>
+
+<hr />
+<h2 id="drawline">drawLine()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawLine(int16_t x0, int16_t y0, int16_t x1, int16_t y1, [uint16_t color]);</mark></p>
+<p><strong>Description: Draw a line from the point (x, y) to the point (x1, y1) in the specified color.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>line color</td>
+</tr>
+</tbody>
+</table>
+<p><em>If the function's color value is not given, the current background color is used.</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5StickC.h&gt;
+
+void setup() {
+  M5.begin();
+  M5.Lcd.drawLine(0, 0, 12, 12, BLUE);
+}
+void loop() {}
+</code></pre>
+
+<hr />
+<h2 id="drawtriangle">drawTriangle()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, [uint16_t color]);</mark></p>
+<p><strong>Description: Draw a triangle with the specified color, with vertices of (x, y), (x1, y1), and (x2, y2).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>line color</td>
+</tr>
+</tbody>
+</table>
+<p><em>If the function's color value is not given, the current background color is used.</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5StickC.h&gt;
+
+void setup() {
+  M5.begin();
+  M5.Lcd.drawTriangle(22, 22, 69, 98, 51, 22, RED);
+}
+void loop() {}
+</code></pre>
+
+<hr />
+<h2 id="filltriangle">fillTriangle()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>fillTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, [uint16_t color]);</mark></p>
+<p><strong>Description: Fill a triangle with the specified color, with vertices of (x, y), (x1, y1) and (x2, y2).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>fill color</td>
+</tr>
+</tbody>
+</table>
+<p><em>If the function's color value is not given, the current background color is used.</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5StickC.h&gt;
+
+void setup() {
+  M5.begin();
+  M5.Lcd.fillTriangle(22, 22, 69, 98, 51, 22, RED);
+}
+void loop() {}
+</code></pre>
+
+<hr />
+<h2 id="drawrect">drawRect()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawRect(int16_t x, int16_t y, int16_t w, int16_t h, [uint16_t color]);</mark></p>
+<p><strong>Description: Draws a rectangle with a specified color, where the coordinates of the upper left corner of the rectangle are (x, y), and the width and height.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>w</td>
+<td>width (pixel)</td>
+</tr>
+<tr>
+<td>h</td>
+<td>height (pixel)</td>
+</tr>
+<tr>
+<td>color</td>
+<td>line color</td>
+</tr>
+</tbody>
+</table>
+<p><em>If the function's color value is not given, the current background color is used.</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5StickC.h&gt;
+
+void setup() {
+  M5.begin();
+  M5.Lcd.drawRect(50, 100, 30, 10, BLUE);
+}
+void loop() {}
+</code></pre>
+
+<hr />
+<h2 id="fillrect">fillRect()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>fillRect(int16_t x, int16_t y, int16_t w, int16_t h, [uint16_t color]);</mark></p>
+<p><strong>Description: Fill a rectangle with the specified color. The coordinates of the upper left corner are (x, y), and the width and height.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>w</td>
+<td>width (pixel)</td>
+</tr>
+<tr>
+<td>h</td>
+<td>height (pixel)</td>
+</tr>
+<tr>
+<td>color</td>
+<td>fill color</td>
+</tr>
+</tbody>
+</table>
+<p><em>If the function's color value is not given, the current background color is used.</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5StickC.h&gt;
+
+void setup() {
+  M5.begin();
+  M5.Lcd.fillRect(50, 100, 20, 10, BLUE);
+}
+void loop() {}
+</code></pre>
+
+<hr />
+<h2 id="drawroundrect">drawRoundRect()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawRoundRect(int16_t x0, int16_t y0, int16_t w, int16_t h, int16_t radius, uint16_t color);</mark></p>
+<p><strong>Description: Draw a rounded corner rectangle with the specified color, where the coordinates of the upper left corner of the rectangle are (x, y), the width, the height and the radius of the fillet.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>w</td>
+<td>width (pixel)</td>
+</tr>
+<tr>
+<td>h</td>
+<td>height (pixel)</td>
+</tr>
+<tr>
+<td>radius</td>
+<td>radius of corner fillet</td>
+</tr>
+<tr>
+<td>color</td>
+<td>fill color</td>
+</tr>
+</tbody>
+</table>
+<p><em>If the function's color value is not given, the current background color is used.</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5StickC.h&gt;
+
+void setup() {
+  M5.begin();
+  M5.Lcd.fillRoundRect(40, 70, 20, 10, 4, BLUE);
+}
+void loop() {}
+</code></pre>
+
+<hr />
+<h2 id="print">print()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>print();</mark></p>
+<p><strong>Description: Printing text (string) at the current cursor position of the screen.</strong></p>
+<p><em>The default printed content color style is white on black.</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5StickC.h&gt;
+
+void setup() {
+  M5.begin();
+  M5.Lcd.print(&quot;print text&quot;);
+}
+void loop() {}
+</code></pre>
+
+<h2 id="usage-docsify-ignore">Usage {docsify-ignore}</h2>
+<pre><code class="arduino">#include &lt;M5StickC.h&gt;
+
+void setup() {
+  M5.begin();
+
+  M5.Lcd.fillScreen(WHITE); // set the default background color
+  M5.Lcd.drawLine(0, 0, 100, 100, WHITE);
+  M5.Lcd.drawTriangle(22, 22, 69, 98, 51, 22, RED);
+  M5.Lcd.fillTriangle(22, 22, 69, 98, 51, 22, RED);
+  M5.Lcd.drawRect(50, 100, 30, 10, BLUE);
+  M5.Lcd.fillRect(50, 100, 30, 10, BLUE);
+  M5.Lcd.drawRoundRect(40, 70, 20, 10, 4, BLUE);
+  M5.Lcd.fillRoundRect(40, 70, 20, 10, 4, BLUE);
+  M5.Lcd.print(&quot;print text&quot;);
+}
+void loop() {}
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../../js/base.js" defer></script>
+        <script src="../../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

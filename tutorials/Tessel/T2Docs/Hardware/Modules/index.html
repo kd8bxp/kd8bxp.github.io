@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Hardware documentation for Tessel modules - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#hardware-documentation-for-tessel-modules">Hardware documentation for Tessel modules</a></li>
+            <li><a href="#scope">Scope</a></li>
+            <li><a href="#accelerometer">Accelerometer</a></li>
+            <li><a href="#ambient">Ambient</a></li>
+            <li><a href="#climate">Climate</a></li>
+            <li><a href="#gps">GPS</a></li>
+            <li><a href="#infrared">Infrared</a></li>
+            <li><a href="#relay">Relay</a></li>
+            <li><a href="#rfid">RFID</a></li>
+            <li><a href="#servo">Servo</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="hardware-documentation-for-tessel-modules">Hardware documentation for Tessel modules</h1>
+<h2 id="scope">Scope</h2>
+<p>This document provides hardware overviews for each Tessel module:</p>
+<ul>
+<li><a href="#accelerometer">Accelerometer</a></li>
+<li><a href="#ambient">Ambient</a></li>
+<li><a href="#climate">Climate</a></li>
+<li><a href="#gps">GPS</a></li>
+<li><a href="#infrared">Infrared</a></li>
+<li><a href="#relay">Relay</a></li>
+<li><a href="#rfid">RFID</a></li>
+<li><a href="#servo">Servo</a></li>
+</ul>
+<h2 id="accelerometer">Accelerometer</h2>
+<p>Measures acceleration in the x, y, and z directions.</p>
+<h3 id="quick-overview">Quick overview:</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tessel part #</td>
+<td>TM-01-XX</td>
+</tr>
+<tr>
+<td>Latest version</td>
+<td>TM-01-02</td>
+</tr>
+<tr>
+<td>Key components</td>
+<td><a href="http://www.freescale.com/files/sensors/doc/data_sheet/MMA8452Q.pdf">MMA8452Q</a></td>
+</tr>
+<tr>
+<td>Current consumption (rated max)</td>
+<td>165 microamps</td>
+</tr>
+<tr>
+<td>Current consumption (average)</td>
+<td>165 microamps</td>
+</tr>
+<tr>
+<td>Communication protocol</td>
+<td>I2C, GPIO</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>I2C address can be modified by shorting J3 – see <a href="http://www.nxp.com/files/sensors/doc/data_sheet/MMA8451Q.pdf">MMA8452Q datasheet</a> 5.11.1 Table 10.</li>
+<li>+x = towards the Tessel, +y = G3 --&gt; GND, +z = up</li>
+</ul>
+<h3 id="links-to-hardware-information">Links to Hardware Information:</h3>
+<ul>
+<li><a href="https://github.com/tessel/accel-mma84">Code: firmware, docs, examples</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Accelerometer/TM-01-02.pdf">Schematic(PDF)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Accelerometer/TM-01-02.dch">Schematic (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Accelerometer/TM-01-02.dip">Layout (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Accelerometer/TM-01-02.dipb2">Layout support file for silkscreen</a></li>
+</ul>
+<h2 id="ambient">Ambient</h2>
+<p>Measures ambient light and sound. Sound gain adjustable via R6.</p>
+<h3 id="quick-overview_1">Quick overview:</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TM part #</td>
+<td>TM-08-XX</td>
+</tr>
+<tr>
+<td>Latest version</td>
+<td>TM-08-03</td>
+</tr>
+<tr>
+<td>Key components</td>
+<td><a href="http://www.everlight.com/file/ProductFile/PT15-21C-TR8.pdf">PT15-21C/TR8</a> photodiode, <a href="http://ke-www2.knowles.com/search/prods_pdf/SPU0410HR5H.pdf">SPU0410HR5H-PB</a> microphone</td>
+</tr>
+<tr>
+<td>Current consumption (rated max)</td>
+<td>10 mA</td>
+</tr>
+<tr>
+<td>Current consumption (average)</td>
+<td>10 mA</td>
+</tr>
+<tr>
+<td>Communication protocol</td>
+<td>SPI, GPIO</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notes_1">Notes</h3>
+<ul>
+<li>Light signal path includes low pass filters with <em>f<sub>c</sub></em> = 1.6 Hz</li>
+<li>Sound signal path measures loudness via a half wave rectifier</li>
+</ul>
+<h3 id="links-to-hardware-information_1">Links to Hardware Information:</h3>
+<ul>
+<li><a href="https://github.com/tessel/ambient-attx4">Code: firmware, docs, examples</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Ambient/TM-08-03.pdf">Schematic(PDF)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Ambient/TM-08-03.dch">Schematic (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Ambient/TM-08-03.dip">Layout (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Ambient/TM-08-03.dipb2">Layout support file for silkscreen</a></li>
+</ul>
+<h2 id="climate">Climate</h2>
+<p>Measure temperature and humidity</p>
+<h3 id="quick-overview_2">Quick overview:</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TM part #</td>
+<td>TM-02-XX</td>
+</tr>
+<tr>
+<td>Latest version</td>
+<td>TM-02-02</td>
+</tr>
+<tr>
+<td>Key components</td>
+<td><a href="http://www.silabs.com/Support%20Documents/TechnicalDocs/Si7020-A20.pdf">SI7020-A20</a> sensor</td>
+</tr>
+<tr>
+<td>Current consumption (rated max)</td>
+<td>565 microamps</td>
+</tr>
+<tr>
+<td>Current consumption (average)</td>
+<td>320 microamps</td>
+</tr>
+<tr>
+<td>Communication protocol</td>
+<td>I2C, GPIO</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notes_2">Notes</h3>
+<p>Temperature of the climate module can be affected by proximity to the Tessel processor.</p>
+<h3 id="links-to-hardware-information_2">Links to Hardware Information:</h3>
+<ul>
+<li><a href="https://github.com/tessel/climate-si7005">Code: firmware, docs, examples</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Climate/TM-02-02.pdf">Schematic(PDF)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Climate/TM-02-02.dch">Schematic (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Climate/TM-02-02.dip">Layout (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Climate/TM-02-02.dipb1">Layout support file for silkscreen</a></li>
+</ul>
+<h2 id="gps">GPS</h2>
+<p>Global positioning system: position reference, movement speed &amp; heading, time reference</p>
+<h3 id="quick-overview_3">Quick overview:</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TM part #</td>
+<td>TM-09-XX</td>
+</tr>
+<tr>
+<td>Latest version</td>
+<td>TM-09-02</td>
+</tr>
+<tr>
+<td>Key components</td>
+<td>A2235-H GPS module (<a href="http://www.maestro-wireless.com/download-dp40">user manual</a>, <a href="http://www.maestro-wireless.com/a2235-h">product page</a>)</td>
+</tr>
+<tr>
+<td>Current consumption (rated max)</td>
+<td>42 mA</td>
+</tr>
+<tr>
+<td>Current consumption (average)</td>
+<td>36 mA</td>
+</tr>
+<tr>
+<td>Communication protocol</td>
+<td>UART, GPIO</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notes_3">Notes</h3>
+<ul>
+<li>The A2235-H is based on CSR SiRFstarIV chipset, which supports a novel GPS fix mode and a variety of low power states.</li>
+<li>The A2235-H supports two different data modes: NMEA and SiRF binary mode (also called OSP mode). Tessel GPS's default APIs use the module in NMEA mode.</li>
+<li>A-GPS is supported with client generated extended ephemeris up to 3 days.</li>
+</ul>
+<h3 id="links-to-hardware-information_3">Links to Hardware Information:</h3>
+<ul>
+<li><a href="https://github.com/tessel/gps-a2235h">Code: firmware, docs, examples</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/GPS/TM-09-02.pdf">Schematic(PDF)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/GPS/TM-09-02.dch">Schematic (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/GPS/TM-09-02.dip">Layout (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/GPS/TM-09-02.dipb0">Layout support file for silkscreen</a></li>
+</ul>
+<h2 id="infrared">Infrared</h2>
+<p>Communicate with and command household electronics using IR light</p>
+<h3 id="quick-overview_4">Quick overview:</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TM part #</td>
+<td>TM-11-XX</td>
+</tr>
+<tr>
+<td>Latest version</td>
+<td>TM-11-03</td>
+</tr>
+<tr>
+<td>Key components</td>
+<td><a href="http://www.vishay.com/docs/82491/tsop382.pdf">TSOP38238</a> 38 kHz IR demodulator, <a href="http://www.osram-os.com/Graphics/XPic6/00116152_0.pdf">SFH-4646-Z</a> IR LED</td>
+</tr>
+<tr>
+<td>Current consumption (rated max)</td>
+<td>95 mA</td>
+</tr>
+<tr>
+<td>Current consumption (average)</td>
+<td>5 mA</td>
+</tr>
+<tr>
+<td>Communication protocol</td>
+<td>UART, GPIO</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notes_4">Notes</h3>
+<ul>
+<li>Receiving IR takes very little power. Transmission, on the other hand, uses a good deal of power.</li>
+<li>Receiver frequency is fixed at 38 kHz, although pin-compatible parts which operate at other frequencies presumably exist. Check your appliance's manual and/or the internet to make sure your hardware is compatible.</li>
+</ul>
+<h3 id="links-to-hardware-information_4">Links to Hardware Information:</h3>
+<ul>
+<li><a href="https://github.com/tessel/ir-attx4">Code: firmware, docs, examples</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/IR/TM-11-03.pdf">Schematic(PDF)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/IR/TM-11-03.dch">Schematic (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/IR/TM-11-03.dip">Layout (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/IR/TM-11-03.dipb2">Layout support file for silkscreen</a></li>
+</ul>
+<h2 id="relay">Relay</h2>
+<p>Switch large, high voltage loads</p>
+<h3 id="quick-overview_5">Quick overview:</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TM part #</td>
+<td>TM-04-XX</td>
+</tr>
+<tr>
+<td>Latest version</td>
+<td>TM-04-04</td>
+</tr>
+<tr>
+<td>Key components</td>
+<td>IM02DGR (<a href="http://www.digikey.com/product-detail/en/IM02DGR/PB1171CT-ND/1828461">DigiKey page</a>)</td>
+</tr>
+<tr>
+<td>Current consumption (rated max)</td>
+<td>90 mA</td>
+</tr>
+<tr>
+<td>Current consumption (average)</td>
+<td>10 mA</td>
+</tr>
+<tr>
+<td>Communication protocol</td>
+<td>GPIO</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notes_5">Notes</h3>
+<ul>
+<li>Relays are normally open (load disconnected) and will open should the module/Tessel lose power</li>
+<li>Current draw increases when the relays close (<em>I<sub>draw</sub></em> = 10mA + 40mA * [number of relays on])</li>
+<li>Rated to 240 V, 5 A (but please be careful)</li>
+<li>Insert and remove wires by pressing down on the connectors with a ballpoint pen (or similar).</li>
+</ul>
+<h3 id="links-to-hardware-information_5">Links to Hardware Information:</h3>
+<ul>
+<li><a href="https://github.com/tessel/relay-mono">Code: firmware, docs, examples</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Relay/TM-04-04.pdf">Schematic(PDF)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Relay/TM-04-04.dch">Schematic (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Relay/TM-04-04.dip">Layout (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Relay/TM-04-04.dipb2">Layout support file for silkscreen</a></li>
+</ul>
+<h2 id="rfid">RFID</h2>
+<p>Read and write from/to 13.56 MHz RFID cards and tags</p>
+<h3 id="quick-overview_6">Quick overview:</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TM part #</td>
+<td>TM-10-XX</td>
+</tr>
+<tr>
+<td>Latest version</td>
+<td>TM-10-03</td>
+</tr>
+<tr>
+<td>Key components</td>
+<td>PN532 (<a href="http://www.adafruit.com/datasheets/pn532longds.pdf">datasheet</a>, <a href="http://www.nxp.com/documents/user_manual/141520.pdf">user manual</a>, <a href="http://www.nxp.com/documents/data_sheet/MF1S503x.pdf">MiFARE tag IC/protocol docs</a>) 13.56 MHz RFID transceiver</td>
+</tr>
+<tr>
+<td>Current consumption (rated max)</td>
+<td>150 mA</td>
+</tr>
+<tr>
+<td>Current consumption (average)</td>
+<td>60 mA</td>
+</tr>
+<tr>
+<td>Communication protocol</td>
+<td>I2C, GPIO</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notes_6">Notes</h3>
+<ul>
+<li>Module can be switched to communicate over SPI with appropriate resistor pop option swaps</li>
+<li>Current is highest when transmitting and much lower most of the time</li>
+<li>A MiFare Classic card ships with the module</li>
+<li>Hardware-compatible with <a href="http://nfc-tools.org/index.php?title=ISO14443A">ISO-14443 RFID tags</a>, including but not limited to: MiFare (Classic 1k, Classic 4k, Ultralight), DesFire, and FeliCa. Further information in the link.</li>
+<li>Compatible cards (consumer): Charlie, Clipper</li>
+</ul>
+<h3 id="links-to-hardware-information_6">Links to Hardware Information:</h3>
+<ul>
+<li><a href="https://github.com/tessel/rfid-pn532">Code: firmware, docs, examples</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/RFID/TM-10-03.pdf">Schematic(PDF)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/RFID/TM-10-03.dch">Schematic (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/RFID/TM-10-03.dip">Layout (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/RFID/TM-10-03.dipb0">Layout support file for silkscreen</a></li>
+</ul>
+<h2 id="servo">Servo</h2>
+<p>Control up to 16 servos</p>
+<h3 id="quick-overview_7">Quick overview:</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TM part #</td>
+<td>TM-03-XX</td>
+</tr>
+<tr>
+<td>Latest version</td>
+<td>TM-03-02</td>
+</tr>
+<tr>
+<td>Key components</td>
+<td><a href="http://www.adafruit.com/datasheets/PCA9685.pdf">PCA9685</a> LED driver</td>
+</tr>
+<tr>
+<td>Current consumption (rated max)</td>
+<td>50 mA</td>
+</tr>
+<tr>
+<td>Current consumption (average)</td>
+<td>10 mA</td>
+</tr>
+<tr>
+<td>Communication protocol</td>
+<td>I2C, GPIO</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notes_7">Notes</h3>
+<ul>
+<li>An I2C LED PWM driver makes for a great servo driver too!</li>
+<li>16 channels</li>
+<li>Tessel is a 3.3V device, so <em>V<sub>out</sub></em> on the PWM channels is 3.3 V (works for standard hobby servos)</li>
+<li>5.5 mm barrel jack (center positive) for powering servos</li>
+<li>Can be used to control anything that needs PWM (speed controllers, gate drivers-to-FETs-big LEDs, etc.)</li>
+</ul>
+<h3 id="links-to-hardware-information_7">Links to Hardware Information:</h3>
+<ul>
+<li><a href="https://github.com/tessel/servo-pca9685">Code: firmware, docs, examples</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Servo/TM-03-03.pdf">Schematic(PDF)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Servo/TM-03-03.dch">Schematic (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Servo/TM-03-03.dip">Layout (DipTrace)</a></li>
+<li><a href="http://design-files.tessel.io.s3.amazonaws.com/2014.06.06/Modules/Servo/TM-03-03.dipb0">Layout support file for silkscreen</a></li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

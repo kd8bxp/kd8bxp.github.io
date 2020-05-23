@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>OLED Expansion Python Module - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#oled-expansion-python-module">OLED Expansion Python Module</a></li>
+        <li class="main "><a href="#programming-flow">Programming Flow</a></li>
+            <li><a href="#understanding-the-display">Understanding the Display</a></li>
+        <li class="main "><a href="#the-python-module">The Python Module</a></li>
+            <li><a href="#source-code">Source Code</a></li>
+            <li><a href="#using-the-python-module">Using the Python Module</a></li>
+            <li><a href="#example-code">Example Code</a></li>
+            <li><a href="#return-values">Return Values</a></li>
+            <li><a href="#initialization-function">Initialization Function</a></li>
+            <li><a href="#functions-to-adjust-settings">Functions to Adjust Settings</a></li>
+            <li><a href="#clear-the-screen">Clear the Screen</a></li>
+            <li><a href="#writing-text-to-the-display">Writing Text to the Display</a></li>
+            <li><a href="#drawing-images-on-the-display">Drawing Images on the Display</a></li>
+            <li><a href="#scrolling-the-display-contents">Scrolling the Display Contents</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="oled-expansion-python-module">OLED Expansion Python Module</h1>
+<p>The Onion OLED Expansion Python module, <code>oledExp</code> is based on the <a href="./OLED-Expansion-C-Library">C OLED Expansion Library</a>. Using this module, you will be able to control the OLED Expansion from within your Python program. </p>
+<p><img alt="Omega+OLED Expansion" src="http://i.imgur.com/tqcRlgG.jpg" /></p>
+<p>[[<em>TOC</em>]]</p>
+<h1 id="programming-flow">Programming Flow</h1>
+<p>After each power-cycle, the chip that controls the OLED Expansion must be programmed with an initialization sequence to setup the display and enable it to receive additional commands. </p>
+<p>After the initialization, the other functions can be used to ajdust various screen settings or display text or images.</p>
+<h2 id="understanding-the-display">Understanding the Display</h2>
+<p>The screen has a resolution of 128x64 pixels. It is addressable by 128 vertical columns and 8 horizontal pages:</p>
+<p><img alt="Page and column visual" src="http://i.imgur.com/4JsaahS.png" /></p>
+<p>Each page consists of 8 horizontal pixel rows. When a byte is written to the display, the Least Significant Byte (LSB) corresponds to the top-most pixel of the page in the current column. The Most Significant Byte (MSB) corresponds to the bottom-most pixel of the page in the current column.</p>
+<p><img alt="Page detail" src="http://i.imgur.com/8DIiN2n.png" /></p>
+<p>So writing <code>0x0f</code> would produce the top 4 pixels being coloured in, and the bottom 4 being left blank.</p>
+<p>The display keeps a cursor pointer in memory that indicates the current page and column being addressed. The cursor will automatically be incremented after each byte is written, the cursor can also be moved by the user through functions discussed below.</p>
+<h1 id="the-python-module">The Python Module</h1>
+<p>The <code>oledExp</code> Python module in the <code>OmegaExpansion</code> package provides a wrapper around the C library functions. The functions are largely the same as their C counterparts, including the arguments and return values. Any differences from the C library will be explicitly mentioned below. </p>
+<h2 id="source-code">Source Code</h2>
+<p>The source code can be found in the <a href="https://github.com/OnionIoT/i2c-exp-driver">Onion <code>i2c-exp-driver</code> GitHub Repo</a>.</p>
+<h2 id="using-the-python-module">Using the Python Module</h2>
+<p><strong>Installing the Module</strong></p>
+<p>To install the Python module, run the following commands:</p>
+<pre><code>opkg update
+opkg install python-light pyOledExp
+</code></pre>
+
+<p>This will install the module to <code>/usr/lib/python2.7/OmegaExpansion/</code></p>
+<p><em>Note: this only has to be done once.</em></p>
+<p><strong>Using the Module</strong></p>
+<p>To add the Onion OLED Expansion Module to your Python program, include the following in your code:</p>
+<pre><code class="python">from OmegaExpansion import oledExp
+</code></pre>
+
+<p>The functions are largely the same as their C counterparts, including the arguments and return values. Any differences from the C library will be explicitly mentioned below. </p>
+<p>One major drawback is that none of the defines found in C are currently implemented in the Python module.</p>
+<h2 id="example-code">Example Code</h2>
+<p>Example code that uses the <code>oledExp</code> module can be <a href="https://github.com/OnionIoT/i2c-exp-driver/blob/master/examples/oled-exp.py">found here</a>, in the <code>i2c-exp-driver</code> Onion GitHub Repo.</p>
+<h2 id="return-values">Return Values</h2>
+<p>All functions follow the same pattern with return values:</p>
+<p>If the function operation is successful, the return value will be <code>0</code>.</p>
+<p>If the function operation is not successful, the function will return <code>1</code>. </p>
+<h2 id="initialization-function">Initialization Function</h2>
+<p>Perform the initialization sequence on the OLED Expansion, after this step is completed, the other various OLED functions can be used with success:</p>
+<pre><code class="python">oledExp.driverInit()
+</code></pre>
+
+<p><strong>Examples</strong></p>
+<p>Initialize the OLED Display:</p>
+<pre><code class="c">status  = oledExp.driverInit();
+</code></pre>
+
+<h2 id="functions-to-adjust-settings">Functions to Adjust Settings</h2>
+<p>There is a series of functions that adjust various settings on the OLED Display. The adjustable settings are:
+* Screen on/off
+* Colour inversion
+* Setting screen brightness 
+* Setting the memory mode
+* Defining the width of each page
+* Setting the cursor position</p>
+<h3 id="turn-the-screen-on-and-off">Turn the Screen On and Off</h3>
+<p>The screen can be turned on and off while still preserving the displayed contents:</p>
+<pre><code class="python">oledExp.setDisplayPower(bPowerOn)
+</code></pre>
+
+<p>Note: turning on a screen that is already on, or turning off a screen that is already off will have no effect.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>bPowerOn</code> argument is detemines whether to turn the display on or off</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Turn the screen <strong>off</strong></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Turn the screen <strong>on</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples</strong></p>
+<p>Turn the screen off:</p>
+<pre><code class="python">status = oledExp.setDisplayPower(0)
+</code></pre>
+
+<p>Turn the screen on:</p>
+<pre><code class="python">status = oledExp.setDisplayPower(1)
+</code></pre>
+
+<h3 id="invert-display-colours">Invert Display Colours</h3>
+<p>The screen driver has the ability to invert the display colours, meaning that black becomes white and vice versa:</p>
+<pre><code class="python">oledExp.setDisplayMode(bInvert)
+</code></pre>
+
+<p><strong>Arguments</strong></p>
+<p>The <code>bInvert</code> argument is detemines whether to invert the colours or not</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Normal colour settings</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Inverted colour settings</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples</strong></p>
+<p>Invert the colours:</p>
+<pre><code class="python">status = oledExp.setDisplayMode(1)
+</code></pre>
+
+<p>Return the colours to normal:</p>
+<pre><code class="python">status = oledExp.setDisplayMode(0)
+</code></pre>
+
+<h3 id="set-the-display-brightness">Set the Display Brightness</h3>
+<p>The brightness of the display can be adjusted in a granularity of 256 steps:</p>
+<pre><code class="python">oledExp.setBrightness(brightness)
+</code></pre>
+
+<p>The default brightness after initialization is 207.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>brightness</code> argument is detemines the display brightness with a range of <strong>0 to 255</strong>, with 255 being the brightest setting and 0 being the dimmest.</p>
+<p><strong>Examples</strong></p>
+<p>Set to maximum brightness:</p>
+<pre><code class="python">status = oledExp.setBrightness(255)
+</code></pre>
+
+<p>Set to lowest possible brightness:</p>
+<pre><code class="python">status = oledExp.setBrightness(0)
+</code></pre>
+
+<p>Set to middle brightness:</p>
+<pre><code class="python">status = oledExp.setBrightness(127)
+</code></pre>
+
+<h3 id="dim-the-display">Dim the display</h3>
+<p>This function implements a 'dim' and a 'normal' setting for the display: </p>
+<pre><code class="python">oledExp.setDim(dim)
+</code></pre>
+
+<p>While the brightness adjustment function described just above implements the same feature, this function simplifies the procedure with two very disctinct settings.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>dim</code> argument is detemines whether to enable the dim setting</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Normal brightness: 207</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Dimmed screen: 0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples</strong></p>
+<p>Dim the display:</p>
+<pre><code class="python">status = oledExp.setDim(1)
+</code></pre>
+
+<p>Set the display to normal brightness:</p>
+<pre><code class="python">status = oledExp.setDim(0)
+</code></pre>
+
+<h3 id="set-memory-mode">Set Memory Mode</h3>
+<p>Implements the ability to select the display's memory mode:</p>
+<pre><code class="python">oledExp.setMemoryMode(mode)
+</code></pre>
+
+<p>The memory mode affects how the cursor is automatically advanced when the display memory is written to with text or images.</p>
+<p><strong>Horizontal Addressing Mode</strong></p>
+<p><img alt="Horizontal Addressing" src="http://i.imgur.com/sU0WyZY.png" /></p>
+<p>After each write, the column cursor advances horizontally to the right along the page, once the end of the page is reached, the page cursor is advanced onto the next page.</p>
+<p><strong>Vertical Addressing Mode</strong></p>
+<p><img alt="Vertical Addressing" src="http://i.imgur.com/Dv1smND.png" /></p>
+<p>After each write, the page cursor advances vertically downward through the pages, once the last page is reached, the column cursor is advanced to the next pixel column</p>
+<p><strong>Page Addressing Mode</strong></p>
+<p><img alt="Page Addressing" src="http://i.imgur.com/oW4giq6.png" /></p>
+<p>The column cursor advances horizontally to the right along each page, once the end of the page is reached, the column cursor wraps around to column 0 and the page cursor remains the same.</p>
+<p>By default, <strong>Horizontal Addressing</strong> is used.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>mode</code> argument detemines which memory mode is active. Unfortunately, the C defines do not carry over to Python, follow this table for selecting the desired mode:</p>
+<table>
+<thead>
+<tr>
+<th>Memory Mode</th>
+<th><code>mode</code> Argument</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Horizontal Addressing Mode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Vertical Addressing Mode</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Page Addressing Mode</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples</strong></p>
+<p>Set to page addressing mode:</p>
+<pre><code class="python">status = oledExp.setMemoryMode(2)
+</code></pre>
+
+<p>Set to horizontal addressing mode:</p>
+<pre><code class="python">status = oledExp.setMemoryMode(0)
+</code></pre>
+
+<h3 id="set-column-addressing">Set Column Addressing</h3>
+<p>This function is used to define where each page starts and ends horizontally:</p>
+<pre><code class="python">oledExp.setColumnAddressing(startPixel, endPixel)
+</code></pre>
+
+<p>Changing the start and end pixels changes the width of each page. By default, the column addressing is set from 0 to pixel 127. This means that each page has 128 usable columns, once the cursor reaches the last column, the display knows this page is filled. </p>
+<p>For example, when writing text, the <code>oledWrite</code> function will set the columns to run from 0 to 125 in order for the characters to display properly. Since each character is 6 columns, 21 full characters can be displayed on a single line, the end pixel is set to 125 so that the 22nd character gets placed on the next line instead.</p>
+<p>Note: the column cursor is not preserved after a column addressing change.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>startPixel</code> argument sets the starting column for each page.</p>
+<p>The <code>endPixel</code> argument sets the end column for each page.</p>
+<p>Both arguments must be between <strong>0 and 127</strong> and startPixel must be <strong>less than</strong> endPixel.</p>
+<p>Again, the C defines do not carry over to Python, regular numbers will have to be used for the start and end pixel arguments.</p>
+<p><strong>Examples</strong></p>
+<p>Set the column addressing to display text:</p>
+<pre><code class="python">status = oledExp.setColumnAddressing(0, 126-1)
+</code></pre>
+
+<p>Set the column addressing to the full display width</p>
+<pre><code class="python">status = oledExp.setColumnAddressing(0, 128-1)
+</code></pre>
+
+<p>Set each column to start halfway across and to end three quarters of the way across the display:</p>
+<pre><code class="python">status = oledExp.setColumnAddressing(63, 95)
+</code></pre>
+
+<h4 id="set-columns-for-text">Set Columns for Text</h4>
+<p>This function defines the column addressing specifically for text:</p>
+<pre><code class="python">oledExp.setTextColumns()
+</code></pre>
+
+<p>It sets the start pixel to 0 and the end pixel to 125. This allows for 21 text characters per line. This function should be run before setting the cursor for writing text.</p>
+<h4 id="set-columns-for-images">Set Columns for Images</h4>
+<p>Alternatively, this function defines the column addressing to cover the entire screen:</p>
+<pre><code class="python">oledExp.setImageColumns()
+</code></pre>
+
+<p>It sets the start pixel to 0 and the end pixel to 127. This enables the use of the entire screen real estate.</p>
+<h3 id="set-cursor-position">Set Cursor Position</h3>
+<p>Any data written to the screen gets written to the current position of the cursor. This position can be adjusted. </p>
+<p>Two methods exist:
+* Specifying the page row and character column
+* Specifying the page row and pixel column</p>
+<h4 id="set-cursor-position-by-character-column">Set Cursor Position by Character Column</h4>
+<p>This function is used to position the cursor on a specific page and character column. After this call, the next bytes written to the screen will be displayed at the new position of the cursor:</p>
+<pre><code class="python">oledExp.setCursor(row, column)
+</code></pre>
+
+<p>Note: since the column cursor is not preserved after a column addressing change, the column addressing <strong>needs be set to 0-125 to using the <code>oledExp.setTextColumns()</code> function to properly display text before the cursor position is programmed.</strong></p>
+<p><strong>Arguments</strong></p>
+<p>The <code>row</code> argument sets the page for the cursor, so the range is <strong>0 to 7</strong></p>
+<p>The <code>column</code> argument sets the character column position of the cursor, the range is <strong>0 to 20</strong></p>
+<p><strong>Examples</strong></p>
+<p>Set the cursor to the start of the last page:</p>
+<pre><code class="python">status = oledExp.setCursor(7, 0)
+</code></pre>
+
+<p>Set the cursor to the middle of the 4th row:</p>
+<pre><code class="python">status = oledExp.setCursor(3, 10)
+</code></pre>
+
+<p>Set the cursor to the starting position at the top-right</p>
+<pre><code class="python">status = oledExp.setCursor(0, 0)
+</code></pre>
+
+<p>Write 'hello' at the top left of the screen, and then write 'hi there' on the middle of the 7th row:</p>
+<pre><code class="python">status  = oledExp.setCursor(0, 0)
+status  |= oledExp.write(&quot;hello&quot;)
+status  |= oledExp.setCursor(6, 10)
+status  |= oledExp.write(&quot;hi there&quot;)
+</code></pre>
+
+<h4 id="set-cursor-position-by-pixel">Set Cursor Position by Pixel</h4>
+<p>This function is used to position the cursor on a specific page and pixel row. This gives more fine grain control than setting by character column. After this call, the next bytes written to the screen will be displayed at the new position of the cursor:</p>
+<pre><code class="python">oledExp.setCursorByPixel(row, pixel)
+</code></pre>
+
+<p>It allows for cursor positions that are not aligned with the 21 possible character columns.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>row</code> argument sets the page for the cursor, so the range is <strong>0 to 7</strong></p>
+<p>The <code>pixel</code> argument sets the horizontal pixel position of the cursor, the range is <strong>0 to 127</strong></p>
+<p><strong>Examples</strong></p>
+<p>Set the cursor to the start of the last page:</p>
+<pre><code class="python">status = oledExp.setCursorByPixel(7, 0)
+</code></pre>
+
+<p>Set the cursor to the middle of the 4th row:</p>
+<pre><code class="python">status = oledExp.setCursorByPixel(3, 63)
+</code></pre>
+
+<p>Set the cursor to the bottom-left</p>
+<pre><code class="python">status = oledExp.setCursorByPixel(7, 0)
+</code></pre>
+
+<p>Write 'hello' at the top left of the screen, and then write 'hi there' on the middle of the 7th row:</p>
+<pre><code class="python">oledExp.setCursorByPixel(0, 0)
+oledExp.write(&quot;hello&quot;)
+oledExp.setCursorByPixel(6, 63)
+oledExp.write(&quot;hi there&quot;)
+</code></pre>
+
+<h2 id="clear-the-screen">Clear the Screen</h2>
+<p>To clear the screen and move the cursor to the starting position at the top-left of the screen:</p>
+<pre><code class="python">oledExp.clear()
+</code></pre>
+
+<h2 id="writing-text-to-the-display">Writing Text to the Display</h2>
+<p>Listed below are the functions that write bytes, characters, strings, or images to the display.</p>
+<h3 id="write-a-single-byte">Write a Single Byte</h3>
+<p>Write a single byte, eight vertical pixels, to the current position of the cursor:</p>
+<pre><code class="python">oledExp.writeByte(byte)
+</code></pre>
+
+<p><strong>Arguments</strong></p>
+<p>The <code>byte</code> argument is the eight bits that will be written to the screen. The Least Significant Bit (LSB) in the byte corresponds to the top-most pixel in the column, the Most Significant Bit (MSB) corresponds to the bottom-most pixel in the column.</p>
+<p><img alt="Page detail" src="http://i.imgur.com/8DIiN2n.png" /></p>
+<p>After the byte is set, the cursor will automatically move to the next page column.</p>
+<p><strong>Examples</strong></p>
+<p>Draw the following pattern:</p>
+<p><img alt="Page detail" src="http://i.imgur.com/lxs1q8J.png" /></p>
+<pre><code class="python">status =  oledExp.writeByte(0x01)       # 0x01 = 0b 0000 0001
+status |= oledExp.writeByte(0x03)       # 0x03 = 0b 0000 0011
+status |= oledExp.writeByte(0x07)       # 0x07 = 0b 0000 0111
+status |= oledExp.writeByte(0x0f)           # 0x0f = 0b 0000 1111
+status |= oledExp.writeByte(0x3f)           # 0x3f = 0b 0011 1111
+</code></pre>
+
+<h3 id="write-a-single-character">Write a Single Character</h3>
+<p>Write a single character to the current position of the cursor:</p>
+<pre><code class="python">oledExp.writeChar(c)
+</code></pre>
+
+<p><strong>Arguments</strong></p>
+<p>The <code>c</code> argument is the character that is to be written to the screen.</p>
+<p>Make sure to check the <code>asciiTable</code> dynamic array found in <code>oled-exp.h</code>, it defines the bitmap pattern of each allowed character. Any characters not found in the table will be ignored.</p>
+<p><strong>Examples</strong></p>
+<p>Write an 'O'</p>
+<pre><code class="python">status = oledExp.writeChar('O')
+</code></pre>
+
+<p>Write an open bracket, an x, then a close bracket:</p>
+<pre><code class="python">status =  oledExp.writeChar('(')
+status |= oledExp.writeChar('x')
+status |= oledExp.writeChar(')')
+</code></pre>
+
+<h3 id="write-a-string">Write a String</h3>
+<p>Write an entire string of characters, starting at the current position of the cursor:</p>
+<pre><code class="python">oledExp.write(msg)
+</code></pre>
+
+<p>Underneath, this uses the <code>oledWriteChar</code> function to display characters and also implements newline functionality.</p>
+<p>The newline functionality is implemented by using a global variable to keep track where the cursor is in each row (I know... shameful...). Once the characters '\' and 'n' are detected, the <code>oledWrite</code> function will print spaces to the display until it reaches the end of the current page and the cursor increments its position to the next page.</p>
+<p>Note: the column addressing will be set to 0-125 to properly display text during this call, at the end of the function it will be reset back to 0-127.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>msg</code> argument is the string to be written to the display. Any characters not found in the <code>asciiTable</code> array will be ignored.</p>
+<p><strong>Examples</strong></p>
+<p>Write 'Onion Omega':</p>
+<pre><code class="python">status = oledExp.write(&quot;Onion Omega&quot;);
+</code></pre>
+
+<p>Write 'Python rules!', then 'Especially on', and then 'the Omega' two lines below:</p>
+<pre><code class="python">status = oledExp.write(&quot;Python rules!\nEspecially on\n\nthe Omega&quot;)
+</code></pre>
+
+<h2 id="drawing-images-on-the-display">Drawing Images on the Display</h2>
+<p>The OLED Screen can also be used to display images. The Console can be used to convert existing images into a format that is compatible with the OLED Expansion and save the output to an Omega. Functions in the Python module can read the image data and display it on the OLED Expansion.</p>
+<h3 id="creating-image-files">Creating Image Files</h3>
+<p>The Console OLED App can be used to create OLED Expansion compatible image files. Navigate to the Image tab of the OLED App:</p>
+<p><img alt="OLED Console App Image Tab" src="http://i.imgur.com/FPCVp8x.png" /></p>
+<p>Once an image has been selected, a button and form will appear that allow you to save the OLED image file to your Omega:</p>
+<p><img alt="OLED Console App Loaded Image" src="http://i.imgur.com/xKx5KHa.png" /></p>
+<p>After the image name and location are selected, click the Save to Omega button.</p>
+<h3 id="oled-image-file-details">OLED Image File Details</h3>
+<p>The OLED image files store the image data as 1024 bytes represented in hexadecimal. Each byte represents eight vertical pixels, with the first 128 bytes representing the columns in Page 0, the following 128 bytes representing the columns in Page 1, and so on. </p>
+<p>If this is unclear, see the <a href="#programming-flow_understanding-the-display">Understanding the Display Section</a> for details on how the display is addressed.</p>
+<h3 id="displaying-images-from-a-file">Displaying Images from a File</h3>
+<p>Read the image data from a file and display on the OLED screen:</p>
+<pre><code class="python">status = oledExp.drawFromFile(file)
+</code></pre>
+
+<p><strong>Arguments</strong></p>
+<p>The <code>file</code> argument is the path to the OLED image file.</p>
+<p><strong>Examples</strong></p>
+<p>Read an image file located at <code>/root/image.lcd</code> and draw it on the OLED display:</p>
+<pre><code class="python">status = oledExp.drawFromFile(&quot;/root/image.lcd&quot;)
+</code></pre>
+
+<h2 id="scrolling-the-display-contents">Scrolling the Display Contents</h2>
+<p>The OLED can scroll the contents of the screen horizontally or upwards at a 45 degree angle. The displayed content will wrap around when it reaches the edge of the display.</p>
+<h3 id="horizontal-scrolling">Horizontal Scrolling</h3>
+<p>Scroll all or part of the screen horizontally:</p>
+<pre><code class="python">oledExp.scroll(direction, scrollSpeed, startPage, stopPage)
+</code></pre>
+
+<p><strong>Arguments</strong></p>
+<p>The <code>direction</code> argument indicates whether to scroll to the left or right:</p>
+<table>
+<thead>
+<tr>
+<th><code>direction</code> Value</th>
+<th>Scrolling Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Left</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Right</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>scrollSpeed</code> argument determines the number of "frames" between each scroll step:</p>
+<table>
+<thead>
+<tr>
+<th>Scroll Speed</th>
+<th><code>scrollSpeed</code> Argument</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_5_FRAMES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_64_FRAMES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_128_FRAMES</td>
+<td>2</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_256_FRAMES</td>
+<td>3</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_3_FRAMES</td>
+<td>4</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_4_FRAMES</td>
+<td>5</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_25_FRAMES</td>
+<td>6</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_2_FRAMES</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>startPage</code> argument defines at which page to start scrolling, and <code>stopPage</code> defines at which page to start the scroll. The range for both is <strong>0 to 7</strong>, and startPage must be less than stopPage.</p>
+<p><strong>Examples</strong></p>
+<p>Scroll the entire screen to the left:</p>
+<pre><code class="python">status = oledExp.scroll (0, 0, 0, 8-1)
+</code></pre>
+
+<p><img alt="left scroll" src="http://i.imgur.com/nytY4Xw.gif" /></p>
+<p>Quickly scroll the bottom half of the screen to the right:</p>
+<pre><code class="python">status = oledExp.scroll (1, 7, 4, 8-1)
+</code></pre>
+
+<p>Slowly scroll pages 1 to 5:</p>
+<pre><code class="python">status = oledExp.scroll (1, 6, 1, 5)
+</code></pre>
+
+<h3 id="diagonal-scrolling">Diagonal Scrolling</h3>
+<p>Scroll all or part of the screen diagonally upwards:</p>
+<pre><code class="python">oledExp.scrollDiagonal(direction, scrollSpeed, fixedRows, scrollRows, verticalOffset, startPage, stopPage)
+</code></pre>
+
+<p><strong>Arguments</strong></p>
+<p>The <code>direction</code> argument indicates whether to scroll upwards to the left or right:</p>
+<table>
+<thead>
+<tr>
+<th><code>direction</code> Value</th>
+<th>Scrolling Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Upwards and Left</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Upwards and Right</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>scrollSpeed</code> argument determines the number of "frames" between each scroll step:</p>
+<table>
+<thead>
+<tr>
+<th>Scroll Speed</th>
+<th><code>scrollSpeed</code> Argument</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_5_FRAMES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_64_FRAMES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_128_FRAMES</td>
+<td>2</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_256_FRAMES</td>
+<td>3</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_3_FRAMES</td>
+<td>4</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_4_FRAMES</td>
+<td>5</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_25_FRAMES</td>
+<td>6</td>
+</tr>
+<tr>
+<td>OLED_EXP_SCROLL_SPEED_2_FRAMES</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>fixedRows</code> argument defines the amount of pixel rows, starting from the top, <strong>will not</strong> have vertical scrolling. The range is <strong>0 to 63</strong>.</p>
+<p>The <code>scrollRows</code> argument defines the amount of pixel rows, starting from the top, that <strong>will</strong> have vertical scrolling. </p>
+<p>The <code>verticalOffset</code> argument defines the number of vertical rows to scroll by each frame.</p>
+<p>The <code>startPage</code> argument defines at which page to start scrolling, and <code>stopPage</code> defines at which page to start the scroll. The range for both is <strong>0 to 7</strong>, and startPage must be <strong>less than</strong> stopPage.</p>
+<p><strong>Examples</strong></p>
+<p>Scroll the entire screen upwards to the left:</p>
+<pre><code class="python">status = oledExp.scrollDiagonal (   0, 
+                5, 
+                0, 
+                128-1, 
+                1, 
+                0, 
+                8-1
+            )
+</code></pre>
+
+<p>Slowly Scroll the entire screen upwards to the right:</p>
+<pre><code class="python">status = oledExp.scrollDiagonal (   1, 
+                1, 
+                0, 
+                128-1, 
+                1, 
+                0, 
+                8-1
+            )
+</code></pre>
+
+<p><img alt="diagonal-right scroll" src="http://i.imgur.com/9JcoKEj.gif" /></p>
+<h3 id="stop-scrolling">Stop Scrolling</h3>
+<p>Disables all active scrolling:</p>
+<pre><code class="python">oledExp.scrollStop()
+</code></pre>
+
+<p><strong>Examples</strong></p>
+<p>Scroll the entire screen to the left, then stop it:</p>
+<pre><code class="python">status = oledExp.scroll (0, 0, 0, 7)
+status |= oledExp.scrollStop(0)
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

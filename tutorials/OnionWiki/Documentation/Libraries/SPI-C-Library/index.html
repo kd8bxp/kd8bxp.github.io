@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>SPI C Library - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#spi-c-library">SPI C Library</a></li>
+        <li class="main "><a href="#the-spi-protocol">The SPI Protocol</a></li>
+            <li><a href="#linux-and-spi">Linux and SPI</a></li>
+        <li class="main "><a href="#the-c-library">The C Library</a></li>
+            <li><a href="#source-code">Source Code</a></li>
+            <li><a href="#programming-flow">Programming Flow</a></li>
+            <li><a href="#using-the-library">Using the Library</a></li>
+            <li><a href="#example">Example</a></li>
+            <li><a href="#return-values">Return Values</a></li>
+            <li><a href="#parameter-structure">Parameter Structure</a></li>
+            <li><a href="#setup-functions">Setup Functions</a></li>
+            <li><a href="#communication-functions">Communication Functions</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="spi-c-library">SPI C Library</h1>
+<p>The Onion SPI Library, <code>libonionspi</code> is a dynamic C library that provides functions to easily read from and write to devices communicating with the Omega over the GPIOs via the SPI protocol. The library can be used in C and C++ programs.</p>
+<p>Also available is a Python module, called <code>onionSpi</code>, that implements an SPI object using functions from the C Library.</p>
+<p>[[<em>TOC</em>]]</p>
+<h1 id="the-spi-protocol">The SPI Protocol</h1>
+<p>The Serial Peripheral Interface (SPI) is a four-wire synchronous communication protocol, largely used to connect microprocessors or microcontrollers to sensors, memory, and other peripherals. </p>
+<p>The four signals are:</p>
+<table>
+<thead>
+<tr>
+<th>SPI Signal</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SCK</td>
+<td>System Clock</td>
+</tr>
+<tr>
+<td>MOSI</td>
+<td>Master Out, Slave In - Data sent from the Master to the Slave</td>
+</tr>
+<tr>
+<td>MISO</td>
+<td>Master In, Slave Out - Data sent from the Slave to the Master</td>
+</tr>
+<tr>
+<td>CS/SS</td>
+<td>Chip Select/Slave Select</td>
+</tr>
+</tbody>
+</table>
+<p>The fact that it is a <em>synchronous</em> data bus means that one of the lines is a clock, used to synchronize the bits being sent on the data lines. </p>
+<p>The protocol is based on the Master-Slave architecture, so the Master will generate the System Clock and the Slave Select signals. In systems with multiple slaves, there will be multiple Slave Select signals.</p>
+<p>For more details on SPI, check out the <a href="https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus">Wikipedia article</a>.</p>
+<h2 id="linux-and-spi">Linux and SPI</h2>
+<p>Linux systems usually control SPI devices through kernel drivers. However, it is also possible to generate the SPI protocol by bit-banging on connecte GPIOs. Bit-banging SPI is done through an adapter usually found at <code>/dev/spidevX.Y</code> where <code>X</code> is the device number and <code>Y</code> is the bus number.</p>
+<p>The Omega does not have an SPI bit-banging adapter setup by default, but this can be done by using the <code>insmod</code> command to insert a module into the kernel. The <code>libonionspi</code> library takes care of this for you so you don't have to deal with the intricacies.</p>
+<h1 id="the-c-library">The C Library</h1>
+<p>The <code>libonionspi</code> C library is a series of functions that implement SPI communication through the Linux device interface. </p>
+<h2 id="source-code">Source Code</h2>
+<p>The source code can be found in the <a href="https://github.com/OnionIoT/spi-gpio-driver">Onion <code>spi-gpio-driver</code> GitHub Repo</a>.</p>
+<h2 id="programming-flow">Programming Flow</h2>
+<p>Any program using the <code>libonionspi</code> library must first initialize the <code>spiParams</code> structure since it is used by all of the other library functions. Then, the <code>spiParams</code> structure members should be modified to suit the requirements of the use case. For example, the desired bus number and device ID should be programmed.</p>
+<p>Transactions will not work if the SPI adapter is not registered with the system, there are functions to check if an adapter is registered, and if not, to register the adapter. There is also a setup function to set  additional parameters on the adapter.</p>
+<p>After the above is complete, the functions to transfer data using the SPI protocol can be used freely</p>
+<h2 id="using-the-library">Using the Library</h2>
+<p><strong>Header File</strong></p>
+<p>To add the Onion SPI Library to your C/C++ program, include the header file in your C code:</p>
+<pre><code class="c">#include &lt;onion-spi.h&gt;
+</code></pre>
+
+<p><strong>Library for Linker</strong></p>
+<p>In your project's makefile, you will need to add the following dynamic libraries to the linker command:</p>
+<pre><code class="c">-loniondebug -lonionspi 
+</code></pre>
+
+<p>The dynamic libraries are stored in <code>/usr/lib</code> on the Omega.</p>
+<h2 id="example">Example</h2>
+<p>An example of how the <code>libonionspi</code> library is used can be found in the C implementation of the <a href="https://github.com/OnionIoT/spi-gpio-driver/blob/master/src/main-spi-tool.c">command line SPI tool.</a></p>
+<p>Additional example code can be found in the sections below.</p>
+<h2 id="return-values">Return Values</h2>
+<p>All functions follow the same pattern with return values:</p>
+<p>If the function operation is successful, the return value will be <code>EXIT_SUCCESS</code> which is a macro defined as <code>0</code> in <code>cstdlib.h.</code></p>
+<p>If the function operation is not successful, the function will return <code>EXIT_FAILURE</code> which is defined as <code>1</code>. </p>
+<p>Any deviations from this rule will be specified below.</p>
+<h2 id="parameter-structure">Parameter Structure</h2>
+<p>The <code>spiParams</code> structure is the central location that stores all of the data required by the library functions:</p>
+<pre><code class="c">struct spiParams {
+    // bus number and device id
+    int     busNum;
+    int     deviceId;
+
+    int     speedInHz;      // system clock frequency
+    int     delayInUs;      // delay after last bit transferred before optionall deselecting the device before the next transfer
+    int     bitsPerWord;    // how many bits are in a transfered word
+
+    int     mode;           // SPI mode: can be 0 to 3 (0 is the most common)
+    int     modeBits;       // additional SPI setup
+
+    // Omega GPIO definitions
+    int     sckGpio;
+    int     mosiGpio;
+    int     misoGpio;
+    int     csGpio;
+};
+</code></pre>
+
+<h3 id="spi-mode-bits">SPI Mode Bits</h3>
+<p>Additional SPI options can be setup on the interface by adding specific bits to the <code>modeBits</code> member of the structure. Macros exist to define which bits need to be set.</p>
+<p>The following macros are available:
+* <code>SPI_3WIRE</code>
+  * Use three-wire implementation of SPI where the MOSI and MISO lines are shared on a single GPIO.
+* <code>SPI_NO_CS</code>
+  * Modify the protocol to not generate a Chip-Select line.
+* <code>SPI_CS_HIGH</code>
+  * Modify the protocol for an active-high Chip-Select line.
+* <code>SPI_LSB_FIRST</code>
+  * Modify the protocol to transmit bytes LSB to MSB.
+* <code>SPI_LOOP</code>
+  * Enable loopback mode where the slave is configured to transmit the received bytes. This can be achieved with a single master by wiring the MISO and MOSI lines together.</p>
+<p>To enable any one of the options, perform a bitwise <code>or</code> operation with the <code>modeBits</code> structure member:</p>
+<pre><code class="c">params.modeBits |= SPI_CS_HIGH;
+params.modeBits |= SPI_LSB_FIRST;
+</code></pre>
+
+<p>Then run the <code>spiSetupDevice()</code> function to set the options in the adapter device. More information on this function in the sections below.</p>
+<h2 id="setup-functions">Setup Functions</h2>
+<p>The following functions serve to initialize the <code>spiParams</code> structure and do any SPI adapter setup required to actually perform transfers.</p>
+<h3 id="initialize-the-parameter-structure-spiparaminit">Initialize the Parameter Structure: <code>spiParamInit()</code></h3>
+<p>There is a function to initialize the <code>spiParams</code> structure with acceptable default values:</p>
+<pre><code class="c">void spiParamInit (struct spiParams *params);
+</code></pre>
+
+<p>The default settings:</p>
+<table>
+<thead>
+<tr>
+<th>SPI Setting</th>
+<th>Programmed Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>speedInHz</td>
+<td>100000 Hz (100 kHz)</td>
+</tr>
+<tr>
+<td>delayInUs</td>
+<td>0</td>
+</tr>
+<tr>
+<td>bitsPerWord</td>
+<td>0 (Corresponds to 8 bits per  word)</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>SPI Mode 0</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the SPI lines to the following GPIOs:</p>
+<table>
+<thead>
+<tr>
+<th>SPI Signal</th>
+<th>Omega Gpio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SCK</td>
+<td>6</td>
+</tr>
+<tr>
+<td>MOSI</td>
+<td>18</td>
+</tr>
+<tr>
+<td>MISO</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CS/SS</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Arguments</strong></p>
+<p>The <code>params</code> argument should be the structure you want to initialize passed by reference.</p>
+<h3 id="check-if-spi-device-is-mapped-spicheckdevice">Check if SPI Device is Mapped: <code>spiCheckDevice()</code></h3>
+<p>Performs a check to see if an SPI device with the specified bus number and device ID is mapped:</p>
+<pre><code class="c">int spiCheckDevice (int busNum, int devId, int printSeverity);
+</code></pre>
+
+<p><strong>Return Value</strong></p>
+<p>If the SPI device adapter is found, the function returns <code>EXIT_SUCCESS</code>, a macro mapped to <code>0</code></p>
+<p>If the SPI device adapter is <strong>not found</strong>, the function returns <code>EXIT_SUCCESS</code></p>
+<p><strong>Arguments</strong></p>
+<p>The <code>busNum</code> and <code>devId</code> specify the bus number and device ID of the adapter, respectively.</p>
+<p>The print severity refers to the Onion Debug Library verbosity level. For now set to <code>ONION_SEVERITY_DEBUG_EXTRA</code> for no additional messages printed.
+<strong>More info on this to come.</strong></p>
+<p><strong>Examples</strong></p>
+<p>To check if a device on bus 1 with device ID 2 is registered, and print out a message based on the result:</p>
+<pre><code class="c">int status;
+
+status  = spiCheckDevice(1, 2, ONION_SEVERITY_DEBUG_EXTRA);
+if (status == EXIT_SUCCESS) {
+    printf(&quot;SPI Device is mapped.\n&quot;);
+}
+else {
+    printf(&quot;WARNING: SPI Device NOT mapped!\n&quot;);
+}
+</code></pre>
+
+<h3 id="register-spi-device-spiregisterdevice">Register SPI Device: <code>spiRegisterDevice()</code></h3>
+<p>This function will register an SPI device with the bus number, device ID, and other SPI parameters as specified in the parameter structure:</p>
+<pre><code class="c">int spiRegisterDevice (struct spiParams *params);
+</code></pre>
+
+<p>It will first check if a device with the specified bus number and device ID is already registered. If it is, it will just return <code>EXIT_SUCCESS</code>. </p>
+<p>If not, it will attempt to register the SPI device adapter by inserting an SPI-gpio module into the kernel. If this operation is successful, the function will return <code>EXIT_SUCCESS</code>, if not, <code>EXIT_FAILURE</code> is returned.</p>
+<p>The function uses the following information to register the device:
+* The bus number 
+* The device ID
+* SPI mode
+* The SPI speed
+* The GPIO for the SCK line
+* The GPIO for the MOSI line
+* The GPIO for the MISO line
+* The GPIO for the CS line</p>
+<p><strong>Example</strong></p>
+<p>A short example showing how to register an SPI device adapter:</p>
+<pre><code class="c">int     status;
+struct  spiParams   params;
+
+// initialize the SPI parameters
+spiParamInit(&amp;params);
+
+// set the desired bus number and device id
+params.busNum   = 0;
+params.devId    = 1;
+
+// change the CS line to use GPIO23
+params.csGpio   = 23;
+
+// register the device
+status  = spiRegisterDevice(&amp;params);
+
+</code></pre>
+
+<h3 id="setup-spi-device-spisetupdevice">Setup SPI Device: <code>spiSetupDevice()</code></h3>
+<p>This function will setup additional SPI parameters on the device adapter</p>
+<pre><code class="c">int spiSetupDevice (struct spiParams *params);
+</code></pre>
+
+<p>It will setup the following SPI parameters:
+* The maximum speed of the link
+* The number of bits per word
+* Additional mode information, see <a href="#the-c-library_parameter-structure_spi-mode-bits">section on additional mode information above</a></p>
+<h2 id="communication-functions">Communication Functions</h2>
+<p>Once a device adapter is registered, the functions below can be used to read from and write data to the device via SPI.</p>
+<h3 id="transferring-data-spitransfer">Transferring Data: <code>spiTransfer()</code></h3>
+<p>This is the function that implements all data transfers using the SPI protocol:</p>
+<pre><code class="c">int spiTransfer (struct spiParams *params, uint8_t *txBuffer, uint8_t *rxBuffer, int bytes);
+</code></pre>
+
+<p><strong>Arguments</strong></p>
+<p>The <code>params</code> spiParams structure holds all of the relevant SPI information.</p>
+<p>The <code>txBuffer</code> argument will hold the data to be transferred via SPI.</p>
+<p>The <code>rxBuffer</code> argument will be populated by data received during the SPI transfer.</p>
+<p>And finally, the <code>bytes</code> argument indicates the number of bytes being transferred. Note that the txBuffer and rxBuffer need to be allocated to at least this size.</p>
+<h4 id="example-code-reading-a-byte">Example Code: Reading a Byte</h4>
+<p>The following example code uses the SPI protocol to read a byte of data from a specific address on an SPI device:</p>
+<pre><code class="c">void SpiReadValue(int addr)
+{
+    int         status, size;
+    uint8_t     *txBuffer;
+    uint8_t     *rxBuffer;
+
+    struct spiParams    params;
+
+    // initialize the SPI parameters and set the bus number and device ID
+    spiParamInit(&amp;params);
+    params.busNum       = 0;
+    params.deviceId     = 1;
+
+    // set the transmission size and allocate memory for the buffers
+    size        = 1;
+    txBuffer    = (uint8_t*)malloc(sizeof(uint8_t) * size);
+    rxBuffer    = (uint8_t*)malloc(sizeof(uint8_t) * size);
+
+    // assign the register address to the transmission buffer
+    *txBuffer   = (uint8_t)addr;
+
+    // invoke the SPI transfer
+    status  = spiTransfer(&amp;params, txBuffer, rxBuffer, size);
+
+    // rxBuffer now contains the data read through the SPI interface
+    printf(&quot;&gt; SPI Read from addr 0x%02x: 0x%02x\n&quot;, addr, *rxBuffer);
+
+    // clean-up
+    free(txBuffer);
+    free(rxBuffer);
+}
+</code></pre>
+
+<p>During the SPI transfer, the SPI Master (the Omega) will send the contents of the transmission buffer, in this case, the address from which to read. The slave device will respond with a value that corresponds to the register address, this value will be populated into the receive buffer.</p>
+<p>In this case, the <code>size</code> variable refers to the number of bytes to be read from the SPI device.</p>
+<p>Before this function will work, the SPI device adapter needs to be registered, check out <a href="#the-c-library_setup-functions_register-spi-device-spiregisterdevice">the section above</a>. </p>
+<p>Some devices require specific bit-wise operations on the address to indicate a read operation. Most common are:
+* A bitwise shift to the left
+* Setting a specific bit to 1 to indicate a read</p>
+<p>Refer to the datasheet of your device for specifics.</p>
+<h4 id="example-code-writing-a-value">Example Code: Writing a Value</h4>
+<p>This example uses the SPI protocol to write a byte of data to a specific address on an SPI device:</p>
+<pre><code class="c">void SpiWriteValue(int addr, int value)
+{
+    int         status, size;
+    uint8_t     *txBuffer;
+    uint8_t     *rxBuffer;
+
+    struct spiParams    params;
+
+    // initialize the SPI parameters and set the bus number and device ID
+    spiParamInit(&amp;params);
+    params.busNum       = 0;
+    params.deviceId     = 1;
+
+    // set the transmission size and allocate memory for the buffers
+    size        = 2;
+    txBuffer    = (uint8_t*)malloc(sizeof(uint8_t) * size);
+    rxBuffer    = (uint8_t*)malloc(sizeof(uint8_t) * size);
+
+    // assign the register address and data to be written to the transmission buffer
+    txBuffer[0] = (uint8_t)addr;
+    txBuffer[1] = (uint8_t)value;
+
+    // invoke the SPI transfer
+    status  = spiTransfer(&amp;params, txBuffer, rxBuffer, size);
+
+    // data has been written
+    // any response is now in rxBuffer (usually don't get a response from a write operation so it should be empty)
+    printf(&quot;&gt; SPI Write to addr 0x%02x: 0x%02x\n&quot;, txBuffer[0], txBuffer[1] );
+
+    // clean-up
+    free(txBuffer);
+    free(rxBuffer);
+}
+</code></pre>
+
+<p>In this case, the SPI Master will first send the register address where the write is to be performed, and then the value to be written. Usually the SPI Slave will not send a response, however, the <code>spiTransfer()</code> function still requires a buffer to be passed in order to work properly.</p>
+<h4 id="example-code-writing-several-values">Example Code: Writing Several Values</h4>
+<p>Some devices allow/require the user to write a stream of data with no address, this can be accomplished using the <code>spiTransfer()</code> function as well:</p>
+<pre><code class="c">void SpiWriteValues(int addr, int* data, int size)
+{
+    int         status;
+    uint8_t     *txBuffer;
+    uint8_t     *rxBuffer;
+
+    struct spiParams    params;
+
+    // initialize the SPI parameters and set the bus number and device ID
+    spiParamInit(&amp;params);
+    params.busNum       = 0;
+    params.deviceId     = 1;
+
+    // allocate memory for the buffers based on input data size
+    txBuffer    = (uint8_t*)malloc(sizeof(uint8_t) * size);
+    rxBuffer    = (uint8_t*)malloc(sizeof(uint8_t) * size);
+
+    // fill the transmission buffer with the data
+    for (i = 0; i &lt; size; i++) {
+        txBuffer[i] = (uint8_t)data[i];
+    }
+
+    // invoke the SPI transfer
+    status  = spiTransfer(&amp;params, txBuffer, rxBuffer, size);
+
+    // data has been written
+    // any response is now in rxBuffer (usually don't get a response from a write operation so it should be empty)
+    printf(&quot;&gt; SPI: wrote a %d bytes of data to device\n&quot;, size );
+
+    // clean-up
+    free(txBuffer);
+    free(rxBuffer);
+}
+</code></pre>
+
+<h3 id="additional-functions">Additional Functions</h3>
+<p>The <code>spiTransfer()</code> is all that's required to perform reads and writes using SPI. However, two additional functions are provided to perform reads and writes. Internally, they both use the <code>spiTransfer()</code> function, but they provide a slightly simpler interface.</p>
+<h4 id="reading-data-spiread">Reading Data: <code>spiRead()</code></h4>
+<p>This function can be used to perform a register read:</p>
+<pre><code class="c">int spiRead(struct spiParams *params, int addr, uint8_t *rdBuffer, int bytes);
+</code></pre>
+
+<p>It can read a specified number of bytes from a specified address. The limitation is that the address can only be a single byte. Use <code>spiTransfer()</code> if your use-case requires more than 8-bits for the address.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>params</code> spiParams structure holds all of the relevant SPI information.</p>
+<p>The <code>addr</code> argument is the 8-bit address from which to read.</p>
+<p>The <code>rdBuffer</code> argument will be populated by data received during the SPI transfer.</p>
+<p>And finally, the <code>bytes</code> argument indicates the number of bytes being read. Note that the <code>rdBuffer</code> needs to be allocated to at least this size. </p>
+<h5 id="example-code">Example Code</h5>
+<p>The following function will read two bytes from the specified address, the data will be stored in <code>rdBuffer</code>:</p>
+<pre><code class="c">void SpiReadValue2(int addr)
+{
+    int         status, size;
+    uint8_t     *rdBuffer;
+
+    struct spiParams    params;
+
+    // initialize the SPI parameters and set the bus number and device ID
+    spiParamInit(&amp;params);
+    params.busNum       = 0;
+    params.deviceId     = 1;
+
+    // set the transmission size and allocate memory for the buffers
+    size        = 2;
+    rdBuffer    = (uint8_t*)malloc(sizeof(uint8_t) * size);
+
+    // invoke the SPI read
+    status      = spiRead(&amp;params, addr, rdBuffer, size);
+
+    // rdBuffer now contains the data read through the SPI interface
+    printf(&quot;&gt; SPI Read from addr 0x%02x: 0x%02x, 0x%02x\n&quot;, addr, rdBuffer[0], rdBuffer[1]);
+
+    // clean-up
+    free(rdBuffer);
+}
+</code></pre>
+
+<p>In essence, this simplifies the use of the <code>spiTransfer()</code> for read scenarios.
+<em>Note that this function has not been tested as thoroughly as the <code>spiTransfer()</code> function.</em></p>
+<h4 id="reading-data-spiwrite">Reading Data: <code>spiWrite()</code></h4>
+<p>This function can be used to perform a register write:</p>
+<pre><code class="c">int spiWrite(struct spiParams *params, int addr, uint8_t *wrBuffer, int bytes);
+</code></pre>
+
+<p>It will write a specified number of bytes to a specified address. The limitation is that the address can only be a single byte. Use <code>spiTransfer()</code> if your use-case requires more than 8-bits for the address.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>params</code> spiParams structure holds all of the relevant SPI information.</p>
+<p>The <code>addr</code> argument is the 8-bit address on which to perform the write</p>
+<p>The <code>wrBuffer</code> argument holds the data to be transmitted during the SPI transfer.</p>
+<p>And finally, the <code>bytes</code> argument indicates the number of bytes being written. Note that the <code>wdBuffer</code> needs to be allocated to at least this size. </p>
+<h5 id="example-code_1">Example Code</h5>
+<p>The following code will write a byte to the specified address, the data will be stored in <code>rdBuffer</code>:</p>
+<pre><code class="c">void SpiWriteValue2(int addr, int value)
+{
+    int         status, size;
+    uint8_t     *wrBuffer;
+
+    struct spiParams    params;
+
+    // initialize the SPI parameters and set the bus number and device ID
+    spiParamInit(&amp;params);
+    params.busNum       = 0;
+    params.deviceId     = 1;
+
+    // set the transmission size and allocate memory for the buffers
+    size        = 1;
+    wrBuffer    = (uint8_t*)malloc(sizeof(uint8_t) * size);
+
+    // put the value to be written in the wrBuffer
+    *wrBuffer   = (uint8_t)value;
+
+    // invoke the SPI read
+    status      = spiWrite(&amp;params, addr, wrBuffer, size);
+
+    // data in wrBuffer has been written to the SPI device
+    printf(&quot;&gt; SPI Write to addr 0x%02x: 0x%02x\n&quot;, addr, *wrBuffer );
+
+    // clean-up
+    free(wrBuffer);
+}
+</code></pre>
+
+<p>This function simplifies the use of <code>spiTransfer()</code> for scenarios where SPI is used to write to a register.
+<em>Note that this function has not been tested as thoroughly as the <code>spiTransfer()</code> function.</em></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

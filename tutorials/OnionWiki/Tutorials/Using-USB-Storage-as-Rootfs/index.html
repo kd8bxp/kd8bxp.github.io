@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Using USB Storage as Rootfs (extroot) - Random Wire!</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#using-usb-storage-as-rootfs-extroot">Using USB Storage as Rootfs (extroot)</a></li>
+        <li class="main "><a href="#extroot-with-pivot-overlay">extroot with pivot-overlay</a></li>
+            <li><a href="#step-1-prerequisites">Step 1. Prerequisites</a></li>
+            <li><a href="#step-11-important-to-avoid-errors">Step 1.1 (Important to avoid errors)</a></li>
+            <li><a href="#step-2-mounting-the-usb-storage-device">Step 2. Mounting the USB Storage Device</a></li>
+            <li><a href="#step-3-duplicating-the-overlay-directory">Step 3. Duplicating the /overlay Directory</a></li>
+            <li><a href="#step-4-setting-up-the-overlay-directory-to-automount-on-startup">Step 4. Setting up the /overlay Directory to Automount on Startup</a></li>
+        <li class="main "><a href="#exroot-with-pivot-root">exroot with pivot-root</a></li>
+            <li><a href="#step-1-prerequisites_1">Step 1. Prerequisites</a></li>
+            <li><a href="#step-2-mounting-the-usb-storage-device_1">Step 2. Mounting the USB Storage Device</a></li>
+            <li><a href="#step-3-duplicating-your-rootfs">Step 3. Duplicating your rootfs</a></li>
+            <li><a href="#step-4-configure-omega-to-automount-usb-storage-device-on-boot">Step 4. Configure Omega to Automount USB Storage Device on Boot</a></li>
+        <li class="main "><a href="#addendum-procedures">Addendum Procedures</a></li>
+            <li><a href="#how-to-format-a-usb-drive-to-ext4">How to format a USB drive to ext4</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="using-usb-storage-as-rootfs-extroot">Using USB Storage as Rootfs (extroot)</h1>
+<p><em>This tutorial is on how to use the USB storage device as the rootfs. If you simply want to use the USB storage device to store files (i.e., you won't be installing anything to it), then read [[Tutorials/Using-USB-Storage]]</em>.</p>
+<p>The Omega comes with 16MB of flash storage. While this is enough for the majority of hardware-related tasks, having extra storage space is always better. Even though you can plug in external USB storage devices to the Omega, but because application packages are typically designed to be installed in the root filesystem (rootfs), those of you who want to install larger <code>opkg</code> packages would still be limited by the 16MB flash size.</p>
+<p>Luckily, with extroot, you can mount your USB storage device to the rootfs. There are two approaches to this:
+* With <strong>pivot-overlay</strong>, you can mount your USB storage device to <code>/overlay</code>, which is the writable part of your filesystem that's merged with <code>/rom</code> (the read-only part of your filesystem) to generate <code>/</code>.
+* With <strong>pivot-root</strong>, you can mount your USB storage device to both <code>/overlay</code> and <code>/rom</code>, which essentially allows you to replace Omega's on-board flash with your USB storage device.</p>
+<p>[[<em>TOC</em>]]</p>
+<h1 id="extroot-with-pivot-overlay">extroot with pivot-overlay</h1>
+<p>Pivot-overlay is the recommended extroot implementation because it is easier to set up and future firmware upgrade will still be written to Omega's flash (instead of your USB storage device).</p>
+<h2 id="step-1-prerequisites">Step 1. Prerequisites</h2>
+<p>Using extroot requires the following packages, all of them should already be installed on the default Omega firmware. But just in case you are using your own firmware, here they are again:
+* <code>block-mount</code>
+* <code>kmod-fs-[filesystem of choice]</code>, typically <code>kmod-fs-ext4</code>
+* <code>kmod-usb-storage-extras</code></p>
+<p>Install the packages with <code>opkg</code>:</p>
+<pre><code>opkg update
+opkg install block-mount kmod-fs-ext4 kmod-usb-storage-extras
+</code></pre>
+
+<h2 id="step-11-important-to-avoid-errors">Step 1.1 (Important to avoid errors)</h2>
+<p>You also need to have a <strong>USB storage device formatted to ext4</strong> (important to avoid errors). You can learn how to format a USB drive following the steps outlined in the <a href="#addendum-procedures_how-to-format-a-usb-drive-to-ext4">How to format a USB drive to ext4</a> addendum section below.</p>
+<h2 id="step-2-mounting-the-usb-storage-device">Step 2. Mounting the USB Storage Device</h2>
+<p>Next, plug in your USB storage device. If your device is detected correctly by the Omega, it will show up at a device under the <code>/dev</code> directory, usually <code>/dev/sda1</code>.</p>
+<p>Then, create a mount point for your device if you don't already have one with the following command:</p>
+<pre><code>mkdir /mnt/sda1
+</code></pre>
+
+<p>Finally, mount the device:</p>
+<pre><code>mount /dev/sda1 /mnt/sda1
+</code></pre>
+
+<p>Your USB storage device should now be accessible at <code>/mnt/sda1</code>.</p>
+<h2 id="step-3-duplicating-the-overlay-directory">Step 3. Duplicating the <code>/overlay</code> Directory</h2>
+<p>Now, we are ready to move the <code>/overlay</code> directory into the USB storage device. </p>
+<pre><code>mount /dev/sda1 /mnt ; tar -C /overlay -cvf - . | tar -C /mnt -xf - ; umount /mnt
+</code></pre>
+
+<h2 id="step-4-setting-up-the-overlay-directory-to-automount-on-startup">Step 4. Setting up the <code>/overlay</code> Directory to Automount on Startup</h2>
+<p>First, we are going to generate the <code>fstab</code> template:</p>
+<pre><code>block detect &gt; /etc/config/fstab
+</code></pre>
+
+<p>Then, we are going to edit the <code>/etc/config/fstab</code> file, which we have just created, to enable auto-mounting the <code>/overlay</code> directory. Look for the line</p>
+<pre><code>option  target  '/mnt/sda1'
+</code></pre>
+
+<p>and change it to:</p>
+<pre><code>option target '/overlay'
+</code></pre>
+
+<p>Then, look for the line: </p>
+<pre><code>option  enabled '0'
+</code></pre>
+
+<p>and change it to </p>
+<pre><code>option  enabled '1'
+</code></pre>
+
+<p>Save the file and restart the Omega:</p>
+<pre><code>reboot
+</code></pre>
+
+<p>And voilà! Your Omega should automatically mount the <code>/overlay</code> directory. From this point on, all changes to your filesystem will be made on your USB storage device. Please remember that if you startup your Omega with out plugging in the USB storage device, some settings may be different because all the settings will be saved on your USB device.</p>
+<h1 id="exroot-with-pivot-root">exroot with pivot-root</h1>
+<p>Pivot-root is the extroot implementation that completely replaces the flash storage on the Omega with your USB storage device. Using pivot-root method means that all fugure firmware upgrade (unless it is done by uboot) will be done to your USB storage device.</p>
+<h2 id="step-1-prerequisites_1">Step 1. Prerequisites</h2>
+<p>Using extroot requires the following packages, all of them should already be installed on the default Omega firmware. But just in case you are using your own firmware, here they are again:
+* <code>block-mount</code>
+* <code>kmod-fs-[filesystem of choice]</code>, typically <code>kmod-fs-ext4</code>
+* <code>kmod-usb-storage-extras</code></p>
+<p>Install the packages with <code>opkg</code>:</p>
+<pre><code>opkg update
+opkg install block-mount kmod-fs-ext4 kmod-usb-storage-extras
+</code></pre>
+
+<p>You also need to have a USB storage device formatted to ext4 (or another filesystem you chose above).</p>
+<h2 id="step-2-mounting-the-usb-storage-device_1">Step 2. Mounting the USB Storage Device</h2>
+<p>Next, plug in your USB storage device. If your device is detected correctly by the Omega, it will show up at a device under the <code>/dev</code> directory, usually <code>/dev/sda1</code>.</p>
+<p>Then, create a mount point for your device if you don't already have one with the following command:</p>
+<pre><code>mkdir /mnt/sda1
+</code></pre>
+
+<p>Finally, mount the device:</p>
+<pre><code>mount /dev/sda1 /mnt/sda1
+</code></pre>
+
+<p>Your USB storage device should now be accessible at <code>/mnt/sda1</code>.</p>
+<h2 id="step-3-duplicating-your-rootfs">Step 3. Duplicating your rootfs</h2>
+<p>Next, we must make a complete copy of the of the root filesystem to the external rootfs device. To do this, we will first create a temporary directory that acts as the mount point for the current <code>/</code> directory:</p>
+<pre><code>mkdir -p /tmp/cproot
+</code></pre>
+
+<p>Then, we will create a bind mount of <code>/</code> at <code>/tmp/cproot</code>:</p>
+<pre><code>mount --bind / /tmp/cproot
+</code></pre>
+
+<p>Now, we will make a complete copy of the rootfs to your USB storage device:</p>
+<pre><code>tar -C /tmp/cproot -cvf - . | tar -C /mnt/sda1 -xf -
+</code></pre>
+
+<p>Finally, we will unmount the bind mount:</p>
+<pre><code>umount /tmp/cproot
+</code></pre>
+
+<p>Great! Now you have created a complete copy of your current rootfs on your USB storage device!</p>
+<h2 id="step-4-configure-omega-to-automount-usb-storage-device-on-boot">Step 4. Configure Omega to Automount USB Storage Device on Boot</h2>
+<p>We will now configure the Omega to automatically mount your USB storage device to <code>/</code> on startup. This essentially means that we will be using the firmware on Omega's own flash storage as a "bootloader" that run the filesystem on your USB storage as rootfs. To do this, we will open up <code>/etc/config/fstab</code>, and add the following lines to it:</p>
+<pre><code>config mount
+    option target        /
+    option device        /dev/sda1
+    option fstype        ext4
+    option options       rw,sync
+    option enabled       1
+    option enabled_fsck  0
+</code></pre>
+
+<p>Save the file and reboot:</p>
+<pre><code>reboot
+</code></pre>
+
+<p>And voilà! Your Omega should automatically mount your USB storage device as its rootfs. From this point on, all changes to your filesystem, including firmware upgrades, will be made on your USB storage device. If you change your mind and want to revert back to running the firmware off Omega's flash storage, simply unplug the USB storage and reboot the Omega.</p>
+<p>Happy hacking!</p>
+<h1 id="addendum-procedures">Addendum Procedures</h1>
+<h2 id="how-to-format-a-usb-drive-to-ext4">How to format a USB drive to ext4</h2>
+<p>In this short additional tutorial you'll learn how to format a USB drive to ext4 so it can be used as rootfs or additional storage. This is handly as USB drives typically arrive pre-formatted with fat32!</p>
+<p>Run these commands on the Omega's terminal:</p>
+<pre><code>opkg update
+opkg install kmod-usb-storage-extras e2fsprogs kmod-fs-ext4
+</code></pre>
+
+<p>This installs the required tools, next plug in your USB drive.</p>
+<p>Next we need to format the USB drive with ext4, typically the drive is mounded as "sda1" (change the value if required):</p>
+<pre><code>mkfs.ext4 /dev/sda1
+</code></pre>
+
+<p>Now you can mount the USB drive and use it for either <a href="./Using-USB-Storage">general storage</a>, <a href="#extroot-with-pivot-overlay">extroot with pivot-overlay</a> or <a href="#extroot-with-pivot-overlay">exroot with pivot-root</a>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

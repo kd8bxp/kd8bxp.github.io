@@ -1,0 +1,2367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../../img/favicon.ico">
+        <title>LCD - Random Wire!</title>
+        <link href="../../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#lcd">LCD</a></li>
+            <li><a href="#begin">begin()</a></li>
+            <li><a href="#sleep">sleep()</a></li>
+            <li><a href="#wakeup">wakeup()</a></li>
+            <li><a href="#setbrightness">setBrightness()</a></li>
+            <li><a href="#progressbar">progressBar()</a></li>
+            <li><a href="#qrcode">qrcode()</a></li>
+            <li><a href="#drawbitmap">drawBitmap()</a></li>
+            <li><a href="#drawbmpfile">drawBmpFile()</a></li>
+            <li><a href="#drawjpg">drawJpg()</a></li>
+            <li><a href="#drawjpgfile">drawJpgFile()</a></li>
+            <li><a href="#fillscreen">fillScreen()</a></li>
+            <li><a href="#settextcolor">setTextColor()</a></li>
+            <li><a href="#setcursor">setCursor()</a></li>
+            <li><a href="#drawpixel">drawPixel()</a></li>
+            <li><a href="#drawpixel_1">drawPixel()</a></li>
+            <li><a href="#drawchar">drawChar()</a></li>
+            <li><a href="#drawfastvline">drawFastVLine()</a></li>
+            <li><a href="#drawfastvline_1">drawFastVLine()</a></li>
+            <li><a href="#drawline">drawLine()</a></li>
+            <li><a href="#drawtriangle">drawTriangle()</a></li>
+            <li><a href="#filltriangle">fillTriangle()</a></li>
+            <li><a href="#drawrect">drawRect()</a></li>
+            <li><a href="#fillrect">fillRect()</a></li>
+            <li><a href="#drawroundrect">drawRoundRect()</a></li>
+            <li><a href="#fillroundrect">fillRoundRect()</a></li>
+            <li><a href="#drawellipse">drawEllipse()</a></li>
+            <li><a href="#fillellipse">fillEllipse()</a></li>
+            <li><a href="#color565">color565()</a></li>
+            <li><a href="#setrotation">setRotation()</a></li>
+            <li><a href="#invertdisplay">invertDisplay()</a></li>
+            <li><a href="#loadfont">loadFont()</a></li>
+            <li><a href="#unloadfont">unloadFont()</a></li>
+            <li><a href="#fontsloaded">fontsLoaded()</a></li>
+            <li><a href="#print">print()</a></li>
+            <li><a href="#drawstring">drawString()</a></li>
+            <li><a href="#printf">printf()</a></li>
+            <li><a href="#usage-docsify-ignore">Usage {docsify-ignore}</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="lcd">LCD</h1>
+<p><em>The screen pixel is 320x240, with the top left corner of the screen as the origin (0,0)</em></p>
+<p>Color codes are predefined and can be used.</p>
+<table>
+<thead>
+<tr>
+<th>Definition</th>
+<th>Value</th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TFT_BLACK</td>
+<td>0x0000</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TFT_NAVY</td>
+<td>0x000F</td>
+<td>0</td>
+<td>0</td>
+<td>128</td>
+</tr>
+<tr>
+<td>TFT_DARKGREEN</td>
+<td>0x03E0</td>
+<td>0</td>
+<td>128</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TFT_MAROON</td>
+<td>0x7800</td>
+<td>128</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TFT_PURPLE</td>
+<td>0x780F</td>
+<td>128</td>
+<td>0</td>
+<td>128</td>
+</tr>
+<tr>
+<td>TFT_OLIVE</td>
+<td>0x7BE0</td>
+<td>128</td>
+<td>128</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TFT_LIGHTGREY</td>
+<td>0xC618</td>
+<td>192</td>
+<td>192</td>
+<td>192</td>
+</tr>
+<tr>
+<td>TFT_DARKGREY</td>
+<td>0x7BEF</td>
+<td>128</td>
+<td>128</td>
+<td>128</td>
+</tr>
+<tr>
+<td>TFT_BLUE</td>
+<td>0x001F</td>
+<td>0</td>
+<td>0</td>
+<td>255</td>
+</tr>
+<tr>
+<td>TFT_GREENYELLOW</td>
+<td>0xB7E0</td>
+<td>180</td>
+<td>255</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TFT_GREEN</td>
+<td>0x07E0</td>
+<td>0</td>
+<td>255</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TFT_YELLOW</td>
+<td>0xFFE0</td>
+<td>255</td>
+<td>255</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TFT_ORANGE</td>
+<td>0xFDA0</td>
+<td>255</td>
+<td>180</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TFT_PINK</td>
+<td>0xFC9F</td>
+<td>255</td>
+<td>255</td>
+<td>16</td>
+</tr>
+<tr>
+<td>TFT_CYAN</td>
+<td>0x07FF</td>
+<td>0</td>
+<td>255</td>
+<td>255</td>
+</tr>
+<tr>
+<td>TFT_DARKCYAN</td>
+<td>0x03EF</td>
+<td>0</td>
+<td>128</td>
+<td>128</td>
+</tr>
+<tr>
+<td>TFT_RED</td>
+<td>0xF800</td>
+<td>255</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TFT_MAGENTA</td>
+<td>0xF81F</td>
+<td>255</td>
+<td>0</td>
+<td>255</td>
+</tr>
+<tr>
+<td>TFT_WHITE</td>
+<td>0xFFFF</td>
+<td>255</td>
+<td>255</td>
+<td>255</td>
+</tr>
+</tbody>
+</table>
+<h2 id="begin">begin()</h2>
+<p><strong>Description:</strong></p>
+<p>Initialize it for use.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>begin();</mark></p>
+<p><strong>Function argument:</strong></p>
+<p>None</p>
+<p><strong>Function return value:</strong></p>
+<p>None</p>
+<p><strong>Note:</strong></p>
+<p>1)If you do not want to initialize the LCD with M5.begin( ), call this function before using the display.</p>
+<h2 id="sleep">sleep()</h2>
+<p><strong>Description:</strong></p>
+<p>Switch the display to energy saving mode</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>sleep();</mark></p>
+<p><strong>Function argument:</strong></p>
+<p>None</p>
+<p><strong>Function return value:</strong></p>
+<p>None</p>
+<p><strong>Note:</strong></p>
+<p>1) Call wakeup () function to wake up.</p>
+<p>2) Since the LCD backlight of M5Stack is controlled separately, please adjust it with the setBrightness () function if necessary.</p>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.Lcd.sleep();
+M5.Lcd.setBrightness(0);
+</code></pre>
+
+<h2 id="wakeup">wakeup()</h2>
+<p><strong>Description:</strong></p>
+<p>Restore the display from energy saving mode</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>wakeup();</mark></p>
+<p><strong>Function argument:</strong></p>
+<p>None</p>
+<p><strong>Function return value:</strong></p>
+<p>None</p>
+<p><strong>Note:</strong></p>
+<p>1) Since the LCD backlight of M5Stack is controlled separately, please adjust it with the setBrightness () function if necessary.</p>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.Lcd.wakeup();
+M5.Lcd.setBrightness(200);
+</code></pre>
+
+<h2 id="setbrightness">setBrightness()</h2>
+<p><strong>Description:</strong></p>
+<p>Adjust the display backlight.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>setBrightness(uint8_t brightness);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>brightness</td>
+<td>uint8_t</td>
+<td>Brightness (0: Off - 255:Full)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None.</p>
+<p><strong>Note:</strong></p>
+<p>1) The backlight is controlled by PWM (44.1 KHz).</p>
+<p>2) Many backlights have a direct effect on battery consumption.</p>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.Lcd.setBrightness(200);
+</code></pre>
+
+<h2 id="progressbar">progressBar()</h2>
+<p><strong>Description:</strong></p>
+<p>Display a bar that shows the progress.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>progressBar(int x, int y, int w, int h, uint8_t val);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>int</td>
+<td>Coordinate X(left corner)</td>
+</tr>
+<tr>
+<td>y</td>
+<td>int</td>
+<td>Coordinate Y(left corner)</td>
+</tr>
+<tr>
+<td>w</td>
+<td>int</td>
+<td>width (px)</td>
+</tr>
+<tr>
+<td>h</td>
+<td>int</td>
+<td>height(px)</td>
+</tr>
+<tr>
+<td>val</td>
+<td>uint8_t</td>
+<td>progress(0-100%)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None</p>
+<p><strong>Note:</strong></p>
+<p>1) The color is expressed in blue (0x09F1).</p>
+<p>2) Please erase the background beforehand to draw only the additional amount.</p>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+  M5.Lcd.fillRect(0,0,240,20,0);
+  M5.Lcd.progressBar(0,0,240,20, 20);
+</code></pre>
+
+<h2 id="qrcode">qrcode()</h2>
+<p><strong>Description:</strong></p>
+<p>Generate a QR code.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>qrcode(const char *string, uint16_t x, uint16_t y, uint8_t width, uint8_t version);</mark></p>
+<p><mark>qrcode(const String &amp;string, uint16_t x, uint16_t y, uint8_t width, uint8_t version);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>val</td>
+<td>string / String&amp;</td>
+<td>String to embed in QR</td>
+</tr>
+<tr>
+<td>x</td>
+<td>uint16_t</td>
+<td>Coordinate X(left corner)</td>
+</tr>
+<tr>
+<td>y</td>
+<td>uint16_t</td>
+<td>Coordinate Y(left corner)</td>
+</tr>
+<tr>
+<td>width</td>
+<td>uint8_t</td>
+<td>width (px)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>uint8_t</td>
+<td>QR code version</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None</p>
+<p><strong>Note:</strong></p>
+<p>1) Please indicate the appropriate QR code version according to the number of characters.</p>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+  M5.Lcd.qrcode(&quot;http://www.m5stack.com&quot;,50,10,220,6);
+
+</code></pre>
+
+<h2 id="drawbitmap">drawBitmap()</h2>
+<p><strong>Description:</strong></p>
+<p>Draw a bitmap</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawBitmap(int16_t x0, int16_t y0, int16_t w, int16_t h, const uint16_t *data);</mark></p>
+<p><mark>drawBitmap(int16_t x0, int16_t y0, int16_t w, int16_t h, uint16_t *data);</mark></p>
+<p><mark>drawBitmap(int16_t x0, int16_t y0, int16_t w, int16_t h, const uint16_t *data, uint16_t transparent);</mark></p>
+<p><mark>drawBitmap(int16_t x0, int16_t y0, int16_t w, int16_t h, const uint8_t *data);</mark></p>
+<p><mark>drawBitmap(int16_t x0, int16_t y0, int16_t w, int16_t h, uint8_t *data);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x0</td>
+<td>uint16_t</td>
+<td>Coordinate X(left corner)</td>
+</tr>
+<tr>
+<td>y0</td>
+<td>uint16_t</td>
+<td>Coordinate Y(left corner)</td>
+</tr>
+<tr>
+<td>w</td>
+<td>int16_t</td>
+<td>width (px)</td>
+</tr>
+<tr>
+<td>h</td>
+<td>int16_t</td>
+<td>height(px)</td>
+</tr>
+<tr>
+<td>data</td>
+<td>uint16_t<em> / uint8_t</em></td>
+<td>image data</td>
+</tr>
+<tr>
+<td>transparent</td>
+<td>uint16_t</td>
+<td>Transparent color code</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None</p>
+<p><strong>Note:</strong></p>
+<p>1) The color code is expressed by a total of 16 bits: red 5 bits, green 6 bits and blue 5 bits from the top.</p>
+<p><strong>Example of use:</strong></p>
+<p>See sample sketch:M5Stack-&gt;Advanced-&gt;drawXBitmap</p>
+<h2 id="drawbmpfile">drawBmpFile()</h2>
+<p><strong>Description:</strong></p>
+<p>Read a bitmap from a file and draw it.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawBmpFile(fs::FS &amp;fs, const char *path, uint16_t x, uint16_t y);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fs</td>
+<td>fs::FS</td>
+<td>File stream</td>
+</tr>
+<tr>
+<td>path</td>
+<td>const char *</td>
+<td>file path</td>
+</tr>
+<tr>
+<td>x</td>
+<td>int16_t</td>
+<td>Coordinate X(left corner)</td>
+</tr>
+<tr>
+<td>y</td>
+<td>int16_t</td>
+<td>Coordinate Y(left corner)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None</p>
+<p><strong>Note:</strong></p>
+<p>1) It may not be possible to expand depending on the size and the number of bits.</p>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+  M5.Lcd.drawBmpFile(SD, &quot;/p2.bmp&quot;,0,0);
+</code></pre>
+
+<h2 id="drawjpg">drawJpg()</h2>
+<p><strong>Description:</strong></p>
+<p>Read JPEG data from memory and draw it.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>void drawJpg(const uint8_t *jpg_data, size_t jpg_len, uint16_t x = 0,
+                  uint16_t y = 0, uint16_t maxWidth = 0, uint16_t maxHeight = 0,
+                  uint16_t offX = 0, uint16_t offY = 0,
+                  jpeg_div_t scale = JPEG_DIV_NONE);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jpg_data</td>
+<td>uint8_t *</td>
+<td>top of data</td>
+</tr>
+<tr>
+<td>jpg_len</td>
+<td>size_t</td>
+<td>data length</td>
+</tr>
+<tr>
+<td>x</td>
+<td>uint16_t</td>
+<td>Coordinate X (left corner)</td>
+</tr>
+<tr>
+<td>y</td>
+<td>uint16_t</td>
+<td>Coordinate Y (left corner)</td>
+</tr>
+<tr>
+<td>maxWidth</td>
+<td>uint16_t</td>
+<td>Maximum width (px)</td>
+</tr>
+<tr>
+<td>maxHeight</td>
+<td>uint16_t</td>
+<td>Maximum height (px)</td>
+</tr>
+<tr>
+<td>offX</td>
+<td>uint16_t</td>
+<td>offset X (px)</td>
+</tr>
+<tr>
+<td>offY</td>
+<td>uint16_t</td>
+<td>offset Y (px)</td>
+</tr>
+<tr>
+<td>scale</td>
+<td>jpeg_div_t</td>
+<td>scale</td>
+</tr>
+</tbody>
+</table>
+<p>scale (jpeg_div_t)：</p>
+<table>
+<thead>
+<tr>
+<th>Definition</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JPEG_DIV_NONE</td>
+<td>no care.</td>
+</tr>
+<tr>
+<td>JPEG_DIV_2</td>
+<td>1/2</td>
+</tr>
+<tr>
+<td>JPEG_DIV_4</td>
+<td>1/4</td>
+</tr>
+<tr>
+<td>JPEG_DIV_8</td>
+<td>1/8</td>
+</tr>
+<tr>
+<td>JPEG_DIV_MAX</td>
+<td>MAX</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None</p>
+<p><strong>Note:</strong></p>
+<p>1) Depending on the size, the number of bits and the format (progressive etc.), it may not be possible to expand.</p>
+<h2 id="drawjpgfile">drawJpgFile()</h2>
+<p><strong>Description:</strong></p>
+<p>Read JPEG data from a file and draw it.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>void drawJpgFile(fs::FS &amp;fs, const char *path, uint16_t x = 0, uint16_t y = 0,
+                    uint16_t maxWidth = 0, uint16_t maxHeight = 0,
+                    uint16_t offX = 0, uint16_t offY = 0,
+                    jpeg_div_t scale = JPEG_DIV_NONE);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fs</td>
+<td>fs::FS &amp;</td>
+<td>file stream</td>
+</tr>
+<tr>
+<td>path</td>
+<td>const char *</td>
+<td>file path</td>
+</tr>
+<tr>
+<td>x</td>
+<td>uint16_t</td>
+<td>Coordinate X(left corner)</td>
+</tr>
+<tr>
+<td>y</td>
+<td>uint16_t</td>
+<td>Coordinate Y(left corner)</td>
+</tr>
+<tr>
+<td>maxWidth</td>
+<td>uint16_t</td>
+<td>Max Width (px)</td>
+</tr>
+<tr>
+<td>maxHeight</td>
+<td>uint16_t</td>
+<td>Max Height (px)</td>
+</tr>
+<tr>
+<td>offX</td>
+<td>uint16_t</td>
+<td>Offset X (px)</td>
+</tr>
+<tr>
+<td>offY</td>
+<td>uint16_t</td>
+<td>Offset Y (px)</td>
+</tr>
+<tr>
+<td>scale</td>
+<td>jpeg_div_t</td>
+<td>Scale</td>
+</tr>
+</tbody>
+</table>
+<p>Scale(jpeg_div_t)：</p>
+<table>
+<thead>
+<tr>
+<th>Definition</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JPEG_DIV_NONE</td>
+<td>no care.</td>
+</tr>
+<tr>
+<td>JPEG_DIV_2</td>
+<td>1/2</td>
+</tr>
+<tr>
+<td>JPEG_DIV_4</td>
+<td>1/4</td>
+</tr>
+<tr>
+<td>JPEG_DIV_8</td>
+<td>1/8</td>
+</tr>
+<tr>
+<td>JPEG_DIV_MAX</td>
+<td>MAX</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None</p>
+<p><strong>Note:</strong></p>
+<p>1) Depending on the size and format (progressive etc.), it may not be possible to expand.</p>
+<h2 id="fillscreen">fillScreen()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>fillScreen(uint16_t color);</mark></p>
+<p><strong>Function: Fill the entire screen with the specified color.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>the color to be filled</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+
+M5.Lcd.fillScreen(RED);
+</code></pre>
+
+<!-- ```python
+# MicroPython
+from m5stack import *
+from m5ui import *
+
+lcd.fillScreen(lcd.RED)
+``` -->
+
+<!-- ### ```arduinolcd.setColor(color [, background_color])</mark> -->
+
+<h2 id="settextcolor">setTextColor()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>setTextColor(uint16_t color, uint16_t </mark>backgroundcolor);</p>
+<p><strong>Function: Set the foreground color and background color of the displayed text.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>the color of text</td>
+</tr>
+<tr>
+<td>backgroundcolor</td>
+<td>the background color of text</td>
+</tr>
+</tbody>
+</table>
+<p><em>If backgroundcolor is not given, current background color is used</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+
+M5.Lcd.setTextColor(RED);
+</code></pre>
+
+<!-- ```python
+# MicroPython
+from m5stack import *
+from m5ui import *
+
+lcd.setTextColor(lcd.RED)
+lcd.setTextColor(lcd.ORANGE, lcd.DARKCYAN)
+``` -->
+
+<h2 id="setcursor">setCursor()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>setCursor(uint16_t x0, uint16_t y0);</mark></p>
+<!-- ```arduinosetCursor(x0, y0)</mark> # for micropython -->
+
+<p><strong>Function: Move the cursor to (x0, y0).</strong></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+
+M5.Lcd.setCursor(100,100);
+M5.Lcd.print(&quot;Hello&quot;);
+</code></pre>
+
+<!-- ```python
+# MicroPython
+from m5stack import *
+from m5ui import *
+
+lcd.drawPixel(22,22,lcd.RED)
+``` -->
+
+<h2 id="drawpixel">drawPixel()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawPixel(int16_t x, int16_t y, uint16_t color);</mark></p>
+<p><strong>Function: Draw a point at position (x, y).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>color value</td>
+</tr>
+</tbody>
+</table>
+<p><em>If color is not given, current background color is used</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+
+M5.Lcd.drawPixel(22,22,RED);
+</code></pre>
+
+<!-- ```python
+# MicroPython
+from m5stack import *
+from m5ui import *
+
+lcd.drawPixel(22,22,lcd.RED)
+``` -->
+
+<h2 id="drawpixel_1">drawPixel()</h2>
+<p><strong>Description:</strong></p>
+<p>Draws a pixel of a specified color at a specified position.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawPixel(int16_t x, int16_t y, [uint16_t color]);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>Description</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>Coordinate X</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>y</td>
+<td>Coordinate Y</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>color</td>
+<td>Pixel color. (Optional)</td>
+<td>uint16_t</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+M5.Lcd.drawPixel(22, 22, RED);
+</code></pre>
+
+<h2 id="drawchar">drawChar()</h2>
+<p><strong>Description:</strong></p>
+<p>Draws a straight line of the specified color from the specified start point to the end point.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawChar(int32_t x, int32_t y, uint16_t c, uint32_t color, uint32_t bg, uint8_t size);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>int32_t</td>
+<td>Coordinate X (upper left)</td>
+</tr>
+<tr>
+<td>y</td>
+<td>int32_t</td>
+<td>Coordinate Y (upper left)</td>
+</tr>
+<tr>
+<td>c</td>
+<td>uint16_t</td>
+<td>Character code</td>
+</tr>
+<tr>
+<td>color</td>
+<td>uint32_t</td>
+<td>Drawing color</td>
+</tr>
+<tr>
+<td>bg</td>
+<td>uint32_t</td>
+<td>Background color</td>
+</tr>
+<tr>
+<td>size</td>
+<td>uint8_t</td>
+<td>Character size</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+    M5.begin();
+    M5.Lcd.drawChar(0,0,'A',TFT_GREEN,TFT_BLACK,3);
+</code></pre>
+
+<h2 id="drawfastvline">drawFastVLine()</h2>
+<p><strong>Description:</strong></p>
+<p>Draw a vertical line from X to Y.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawFastVLine(int32_t x, int32_t y, int32_t h, uint32_t color);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>int16_t</td>
+<td>x position of start point</td>
+</tr>
+<tr>
+<td>y</td>
+<td>int16_t</td>
+<td>y position of start point</td>
+</tr>
+<tr>
+<td>h</td>
+<td>int16_t</td>
+<td>line length</td>
+</tr>
+<tr>
+<td>color</td>
+<td>uint32_t</td>
+<td>Line color (optional)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.Lcd.drawFastHLine(0, 0, 12, TFT_GREEN);
+</code></pre>
+
+<h2 id="drawfastvline_1">drawFastVLine()</h2>
+<p><strong>Description:</strong></p>
+<p>Draw a horizontal line from X to Y.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawFastHLine(int32_t x, int32_t y, int32_t w, uint32_t color);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>int16_t</td>
+<td>x position of start point</td>
+</tr>
+<tr>
+<td>y</td>
+<td>int16_t</td>
+<td>y position of start point</td>
+</tr>
+<tr>
+<td>h</td>
+<td>int16_t</td>
+<td>line length</td>
+</tr>
+<tr>
+<td>color</td>
+<td>uint32_t</td>
+<td>Line color (optional)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.Lcd.drawFastHLine(0, 0, 12, TFT_GREEN);
+</code></pre>
+
+<h2 id="drawline">drawLine()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawLine(int16_t x0, int16_t y0, int16_t x1, int16_t y1, uint16_t color); </mark></p>
+<p><strong>Function: Draw the line from point (x,y) to point (x1,y1).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>color value</td>
+</tr>
+</tbody>
+</table>
+<p><em>If color is not given, current background color is used</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+
+M5.Lcd.drawLine(0,0,12,12,WHITE);
+</code></pre>
+
+<!-- ```python
+# MicroPython
+from m5stack import *
+from m5ui import *
+
+lcd.drawLine(0,0,12,12,lcd.WHITE)
+``` -->
+
+<h2 id="drawtriangle">drawTriangle()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint16_t color); </mark></p>
+<p><strong>Function: Draw the triangel between points (x,y), (x1,y1) and (x2,y2).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>color value</td>
+</tr>
+</tbody>
+</table>
+<p><em>If color is not given, current background color is used</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+
+M5.Lcd.drawTriangle(22,22,69,98,51,22,RED);
+</code></pre>
+
+<!-- ```python
+# MicroPython
+from m5stack import *
+from m5ui import *
+
+lcd.drawLine(0,0,12,12,lcd.WHITE)
+``` -->
+
+<h2 id="filltriangle">fillTriangle()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>fillTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint16_t color); </mark></p>
+<p><strong>Function: Fill the triangel between points (x,y), (x1,y1) and (x2,y2).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>color value</td>
+</tr>
+</tbody>
+</table>
+<p><em>If color is not given, current background color is used</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+
+M5.Lcd.fillTriangle(22,22,69,98,51,22,RED);
+</code></pre>
+
+<!-- ```python
+# MicroPython
+from m5stack import *
+from m5ui import *
+
+lcd.drawLine(0,0,12,12,lcd.WHITE)
+``` -->
+
+<h2 id="drawrect">drawRect()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawRect(int16_t x, int16_t y, int16_t w, int16_t h, uint16_t color); </mark></p>
+<p><strong>Function: Draw the rectangle from the upper left point at (x,y) and width and height.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>position of point</td>
+</tr>
+<tr>
+<td>y</td>
+<td>position of point</td>
+</tr>
+<tr>
+<td>w</td>
+<td>width of rectangle</td>
+</tr>
+<tr>
+<td>h</td>
+<td>height of rectangle</td>
+</tr>
+<tr>
+<td>color</td>
+<td>Line color.(Optional.)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+
+M5.Lcd.drawRect(180, 12, 122, 10, BLUE);
+</code></pre>
+
+<!-- ```python
+# MicroPython
+from m5stack import *
+from m5ui import *
+
+lcd.drawLine(0,0,12,12,lcd.WHITE)
+``` -->
+
+<h2 id="fillrect">fillRect()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>fillRect(int16_t x, int16_t y, int16_t w, int16_t h,uint16_t color); </mark></p>
+<p><strong>Function: Fill the rectangle from the upper left point at (x,y) and width and height.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>position of point</td>
+</tr>
+<tr>
+<td>y</td>
+<td>position of point</td>
+</tr>
+<tr>
+<td>w</td>
+<td>width of rectangle</td>
+</tr>
+<tr>
+<td>h</td>
+<td>height of rectangle</td>
+</tr>
+<tr>
+<td>color</td>
+<td>Line color.(Optional.)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+
+M5.Lcd.fillRect(180, 12, 122, 10, BLUE);
+</code></pre>
+
+<!-- ```python
+# MicroPython
+from m5stack import *
+from m5ui import *
+
+lcd.drawLine(0,0,12,12,lcd.WHITE)
+``` -->
+
+<h2 id="drawroundrect">drawRoundRect()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawRoundRect(int16_t x0, int16_t y0, int16_t w,int16_t h, int16_t radius, uint16_t color); </mark></p>
+<p><strong>Function: Draw the rectangle with rounded corners from the upper left point at (x,y) and width and height. Corner radius is given by radius argument.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>position of point</td>
+</tr>
+<tr>
+<td>y</td>
+<td>position of point</td>
+</tr>
+<tr>
+<td>w</td>
+<td>width of circle</td>
+</tr>
+<tr>
+<td>h</td>
+<td>height of circle</td>
+</tr>
+<tr>
+<td>radius</td>
+<td>the radius of circle</td>
+</tr>
+<tr>
+<td>color</td>
+<td>color value</td>
+</tr>
+</tbody>
+</table>
+<p><em>If color is not given, current background color is used</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+
+M5.Lcd.fillRoundRect(180,70,122,10,4,BLUE);
+</code></pre>
+
+<!-- ```python
+# MicroPython
+from m5stack import *
+from m5ui import *
+
+lcd.drawLine(0,0,12,12,lcd.WHITE)
+``` -->
+
+<h2 id="fillroundrect">fillRoundRect()</h2>
+<p><strong>Description:</strong></p>
+<p>Draw a filled square with the upper left point (x, y) and width and height.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>fillRoundRect(int16_t x, int16_t y, int16_t w, int16_t h, int16_t r, [uint16_t color]);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>Description</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>coordinate of the top left corner of the rectangle</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>y</td>
+<td>coordinate of the top left corner of the rectangle</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>w</td>
+<td>width of rectangle</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>h</td>
+<td>height of rectangle</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>r</td>
+<td>corner radius</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>color</td>
+<td>Color of the square line. Optional.</td>
+<td>uint16_t</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+M5.Lcd.fillRoundRect(180, 70, 122, 10, 4, BLUE);
+</code></pre>
+
+<h2 id="drawellipse">drawEllipse()</h2>
+<p><strong>Description:</strong></p>
+<p>Draw an ellipse with the top left point (x, y) and the width and height.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawEllipse(int16_t x0, int16_t y0, int32_t rx, int32_t ry, uint16_t color);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>Description</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x0</td>
+<td>Center X coordinate of the ellipse</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>y0</td>
+<td>Center Y coordinate of the ellipse</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>rx</td>
+<td>Width of circle</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>ry</td>
+<td>Height of circle</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>color</td>
+<td>circle color</td>
+<td>uint16_t</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.Lcd.drawEllipse(100,100,20,30, TFT_GREEN);
+</code></pre>
+
+<h2 id="fillellipse">fillEllipse()</h2>
+<p><strong>Description:</strong></p>
+<p>Draw a filled ellipse, specifying the top left point (x, y) and the width and height.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>fillEllipse(int16_t x0, int16_t y0, int32_t rx, int32_t ry, uint16_t color);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>Description</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x0</td>
+<td>Center X coordinate of the ellipse</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>y0</td>
+<td>Center Y coordinate of the ellipse</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>rx</td>
+<td>Width of circle</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>ry</td>
+<td>Height of circle</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>color</td>
+<td>circle color</td>
+<td>uint16_t</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.Lcd.drawEllipse(100,100,20,30, TFT_GREEN);
+</code></pre>
+
+<h2 id="color565">color565()</h2>
+<p><strong>Description:</strong></p>
+<p>Change to the color code (rgb 565) used in the function.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>color565(uint8_t red, uint8_t green, uint8_t blue);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>red</td>
+<td>red</td>
+<td>int8_t</td>
+</tr>
+<tr>
+<td>green</td>
+<td>green</td>
+<td>int8_t</td>
+</tr>
+<tr>
+<td>blue</td>
+<td>blue</td>
+<td>int8_t</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None</p>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+    uint16_t colorvalue=0;
+    colorvalue=color565(255,255,255);
+
+</code></pre>
+
+<h2 id="setrotation">setRotation()</h2>
+<p><strong>Description:</strong></p>
+<p>Rotate the screen.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>setRotation(uint8_t r);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r</td>
+<td>uint8_t</td>
+<td>Rotation angle r (unit:90 deg)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+    M5.begin();
+    M5.Lcd.setRotation(1);
+</code></pre>
+
+<p><strong>Note:</strong></p>
+<p>1) The display control of M5Stack is rotated by 90 °, and setRotation (1) is executed in M5.Lcd.begin ().</p>
+<p>2) 0 to 3 rotate, 4 to 7 reverse and rotate.</p>
+<h2 id="invertdisplay">invertDisplay()</h2>
+<p><strong>Description:</strong></p>
+<p>Reverse the screen color in negative / positive.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>invertDisplay(boolean i);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>i</td>
+<td>boolean</td>
+<td>true : inverted</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+    M5.begin();
+    M5.Lcd.invertDisplay(true);
+</code></pre>
+
+<h2 id="loadfont">loadFont()</h2>
+<p><strong>Description:</strong></p>
+<p>Load a font</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>loadFont(String fontName, fs::FS &amp;ffs);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fontName</td>
+<td>String</td>
+<td>font filepath</td>
+</tr>
+<tr>
+<td>ffs</td>
+<td>fs::FS</td>
+<td>file stream</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.Lcd.loadFont(&quot;filename&quot;, SD);
+</code></pre>
+
+<h2 id="unloadfont">unloadFont()</h2>
+<p><strong>Description:</strong></p>
+<p>Finish using a font</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>unloadFont();</mark></p>
+<p><strong>Function argument:</strong></p>
+<p>None</p>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.Lcd.unloadFont();
+</code></pre>
+
+<h2 id="fontsloaded">fontsLoaded()</h2>
+<p><strong>Description:</strong></p>
+<p>Returns whether you are loading a font</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>fontsLoaded();</mark></p>
+<p><strong>Function argument:</strong></p>
+<p>None</p>
+<p><strong>Function return value:</strong></p>
+<table>
+<thead>
+<tr>
+<th>値</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>loaded</td>
+</tr>
+<tr>
+<td>false</td>
+<td>Unread</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+if(M5.Lcd.unloadFont()){
+    M5.Lcd.unloadFont();
+}
+</code></pre>
+
+<h2 id="print">print()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>print();</mark></p>
+<p><strong>Function: Start printing text at the current position of the screen.</strong></p>
+<p><em>The specified content is printed in the foreground color by default.</em></p>
+<p><strong>Example:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+
+M5.Lcd.print(&quot;this is a print text function&quot;);
+</code></pre>
+
+<!-- ```python
+# MicroPython
+from m5stack import *
+from m5ui import *
+
+lcd.drawLine(0,0,12,12,lcd.WHITE)
+``` -->
+
+<h2 id="drawstring">drawString()</h2>
+<p><strong>Description:</strong></p>
+<p>Draw a character</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>drawString(const char *string, int32_t poX, int32_t poY, uint8_t font);</mark></p>
+<p><mark>drawString(const char *string, int32_t poX, int32_t poY);</mark></p>
+<p><mark>drawString(const String&amp; string, int32_t poX, int32_t poY, uint8_t font);</mark></p>
+<p><mark>drawString(const String&amp; string, int32_t poX, int32_t poY);</mark></p>
+<p><strong>Function argument:</strong></p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>poX</td>
+<td>int32_t</td>
+<td>Coordinate X (upper left)</td>
+</tr>
+<tr>
+<td>poY</td>
+<td>int32_t</td>
+<td>Coordinate Y (upper left)</td>
+</tr>
+<tr>
+<td>string</td>
+<td>const char * / String &amp;</td>
+<td>String</td>
+</tr>
+<tr>
+<td>font</td>
+<td>uint8_t</td>
+<td>1: If use the loaded font</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None</p>
+<h2 id="printf">printf()</h2>
+<p><strong>Description:</strong></p>
+<p>Draw the specified string.</p>
+<p><strong>Syntax:</strong></p>
+<p><mark>printf("Format specification",arg1...);</mark></p>
+<p><strong>Note:</strong></p>
+<p>The format specification can be specified according to the usual C language format.</p>
+<p><strong>Example of use:</strong></p>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+int a=1;
+M5.begin();
+M5.Lcd.printf(&quot;A=%d&quot;,a);
+</code></pre>
+
+<h2 id="usage-docsify-ignore">Usage {docsify-ignore}</h2>
+<pre><code class="arduino">#include &lt;M5Stack.h&gt;
+
+M5.begin();
+
+M5.Lcd.fillScreen(BLACK) #set the default background color
+M5.Lcd.drawLine(0, 0, WHITE);
+M5.Lcd.drawTriangle(22, 22, 69, 98, 51, 22, RED);
+M5.Lcd.fillTriangle(122, 122, 169, 198, 151, 182, RED);
+M5.Lcd.drawRect(180, 12, 122, 10, BLUE);
+M5.Lcd.fillRect(180, 30, 122, 10, BLUE);
+M5.Lcd.drawRoundRect(180, 50, 122, 10, 4, BLUE);
+M5.Lcd.fillRoundRect(180, 70, 122, 10, 4, BLUE);
+M5.Lcd.print(&quot;this is a print text function&quot;);
+</code></pre>
+
+<!-- ```python
+from machine import SPI, Pin
+from display import LCD
+
+spi = SPI(1, baudrate=32000000, mosi=Pin(23), miso=Pin(19), sck=Pin(18))
+
+lcd = LCD(spi = spi) #lcd init
+lcd.fillScreen(lcd.BLACK) #set the default background color
+
+lcd.drawLine(0, 0, lcd.WHITE)
+lcd.drawTriangle(22, 22, 69, 98, 51, 22, lcd.RED)
+lcd.fillTriangle(122, 122, 169, 198, 151, 182, lcd.RED)
+lcd.drawCircle(180, 180, 10, lcd.BLUE)
+lcd.fillcircle(100, 100, 10, lcd.BLUE)
+lcd.drawRect(180, 12, 122, 10, lcd.BLUE)
+lcd.fillRect(180, 30, 122, 10, lcd.BLUE)
+lcd.drawRoundRect(180, 50, 122, 10, 4, lcd.BLUE)
+lcd.fillRoundRect(180, 70, 122, 10, 4, lcd.BLUE)
+lcd.print('this is a print text function', 80, 80)
+``` --></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../../js/base.js" defer></script>
+        <script src="../../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

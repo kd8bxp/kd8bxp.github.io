@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>The Onion + IFTTT Experience - Random Wire!</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#the-onion-ifttt-experience">The Onion + IFTTT Experience</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#background-info">Background Info</a></li>
+            <li><a href="#step-1-setting-up-the-omega-with-the-cloud">Step 1: Setting Up The Omega With The Cloud</a></li>
+            <li><a href="#step-2-setting-up-ifttt">Step 2: Setting Up IFTTT</a></li>
+            <li><a href="#step-3-creating-an-ifttt-recipe">Step 3: Creating an IFTTT Recipe.</a></li>
+            <li><a href="#step-4-try-it-out">Step 4: Try It Out!</a></li>
+        <li class="main "><a href="#using-the-project">Using the Project</a></li>
+            <li><a href="#related-tutorials">Related Tutorials</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="the-onion-ifttt-experience">The Onion + IFTTT Experience</h1>
+<p><img alt="IFTTT" src="http://marketingland.com/wp-content/ml-loads/2012/09/ifttt-logo.jpg" /></p>
+<p>In this tutorial/mini-project, we will show you how to do some very cool things using IFTTT, the Omega and the Onion Cloud. Specifically, we will use the <strong>IFTTT DO App</strong> on a SmartPhone to send the date 
+and GPS information from your phone to be printed remotely on your Omega's OLED Expansion. This tutorial will give you a taste of the Onion Cloud and its capabilities. Let's get into it.</p>
+<p><img alt="Imgur" src="http://i.imgur.com/0bYYBsz.gif" /></p>
+<p>[[<em>TOC</em>]]</p>
+<h2 id="overview">Overview</h2>
+<p><strong>Tutorial Difficulty</strong>:</p>
+<p><strong>Beginner</strong></p>
+<p>Time Required:</p>
+<p><strong>20 minutes</strong></p>
+<p><strong>Required Materials</strong>:
+* The Omega
+* The Expansion Dock 
+* The Oled Expansion
+* Android/iOS device</p>
+<p><strong>Useful Experience</strong>:
+* Using the Onion Cloud(not necessary)
+* Knowledge of Ubus Commands(not necessary)</p>
+<h2 id="background-info">Background Info</h2>
+<h3 id="what-is-ifttt">What is IFTTT</h3>
+<p><a href="https://en.wikipedia.org/wiki/IFTTT">IFTTT</a> stands for "if this, then that", which is a web service that allows users to create custom tasks, which are called "recipes", that can set up 
+user's own conditional statement (e.g. if I receive a new email on my gmail account, then forward it to another account). The conditional statement could be as simple as if a button is 
+pressed, or as complex as you want. There is also "DO button" app in APPstore or Google Play store,which allows the recipe to be triggered by pressing a button on the app. We will be using te "DO" app in our tutorial.
+ In the next section, I will explain what will be going on behind the scenes. </p>
+<p><img alt="IFTTT" src="http://marketingland.com/wp-content/ml-loads/2012/09/ifttt-logo.jpg" /></p>
+<h3 id="theory-introduction">Theory &amp; Introduction</h3>
+<p>The theory of using IFTTT to control our Omega is, when one event is triggered, a request is sent to the Onion Cloud via the Maker Channel. The Onion Cloud will then send a command to your local Omega to execute a ubus function. 
+We have built in Ubus functions to control the Omega's expansion which is what we are using in this tutorial. If you would like to learn more about ubus or would like to create your own 
+function, check out our <a href="https://wiki.onion.io/Tutorials/OpenWRT%20Tutorials/UBUS_Tutorial/Part1_Ubus_Intro">ubus tutorial series</a>!</p>
+<p><img alt="Imgur" src="http://i.imgur.com/Un7BqbI.png" /></p>
+<p>The recipes are created through "channels", which are different web services, for example, Gmail. We are in the process of creating an Onion channel, but in the meantime, we can still use IFTTT through the DIY "Maker" Channel.</p>
+<h2 id="step-1-setting-up-the-omega-with-the-cloud">Step 1: Setting Up The Omega With The Cloud</h2>
+<h3 id="create-onion-account-and-register-a-device">Create Onion Account and Register a Device</h3>
+<p>If you haven't already, you will need to create an Onion Account on the <a href="https://onion.io/">Onion Website</a>. If you are completely new to the Onion Cloud, click the <img alt="info button" src="http://i.imgur.com/YLj4Oj6.png" /> button on the bottom left to take a tour of the Cloud. Use the <strong>Device Manager</strong> to register your Omega with the Cloud. Again, use the tour button if you're unsure how anything works!</p>
+<p><img alt="Imgur" src="http://i.imgur.com/r7ZjCg3.png" /></p>
+<p>Now that you have a Cloud connected Omega, make a note of it's Device ID since we will be using it later. Next we will need to get an API Key.</p>
+<h3 id="get-your-api-key">Get Your API Key</h3>
+<p>API Keys are authentication credentials that are tied to your account and allow other programs to use the Onion Cloud APIs. Click on the <strong>Key Manager</strong> App on the Cloud to create a API Key to use with IFTTT. Make note of the Key since we will be using it later.</p>
+<p><img alt="Imgur" src="http://i.imgur.com/Z9oPC1m.png" /></p>
+<h2 id="step-2-setting-up-ifttt">Step 2: Setting Up IFTTT</h2>
+<h3 id="make-an-account-with-ifttt">Make An Account With IFTTT.</h3>
+<p>Go to the <a href="https://ifttt.com/">IFTTT site</a> and make an account. In the next step we will be making the recipe.</p>
+<h3 id="download-do-button-app-and-setup-up-the-recipe">Download DO Button App and Setup Up the "Recipe"</h3>
+<p>Download and open the DO Button App by IFTTT on your phone. Navigate to the My Recipes section and click the add button. I have included a series of screen shots to guide you through
+the steps on your phone. Once you have selected the Maker Channel, you will be prompted to connect to the maker channel. Once you have reached the final screen, choose a title for the recipe.
+I have made mine "omega test". For the URL field, just put google.com for now and choose the POST for the Method. For "Content type" select "applications/JSON", scroll to the bottom and click add. We will now continue to modify the recipe
+on the desktop.</p>
+<p><img alt="Imgur" src="http://i.imgur.com/hl5VhxB.png" /></p>
+<h2 id="step-3-creating-an-ifttt-recipe">Step 3: Creating an IFTTT Recipe.</h2>
+<p>In this step you will need to log back into the IFTTT website and open up the Onion Cloud. In this step you will modify the URL you entered in step 2 with one that is generated by the onion
+cloud and that points to your device and tells it to do something. Click on My Recipes, click on DO tab and then on the recipe you created on your phone and you will be able to modify the recipe. </p>
+<p><img alt="Imgur" src="http://i.imgur.com/aOjkVVa.png" /></p>
+<h3 id="get-url-and-body-info-from-the-onion-cloud">Get URL and Body Info From the Onion Cloud</h3>
+<p>Login into the Onion Cloud, then click on the <strong>Device Explorer</strong> App on the dashboard:
+<img alt="Imgur" src="http://i.imgur.com/ngeUQJE.png" /></p>
+<p>Your Device should have a Device ID and be connected to the cloud:
+<img alt="Imgur" src="http://i.imgur.com/9A92F9S.png" /></p>
+<p>Click on the device and then the following tabs on the left <code>i2c_exp</code> and then <code>oled-exp</code>. You should reach the following screen:
+<img alt="Imgur" src="http://i.imgur.com/MQKGocR.png" /></p>
+<p><em>Side Note:</em> </p>
+<p>We have just selected the ubus command to control the Oled Display via the Onion Cloud. You can select another tab to issue a different command to the Omega. Using the steps below as a baseline, you can easily control any of the expansions or other Omega functionality using steps similar to those below.</p>
+<p><em>Back to the tutorial:</em></p>
+<p>In the command field enter:</p>
+<pre><code>set
+</code></pre>
+
+<p>In the option field enter:</p>
+<pre><code>i
+</code></pre>
+
+<p>In the params field enter:</p>
+<pre><code>{&quot;write&quot;:&quot;&quot;}
+</code></pre>
+
+<p>Take a look at the <a href="https://github.com/OnionIoT/i2c-exp-driver#i2c-exp-driver">i2c-exp-driver Read Me</a> for details on controling the Servo, Relay, and OLED Expansions using ubus commands.</p>
+<p>The section under the curl command is what you will use to fill in the URL and body fields in the IFTTT recipe. The link at the end will be the URL to the Onion API and the JSON text before
+it is the body.</p>
+<p>The URL will have the following form:</p>
+<pre><code>https://api.onion.io/v1/devices/&lt;device-id&gt;/i2c_exp/oled-exp?key=&lt;API-key&gt;
+</code></pre>
+
+<p>You will need to replace <device-id> and <API-key> with your device ID and API key which you took note of earlier. Enter this into the URL Field. </p>
+<p>Next, simply copy the JSON text inside the single quotes as is into the body field. Now let's add some ingredients, ie date and GPS coordinates. To do this place the cursor in between the empty quotation marks
+following </p>
+<pre><code>&quot;write&quot;:
+</code></pre>
+
+<p>And click on the button beside the field. Select "OccuredAt" from the dropdown menu and click "Add Ingredient". Repeat the process selecting latitude and longtitude. You will also need
+to add a space between the last two curly closed brackets. Once you are done, your screen should look something like this and you can hit Update. 
+<img alt="Imgur" src="http://i.imgur.com/UFPGoAo.png" />
+<img alt="Imgur" src="http://i.imgur.com/CxAq7eb.png" /></p>
+<h2 id="step-4-try-it-out">Step 4: Try It Out!</h2>
+<p>First make sure the GPS on your on phone is turned on. Open up the DO app, press the button and watch the OLED Display. </p>
+<p><img alt="Imgur" src="http://i.imgur.com/bQnE4r6.jpg" /></p>
+<h1 id="using-the-project">Using the Project</h1>
+<p>Using this project, you can use the Onion Cloud to control your remote Omega very easily. Using IFTTT, you can trigger commands either automatically or from your smartphone via the DO button App.</p>
+<p>The Onion Cloud can send commands to any connected Omega to execute ubus functions. Therefore, this tutorial can be used as a framework to do other things remotely on your Omega; maybe control a door lock or light 
+switch from your phone, or automatically start an action when you enter a specific area of your city. The world is your playground with the Omega and IFTTT.</p>
+<h2 id="related-tutorials">Related Tutorials</h2>
+<ul>
+<li><a href="https://wiki.onion.io/Tutorials/OpenWRT%20Tutorials/UBUS_Tutorial/Part1_Ubus_Intro">ubus tutorial</a></li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

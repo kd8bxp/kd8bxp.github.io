@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../../../img/favicon.ico">
+        <title>M5Core Quick Start - UIFlow {docsify-ignore-all} - Random Wire!</title>
+        <link href="../../../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#m5core-quick-start-uiflow-docsify-ignore-all">M5Core Quick Start - UIFlow {docsify-ignore-all}</a></li>
+            <li><a href="#table-of-contents">Table of Contents</a></li>
+            <li><a href="#1-install-usb-to-serial-driver">1. Install USB to Serial Driver</a></li>
+            <li><a href="#2-burn-uiflow-firmware">2. Burn UIFlow Firmware</a></li>
+            <li><a href="#3-wi-fi-setting">3. Wi-Fi Setting</a></li>
+            <li><a href="#4-program">4. Program</a></li>
+            <li><a href="#5-related-video">5. Related Video</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="m5core-quick-start-uiflow-docsify-ignore-all">M5Core Quick Start - UIFlow {docsify-ignore-all}</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<p><strong><a href="#_1-Install-USB-to-Serial-Driver">1. Install USB to Serial Driver</a></strong></p>
+<p><strong><a href="#_2-Burn-UIFlow-Firmware">2. Burn UIFlow Firmware</a></strong></p>
+<p><strong><a href="#_3-Wi-Fi-Setting">3. Wi-Fi Setting</a></strong></p>
+<p><strong><a href="#_4-Program">4. Program</a></strong></p>
+<p><strong><a href="#_5-Related-Video">5. Video Tutorial</a></strong></p>
+<h2 id="1-install-usb-to-serial-driver">1. Install USB to Serial Driver</h2>
+<p>Open your browser, enter the official website of M5Stack  https://m5stack.com/download</p>
+<h4 id="1-click-windows-for-downloading-this-installation-package-and-then-unzip-this-package">(1) click <code>Windows</code> for downloading this installation package and then unzip this package.</h4>
+<p><img src="assets/img/getting_started_pics/m5stack_core/get_started_with_arduino_m5core/windows/download_usb_driver_win_01.png"></p>
+<h4 id="2-according-to-your-windows-operating-system-type-select-the-corresponding-driver-installation-package">(2) According to your Windows operating system type, select the corresponding driver installation package</h4>
+<ul>
+<li>
+<p>32-bit Windows operating system, choose <code>CP210xVCPInstaller_x86_vx.x.x.x.exe</code></p>
+</li>
+<li>
+<p>64-bit Windows operating system, choose <code>CP210xVCPInstaller_x64_vx.x.x.x.exe</code></p>
+</li>
+</ul>
+<p><img src="assets/img/getting_started_pics/establish_serial_connection/windows_install_usb_driver01.png"></p>
+<h4 id="3-double-click-the-executable-file-for-installing">(3) double click the executable file for installing.</h4>
+<p><img src="assets/img/getting_started_pics/establish_serial_connection/windows_install_usb_driver02.png"></p>
+<p><img src="assets/img/getting_started_pics/establish_serial_connection/windows_install_usb_driver03.png"></p>
+<h4 id="4-check-the-serial-port-number-comx">(4) Check the serial port number <code>COMx</code></h4>
+<p>To comfirm if the USB to Serial Driver was successfully installed already, Check the list of identified COM ports in the <code>Windows Device Manager</code>:</p>
+<p>Connect the Core to the computer via a USB Type-C cable, open <code>Windows Device Manager</code>, click <code>Ports(COM &amp; LPT)</code> for checking the list of identified COM ports.</p>
+<p>Disconnect M5Core device and connect it back, to verify which port disappears from the list and then shows back again.</p>
+<p><img src="assets/img/getting_started_pics/m5stack_core/get_started_with_arduino_m5core/windows/check_serial_port_01.png"></p>
+<h2 id="2-burn-uiflow-firmware">2. Burn UIFlow Firmware</h2>
+<h4 id="1-download-m5burner">(1) Download M5Burner</h4>
+<p>Access <a href="http://www.m5stack.com/download">M5Stack Official Website</a>, and download M5Burner</p>
+<p><img src="assets/img/getting_started_pics/how_to_burn_firmware/download_M5Burner.png" alt="Screenshot of coverpage" title="Cover page"></p>
+<p><img src="assets/img/getting_started_pics/how_to_burn_firmware/download_M5Burner_02.png" alt="Screenshot of coverpage" title="Cover page"></p>
+<h4 id="2-burn-the-firmware">(2) Burn the firmware</h4>
+<p>Connect M5Core to the computer via the USB Type-C cable, unzip the M5Burner archive you just downloaded, and double-click the executable <code>M5Burner.exe</code></p>
+<p>Select the <code>serial number</code> and <code>921600 baud rate</code> that the board is connected to the computer, and select the latest version of UIFlow firmware.</p>
+<p><img src="assets/img/getting_started_pics/how_to_burn_firmware/burn_firmware_02.png"></p>
+<p>Click <code>Burn</code> for downloading UIFlow firmware</p>
+<p><img src="assets/img/getting_started_pics/how_to_burn_firmware/burn_firmware_06_02.png"></p>
+<p>The following interface appears, indicating that the firmware is successfully burned.</p>
+<p><img src="assets/img/getting_started_pics/how_to_burn_firmware/burn_firmware_05.png"></p>
+<h2 id="3-wi-fi-setting">3. Wi-Fi Setting</h2>
+<h4 id="1-select-setup">(1) Select <code>SETUP</code></h4>
+<p>After successfully burning the UIFlow firmware, click the red button in the upper left corner of the Core to restart the device. Once the Core is powered on, immediately click the <code>C button</code> that indicates you select the <code>SETUP</code> option on the screen for the network configuration. Then click on the middle button and select <code>Link Server: Flow.m5stack.com</code>.</p>
+<p><img src="assets/img/getting_started_pics/m5stack_core/get_started_with_uiflow/core_home_page_04.png"></p>
+<h4 id="2-connect-to-ap">(2) Connect to AP</h4>
+<p>Turn on Wi-Fi on your phone or computer, then connect to the M5Core hotspot <code>AP</code> displayed on the screen ( For example, the M5Stack-0d60 is now displayed ). After the connection is successful, open a browser and enter the URL <code>192.168.4.1</code>, then select Wi-Fi that can be connected to the network, enter the Wi-Fi password. ( Now, the networkable Wi-Fi is M5 )</p>
+<p><img src="assets/img/getting_started_pics/m5stack_core/get_started_with_uiflow/core_home_page_05.png"></p>
+<h4 id="3-connect-to-wi-fi">(3) Connect to Wi-Fi</h4>
+<p>After M5Core successfully connects to a networkable Wi-Fi (here M5), the screen will display <code>APIKEY</code> and the QR code that can access the UIFlow webpage.</p>
+<p><em>Description of APIKEY: APIKEY is the device unique identifier. As long as the current UIFlow is connected to which device's APIKEY, The programming code will be downloaded to that device.</em></p>
+<p><img src="assets/img/getting_started_pics/m5stack_core/get_started_with_uiflow/core_home_page_06.png"></p>
+<p>The status of the small dot on the screen:</p>
+<ul>
+<li>
+<p>Green means M5Core successfully connected to M5Stack Server, that is online status</p>
+</li>
+<li>
+<p>Red means be offline status</p>
+</li>
+</ul>
+<h2 id="4-program">4. Program</h2>
+<h4 id="1-connect-to-uiflow">(1) Connect to UIFlow</h4>
+<p>Now scan the QR code on the M5Core with your phone or tablet, or if you are programming with a computer, enter the URL <code>flow.m5stack.com</code> on your computer's browser</p>
+<p><img src="assets/img/getting_started_pics/m5stack_core/get_started_with_uiflow/webide.png"></p>
+<p>Every time before you upload the code to M5Core through UIFlow, make sure that UIFlow is connected to the M5Core you want to program.</p>
+<p>So you need to click on the gear in the upper right corner of the UIFlow IDE page and enter APIKEY on your M5Core screen in the pop-up dialog box. Click <code>Save</code>, then UIFlow will connect to M5Core.</p>
+<p><img src="assets/img/getting_started_pics/m5stack_core/get_started_with_uiflow/click_for_apikey.png"></p>
+<p><img src="assets/img/getting_started_pics/m5stack_core/get_started_with_uiflow/input_apikey.png"></p>
+<p>Now you can start programming with UIFlow!</p>
+<h4 id="2-programming-example">(2) Programming example</h4>
+<h4 id="a-draw-a-ui">a. draw a UI</h4>
+<p>Drag and drop the 4 controls in the upper left corner of the UIFlow IDE to the UI interface of <code>M5Stack Core</code> and click the <code>Run</code> button in the upper right corner of the page to execute the effect.</p>
+<p><img src="assets/img/getting_started_pics/m5stack_core/get_started_with_uiflow/draw_ui.gif"></p>
+<h4 id="b-writing-a-blockly-program">b. writing a Blockly program</h4>
+<p>Drag the <code>Set emoji map in0</code> block from the <code>Emoji</code> category on the left to the code area of <code>Blockly</code> and click the <code>Run</code> button.</p>
+<p><img src="assets/img/getting_started_pics/m5stack_core/get_started_with_uiflow/draw_heart.gif"></p>
+<p><em>The link of source coce: https://github.com/m5stack/M5-ProductExampleCodes/blob/master/Core/M5_draw_heart.m5f</em></p>
+<h4 id="c-writing-a-micropython-program">c. writing a MicroPython program</h4>
+<p>Copy the following code into the Python editing area, then click <code>Run</code> in the top right corner to execute the code.</p>
+<pre><code class="Python">from m5stack import *
+from m5ui import *
+clear_bg(0x111111)
+
+
+btnA = M5Button(name='ButtonA', text='ButtonA', visibility=False)
+btnB = M5Button(name='ButtonB', text='ButtonB', visibility=False)
+btnC = M5Button(name='ButtonC', text='ButtonC', visibility=False)
+
+
+lcd.print(&quot;Hello M5Stack&quot;)
+</code></pre>
+
+<p><img src="assets/img/getting_started_pics/m5stack_core/get_started_with_uiflow/program_with_micropython.png"></p>
+<p>At this time, the word 'Hello M5Stack` will be printed on the M5Core screen.</p>
+<h2 id="5-related-video">5. Related Video</h2>
+<ul>
+<li>UIFlow Overview</li>
+</ul>
+<video width="500" controls>
+    <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/LukeVideo/UI%20Flow%20Overview.mp4" type="video/mp4">
+</video>
+
+<ul>
+<li>Video tutorial for developing M5Core in UIFlow</li>
+</ul>
+<video width="500" controls>
+    <source src="https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/%E6%95%99%E7%A8%8B/UIFlow%20Tutorials/A3%20-%20UIflow%E7%AE%80%E4%BB%8B.mp4" type="video/mp4">
+</video>
+
+<!-- ## Complete
+
+?> *Absolutely, For being more familiar with M5, you can read [the tutorial documentation of UIFlow](https://m5stack.github.io/UIFlow_doc/cn/index.html).* --></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../../../js/base.js" defer></script>
+        <script src="../../../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

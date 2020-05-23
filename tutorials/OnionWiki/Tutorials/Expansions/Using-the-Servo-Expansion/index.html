@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Using the Servo Expansion - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#using-the-servo-expansion">Using the Servo Expansion</a></li>
+        <li class="main "><a href="#pwm-signals">PWM Signals</a></li>
+            <li><a href="#duty-cycle">Duty Cycle</a></li>
+            <li><a href="#period">Period</a></li>
+        <li class="main "><a href="#the-hardware">The Hardware</a></li>
+        <li class="main "><a href="#using-the-command-line">Using the Command Line</a></li>
+            <li><a href="#command-usage">Command Usage</a></li>
+            <li><a href="#initialization">Initialization</a></li>
+            <li><a href="#setting-the-pwm-based-on-duty-cycle">Setting the PWM based on Duty Cycle</a></li>
+            <li><a href="#setting-the-pwm-based-on-period">Setting the PWM based on Period</a></li>
+            <li><a href="#setting-the-pwm-signal-frequency">Setting the PWM signal frequency</a></li>
+            <li><a href="#selecting-a-channel">Selecting a Channel</a></li>
+            <li><a href="#setting-a-delay">Setting a Delay</a></li>
+            <li><a href="#disabling-the-oscillator">Disabling the Oscillator</a></li>
+        <li class="main "><a href="#using-the-libraries">Using the Libraries</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="using-the-servo-expansion">Using the Servo Expansion</h1>
+<p>The Servo (PWM) Expansion allows you to generate up to 16 different Pulse Width Modulated (PWM) signals to control anything from Servo Motors, DC Motor speed, LED brightness, etc.</p>
+<p>[[<em>TOC</em>]]</p>
+<h1 id="pwm-signals">PWM Signals</h1>
+<p>Pulse Width Modulated signals can be described by duty cycle or periods.</p>
+<p><img alt="Duty Cycle Graph" src="http://www.bristolwatch.com/picaxe/images/io43.gif" /></p>
+<h2 id="duty-cycle">Duty Cycle</h2>
+<p>Indicates what percentage of the time a signal is on or high voltage. So a PWM signal with a 25% duty cycle will be high for 25% of the time, and low 75% of the time. The duty cycle can be calculated as follows:</p>
+<p>$$DutyCycle = {\frac{T_{on}}{T_{CompleteCycle}}}\times100\%$$</p>
+<h2 id="period">Period</h2>
+<p>Indicates the amount of time (usually in milliseconds) for each part of the cycle.
+The Time On, Ton in the diagram above is the time the signal is high. This is also known as pulse width.
+Similarly, Time Off, or Toff is the time the signal is low.</p>
+<p>The Complete Cycle time corresponds to the overall period of the PWM. Changing the period will also change the frequency of the PWM signal:</p>
+<p>$$Frequency = {\frac{1}{Period}}$$</p>
+<h1 id="the-hardware">The Hardware</h1>
+<p>The Servo Expansion has 16 channels to generate PWM signals. The 16 channels are broken out so that servo-motors can be directly connected to the headers. </p>
+<p>It also comes with an onboard DC barrel jack connector that can be used to supply power to any connected servos. If this connector is not used, the Expansion Dock will provide power to the servos, however, it is not recommended to run more than one or two servos under light load with this method.
+Note that the Omega cannot be powered through this connector, it requires its power own power supply. </p>
+<p>The onboard chip has an oscillator that can generate PWM signals with a frequency in the range of 24 Hz to 1526 Hz. Most servos operate at 50 Hz, that is the default frequency.</p>
+<p><img alt="Servo Expansion" src="http://i.imgur.com/aNoYCZc.png" /></p>
+<h1 id="using-the-command-line">Using the Command Line</h1>
+<p><em>Make sure that your Omega has the latest firmware!</em></p>
+<p>We've developed a tool called <code>pwm-exp</code> that should make generating PWM signals a breeze.</p>
+<p>Also available are a C library and a Python module that allow you to develop your own programs to control the Servo Expansion.</p>
+<h2 id="command-usage">Command Usage</h2>
+<p>For a print-out of the command's usage, run it with just a -h argument</p>
+<pre><code>pwm-exp -h
+</code></pre>
+
+<h2 id="initialization">Initialization</h2>
+<p>After every boot, the chip and oscillator on the Servo Expansion have to be initialized in order for the PWM signals to be generated correctly. <strong>The driver application will automatically detect if the oscillator is not running and will run the required sequence,</strong> so this command should only be run if you wish to initialize the oscillator but not generate any PWM signals.</p>
+<p>To perform the initialization, run the following command:</p>
+<pre><code>pwm-exp -i
+</code></pre>
+
+<p>This can be run by itself or in conjunction with any commands below.</p>
+<h2 id="setting-the-pwm-based-on-duty-cycle">Setting the PWM based on Duty Cycle</h2>
+<p>The tool allows you to define the PWM signal to be generated by specifying which channel on the expansion to use and the duty cycle</p>
+<pre><code>pwm-exp [options] &lt;channel&gt; &lt;duty cycle percentage&gt;
+</code></pre>
+
+<p>A few examples:</p>
+<p>Generating a 10% duty cycle signal on channel 0</p>
+<pre><code>pwm-exp 0 10
+</code></pre>
+
+<p>Generating a 33.33% duty cycle with a signal frequency of 100 Hz on channel 1</p>
+<pre><code>pwm-exp -f 100 1 33.33
+</code></pre>
+
+<p>Performing the initialization sequence and then generating a 95% duty cycle signal on channel 2</p>
+<pre><code>pwm-exp -i 2 95
+</code></pre>
+
+<p>Note that the duty cycle must be between 0 and 100.</p>
+<h2 id="setting-the-pwm-based-on-period">Setting the PWM based on Period</h2>
+<p>The PWM signal can also be generated by specifying the pulse width and total period in milliseconds:</p>
+<pre><code>pwm-exp -p &lt;channel&gt; &lt;pulse width&gt; &lt;total period&gt;
+</code></pre>
+
+<p>Some examples:</p>
+<p>Generating a PWM signal that is high for 1ms and low for 19ms on channel 3. This makes the overall period 20ms, corresponding to a 50Hz frequency</p>
+<pre><code>pwm-exp -p 3 1 20
+</code></pre>
+
+<p>Generating a PWM signal that is high for 1.65ms with an overall period of 5.4ms  (corresponds to 185.19 Hz) on channel 4</p>
+<pre><code>pwm-exp -p 5 1.65 5.4
+</code></pre>
+
+<h2 id="setting-the-pwm-signal-frequency">Setting the PWM signal frequency</h2>
+<p>When setting the signal based on duty cycle, the frequency can also be adjusted in each command by using the -f option.</p>
+<pre><code>pwm-exp -f &lt;frequency&gt; &lt;channel&gt; &lt;duty&gt;
+</code></pre>
+
+<p>An example
+Generating a 15% duty pwm signal at 220Hz on channel 5</p>
+<pre><code>pwm-exp -f 220 5 15
+</code></pre>
+
+<p>The default frequency is 50 Hz since most Servos operate on this frequency.</p>
+<p>If the desired frequency is different from the default, the frequency must be specified in each <code>pwm-exp</code> command, otherwise the expansion will reset to the default frequency.</p>
+<p><strong>Also note that all channels run on the same frequency, it is not possible to generate PWM signals with different frequencies on the same Servo Expansion.</strong></p>
+<p>When setting the signal based on period, the frequency is dependent on the total period:</p>
+<p>$$Frequency = {\frac{1}{Period}}$$</p>
+<h2 id="selecting-a-channel">Selecting a Channel</h2>
+<p>The Servo Expansion has 16 channels, <code>pwm-exp</code> allows you to program each individually or all at once.</p>
+<p><strong>Programming each individually:</strong></p>
+<p>Seen in the examples above:</p>
+<pre><code>pwm-exp 12 97
+pwm-exp -p 15 1.65 20
+</code></pre>
+
+<p><strong>Programming all at once:</strong></p>
+<p>Instead of specifying a channel number, the keyword all can be entered</p>
+<p>Setting all of the channels to a 50% duty cycle signal at the default 50Hz:</p>
+<pre><code>pwm-exp all 50
+</code></pre>
+
+<p>Setting all of the channels to a 66% duty cycle at 123Hz:</p>
+<pre><code>pwm-exp -f 123 all 66
+</code></pre>
+
+<p>Setting all of the channels to a 5% duty cycle at 50Hz using the period times</p>
+<pre><code>pwm-exp -p all 1 20
+</code></pre>
+
+<h2 id="setting-a-delay">Setting a Delay</h2>
+<p>It is also possible to create PWM signals where the pulse is delayed by some time.</p>
+<p>The following image shows a 20% duty cycle signal with a 10% delay:</p>
+<p><img alt="Delay" src="//i.imgur.com/zvyaWdF.png" /></p>
+<p>So for the first 10% of the time, the signal is low, then it will be high for the next 20% of the time, and low for the remaining 70% of the time.</p>
+<p>Setting a delay with pwm-exp can only be done when setting the PWM signal using the duty cycle:</p>
+<pre><code>pwm-exp &lt;channel&gt; &lt;duty cycle&gt; &lt;delay percentage&gt;
+</code></pre>
+
+<p><em>Examples</em></p>
+<p>Generating a signal like the one above, 20% duty cycle with a 10% delay, on all channels:</p>
+<pre><code>pwm-exp all 20 10
+</code></pre>
+
+<p>Generating a signal with 33% and a delay of 50% on channel 9:</p>
+<pre><code>pwm-exp 9 33 50
+</code></pre>
+
+<h2 id="disabling-the-oscillator">Disabling the Oscillator</h2>
+<p>The oscillator can be put into sleep mode, immediately disabling generation of all PWM signals. This might be useful in any application where you want to disable all connected servos or LEDs but keep the Omega powered on. For instance, we use the sleep mode to rest the servos on Oliver, our robotic arm, after he's been powered on for too long.</p>
+<p>To put the oscillator in sleep mode:</p>
+<pre><code>pwm-exp -s
+</code></pre>
+
+<p><strong>To enable the oscillator again, there are a few methods:</strong></p>
+<p>Run the initialization sequence to enable the oscillator and generate no pwm signals:</p>
+<pre><code>pwm-exp -i
+</code></pre>
+
+<p>Generate a PWM signal on one or all channels, the software will detect the oscillator is in sleep mode and will run the initialization sequence:</p>
+<pre><code>pwm-exp &lt;channel&gt; &lt;duty&gt;
+</code></pre>
+
+<p>or</p>
+<pre><code>pwm-exp -p &lt;channel&gt; &lt;pulse width&gt; &lt;total period&gt;
+</code></pre>
+
+<h1 id="using-the-libraries">Using the Libraries</h1>
+<p>The C library and Python module will allow you to develop your own programs that can control the Servo Expansion.</p>
+<p>For more information, see <a href="../../Documentation/Libraries/PWM-Expansion-C-Library">this guide</a>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

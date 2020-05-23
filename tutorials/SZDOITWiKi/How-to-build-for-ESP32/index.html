@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>How to build for ESP32 - Random Wire!</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#linux">Linux:</a></li>
+        <li class="main "><a href="#mac-os">Mac OS:</a></li>
+        <li class="main "><a href="#how-to-build-for-esp8266">HOW TO BUILD (For ESP8266):</a></li>
+            <li><a href="#windows">Windows:</a></li>
+            <li><a href="#linux_1">Linux:</a></li>
+            <li><a href="#mac-os_1">Mac OS:</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><img alt="esp32" src="https://camo.githubusercontent.com/ecc121d622c460db039dc3d557dfa74051d5e158/68747470733a2f2f6b73722d7567632e696d6769782e6e65742f6173736574732f3030352f3935332f3431302f62313962333566633861356134376136303136353461663433656639656438665f6f726967696e616c2e6a70673f773d363830266669743d6d617826763d31343631323435333938266175746f3d666f726d617426713d393226733d6533363437333335653031393834333932333735366332633033333338633562" /></p>
+<p><em>Requirements:</em></p>
+<p>The following tools are required, use apt-get to install them.</p>
+<ul>
+<li>GNU autoconf, libtool, libtool-bin</li>
+<li>GNU flex, bison, gawk,</li>
+<li>libexpat1-dev</li>
+</ul>
+<p><em>Windows:</em></p>
+<p>We utilize VirtualBox (VB) with Ubuntu installed as build environment. If your OS is Linux, you can also setup the build environment according the following steps:</p>
+<ul>
+<li>
+<ol>
+<li>Download and install <a href="https://www.virtualbox.org/">VirtualBox-5.0.16-105871-Win</a> (You'd better install the latest version, since I found that the older version such as 4.x cannot install the VB Guest Additions)</li>
+</ol>
+</li>
+<li>Download <a href="https://www.ubuntu.com/download">ubuntu-15.10-desktop-amd64.iso</a> and install it on VB. Make sure that asign more than 1G RAM and 12G Hard Disk for this virtual machine. The tool chain build process require much memory!</li>
+<li>
+<ol>
+<li>Setup share file folder: Settings-&gt;Share Folders-&gt;Add new shared folder, input your share folder path and the select Make Permanent, Note that do not select Auto Mount. Launch Ubuntu and then create a folder to mount the share folder, I create a folder, named share, in the path /mnt. Type the commond in the terminal to mount share folder:</li>
+</ol>
+</li>
+</ul>
+<pre><code class="c">sudo mount -t vboxsf share /mnt/share 
+</code></pre>
+
+<p>Note: if you mount failed, check whether the module vboxsf is exist by executing commond <code>c lsmod | grep vboxsf</code>. If nothing found, maybe the Guest Additions are not installed correctly. Try to install that again or upgrade your VirtualBox to the latest version.
+* 3. Download toolchain: Before downloading, make sure that the git has been installed, if not, install it by sudo apt-get install git. I create path /opt/Espressif and then install to sdk to it, then make the current user the owner:
+ ```c 
+sudo chown $USER /opt/Espressif/; Execute the following commond to download toolchain:
+cd /opt/Espressif/
+git clone -b esp108-1.21.0 git://github.com/jcmvbkbc/crosstool-NG.git</p>
+<pre><code>* 4. Install toolchain: Before installing, make sure that all the required tools list in Requirements are installed on your virtual machine. Type the following commands to build the toolchain.
+```c
+cd crosstool-NG
+./bootstrap &amp;&amp; ./configure --prefix=`pwd` &amp;&amp; make &amp;&amp; make install
+./ct-ng xtensa-esp108-elf
+./ct-ng build
+</code></pre>
+
+<ul>
+<li>
+<ol>
+<li>After installing the toolchain, export the bin path by the following commond, then you can build your source on your machine!
+Note: if your machine is not enough memory, the error such as Build failed in step: 'installing pass-2 core C compiler' may occur. The following screenshot shows the error:</li>
+</ol>
+</li>
+</ul>
+<p><img alt="" src="https://camo.githubusercontent.com/f6c826a3b4201fe5c6595a479035f9d4957c77c0/687474703a2f2f7777322e73696e61696d672e636e2f6d773639302f3939396261626533677731663269713537796136396a323068713039616a77332e6a7067" />
+* 6. After installing the toolchain, export the bin path by the following commond, then you can build your source on your machine!</p>
+<pre><code class="c">export PATH=/opt/Espressif/crosstool-NG/builds/xtensa-esp108-elf/bin:$PATH
+</code></pre>
+
+<p>Now that you can place your source in the share folder, build it with your virtual machine.</p>
+<p>Build App:</p>
+<ul>
+<li>Create a directory, say LuaNode, and then clone the LuaNode project to it: git clone --recursive https://github.com/Nicholas3388/LuaNode.git</li>
+<li>Create a Bin folder for LuaNode, say LuaNode_Bin, you should place LuaNode_Bin and LuaNode_Esp32 at the same directory.</li>
+<li>Modify the gen_misc.sh, setup the following three variables: SDK_PATH, BIN_PATH, and APP_NAME. SDK_PATH is the path of LuaNode_Esp32; BIN_PATH is the path of LuaNode_Bin; APP is the path of the application that you want to build. The apps you can build is in the apps folder.</li>
+<li>Start to build by input ./gen_misc.sh in your shell.</li>
+</ul>
+<h3 id="linux">Linux:</h3>
+<ul>
+<li>System requiement: RAM&gt;1G; Hard Disk&gt;10G</li>
+<li>Setup the build environment as that on Windows:)</li>
+</ul>
+<h3 id="mac-os">Mac OS:</h3>
+<ul>
+<li>Download and install VirtualBox for Mac</li>
+<li>Assign memory &gt; 1G and hard disk &gt; 12G for the virtual machine</li>
+<li>Setup the build environment as that on Windows:)</li>
+</ul>
+<h1 id="how-to-build-for-esp8266">HOW TO BUILD (For ESP8266):</h1>
+<p><em>Requirements:</em></p>
+<p>The required tools are the same as those list in the section How To Build for ESP8266. But the firmware for ESP32 utilize different toolchain.</p>
+<h2 id="windows">Windows:</h2>
+<p>Follow the Step 1~3 list in How To Build for ESP32.</p>
+<ul>
+<li>
+<p>Create a new directory for toolchain by executing the commond: sudo mkdir /opt/esp-open-sdk. Download the latest toolchain:</p>
+</li>
+<li>
+<p>git clone --recursive https://github.com/pfalcon/esp-open-sdk.git /opt/esp-open-sdk
+Install the toolchain (If you are not in the toolchain directory now, change directory first cd /opt/Espressif/): 'make STANDALONE=y'</p>
+</li>
+<li>
+<p>Setup PATH variable: export PATH=/opt/esp-open-sdk/xtensa-lx106-elf/bin:$PATH</p>
+</li>
+</ul>
+<pre><code class="c">Note: You have to export PATH again if you restart the shell. If you don't want to reqeat this step, you 
+can place the toolchain directory to the .bashrc file.
+</code></pre>
+
+<p>If you prefer IDE, such as Eclipse, you can also build the firmware with Eclipse. To setup Eclipse, follow the steps list below:</p>
+<ul>
+<li>
+<ol>
+<li>Download and install the <a href="http://programs74.ru/udkew-en.html">Unofficial Development Kit for Espressif ESP8266</a></li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Download and install the Java Runtime x86 <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">jre-7uXX-windows-i586.exe</a></li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Download and install <a href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/R/eclipse-cpp-mars-R-win32.zip">Eclipse Mars x86 to develop in C++ (eclipse-cpp-mars-R-win32.zip)</a>. Unpack the archive to the root of drive C.</li>
+</ol>
+</li>
+</ul>
+<pre><code class="c">Note: You should place the Eclipse under the path C:, since the install-mingw-package.bat   
+run in step 5 will search the path. If install-mingw-package.bat run failed, it may   
+probably you didn't place Eclipse in C:
+</code></pre>
+
+<ul>
+<li>
+<ol>
+<li>Download and install <a href="https://sourceforge.net/projects/mingw/files/Installer/">MinGW</a>. Run the downloader mingw-get-setup.exe, the installation process to select without GUI, ie uncheck "... also install support for the graphical user interface".</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Run from the file install-mingw-package.bat. He will establish the basic modules for MinGW, installation should proceed without error.</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Start the Eclipse Luna from the directory c:\eclipse\eclipse.exe</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>In Eclipse, select File -&gt; Import -&gt; General -&gt; Existing Project into Workspace, in the line Select root directory, select the directory C:\Espressif\examples and import work projects. Further, the right to select the Make Target project, such as hello-world and run the target All the assembly, while in the console window should display the progress of the build. To select the target firmware flash.</li>
+</ol>
+</li>
+</ul>
+<p>Now that you can build firmware using Eclipse, if you have any questions, go to ESP8266 Community Forum, read this <a href="http://www.esp8266.com/viewtopic.php?f=9&amp;t=820">post</a> for details.</p>
+<h2 id="linux_1">Linux:</h2>
+<p>Setup as that in Windows VirtualBox</p>
+<h2 id="mac-os_1">Mac OS:</h2>
+<p>Setup as in Windows</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

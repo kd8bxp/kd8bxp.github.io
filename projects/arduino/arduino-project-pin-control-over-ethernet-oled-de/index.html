@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Pin Control over Ethernet w/OLED - Random Wire!</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../tutorials/blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../tutorials/document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../tutorials/TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../tutorials/ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../tutorials/syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../tutorials/azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li class="active">
+    <a href="./">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../arduino-project-nokia-5110-lcd/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../arduino-project-skynet-im/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#i2c-096-oled-display-module">I2C 0.96" OLED display module</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>This weeks demo is for Pin Control over ethernet and as a bonus a small<br />
+OLED Demo</p>
+<p>These sketchs use a “real” Arduino ethernet shield. And by that I mean<br />
+one using a:</p>
+<p>W5100 Ethernet Controller</p>
+<p><a href="http://arduino.cc/en/Main/ArduinoEthernetShield"><em>http://arduino.cc/en/Main/ArduinoEthernetShield<br />
+</em></a></p>
+<p><a href="http://www.ebay.com/itm/UNO-ATMega328-1280-MEGA2560-Ethernet-Shield-W5100-Arduino-Main-Board-M3Y2-/171438857683?pt=LH_DefaultDomain_0&amp;hash=item27ea8d5dd3"><em>http://www.ebay.com/itm/UNO-ATMega328-1280-MEGA2560-Ethernet-Shield-W5100-Arduino-Main-Board-M3Y2-/171438857683?pt=LH_DefaultDomain_0&amp;hash=item27ea8d5dd3</em></a></p>
+<p>Like everything else the price of these is dropping, but if you do buy a<br />
+cheap one off eBay make sure it has the W5100 there are others out that<br />
+dont and they dont work the same way.</p>
+<p>I think I paid $10 or $11 for mine a year ago, now you can find them<br />
+for $8 bucks or less.</p>
+<p>Pin control over ethernet is based on this project:</p>
+<p><a href="http://bildr.org/2011/06/arduino-ethernet-pin-control/"><em>http://bildr.org/2011/06/arduino-ethernet-pin-control/</em></a></p>
+<p>alternative website:</p>
+<p><a href="https://web.archive.org/web/20140702134232/http://bildr.org/2011/06/arduino-ethernet-pin-control/"><em>https://web.archive.org/web/20140702134232/http://bildr.org/2011/06/arduino-ethernet-pin-control/</em></a></p>
+<p>The above project sets up a webserver running on the Arduino. The<br />
+address of the server is displayed on a serial terminal. (192.168.1.xxx)<br />
+It is setup get a DHCP from your router.</p>
+<p>Using the IP address you can set pins 2 to 9 to flash a LED.</p>
+<p><a href="http://192.168.1.45/?2">http://192.168.1.45/?2</a> will flash the LED on PIN 2.</p>
+<p><a href="http://192.168.1.45/?23">http://192.168.1.45/?23</a> will flash the LEDs on PIN2 and PIN 3 in order.</p>
+<p>So some interesting patterns can be made from this:</p>
+<p><a href="http://192.168.1.45/?2345678998765432">http://192.168.1.45/?2345678998765432</a> will create something like<br />
+K.I.T.T.s scanner.</p>
+<pre><code>//ARDUINO 1.0+ ONLY
+//ARDUINO 1.0+ ONLY
+
+#include &lt;Ethernet.h&gt;
+#include &lt;SPI.h&gt;
+boolean reading = false;
+
+////////////////////////////////////////////////////////////////////////
+//CONFIGURE
+////////////////////////////////////////////////////////////////////////
+//byte ip[] = { 192, 168, 0, 199 }; //Manual setup only
+//byte gateway[] = { 192, 168, 0, 1 }; //Manual setup only
+//byte subnet[] = { 255, 255, 255, 0 }; //Manual setup only
+// if need to change the MAC address (Very Rare)
+byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
+EthernetServer server = EthernetServer(80); //port 80
+////////////////////////////////////////////////////////////////////////
+
+void setup(){
+Serial.begin(9600);
+//Pins 10,11,12 &amp; 13 are used by the ethernet shield
+pinMode(2, OUTPUT);
+pinMode(3, OUTPUT);
+pinMode(4, OUTPUT);
+pinMode(5, OUTPUT);
+pinMode(6, OUTPUT);
+pinMode(7, OUTPUT);
+pinMode(8, OUTPUT);
+pinMode(9, OUTPUT);
+Ethernet.begin(mac); //Ethernet.begin(mac, ip, gateway, subnet); //for manual setup
+server.begin();
+Serial.println(Ethernet.localIP());
+}
+
+void loop(){
+
+// listen for incoming clients, and process qequest.
+checkForClient();
+}
+
+void checkForClient(){
+EthernetClient client = server.available();
+if (client) {
+// an http request ends with a blank line
+boolean currentLineIsBlank = true;
+boolean sentHeader = false;
+while (client.connected()) {
+if (client.available()) {
+if(!sentHeader){
+// send a standard http response header
+</code></pre>
+
+<p><code>client.println("HTTP/1.1 200 OK");</code></p>
+<p><code>client.println("Content-Type: text/html");</code></p>
+<p><code>client.println();</code></p>
+<p><code>sentHeader = true;</code></p>
+<p><code>}</code></p>
+<p><code>char c = client.read();</code></p>
+<p><code>if(reading &amp;&amp; c == ' ') reading = false;</code></p>
+<p><code>if(c == '?') reading = true; //found the ?, begin reading the info</code></p>
+<p><code>if(reading){</code></p>
+<p><code>Serial.print(c);</code></p>
+<p><code>switch (c) {</code></p>
+<p><code>case '2':</code></p>
+<p><code>//add code here to trigger on 2</code></p>
+<p><code>triggerPin(2, client);</code></p>
+<p><code>break;</code></p>
+<p><code>case '3':</code></p>
+<p><code>//add code here to trigger on 3</code></p>
+<p><code>triggerPin(3, client);</code></p>
+<p><code>break;</code></p>
+<p><code>case '4':</code></p>
+<p><code>//add code here to trigger on 4</code></p>
+<p><code>triggerPin(4, client);</code></p>
+<p><code>break;</code></p>
+<p><code>case '5':</code></p>
+<p><code>//add code here to trigger on 5</code></p>
+<p><code>triggerPin(5, client);</code></p>
+<p><code>break;</code></p>
+<p><code>case '6':</code></p>
+<p><code>//add code here to trigger on 6</code></p>
+<p><code>triggerPin(6, client);</code></p>
+<p><code>break;</code></p>
+<p><code>case '7':</code></p>
+<p><code>//add code here to trigger on 7</code></p>
+<p><code>triggerPin(7, client);</code></p>
+<p><code>break;</code></p>
+<p><code>case '8':</code></p>
+<p><code>//add code here to trigger on 8</code></p>
+<p><code>triggerPin(8, client);</code></p>
+<p><code>break;</code></p>
+<p><code>case '9':</code></p>
+<p><code>//add code here to trigger on 9</code></p>
+<p><code>triggerPin(9, client);</code></p>
+<p><code>break;</code></p>
+<p><code>}</code></p>
+<p><code>}</code></p>
+<p><code>if (c == '\n' &amp;&amp; currentLineIsBlank) break;</code></p>
+<p><code>if (c == '\n') {</code></p>
+<p><code>currentLineIsBlank = true;</code></p>
+<p><code>}else if (c != '\r') {</code></p>
+<p><code>currentLineIsBlank = false;</code></p>
+<p><code>}</code></p>
+<p><code>}</code></p>
+<p><code>}</code></p>
+<p><code>delay(1); // give the web browser time to receive the data</code></p>
+<p><code>client.stop(); // close the connection:</code></p>
+<p><code>}</code></p>
+<p><code>}</code></p>
+<p><code>void triggerPin(int pin, EthernetClient client){</code></p>
+<p><code>//blink a pin - Client needed just for HTML output purposes.</code></p>
+<p><code>client.print("Turning on pin ");</code></p>
+<p><code>client.println(pin);</code></p>
+<p><code>client.print("&lt;br&gt;");</code></p>
+<p><code>digitalWrite(pin, HIGH);</code></p>
+<p><code>delay(25);</code></p>
+<p><code>digitalWrite(pin, LOW);</code></p>
+<p><code>delay(25);</code></p>
+<p><code>}</code></p>
+<p>This is interesting, but really not useful. So I modified the sketch to<br />
+toggle the pins on or off (from one state to another) - my code can be<br />
+found here:</p>
+<p><a href="https://codebender.cc/sketch:60959"><em>https://codebender.cc/sketch:60959</em></a></p>
+<p>This was done using a array of zeros or ones - the array represents the<br />
+LED states, the position inside the array is the PIN number,</p>
+<p>in otherwords:</p>
+<p>boolean ledPins[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };</p>
+<p>\^</p>
+<p>This is PIN 0</p>
+<p>the next zero is PIN 1, the next PIN 2, next PIN 3 etc.</p>
+<p>So the question is why do we have 10 pins listed when there are only 8<br />
+LEDs -</p>
+<p>the simple answer is I needed a place holder of two digits - (with this<br />
+example, pins 0 and 1 are left open so as to easily reprogram the<br />
+Arduino) So the LEDs are hooked to PINs 2 to 9.</p>
+<p>Pin 10, 11, 12, 13 are used by the ethernet shield.</p>
+<p>The main part of the sketch I modified is below:</p>
+<p>void triggerPin(int pin, EthernetClient client){</p>
+<p>//blink a pin - Client needed just for HTML output purposes.</p>
+<p>client.print("Toggling pin: ");</p>
+<p>client.println(pin);</p>
+<p>client.print("&lt;br&gt;");</p>
+<p>digitalWrite(pin, !ledPins[pin]);</p>
+<p>ledPins[pin]=!ledPins[pin];</p>
+<p>}</p>
+<p>The sketch gives output to both the serial monitor, and the website.</p>
+<p>I liked how this worked, and thought this is a lot more useful if you<br />
+need to remotely turn something on or off.</p>
+<p>But I asked myself what if you want to read and display a vaule on the<br />
+website:</p>
+<p>So I modified the sketch one more time:</p>
+<p><a href="https://codebender.cc/sketch:60961"><em>https://codebender.cc/sketch:60961</em></a></p>
+<p>This time I wanted to read a Analog joystick: and I added this code:</p>
+<p>case '0':</p>
+<p>while(analogRead(0)&gt;522) {</p>
+<p>client.print("Joystick 0: ");</p>
+<p>client.print(analogRead(0));</p>
+<p>client.print("&lt;br&gt;");</p>
+<p>}</p>
+<p>break;</p>
+<p>case '1':</p>
+<p>while(analogRead(1)&gt;522) {</p>
+<p>client.print("Joystick 1: ");</p>
+<p>client.print(analogRead(1));</p>
+<p>client.print("&lt;br&gt;");</p>
+<p>}</p>
+<p>break;</p>
+<p>To activate this part of the code you need to send the webserver a zero<br />
+(0) or a one (1)</p>
+<p>This part of the code will stay active as long as the joystick vaule is<br />
+above 522 (522 is the center position) Which also mean that I am only<br />
+reading two directions from Joystick - either down or left (but not up<br />
+or right)</p>
+<p>It’s not the best way to make this work, and this was more of a test to<br />
+make it work, then it was to make it work correctly! :-)</p>
+<p>So I looked at the example library that is included with the Arduino<br />
+IDE:</p>
+<p>That sketch can be found here:</p>
+<p><a href="https://codebender.cc/sketch:61050"><em>https://codebender.cc/sketch:61050</em></a></p>
+<p>Which induces a couple of new things to the webserver - It also sets up<br />
+a static IP which for a IOT device (or a control over IP device) might<br />
+make more since to do.</p>
+<p>Next thing it does is show how to have the page served auto refresh this<br />
+can be a very useful thing to know.</p>
+<p>It also will read all 6 analog ports and display the vaule on the web<br />
+page.</p>
+<p>For the demo I am only using analog Pin 0 and Pin 1 (So I modified the<br />
+sketch to only read what I am using)</p>
+<p>Again this was interesting, and displayed a good example but I wanted to<br />
+use a website to turn pins on or off - or display vaules</p>
+<p>and it lead me to this website:</p>
+<p><a href="http://randomnerdtutorials.com/arduino-webserver-with-an-arduino-ethernet-shield/"><em>http://randomnerdtutorials.com/arduino-webserver-with-an-arduino-ethernet-shield/</em></a></p>
+<p>This is a really good example of control and was close to what I wanted<br />
+so</p>
+<p>Of course I modified the sketch for what I really wanted to</p>
+<p><a href="https://codebender.cc/sketch:61051"><em>https://codebender.cc/sketch:61051</em></a></p>
+<p>/*</p>
+<p>Created by Rui Santos</p>
+<p>Visit: <a href="http://randomnerdtutorials.com">http://randomnerdtutorials.com</a> for more arduino projects</p>
+<p>Arduino with Ethernet Shield</p>
+<p>*/</p>
+<p>#include &lt;SPI.h&gt;</p>
+<p>#include &lt;Ethernet.h&gt;</p>
+<p>byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED }; //physical mac<br />
+address</p>
+<p>byte ip[] = { 192, 168, 1, 178 }; // ip in lan (that's what you need<br />
+to use in your browser. ("192.168.1.178")</p>
+<p>byte gateway[] = { 192, 168, 1, 1 }; // internet access via router</p>
+<p>byte subnet[] = { 255, 255, 255, 0 }; //subnet mask</p>
+<p>EthernetServer server(80); //server port</p>
+<p>String readString;</p>
+<p>void setup() {</p>
+<p>// Open serial communications and wait for port to open:</p>
+<p>Serial.begin(9600);</p>
+<p>while (!Serial) {</p>
+<p>; // wait for serial port to connect. Needed for Leonardo only</p>
+<p>}</p>
+<p>pinMode(2, OUTPUT);</p>
+<p>pinMode(3, OUTPUT);</p>
+<p>pinMode(4, OUTPUT);</p>
+<p>pinMode(5, OUTPUT);</p>
+<p>pinMode(6, OUTPUT);</p>
+<p>pinMode(7, OUTPUT);</p>
+<p>pinMode(8, OUTPUT);</p>
+<p>pinMode(9, OUTPUT);</p>
+<p>// start the Ethernet connection and the server:</p>
+<p>Ethernet.begin(mac, ip, gateway, subnet);</p>
+<p>server.begin();</p>
+<p>Serial.print("server is at ");</p>
+<p>Serial.println(Ethernet.localIP());</p>
+<p>}</p>
+<p>void loop() {</p>
+<p>// Create a client connection</p>
+<p>EthernetClient client = server.available();</p>
+<p>if (client) {</p>
+<p>while (client.connected()) {</p>
+<p>if (client.available()) {</p>
+<p>char c = client.read();</p>
+<p>//read char by char HTTP request</p>
+<p>if (readString.length() &lt; 100) {</p>
+<p>//store characters to string</p>
+<p>readString += c;</p>
+<p>//Serial.print(c);</p>
+<p>}</p>
+<p>//if HTTP request has ended</p>
+<p>if (c == '\n') {</p>
+<p>Serial.println(readString); //print to serial monitor for debuging</p>
+<p>client.println("HTTP/1.1 200 OK"); //send new page</p>
+<p>client.println("Content-Type: text/html");</p>
+<p>client.println();</p>
+<p>client.println("&lt;HTML&gt;");</p>
+<p>client.println("&lt;HEAD&gt;");</p>
+<p>// client.println("&lt;meta name='apple-mobile-web-app-capable'<br />
+content='yes' /&gt;");</p>
+<p>//client.println("&lt;meta name='apple-mobile-web-app-status-bar-style'<br />
+content='black-translucent' /&gt;");</p>
+<p>client.println("&lt;link rel='stylesheet' type='text/css'<br />
+href='<a href="http://randomnerdtutorials.com/ethernetcss.css">http://randomnerdtutorials.com/ethernetcss.css</a>' /&gt;");</p>
+<p>client.println("&lt;TITLE&gt;Project Turn on Stuff From<br />
+Website&lt;/TITLE&gt;");</p>
+<p>client.println("&lt;/HEAD&gt;");</p>
+<p>client.println("&lt;BODY&gt;");</p>
+<p>client.println("&lt;H1&gt;Turn on Stuff from a Website&lt;/H1&gt;");</p>
+<p>client.println("&lt;hr /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;H2&gt;Arduino with Ethernet Shield&lt;/H2&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;a href=\"/?button1on\"\"&gt;Turn On LED<br />
+1&lt;/a&gt;");</p>
+<p>client.println("&lt;a href=\"/?button1off\"\"&gt;Turn Off LED<br />
+1&lt;/a&gt;&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;a href=\"/?button2on\"\"&gt;Turn On LED<br />
+2&lt;/a&gt;");</p>
+<p>client.println("&lt;a href=\"/?button2off\"\"&gt;Turn Off LED<br />
+2&lt;/a&gt;&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;a href=\"/?button3on\"\"&gt;Turn On LED<br />
+3&lt;/a&gt;");</p>
+<p>client.println("&lt;a href=\"/?button3off\"\"&gt;Turn Off LED<br />
+3&lt;/a&gt;&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;a href=\"/?button4on\"\"&gt;Turn On LED<br />
+4&lt;/a&gt;");</p>
+<p>client.println("&lt;a href=\"/?button4off\"\"&gt;Turn Off LED<br />
+4&lt;/a&gt;&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;a href=\"/?button5on\"\"&gt;Turn On LED 5<br />
+&lt;/a&gt;");</p>
+<p>client.println("&lt;a href=\"/?button5off\"\"&gt;Turn Off LED<br />
+5&lt;/a&gt;&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;a href=\"/?button6on\"\"&gt;Turn On LED<br />
+6&lt;/a&gt;");</p>
+<p>client.println("&lt;a href=\"/?button6off\"\"&gt;Turn Off LED<br />
+6&lt;/a&gt;&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>/* client.println("&lt;a href=\"/?7on\"\"&gt;Turn On LED<br />
+7&lt;/a&gt;");</p>
+<p>client.println("&lt;a href=\"/?7off\"\"&gt;Turn Off LED<br />
+7&lt;/a&gt;&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;a href=\"/?8on\"\"&gt;Turn On LED 8&lt;/a&gt;");</p>
+<p>client.println("&lt;a href=\"/?8off\"\"&gt;Turn Off LED<br />
+8&lt;/a&gt;&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>*/</p>
+<p>client.println("&lt;p&gt;Based on a sketch ");</p>
+<p>client.println("&lt;p&gt;Created by Rui Santos. Visit<br />
+<a href="http://randomnerdtutorials.com">http://randomnerdtutorials.com</a> for more projects!&lt;/p&gt;");</p>
+<p>client.println("&lt;br /&gt;");</p>
+<p>client.println("&lt;/BODY&gt;");</p>
+<p>client.println("&lt;/HTML&gt;");</p>
+<p>delay(1);</p>
+<p>//stopping client</p>
+<p>client.stop();</p>
+<p>//controls the Arduino if you press the buttons</p>
+<p>if (readString.indexOf("?button1on") &gt;0){</p>
+<p>digitalWrite(2, HIGH);</p>
+<p>}</p>
+<p>if (readString.indexOf("?button1off") &gt;0){</p>
+<p>digitalWrite(2, LOW);</p>
+<p>}</p>
+<p>if (readString.indexOf("?button2on") &gt;0){</p>
+<p>digitalWrite(3, HIGH);</p>
+<p>}</p>
+<p>if (readString.indexOf("?button2off") &gt;0){</p>
+<p>digitalWrite(3, LOW);</p>
+<p>}</p>
+<p>if (readString.indexOf("?button3on") &gt;0){</p>
+<p>digitalWrite(4, HIGH);</p>
+<p>}</p>
+<p>if (readString.indexOf("?button3off") &gt;0){</p>
+<p>digitalWrite(4, LOW);</p>
+<p>}</p>
+<p>if (readString.indexOf("?button4on") &gt;0){</p>
+<p>digitalWrite(5, HIGH);</p>
+<p>}</p>
+<p>if (readString.indexOf("?button4off") &gt;0){</p>
+<p>digitalWrite(5, LOW);</p>
+<p>}</p>
+<p>if (readString.indexOf("?button5on") &gt;0){</p>
+<p>digitalWrite(6, HIGH);</p>
+<p>}</p>
+<p>if (readString.indexOf("?button5off") &gt;0){</p>
+<p>digitalWrite(6, LOW);</p>
+<p>}</p>
+<p>if (readString.indexOf("?button6on") &gt;0){</p>
+<p>digitalWrite(7, HIGH);</p>
+<p>}</p>
+<p>if (readString.indexOf("?button6off") &gt;0){</p>
+<p>digitalWrite(7, LOW);</p>
+<p>}</p>
+<p>/*</p>
+<p>if (readString.indexOf("?7on") &gt;0){</p>
+<p>digitalWrite(8, HIGH);</p>
+<p>}</p>
+<p>if (readString.indexOf("?7off") &gt;0){</p>
+<p>digitalWrite(8, LOW);</p>
+<p>}</p>
+<p>if (readString.indexOf("?8on") &gt;0){</p>
+<p>digitalWrite(9, HIGH);</p>
+<p>}</p>
+<p>if (readString.indexOf("?8off") &gt;0){</p>
+<p>digitalWrite(9, LOW);</p>
+<p>}</p>
+<p>*/</p>
+<p>//clearing string for next read</p>
+<p>readString="";</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>This time, it makes a “real” web page with buttons that will turn on or<br />
+off LEDs</p>
+<p>(a personal note: I was only able to get PINs 2 to 7 to work and I’m not<br />
+sure why as the code is the same for all the other LEDs)</p>
+<p>You might take notice that when a button is pushed the URL will look<br />
+very much like the 1st example we looked at.</p>
+<p><a href="http://192.168.1.178/?button1on">http://192.168.1.178/?button1on</a></p>
+<p>Also I didn’t add anything to read the analog pins - but it would be<br />
+easy to add something that could read a tempature sensor or some other<br />
+sensor.</p>
+<p>Using these examples we can do just about anything with control over<br />
+ethernet.</p>
+<p>Thou there seems to be a limit to just what the web server can do.</p>
+<p><strong>*** BONUS *** BONUS *** BONUS ***</strong></p>
+<h2 id="i2c-096-oled-display-module">I2C 0.96" OLED display module</h2>
+<p>OLED</p>
+<p><em>noun</em></p>
+<p>noun: <strong>OLED</strong>; plural noun: <strong>OLEDs</strong></p>
+<ol>
+<li>a light-emitting diode containing thin flexible sheets of an organic</li>
+</ol>
+<blockquote>
+<p>electroluminescent material, used for visual displays.</p>
+</blockquote>
+<ol>
+<li>"because OLEDs emit light, they consume significantly less power"</li>
+</ol>
+<p><a href="http://www.ebay.com/itm/0-96-I2C-IIC-SPI-Serial-128X64-OLED-LCD-LED-Display-Module-for-Arduino-white-it-/251536387002?pt=LH_DefaultDomain_0&amp;hash=item3a90bcabba"><em>http://www.ebay.com/itm/0-96-I2C-IIC-SPI-Serial-128X64-OLED-LCD-LED-Display-Module-for-Arduino-white-it-/251536387002?pt=LH_DefaultDomain_0&amp;hash=item3a90bcabba</em></a></p>
+<p>A few example sketches can be found here</p>
+<p><a href="http://www.wide.hk/products.php?product=I2C-0.96%22-OLED-display-module-%28-compatible-Arduino-%29"><em>http://www.wide.hk/products.php?product=I2C-0.96%22-OLED-display-module-%28-compatible-Arduino-%29</em></a></p>
+<p><a href="http://www.adafruit.com/product/326"><em>http://www.adafruit.com/product/326</em></a></p>
+<p>And the adafruit tutorial:</p>
+<p><a href="https://learn.adafruit.com/monochrome-oled-breakouts"><em>https://learn.adafruit.com/monochrome-oled-breakouts</em></a></p>
+<p>To make these examples work you need to have the Adafruit_SSD1306 and<br />
+the Adafruit_GFX libraries that can be found on github.</p>
+<p>There is also this library that works:</p>
+<p><a href="https://github.com/stanleyhuangyc/MultiLCD/tree/master/MicroLCD"><em>https://github.com/stanleyhuangyc/MultiLCD/tree/master/MicroLCD</em></a></p>
+<p>I have examples using both libraries.</p>
+<p>Like “FAKE CLOCK” using the MicroLCD library</p>
+<p>/*************************************************************************</p>
+<p>* Demo sketch for MicroLCD library</p>
+<p>* Distributed under GPL v2.0</p>
+<p>* Copyright (c) 2013-2014 Stanley Huang<br />
+&lt;stanleyhuangyc@gmail.com&gt;</p>
+<p>* All rights reserved.</p>
+<p>* For more information, please visit <a href="http://arduinodev.com">http://arduinodev.com</a></p>
+<p>*************************************************************************/</p>
+<p>#include &lt;Arduino.h&gt;</p>
+<p>#include &lt;Wire.h&gt;</p>
+<p>#include &lt;MicroLCD.h&gt;</p>
+<p>int s = 0;</p>
+<p>int m = 0;</p>
+<p>int h = 12;</p>
+<p>//LCD_SH1106 lcd; /* for SH1106 OLED module */</p>
+<p>LCD_SSD1306 lcd; /* for SSD1306 OLED module */</p>
+<p>const PROGMEM uint8_t smile[48 * 48 / 8] = {</p>
+<p>0x00,0x00,0x00,0x00,0x00,0x00,0x80,0xC0,0xE0,0xF0,0xF8,0xF8,0xFC,0xFC,0xFE,0xFE,0x7E,0x7F,0x7F,0x3F,0x3F,0x3F,0x3F,0x3F,0x3F,0x3F,0x3F,0x3F,0x3F,0x7F,0x7F,0x7E,0xFE,0xFE,0xFC,0xFC,0xF8,0xF8,0xF0,0xE0,0xC0,0x80,0x00,0x00,0x00,0x00,0x00,0x00,</p>
+<p>0x00,0xC0,0xF0,0xFC,0xFE,0xFF,0xFF,0xFF,0x3F,0x1F,0x0F,0x07,0x03,0x01,0x00,0x80,0x80,0x80,0x80,0x80,0x80,0x00,0x00,0x00,0x00,0x00,0x00,0x80,0x80,0x80,0x80,0x80,0x80,0x00,0x01,0x03,0x07,0x0F,0x1F,0x3F,0xFF,0xFF,0xFF,0xFE,0xFC,0xF0,0xC0,0x00,</p>
+<p>0xFE,0xFF,0xFF,0xFF,0xFF,0xFF,0x07,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x06,0x1F,0x1F,0x1F,0x3F,0x1F,0x1F,0x02,0x00,0x00,0x00,0x00,0x06,0x1F,0x1F,0x1F,0x3F,0x1F,0x1F,0x02,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x07,0xFF,0xFF,0xFF,0xFF,0xFF,0xFE,</p>
+<p>0x7F,0xFF,0xFF,0xFF,0xFF,0xFF,0xE0,0x00,0x00,0x30,0xF8,0xF8,0xF8,0xF8,0xE0,0xC0,0x80,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x80,0xC0,0xE0,0xF8,0xF8,0xFC,0xF8,0x30,0x00,0x00,0xE0,0xFF,0xFF,0xFF,0xFF,0xFF,0x7F,</p>
+<p>0x00,0x03,0x0F,0x3F,0x7F,0xFF,0xFF,0xFF,0xFC,0xF8,0xF0,0xE1,0xC7,0x87,0x0F,0x1F,0x3F,0x3F,0x3E,0x7E,0x7C,0x7C,0x7C,0x78,0x78,0x7C,0x7C,0x7C,0x7E,0x3E,0x3F,0x3F,0x1F,0x0F,0x87,0xC7,0xE1,0xF0,0xF8,0xFC,0xFF,0xFF,0xFF,0x7F,0x3F,0x0F,0x03,0x00,</p>
+<p>0x00,0x00,0x00,0x00,0x00,0x00,0x01,0x03,0x07,0x0F,0x1F,0x1F,0x3F,0x3F,0x7F,0x7F,0x7E,0xFE,0xFE,0xFC,0xFC,0xFC,0xFC,0xFC,0xFC,0xFC,0xFC,0xFC,0xFC,0xFE,0xFE,0x7E,0x7F,0x7F,0x3F,0x3F,0x1F,0x1F,0x0F,0x07,0x03,0x01,0x00,0x00,0x00,0x00,0x00,0x00,</p>
+<p>};</p>
+<p>void setup()</p>
+<p>{</p>
+<p>lcd.begin();</p>
+<p>}</p>
+<p>void loop()</p>
+<p>{</p>
+<p>lcd.clear();</p>
+<p>lcd.setCursor(40, 1);</p>
+<p>lcd.draw(smile, 48, 48);</p>
+<p>delay(1000);</p>
+<p>lcd.clear();</p>
+<p>lcd.setCursor(25,1);</p>
+<p>lcd.setFontSize(FONT_SIZE_MEDIUM);</p>
+<p>lcd.print("FAKE Clock");</p>
+<p>delay(1500);</p>
+<p>for (h = 1; h&lt;12; h++) {</p>
+<p>for (m = 0; m&lt;59; m++) {</p>
+<p>for (s = 0; s&lt;59; s++) {</p>
+<p>lcd.clear();</p>
+<p>lcd.setCursor(35, 3);</p>
+<p>lcd.setFontSize(FONT_SIZE_MEDIUM);</p>
+<p>lcd.print(h);</p>
+<p>lcd.print(":");</p>
+<p>if (m &lt; 10) {lcd.print(0);</p>
+<p>lcd.print(m); } else {lcd.print(m);}</p>
+<p>lcd.print(":");</p>
+<p>if (s &lt; 10) {lcd.print(0);</p>
+<p>lcd.print(s); } else {lcd.print(s);}</p>
+<p>lcd.print("P");</p>
+<p>lcd.setCursor(20, 6);</p>
+<p>lcd.print("Nov 9, 2014");</p>
+<p>delay(1000);</p>
+<p>}</p>
+<p>}}}</p>
+<p>Both libraries are pretty easy to use, and following the examples given<br />
+pretty easy to modify</p>
+<p>Some tricky things to get right is the number of pixels and placement of<br />
+the “cursor” on the screen.</p>
+<p>But one you have done a few you get the hang of where it will be.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

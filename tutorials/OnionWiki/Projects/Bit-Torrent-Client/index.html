@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>BitTorrent Client on the Omega - Random Wire!</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#bittorrent-client-on-the-omega">BitTorrent Client on the Omega</a></li>
+        <li class="main "><a href="#overview">Overview</a></li>
+        <li class="main "><a href="#what-is-bittorrent">What is BitTorrent?</a></li>
+        <li class="main "><a href="#setup-the-omega-to-use-the-transmission-bittorrent-client">Setup the Omega to use the Transmission BitTorrent Client</a></li>
+            <li><a href="#step-1-setup-usb-storage-and-automounting">Step 1: Setup USB Storage and Automounting</a></li>
+            <li><a href="#step-2-expand-the-omegas-memory-with-a-swap-file">Step 2: Expand the Omega's Memory with a Swap File</a></li>
+            <li><a href="#step-3-install-transmission">Step 3: Install Transmission</a></li>
+            <li><a href="#step-4-configuring-transmission">Step 4: Configuring Transmission</a></li>
+            <li><a href="#step-5-enable-the-transmission-daemon">Step 5: Enable the Transmission Daemon</a></li>
+            <li><a href="#step-6-install-the-console-app">Step 6: Install the Console App</a></li>
+            <li><a href="#step-7-configure-access-to-the-web-interface">Step 7: Configure Access to the Web Interface</a></li>
+            <li><a href="#step-8-setup-samba-sharing-of-the-usb-drive">Step 8: Setup Samba Sharing of the USB Drive</a></li>
+            <li><a href="#step-9-torrent-away">Step 9: Torrent Away!</a></li>
+        <li class="main "><a href="#using-transmission-on-the-omega">Using Transmission on the Omega</a></li>
+            <li><a href="#recommended-torrent-sources">Recommended Torrent Sources</a></li>
+        <li class="main "><a href="#related-tutorials">Related Tutorials</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="bittorrent-client-on-the-omega">BitTorrent Client on the Omega</h1>
+<p>As you probably already know, BitTorrent is a popular peer-to-peer file sharing protocol, with a variety of content available on the internet ready to be downloaded. Given the Omega's built-in networking capabilities and ability to use USB devices, we thought it would be only proper to show how the Omega can be setup for file-sharing using BitTorrent, specifically, the Transmission BitTorrent client.</p>
+<p><img alt="Omega+Transmission" src="http://i.imgur.com/j3AvApH.png" /></p>
+<p>This guide will walk you through the entire process required to setup Transmission on the Omega. First we'll use a USB Drive to expand the Omega's storage and memory, then we'll install the Transmission client as well as a Onion Console App so that you can control your downloads using the Omega's Console. To finish it all off, we'll wirelessly share the Omega's downloads folder on your local network.</p>
+<p><strong>Disclaimer:</strong>
+Onion does not condone illegal downloading, only download content that is legally distributable! Onion is not responsible for any reprecussions due to downloading copyrighted or illegal content.</p>
+<p>[[<em>TOC</em>]]</p>
+<h1 id="overview">Overview</h1>
+<p>Tutorial Difficulty:</p>
+<p><strong>Intermediate</strong></p>
+<p>Time Required:</p>
+<p><strong>30 minutes</strong></p>
+<p>Required Materials:
+* The Omega
+* Any Dock
+* A USB Storage Device</p>
+<p>Useful Experience:
+* Installing packages with <code>opkg</code>
+* Using BitTorrent
+* Using Transmission
+* Using the Console</p>
+<h1 id="what-is-bittorrent">What is BitTorrent?</h1>
+<p>BitTorrent is a peer-to-peer file sharing communication protocol that is very well suited to distribute large amounts of data over the internet. The BitTorrent protocol essentially uses the data downloaded by each user as a source for that data to other users. In effect, users simultaneously upload to &amp; download from other users that are downloading the same data. This distributed form of downloading greatly outperforms the traditional paradigm where all users download the data from a single source, especially when it comes to transfering large files to many users.</p>
+<p>Essentially, the BitTorrent Protocol is a scalable way for many users to download and share files and data. It is because of this scalability that it has become one of the most popular file sharing methods available on the internet, used to share a variety of different content. For more information on the BitTorrent Protocol, take a look at the <a href="https://en.wikipedia.org/wiki/BitTorrent">BitTorrent Wikipedia article</a>.</p>
+<h1 id="setup-the-omega-to-use-the-transmission-bittorrent-client">Setup the Omega to use the Transmission BitTorrent Client</h1>
+<p>Let's dive right in! We'll start by setting up a USB storage device to store data as well as extend the amount of memory available to the Omega, then we'll move on to installing and configuring the Transmission BitTorrent Client. We'll also install a Console App to easily access the Transmission web interface, and finally, setup Samba to enable easy access to our downloaded content on the local network.</p>
+<h2 id="step-1-setup-usb-storage-and-automounting">Step 1: Setup USB Storage and Automounting</h2>
+<p>We'll need USB storage since most content will not fit on the Omega's built-in storage. Plug in a USB drive that is at least a few gigabytes and make sure it's mounted. Follow the steps outlined in the <a href="../Tutorials/Using-USB-Storage">USB Storage tutorial</a> to setup automatic mounting so that your Omega will be ready to torrent as soon as it boots.</p>
+<p>For the purposes of this tutorial, let's assume the USB device was mounted to <code>/mnt/sda1</code>.</p>
+<p><img alt="Omega + USB Stick" src="http://i.imgur.com/MpBslLzl.jpg" /></p>
+<h2 id="step-2-expand-the-omegas-memory-with-a-swap-file">Step 2: Expand the Omega's Memory with a Swap File</h2>
+<p>Downloading torrents is hard work for the Omega. Since we're already using USB storage, let's use some of that storage capacity to increase the amount of memory available to the Omega with a Swap File. Check out the <a href="../Tutorials/Extending-RAM-with-a-swap-file">Swap File article</a> for instructions on how to extend the memory.</p>
+<h2 id="step-3-install-transmission">Step 3: Install Transmission</h2>
+<p>We'll need a client to download files via BitTorrent; Transmission works well on OpenWRT so let's install the daemon as well as the web interface packages:</p>
+<pre><code>opkg update
+opkg install transmission-daemon transmission-web
+</code></pre>
+
+<h2 id="step-4-configuring-transmission">Step 4: Configuring Transmission</h2>
+<p>We'll now configure Transmission to best suit our purposes. Transmission's configuration file can be found at <code>/etc/config/transmission</code>, so we can use UCI to easily change the configuration options. If you're unfamiliar with UCI, check out <a href="https://wiki.onion.io/Tutorials/OpenWRT%20Tutorials/UCI_Tutorial/uci_introduction">the UCI tutorial</a>.</p>
+<p>Let's make sure that Transmission is enabled and set a logical location for Transmission's own configuration directory:</p>
+<pre><code>uci set transmission.@transmission[0].enabled='1'
+uci set transmission.@transmission[0].config_dir='/etc/transmission'
+</code></pre>
+
+<p>Since the Omega's flash storage definitely isn't big enough to hold downloaded content, set the download and incomplete download locations to directories on the mounted USB drive:</p>
+<pre><code>uci set transmission.@transmission[0].download_dir='/mnt/sda1/download'
+uci set transmission.@transmission[0].incomplete_dir='/mnt/sda1/download/incomplete'
+</code></pre>
+
+<p>Then create these directories with the <code>mkdir</code> command.</p>
+<p>Commit the changes to the configuration file</p>
+<pre><code>uci commit transmission
+</code></pre>
+
+<h2 id="step-5-enable-the-transmission-daemon">Step 5: Enable the Transmission Daemon</h2>
+<p>Now that Transmission has been configured, let's enable the daemon so that it starts automatically when the Omega boots:</p>
+<pre><code>/etc/init.d/transmission enable
+</code></pre>
+
+<p>And let's actually launch the daemon:</p>
+<pre><code>/etc/init.d/transmission start
+</code></pre>
+
+<h2 id="step-6-install-the-console-app">Step 6: Install the Console App</h2>
+<p>The Transmission web interface will be running on port 9091 of your Omega, but wouldn't it be nice if this were accessible from the Console?</p>
+<p>Luckily, it can be! </p>
+<p><img alt="Onion Console with Transmission App" src="http://i.imgur.com/KKohIfe.png" /></p>
+<p>Let's install a Console App that will display the Transmission web interface:</p>
+<pre><code>opkg update
+opkg install transmission-console-app
+</code></pre>
+
+<p>If you're interested, all of the code for the Transmission Console App can be found in <a href="https://github.com/OnionIoT/transmission-console-app">Onion's <code>transmission-console-app</code> repo on GitHub</a>. </p>
+<h2 id="step-7-configure-access-to-the-web-interface">Step 7: Configure Access to the Web Interface</h2>
+<p>The Transmission Web Interface needs to be told which IP addresses are allowed access via a whitelist. We'll first check the current entries in the whitelist:</p>
+<pre><code>root@Omega-267F:~# uci show transmission.@transmission[0].rpc_whitelist
+transmission.cfg025f8f.rpc_whitelist='127.0.0.1,192.168.1.*'
+</code></pre>
+
+<p>Make sure to note the current entries, we'll want to preserve them.</p>
+<h3 id="allow-access-to-users-connected-to-the-omegas-ap">Allow Access to Users Connected to the Omega's AP</h3>
+<p>Any users connected to the Omega's AP should be able to access the Transmission App, so lets add that now.</p>
+<p>By default, the Omega's AP network will assign addresses in the <code>192.168.3.*</code> space, but that's configurable so let's check:</p>
+<pre><code>root@Omega-267F:~# uci show network.wlan.ipaddr
+network.wlan.ipaddr='192.168.8.1'
+</code></pre>
+
+<p>In this case, the address range was changed to <code>192.168.8.*</code>.</p>
+<p>Let's add this address range to the whitelist:</p>
+<pre><code>uci set transmission.@transmission[0].rpc_whitelist='127.0.0.1,192.168.1.*,192.168.8.*'
+uci commit transmission
+</code></pre>
+
+<p>Restart the Transmission daemon with <code>/etc/init.d/transmission restart</code> for the changes to take effect.</p>
+<h3 id="allow-access-to-users-on-an-existing-wifi-network">Allow Access to Users on an Existing WiFi Network</h3>
+<p>In the most common case, your Omega will be connected to an existing WiFi network at your home or office, so we should allow access to any users on that network as well.</p>
+<p>We will need to find the range of IP Addresses that your router assigns to devices on the network. We can do this by checking the Omega's IP Adrress, follow the steps outlined in <a href="../Tutorials/Find-the-Omegas-IP-address">this tutorial</a>, and make note of the IP Address.</p>
+<p>Alternatively, you can check the IP Address of any device on your network to achieve the same effect. The procedure is simple but different depending on the type of device you are using, try googling 'Find IP address on <code>your device</code>'.</p>
+<p>Most routers are setup to assign IP addresses in the <code>192.168.1.*</code> range which is whitelisted by default. If that's the case, you can skip the rest of this step! If not, we will need to add to the whitelist, making sure to preserve the previous entries.</p>
+<p>For the purposes of this tutorial, let's say your Omega's IP address is <code>192.168.23.99</code> so we will be whitelisting addresses in the <code>192.168.23.*</code> range:</p>
+<pre><code>uci set transmission.@transmission[0].rpc_whitelist='127.0.0.1,192.168.1.*,192.168.8.*., 192.168.23.*'
+uci commit transmission
+</code></pre>
+
+<p>Restart the Transmission daemon with <code>/etc/init.d/transmission restart</code> for the changes to take effect.</p>
+<h3 id="not-recommended-disabling-the-whitelist"><strong>Not Recommended:</strong> Disabling the Whitelist</h3>
+<p>If you've tried the instructions above and still can't access the web interface, it is possible to completely disable the whitelist and allow users from any IP to access your Transmission web interface. We definitely <strong>do not recommend doing this</strong> but you can use it in a bind:</p>
+<pre><code>uci set transmission.@transmission[0].rpc_whitelist_enabled='false'
+uci commit transmission
+</code></pre>
+
+<p>Then restart the Transmission daemon with <code>/etc/init.d/transmission restart</code> for the changes to take effect.</p>
+<h2 id="step-8-setup-samba-sharing-of-the-usb-drive">Step 8: Setup Samba Sharing of the USB Drive</h2>
+<p>We'll want an easy way to access our downloaded content without having to actively log on to the Omega. Using Samba, we can make our downloads directory available on our local network. Check out the <a href="../Tutorials/Sharing-with-Samba">Samba article</a> for instructions on how to setup a network share.</p>
+<h2 id="step-9-torrent-away">Step 9: Torrent Away!</h2>
+<p>Thanks to the Omega, you're now all setup with an easy way to use BitTorrent, have fun!</p>
+<h1 id="using-transmission-on-the-omega">Using Transmission on the Omega</h1>
+<p>After everything is installed and configured, you're all set to download using BitTorrent. Remember, <strong>Onion recommends using your powers for good, so make sure the content you're downloading is legally distributable!</strong></p>
+<p>Use a browser to navigate to your Omega's Console, you should see your newly installed Transmission App:</p>
+<p><img alt="Onion Console with Transmission App" src="http://i.imgur.com/KKohIfe.png" /></p>
+<p>The Transmission App will show the web interface for controlling the Transmission client:</p>
+<p><img alt="Transmission App" src="http://i.imgur.com/r2Ezptr.png" /></p>
+<p>Click the <img alt="Transmission App Open Torrent Button" src="http://i.imgur.com/eptNYBe.png" /> button to select a Torrent file. </p>
+<p>You can point to the URL of the Torrent file which you wish to use, or you can upload a Torrent file. We find it easiest to just point to a Torrent URL. Note that the destination folder matches the default destination folder we configured in <a href="#setup-the-omega-to-use-bittorrent_step-4-configuring-transmission">Step 4</a>.</p>
+<p><img alt="Transmission App Upload Torrent Dialogue" src="http://i.imgur.com/R4mt0yh.png" /></p>
+<p>For this example, we will be downloading an image of the <a href="http://www.ubuntu.com/download/alternative-downloads">Linux distro Ubuntu</a>, so we entered the following URL: <code>http://releases.ubuntu.com/16.04/ubuntu-16.04-desktop-i386.iso.torrent?_ga=1.190678248.214845118.1462917625</code></p>
+<p>Once the download starts, we can keep track of the progress:</p>
+<p><img alt="Transmission App Download Progress" src="http://i.imgur.com/3asOiBq.png" /></p>
+<p>And we will be able to see when the download is complete:</p>
+<p><img alt="Transmission App Download Complete" src="http://i.imgur.com/rKcyGis.png" /></p>
+<h2 id="recommended-torrent-sources">Recommended Torrent Sources</h2>
+<p>At Onion HQ, we often use the Omega to download images of new Linux Distros to test out. </p>
+<p>We also recommend checking out <a href="http://www.techsupportalert.com/content/finding-legal-and-free-torrents.htm">this list of legal and free Torrent sources</a> since we don't condone illegal downloads :)</p>
+<h1 id="related-tutorials">Related Tutorials</h1>
+<p>A list of all the tutorials used in this project:
+* <a href="../Tutorials/Using-USB-Storage">Using USB Storage</a>
+* <a href="../Tutorials/Extending-RAM-with-a-swap-file">Extending available memory using a Swap File</a>
+* <a href="https://wiki.onion.io/Tutorials/OpenWRT%20Tutorials/UCI_Tutorial/uci_introduction">Using UCI to change configuration options</a>
+* <a href="../Tutorials/Find-the-Omegas-IP-address">Finding the Omega's IP Address</a>
+* <a href="../Tutorials/Sharing-with-Samba">Sharing directories on your local network with Samba article</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Onion GPIO Python Module - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#onion-gpio-python-module">Onion GPIO Python Module</a></li>
+        <li class="main "><a href="#programming-flow">Programming Flow</a></li>
+        <li class="main "><a href="#using-the-python-module">Using the Python Module</a></li>
+        <li class="main "><a href="#example-code">Example Code</a></li>
+        <li class="main "><a href="#functions">Functions</a></li>
+            <li><a href="#constructor">Constructor</a></li>
+            <li><a href="#gpio-direction">GPIO Direction</a></li>
+            <li><a href="#gpio-value">GPIO Value</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="onion-gpio-python-module">Onion GPIO Python Module</h1>
+<p>The <code>onionGpio</code> Python module provides a Python object, <code>OnionGpio</code> that allows programs to control the Omega's GPIOs. The module uses the sysfs GPIO interface that is part of the Linux operating system.</p>
+<p>[[<em>TOC</em>]]</p>
+<h1 id="programming-flow">Programming Flow</h1>
+<p>Once the <code>OnionGpio</code> object is initialized, the class methods can be used to:
+* Set the GPIO to the input or output direction
+* Read the value of the GPIO (for both the input and output directions)
+* Set the value of the GPIO (only in the output direction)</p>
+<h1 id="using-the-python-module">Using the Python Module</h1>
+<p><strong>Installing the Module</strong></p>
+<p>To install the Python module, run the following commands:</p>
+<pre><code>opkg update
+opkg install python-light pyOnionGpio
+</code></pre>
+
+<p>This will install the module to <code>/usr/lib/python2.7/</code></p>
+<p><em>Note: this only has to be done once.</em></p>
+<p><strong>Using the Module</strong></p>
+<p>To add the Onion GPIO Module to your Python program, include the following in your code:</p>
+<pre><code class="python">import onionGpio
+</code></pre>
+
+<h1 id="example-code">Example Code</h1>
+<p>Several examples of how the <code>OnionGpio</code> object is used can be found in the <a href="https://github.com/OnionIoT/onion-gpio-sysfs/tree/master/python/examples">examples in the <code>onion-gpio-sysfs</code> repo.</a> This directory contains all of the code seen below as well as some additional examples.</p>
+<p>The main example is the <a href="https://github.com/OnionIoT/onion-gpio-sysfs/blob/master/python/examples/gpio-test.py"><code>gpio-test.py</code> script</a>, it sets GPIO14 to be an input and reads the value, it then changes the GPIO direction to output, reads the current value, sets the value to 1, and reads the value again.</p>
+<h1 id="functions">Functions</h1>
+<p>Each of the main functions implemented in this module are described below.</p>
+<h2 id="constructor">Constructor</h2>
+<p>The object needs to be initialized before it can be used, hence, the constructor:</p>
+<pre><code class="python">gpioObject  = onionGpio.OnionGpio(gpioNumber)
+</code></pre>
+
+<p>After this call, the object can be used freely.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>gpioNumber</code> argument is an integer that indicates the GPIO that is to be controlled by this object.</p>
+<p><strong>Example</strong></p>
+<p>To initialize an OnionGpio object to control GPIO14:</p>
+<pre><code class="python">gpio14      = onionGpio.OnionGpio(14)
+</code></pre>
+
+<h2 id="gpio-direction">GPIO Direction</h2>
+<p>The GPIOs on the Omega can be set to the input or output direction. When in the input direction, external signals can be connected to the GPIO and the digital value can be read. When in the output direction, the digital value the GPIO is driving can be programmed.</p>
+<h3 id="reading-the-current-direction">Reading the Current Direction</h3>
+<p>In some instances, it will be useful to find out the current direction of the GPIO:</p>
+<pre><code class="python">direction   = gpioObject.getDirection()
+</code></pre>
+
+<p><strong>Return Value</strong></p>
+<p>The function will return the following:
+* <code>in</code> if the Input direction is selected
+* <code>out</code> if the Output direction is selected</p>
+<h3 id="setting-the-direction">Setting the Direction</h3>
+<p>The direction of the GPIO can be set to <strong>input</strong>:</p>
+<pre><code class="python">status  = gpioObject.setInputDirection()
+</code></pre>
+
+<p>Or <strong>output</strong>:</p>
+<pre><code class="python">status  = gpioObject.setOutputDirection(defaultValue)
+</code></pre>
+
+<p><strong>Return Value</strong></p>
+<p>The function will return the following:
+* <code>0</code> if the operation is successful
+* <code>-1</code> if the operation is NOT successful</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>setOutputDirection()</code> function has an <strong>optional</strong> integer argument that, when defined, will set the initial value of the GPIO to ensure glitch-free operation. </p>
+<p>If the optional argument is not set, the GPIO will just be set to output and the initial value will most likely be LOW. However, glitch-free operation cannot be guaranteed.</p>
+<p><strong>Examples</strong></p>
+<p>Set your GPIO to input:</p>
+<pre><code class="python">status = gpio14.setInputDirection()
+</code></pre>
+
+<p>Set the GPIO to output:</p>
+<pre><code class="python">status = gpio14.setOutputDirection()
+</code></pre>
+
+<p>Set the GPIO to output with LOW (0) as the initial value:</p>
+<pre><code class="python">status = gpio14.setOutputDirection(0)
+</code></pre>
+
+<p>Set the GPIO to output with HIGH (1) as the initial value:</p>
+<pre><code class="python">status = gpio14.setOutputDirection(1)
+</code></pre>
+
+<h2 id="gpio-value">GPIO Value</h2>
+<p>The good part, finally! Now we will be reading and setting a GPIO's value.</p>
+<h3 id="reading-the-value">Reading the Value</h3>
+<p>Reading the current value of the GPIO:</p>
+<pre><code class="python">value   = gpioObject.getValue()
+</code></pre>
+
+<p>Note that the value of the GPIO can be read in both <strong>Input</strong> and <strong>Output</strong> mode. </p>
+<p>The difference is that in input mode, the GPIO can be driven high or low based on external signals, and that is the value that will be read. In output mode, the value that will be read is what the GPIO is currently outputting.</p>
+<p><strong>Return Value</strong></p>
+<p>The function will return the current value of the GPIO: either <code>0</code> or <code>1</code></p>
+<p><strong>Examples</strong></p>
+<p>Set the GPIO to input and then read and print the value every second:</p>
+<pre><code class="python">import time
+import onionGpio
+
+gpioNum = 7
+gpioObj = onionGpio.OnionGpio(gpioNum)
+
+# set to input 
+status  = gpioObj.setInputDirection()
+
+# read and print the value once a second
+loop = 1
+while loop == 1:
+    value = gpioObj.getValue()
+    print 'GPIO%d input value: %d'%(gpioNum, int(value))
+
+    time.sleep(1)
+</code></pre>
+
+<p><em>This code can be found in the <a href="https://github.com/OnionIoT/onion-gpio-sysfs/tree/master/python/examples"><code>onion-gpio-sysfs</code> repo example directory</a>, it's named <a href="https://github.com/OnionIoT/onion-gpio-sysfs/blob/master/python/examples/read-input-loop.py"><code>read-input-loop.py</code></a></em></p>
+<p>Set the GPIO to output, read the initial value:</p>
+<pre><code class="python">import onionGpio
+
+gpioNum = 6
+gpioObj = onionGpio.OnionGpio(gpioNum)
+
+# set to input 
+status  = gpioObj.setOutputDirection()
+print 'GPIO%d set to output,'%(gpioNum),
+
+# read the value
+value   = gpioObj.getValue()
+print ' initial value: %d'%(int(value))
+</code></pre>
+
+<p><em>This code can be found in the <a href="https://github.com/OnionIoT/onion-gpio-sysfs/tree/master/python/examples"><code>onion-gpio-sysfs</code> repo example directory</a>, it's called <a href="https://github.com/OnionIoT/onion-gpio-sysfs/blob/master/python/examples/read-output.py"><code>read-output.py</code></a></em></p>
+<h3 id="setting-the-value">Setting the Value</h3>
+<p>And what we've all been waiting for, setting the value of a GPIO:</p>
+<pre><code class="python">status  = gpioObject.setValue(value)
+</code></pre>
+
+<p>Note that this will only work the the GPIO is programmed to the <strong>Output</strong> direction!</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>value</code> argument is the value to set the GPIO. Set it to <code>0</code> to make the GPIO output a digital 0 (LOW), or set to <code>1</code> to output a digital 1 (HIGH).</p>
+<p><strong>Return Value</strong></p>
+<p>The function will return the following:
+* <code>0</code> if the operation is successful
+* <code>-1</code> if the operation is NOT successful</p>
+<p><strong>Example</strong></p>
+<p>Set a GPIO to output, and alternate the output between LOW and HIGH every 5 seconds:</p>
+<pre><code class="python">import time
+import onionGpio
+
+gpioNum = 1
+gpioObj = onionGpio.OnionGpio(gpioNum)
+
+# set to output 
+status  = gpioObj.setOutputDirection(0)
+
+# alternate the value
+loop    = 1
+value   = 0
+while loop == 1:
+    # reverse the value
+    if value == 0:
+        value = 1
+    else:
+        value = 0
+
+    # set the new value
+    status  = gpioObj.setValue(value)
+    print 'GPIO%d set to: %d'%(gpioNum, value)
+
+    time.sleep(5)
+</code></pre>
+
+<p><em>This code can be found in the <a href="https://github.com/OnionIoT/onion-gpio-sysfs/tree/master/python/examples"><code>onion-gpio-sysfs</code> repo example directory</a>, it's called <a href="https://github.com/OnionIoT/onion-gpio-sysfs/blob/master/python/examples/set-high-low-loop.py"><code>set-high-low-loop.py</code></a></em></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

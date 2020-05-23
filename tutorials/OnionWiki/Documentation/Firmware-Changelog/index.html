@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Omega Firmware Changelog - Random Wire!</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#omega-firmware-changelog">Omega Firmware Changelog</a></li>
+        <li class="main "><a href="#version-syntax">Version Syntax</a></li>
+        <li class="main "><a href="#versions">Versions</a></li>
+            <li><a href="#014">0.1.4</a></li>
+            <li><a href="#013">0.1.3</a></li>
+            <li><a href="#012">0.1.2</a></li>
+            <li><a href="#011">0.1.1</a></li>
+            <li><a href="#010">0.1.0</a></li>
+            <li><a href="#008">0.0.8</a></li>
+            <li><a href="#007">0.0.7</a></li>
+            <li><a href="#006">0.0.6</a></li>
+            <li><a href="#005">0.0.5</a></li>
+            <li><a href="#004">0.0.4</a></li>
+            <li><a href="#003">0.0.3</a></li>
+            <li><a href="#002">0.0.2</a></li>
+            <li><a href="#001">0.0.1</a></li>
+        <li class="main "><a href="#build-notes">Build Notes</a></li>
+            <li><a href="#b330">b330</a></li>
+            <li><a href="#b329">b329</a></li>
+            <li><a href="#b328">b328</a></li>
+            <li><a href="#b327-b326">b327, b326</a></li>
+            <li><a href="#b325">b325</a></li>
+            <li><a href="#b324">b324</a></li>
+            <li><a href="#b323">b323</a></li>
+            <li><a href="#b322-b321">b322, b321</a></li>
+            <li><a href="#b320-b317-b316">b320, b317, b316</a></li>
+            <li><a href="#b315">b315</a></li>
+            <li><a href="#b314-b313">b314, b313</a></li>
+            <li><a href="#b312">b312</a></li>
+            <li><a href="#b311-b310">b311, b310</a></li>
+            <li><a href="#b309">b309</a></li>
+            <li><a href="#b308">b308</a></li>
+            <li><a href="#b307">b307</a></li>
+            <li><a href="#b306">b306</a></li>
+            <li><a href="#b304">b304</a></li>
+            <li><a href="#b303">b303</a></li>
+            <li><a href="#b302">b302</a></li>
+            <li><a href="#b301">b301</a></li>
+            <li><a href="#b300">b300</a></li>
+            <li><a href="#b299">b299</a></li>
+            <li><a href="#b297">b297</a></li>
+            <li><a href="#b296">b296</a></li>
+            <li><a href="#b295">b295</a></li>
+            <li><a href="#b294">b294</a></li>
+            <li><a href="#b293">b293</a></li>
+            <li><a href="#b290-b289">b290, b289</a></li>
+            <li><a href="#b288">b288</a></li>
+            <li><a href="#b283">b283</a></li>
+            <li><a href="#b282">b282</a></li>
+            <li><a href="#b281">b281</a></li>
+            <li><a href="#b278">b278</a></li>
+            <li><a href="#b277">b277</a></li>
+            <li><a href="#b275">b275</a></li>
+            <li><a href="#b271">b271</a></li>
+            <li><a href="#b270">b270</a></li>
+            <li><a href="#b269">b269</a></li>
+            <li><a href="#b267">b267</a></li>
+            <li><a href="#b266">b266</a></li>
+            <li><a href="#b265">b265</a></li>
+            <li><a href="#b264">b264</a></li>
+            <li><a href="#b262">b262</a></li>
+            <li><a href="#b260">b260</a></li>
+            <li><a href="#b259">b259</a></li>
+            <li><a href="#b258">b258</a></li>
+            <li><a href="#b256-b255">b256, b255</a></li>
+            <li><a href="#b254">b254</a></li>
+            <li><a href="#b252">b252</a></li>
+            <li><a href="#b251-b250-b249">b251, b250, b249</a></li>
+            <li><a href="#b247">b247</a></li>
+            <li><a href="#b245">b245</a></li>
+            <li><a href="#b244-b241">b244 - b241</a></li>
+            <li><a href="#b240-b239">b240, b239</a></li>
+            <li><a href="#b238-b237-b236-b235">b238, b237, b236, b235</a></li>
+            <li><a href="#b234">b234</a></li>
+            <li><a href="#b233">b233</a></li>
+            <li><a href="#b232">b232</a></li>
+            <li><a href="#b231">b231</a></li>
+            <li><a href="#b230">b230</a></li>
+            <li><a href="#b229">b229</a></li>
+            <li><a href="#b228">b228</a></li>
+            <li><a href="#b227">b227</a></li>
+            <li><a href="#b225">b225</a></li>
+            <li><a href="#b223">b223</a></li>
+            <li><a href="#b222">b222</a></li>
+            <li><a href="#b221">b221</a></li>
+            <li><a href="#b220">b220</a></li>
+            <li><a href="#b219">b219</a></li>
+            <li><a href="#b217">b217</a></li>
+            <li><a href="#b216">b216</a></li>
+            <li><a href="#b214">b214</a></li>
+            <li><a href="#b213">b213</a></li>
+            <li><a href="#b212">b212</a></li>
+            <li><a href="#b211">b211</a></li>
+            <li><a href="#b209">b209</a></li>
+            <li><a href="#b208">b208</a></li>
+            <li><a href="#b207">b207</a></li>
+            <li><a href="#b206-b205">b206, b205</a></li>
+            <li><a href="#b204">b204</a></li>
+            <li><a href="#b203-b202">b203, b202</a></li>
+            <li><a href="#b199">b199</a></li>
+            <li><a href="#b198-b197">b198, b197</a></li>
+            <li><a href="#b196">b196</a></li>
+            <li><a href="#b193">b193</a></li>
+            <li><a href="#b192-b191">b192, b191</a></li>
+            <li><a href="#b190">b190</a></li>
+            <li><a href="#b189-b188">b189, b188</a></li>
+            <li><a href="#b187">b187</a></li>
+            <li><a href="#b186-b185">b186, b185</a></li>
+            <li><a href="#b184">b184</a></li>
+            <li><a href="#b183-b182">b183, b182</a></li>
+            <li><a href="#b181">b181</a></li>
+            <li><a href="#b180">b180</a></li>
+            <li><a href="#b179-b178">b179, b178</a></li>
+            <li><a href="#b177">b177</a></li>
+            <li><a href="#b176">b176</a></li>
+            <li><a href="#b175">b175</a></li>
+            <li><a href="#b174-b173-b172">b174, b173, b172</a></li>
+            <li><a href="#b171">b171</a></li>
+            <li><a href="#b170">b170</a></li>
+            <li><a href="#b169">b169</a></li>
+            <li><a href="#b168">b168</a></li>
+            <li><a href="#b167-b166">b167, b166</a></li>
+            <li><a href="#b165-b164-b163">b165, b164, b163</a></li>
+            <li><a href="#b159">b159</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="omega-firmware-changelog">Omega Firmware Changelog</h1>
+<p>Log of all changes made to the Onion Omega OpenWRT Firmware</p>
+<p>[[<em>TOC</em>]]</p>
+<h1 id="version-syntax">Version Syntax</h1>
+<p>The Omega Firmware will be in the following format:</p>
+<pre><code>A.B.C bXYZ
+</code></pre>
+
+<p>The individual parts correspond to the following:
+* A is the ULTRA version
+* B is the Major version
+* C is the Minor version
+* XYZ is the build number</p>
+<p>For example:</p>
+<pre><code>0.0.6 b264
+</code></pre>
+
+<p>The build number will continuously increment over the course of development.</p>
+<h1 id="versions">Versions</h1>
+<p>Definining the differences in each version change</p>
+<h2 id="014">0.1.4</h2>
+<p><strong>Repo Fix Release.</strong></p>
+<ul>
+<li>Fix for issue where Onion Repo Keys were not being installed by default, Omega users could not install Onion packages</li>
+<li>Created new release so all users get the fix!</li>
+</ul>
+<h2 id="013">0.1.3</h2>
+<p><strong>Brin J2 Release.</strong></p>
+<ul>
+<li>Updates to Device Client architecture, now supports additional setup modes and compatibility with latest Cloud services</li>
+<li>Updates to I2C Expansion Drivers: additional control added for Relay Expansion</li>
+</ul>
+<h2 id="012">0.1.2</h2>
+<p><strong>Brin J1 Release.</strong></p>
+<p>Firmware updates for Onion Cloud App Store</p>
+<ul>
+<li>Added onion-helper ubus service</li>
+<li>Updates to I2C Expansion Drivers</li>
+</ul>
+<h2 id="011">0.1.1</h2>
+<p><strong>Brin M1 Release.</strong></p>
+<p>Firmware updates for stable Onion Cloud support!</p>
+<ul>
+<li>Stable device client </li>
+<li>Support for GPS Expansion</li>
+<li>Onion sh library fix: no longer creating blank log files</li>
+</ul>
+<h2 id="010">0.1.0</h2>
+<p><strong>Brin A2 Release.</strong></p>
+<p>Firmware includes support for the Onion Cloud!</p>
+<p>Console Updates:
+* Settings App now includes Cloud Settings Tab, used to register the device with the Cloud, and then to view the cloud registration info
+* OLED App can now save converted image files to the Omega</p>
+<h2 id="008">0.0.8</h2>
+<p><strong>Ando A1 Release.</strong></p>
+<p>Added the following features to the firmware:
+* Bluetooth audio support using Onion customized packages
+* Network Manager that will automatically try to connect to recognized networks
+* Fix for Node.JS and NPM where HTML requests were erroneously resolving to IPv6</p>
+<p>Console Updates:
+* Added Programming Calculator app
+* Added Webcam App
+* Overhauled WiFi settings apps </p>
+<h2 id="007">0.0.7</h2>
+<p><strong>Modern Node Release.</strong></p>
+<p>Added kernel changes to support NodeJs v4.3.1</p>
+<p>Updates to Onion Drivers</p>
+<h2 id="006">0.0.6</h2>
+<p><strong>Ando J1 Console Release.</strong></p>
+<p>Added Resistor Calculator app.</p>
+<p>Implemented universal notification system.</p>
+<p>Added error notification to I2C app to indicate Expansion cannot be found.</p>
+<p>Settings app update: added loading icon to wifi setup (sta and ap), added download progress bar to firmware upgrade, added Omega LED blinking before Factory Reset</p>
+<h2 id="005">0.0.5</h2>
+<p><strong>Ando N2 Console Release.</strong></p>
+<p>Added apps for the PWM, Relay, and OLED Expansions, expanded the GPIO Control App.</p>
+<p>Added taskbar for apps.</p>
+<h2 id="004">0.0.4</h2>
+<p>Early November release of the Console. This series of releases is code-named Ando.</p>
+<p>Contains bug fixes, extends functionality of existing apps, added GPIO control app.</p>
+<h2 id="003">0.0.3</h2>
+<p>First release of the Console</p>
+<h2 id="002">0.0.2</h2>
+<p>Post production firmware</p>
+<h2 id="001">0.0.1</h2>
+<p>Initial firmware sent to be flashed at the factory</p>
+<h1 id="build-notes">Build Notes</h1>
+<p>Defining the changes in each build. <em>Note that if a number is missing, that build failed the deployment process.</em></p>
+<h2 id="b330">b330</h2>
+<p><em>Jul 8, 2016</em></p>
+<p><strong>Firmware 0.1.4 Release</strong></p>
+<ul>
+<li>Fixed issue where keys for Onion Package Repo were not being installed by default</li>
+</ul>
+<h2 id="b329">b329</h2>
+<p><em>Jul 6, 2016</em></p>
+<ul>
+<li>Finalized power-dock application for Power Dock release</li>
+</ul>
+<h2 id="b328">b328</h2>
+<p><em>Jun 24, 2016</em></p>
+<p><strong>Firmware 0.1.3 Release</strong></p>
+<ul>
+<li>Updated device-client architecture to support additional setup modes and compatibility with Cloud services</li>
+</ul>
+<h2 id="b327-b326">b327, b326</h2>
+<p><em>Jun 13, 2016</em></p>
+<ul>
+<li>Updated I2C Exp Driver relay expansion w/ cli usage instructions</li>
+</ul>
+<h2 id="b325">b325</h2>
+<p><em>Jun 10, 2016</em></p>
+<p><strong>Firmware 0.1.2 Release</strong></p>
+<p>Console Updates:
+* Fixed dropdown issue in GPIO and OLED apps</p>
+<p>Firmware Updates:
+* Added onion-helper, a c-based ubus service to facilitate better cloud interaction
+* Updated I2C Expansion Drivers, specifically the Relay
+  * Extended to use all GPIOs available on MCP chip
+  * Can now read relay state
+  * Updates to ubus service to allow reading relay state
+* Removed power-dock testing application from firmware</p>
+<h2 id="b324">b324</h2>
+<p><em>May 31, 2016</em></p>
+<ul>
+<li>Added power-dock application to firmware (for testing purposes)</li>
+</ul>
+<h2 id="b323">b323</h2>
+<p><em>May 31, 2016</em></p>
+<ul>
+<li>I2C Expansion Driver version upped to 0.3</li>
+<li>relay-exp app can now:<ul>
+<li>Control all 8 MCP chip GPIOs</li>
+<li>Accept full I2C device address from the command line</li>
+</ul>
+</li>
+</ul>
+<h2 id="b322-b321">b322, b321</h2>
+<p><em>May 29, 2016</em></p>
+<ul>
+<li>Library management script update: changed structure of output</li>
+</ul>
+<h2 id="b320-b317-b316">b320, b317, b316</h2>
+<p><em>May 24, 2016</em></p>
+<ul>
+<li>Added hooks for build server and library management</li>
+</ul>
+<h2 id="b315">b315</h2>
+<p><em>May 20, 2016</em></p>
+<ul>
+<li>Added I2C Expansion Node modules</li>
+</ul>
+<h2 id="b314-b313">b314, b313</h2>
+<p><em>May 18, 2016</em></p>
+<ul>
+<li>Added rpcsys ubus service package to firmware</li>
+<li>Updated onion-helper ubus service download function</li>
+<li>Better error handling</li>
+<li>Ability to run download in background</li>
+</ul>
+<h2 id="b312">b312</h2>
+<p><em>May 17, 2016</em></p>
+<ul>
+<li>Updates to onion-helper ubus service</li>
+</ul>
+<h2 id="b311-b310">b311, b310</h2>
+<p><em>May 12, 2016</em></p>
+<ul>
+<li>Adding Transmission Console App to onion repo</li>
+</ul>
+<h2 id="b309">b309</h2>
+<p><em>May 9, 2016</em></p>
+<ul>
+<li>Adding onion-helper c-based ubus service as a package</li>
+</ul>
+<h2 id="b308">b308</h2>
+<p><em>April 29, 2016</em></p>
+<p><strong>Firmware 0.1.1 Release</strong></p>
+<p>Console Updates
+* Now at Brin M1 codename
+* Settings App will no longer be cached</p>
+<h2 id="b307">b307</h2>
+<p><em>April 28, 2016</em></p>
+<ul>
+<li>device-client version upped to 0.5</li>
+<li>Push out updates that fix connection hang in the event of a network outage</li>
+</ul>
+<h2 id="b306">b306</h2>
+<p><em>April 20, 2016</em></p>
+<ul>
+<li>updates to the sh library to fix bug where blank tmp files kept getting created</li>
+<li>updates to fast-gpio to fix blank tmp files bug</li>
+<li>added ubus service to launch processes in the background</li>
+</ul>
+<h2 id="b304">b304</h2>
+<p><em>April 15, 2016</em></p>
+<ul>
+<li>device-client version upped to 0.4</li>
+<li>Push out the updates that fix the curl and threading memory leaks</li>
+<li>Updates to firmware database access scripts to decrease verbosity</li>
+</ul>
+<h2 id="b303">b303</h2>
+<p><em>April 13, 2016</em></p>
+<p>Build Server related:</p>
+<p>Updated firmware database access scripts to match new firmware database web API</p>
+<h2 id="b302">b302</h2>
+<p><em>April 11, 2016</em></p>
+<p>Added <code>ogps</code> to the onion packages repo. </p>
+<h2 id="b301">b301</h2>
+<p><em>April 10, 2016</em>*</p>
+<p>Added script to use with buildroot automated compilation: Checks compile exit codes and retries up to 2 additional times, returns last compile exit code</p>
+<h2 id="b300">b300</h2>
+<p><em>April 8, 2016</em></p>
+<p><strong>Version 0.1.0 Firmware</strong></p>
+<ul>
+<li>Added support for the Onion Cloud</li>
+<li>Updated to latest version of the Console</li>
+<li>Settings App: Added Cloud Settings tab</li>
+<li>OLED App can now save converted images to the Omega</li>
+</ul>
+<h2 id="b299">b299</h2>
+<p><em>April 4, 2016</em></p>
+<ul>
+<li>New wdb40 version: fixed issue with connecting to SSIDs with spaces</li>
+</ul>
+<h2 id="b297">b297</h2>
+<p><em>April 4, 2016</em></p>
+<ul>
+<li>Added <code>tmux</code> back into the firmware</li>
+<li>New device-client version for repo: fixed device ID and secret location</li>
+</ul>
+<h2 id="b296">b296</h2>
+<p><em>April 2, 2016</em></p>
+<p><strong>Version 0.0.8 Firmware</strong></p>
+<p>Updated to latest version of Console and WDB40</p>
+<p>Console:
+* Added Calculator and Webcam Apps
+* Overhauled the WiFi Settings Apps</p>
+<p>WDB40:
+* Updated usage instructions</p>
+<h2 id="b295">b295</h2>
+<p><em>April 2, 2016</em></p>
+<ul>
+<li>Removed deprecated ubus-intf package (functionality replaced by onion-ubus gpio method, saving space)</li>
+<li>Replaced wifisetup and wifisaint packages with wdb40 network manager</li>
+<li>Updated onion-ubus with new wdb40 install paths</li>
+</ul>
+<h2 id="b294">b294</h2>
+<p><em>April 2, 2016</em></p>
+<ul>
+<li>Added Onion customized bluez and pulseaudio packages to Onion Repo</li>
+<li>Modified deployment script to correctly upload images and packages</li>
+</ul>
+<h2 id="b293">b293</h2>
+<p><em>Mar 31, 2016</em></p>
+<p>Added kmod-input-uinput package into the build.</p>
+<h2 id="b290-b289">b290, b289</h2>
+<p><em>Mar 30, 2016</em></p>
+<ul>
+<li>Kernel config update now done by appending to config file from script (instead of overwriting), increased build stability</li>
+<li>Added uClibc toolchain patch that makes web requests default to IPv4 (Required for NodeJS to properly get HTML)</li>
+<li>Updated onion-ubus: modified and fixed gpio method</li>
+</ul>
+<h2 id="b288">b288</h2>
+<p><em>Mar 19, 2016</em></p>
+<p>Added Onion GPIO Python module package to Onion Repo</p>
+<h2 id="b283">b283</h2>
+<p><em>Mar 9, 2016</em></p>
+<p>Fix for failing build (caused by having some new options missing in the kernel config)</p>
+<h2 id="b282">b282</h2>
+<p><em>Mar 7, 2016</em></p>
+<p>Updates to the Onion SPI library
+* better handling of device registration
+* usage printout is nicer</p>
+<h2 id="b281">b281</h2>
+<p><em>Mar 5, 2016</em></p>
+<ul>
+<li>Added NodeJS v4.3.1 as a package</li>
+<li>Along with associated kernel changes</li>
+<li>Updates to Onion SPI library </li>
+<li>arduino-dock, avrdude, and tmux packages are no longer included in the build</li>
+</ul>
+<h2 id="b278">b278</h2>
+<p><em>Feb 23, 2016</em></p>
+<ul>
+<li>Now building onion I2C python library as an optional module (in onion repo)</li>
+<li>Added Onion spi library, command line spi tool, and python module as modules in repo</li>
+</ul>
+<h2 id="b277">b277</h2>
+<p><em>Feb 22, 2016</em></p>
+<p>I2C Expansions Software Updates
+* Extended oled library functionality
+  * functions for: text/image column addressing, writing a single byte to the screen, setting cursor by row and pixel
+* Implemented Python object for the i2c library
+* Updated all c-python modules with better error checking:
+  * checks for correct arguments
+  * checks for successful C function calls</p>
+<h2 id="b275">b275</h2>
+<p><em>Jan 27, 2016</em></p>
+<p>Added <code>whois</code> command to Busybox</p>
+<h2 id="b271">b271</h2>
+<p><em>Jan 25, 2016</em></p>
+<p>Updates to firmware database access scripts</p>
+<h2 id="b270">b270</h2>
+<p><em>Jan 25, 2016</em></p>
+<p>Added <code>kmod-w1-slave-therm</code> kernel package for One-Wire temperature sensor family. Updated PATH variable to match new OpenWRT default.</p>
+<h2 id="b269">b269</h2>
+<p><em>Jan 21, 2016</em></p>
+<p>Added <code>kmod-dma-buf</code> package to resolve build issue</p>
+<h2 id="b267">b267</h2>
+<p><em>Jan 20, 2016</em></p>
+<p>Added one-wire kernel modules:
+* <code>kmod-w1</code>
+* <code>kmod-w1-gpio-custom</code>
+* <code>kmod-w1-master-gpio</code></p>
+<h2 id="b266">b266</h2>
+<p>Added gpio-test package to Onion Package Repo</p>
+<h2 id="b265">b265</h2>
+<p>Enabled GPIO Edge irq patch</p>
+<p>Kernel Modules added:
+* kmod-bluetooth 
+* kmod-gpio-irq - enable interrupts from gpio</p>
+<h2 id="b264">b264</h2>
+<p><strong>Ando J1 Console Release</strong></p>
+<p>Upgrading to version 0.0.6</p>
+<p>Console Updates:
+* Added Resistor Calculator App
+* Implemented universal notification system
+* Added error notification to I2C expansion apps if expansion cannot be found
+* Cosmetic updates to Settings app, making it more user friendly
+Firmware Update:
+* ~~Added an additional patch for GPIO Edge irq~~
+* Removed GPIO Edge irq patches</p>
+<h2 id="b262">b262</h2>
+<p>Added support for GPIO Edge irq</p>
+<h2 id="b260">b260</h2>
+<p>Added usb audio card kernel modules (<code>kmod-usb-audio</code> and <code>kmod-sound-core</code>)</p>
+<h2 id="b259">b259</h2>
+<p>oupgrade update:
+* added ca-certificates packages to base build
+* oupgrade script now points to https version of repo info file, various code clean-up
+* onion sh lib: added function to wget a file from a url</p>
+<h2 id="b258">b258</h2>
+<ul>
+<li>i2c library update: implemented writeBuffer function that takes an address and a data buffer, and then a private writeBuffer function that creates a buffer with the i2c register address at element 0, and the data in the rest of the elements, then uses this to perform the i2c write</li>
+<li>i2c-exp cli apps: changed verbosity option to be cumulative</li>
+<li>neopixel tool:</li>
+<li>updated to use new i2c library writeBuffer function</li>
+<li>fixed setBuffer class function: now returns valid EXIT_SUCCESS/EXIT_FAILURE</li>
+</ul>
+<h2 id="b256-b255">b256, b255</h2>
+<p>python package update: added base packages to setup OmegaExpansion and OmegaArduinoDock Python Packages</p>
+<h2 id="b254">b254</h2>
+<p>neopixel-tool fix: set pixel can now accept hex codes with <code>0x</code> prefix</p>
+<h2 id="b252">b252</h2>
+<p>oled-exp fix: diagonal scrolling no longer leaves out the bottom row</p>
+<h2 id="b251-b250-b249">b251, b250, b249</h2>
+<p>Neopixel Class: 
+* added brightness control to c++ class (added to cli app, c-lib, python module, and python example)
+* added overloaded Init function that sets pin, length of strip, and performs init
+* fixes for dynamic memory clean-up</p>
+<h2 id="b247">b247</h2>
+<p>Added utilities and libraries for controlling Neopixels with the Arduino Dock</p>
+<h2 id="b245">b245</h2>
+<p>oled-exp driver fix: resolved issue with column addressing for text and images, all images should display correctly now</p>
+<h2 id="b244-b241">b244 - b241</h2>
+<p><strong>Invalid builds</strong>
+<em>resolving build server + strider deployment issues</em></p>
+<h2 id="b240-b239">b240, b239</h2>
+<p>Added i2c-exp python libraries as packages</p>
+<h2 id="b238-b237-b236-b235">b238, b237, b236, b235</h2>
+<p>oled-exp changes
+* fix for oledDraw: now reset the column addressing to 0-127 so images are displayed correctly
+* changed name of contrasting setting function to oledSetBrightness
+* fix: correctly set the cursor for columns (setcursor function now sets column addressing to 0-125 since changing the column addressing resets the column cursor pointer)</p>
+<h2 id="b234">b234</h2>
+<ul>
+<li>Added g=grep alias to profile</li>
+<li>Updated pwm-exp usage printout to include oscillator sleep functionality</li>
+</ul>
+<h2 id="b233">b233</h2>
+<p>Console Bug Fix: permission denied error did not result in relogin</p>
+<h2 id="b232">b232</h2>
+<p><strong>Ando N2 Console Release</strong>
+Upgrading to version 0.0.5
+Console Updates:
+* Added apps for the PWM, Relay, and OLED Expansions
+* Extended the GPIO Control App to include the Expansion Dock as well
+* Added a taskbar to easily switch between apps</p>
+<h2 id="b231">b231</h2>
+<p><strong>Pre Console Release Test Build #2</strong>
+Fixes:
+* Base system
+  * Typo fix for ll alias
+  * Onion Repo Key: now installs with correct name and as a signed signature file</p>
+<h2 id="b230">b230</h2>
+<p><strong>Pre Console Release Test Build</strong>
+Added functionality:
+* Onion UBUS Service
+  * added i2c-scan functionality: get a list of addresses of all connected I2C slaves
+* I2C Expansions
+  * pwm-exp
+    * Implemented ability to set oscillator to sleep (disable all pwm signals)
+    * Added check to see if oscillator is running, if not, start it up (automatic initialization, running with -i at the beginning is no longer necessary)
+  * oled-exp
+    * Developed driver for all oled exp functionality
+      * init, clear, turn display on/off, invert display, dim the display, set the cursor, writing a message, scrolling (horizontal and diagonal), displaying an image
+  * ubus integration for all three apps (pwm-exp, relay-exp, oled-exp)
+  * created static libraries of the driver code for all three expansions (pwm, relay, oled)
+* SH Library
+  * json argument parser: added better parsing, now wraps values with double quotes if they have certain special characters
+* Packages
+  * Added Onion specific keys for signing Onion packages
+  * Compiled NodeJs v0.10.5, available as a package in Onion Repo
+* Base System
+  * Will now preserve /root during a sysupgrade (firmware update)
+  * Enabled access to the Onion Package Repo (opkg feed setup)
+  * Added automatic ll alias
+* Deploy
+  * Sign Onion Repo packages with Onion key
+  * Deploy all packages to the Onion Repo</p>
+<h2 id="b229">b229</h2>
+<p>Integration of i2c-exp-drivers into ubus via rpcd</p>
+<h2 id="b228">b228</h2>
+<p>Package repo keys feed now uses the keys from the Buildroot (this) Repo</p>
+<h2 id="b227">b227</h2>
+<p>Resolved conflict with OpenWRT NodeJS package, fixes for packages signature generation</p>
+<h2 id="b225">b225</h2>
+<p>Moved keys to buildroot repo. Changed scripts to push new signature of Packages file.</p>
+<h2 id="b223">b223</h2>
+<p>Added nodejs package, deploy also pushes Onion packages to the repo</p>
+<h2 id="b222">b222</h2>
+<p>Added signature keys for Onion Package Repo</p>
+<h2 id="b221">b221</h2>
+<ul>
+<li>Arduino Dock update: added placeholder lua sketch that is used by Arduino IDE when flashing</li>
+<li>i2c library: updated read function to return a buffer array, meant to increase compatibility as a library</li>
+<li>debug library: added an onion debug library, implements print statements with a severity level for now</li>
+<li>i2c-exp-drivers: updated to reflect i2c lib changes and debug lib addition</li>
+<li>ads1x15 driver: updated to reflect i2c lib changes and debug lib addition</li>
+</ul>
+<h2 id="b220">b220</h2>
+<p>Added arduino-dock package: all utilities required for use of Arduino Dock</p>
+<h2 id="b219">b219</h2>
+<p>Console GPIO App fix</p>
+<h2 id="b217">b217</h2>
+<p>Added avrdude programmer and its' dependencies to build</p>
+<h2 id="b216">b216</h2>
+<p>Added kmod-hid, kmod-usb-hid, and kmod-usb-printer modules to build.</p>
+<h2 id="b214">b214</h2>
+<p>New console release.
+Incrementing version number.</p>
+<h2 id="b213">b213</h2>
+<p>Added sftp server module</p>
+<h2 id="b212">b212</h2>
+<ul>
+<li>updates to i2c lib, fixed issue with write/read function status return</li>
+<li>added driver for ads1x15 chip as built-in module</li>
+<li>added modules kmod-video-uvc and mjpg-streamer for use with USB webcams</li>
+</ul>
+<h2 id="b211">b211</h2>
+<ul>
+<li>fast-gpio: implemented print verbosity control, along with json output support</li>
+<li>onion ubus: added fast-gpio support (pwm times-out)</li>
+</ul>
+<h2 id="b209">b209</h2>
+<ul>
+<li>i2c library: headers and static library files are now properly installed and can be used by other packages</li>
+<li>added app to use ADS1X15 ADC+PGA chip</li>
+</ul>
+<h2 id="b208">b208</h2>
+<ul>
+<li>i2c library: implemented output verbosity and some code clean-up</li>
+<li>sh lib: added clean-up of empty log files</li>
+<li>added chpasswd utility to busybox</li>
+</ul>
+<h2 id="b207">b207</h2>
+<p>i2c lib: expanded to perform multi-byte i2c read and write operations</p>
+<h2 id="b206-b205">b206, b205</h2>
+<p>relay-exp tool now supports different dip-switch settings to change I2C address, added better error checking</p>
+<h2 id="b204">b204</h2>
+<p>Changes to i2c expansions:
+* changed the repo name
+* clean-up of pwm-exp print outs
+* exposed i2c and mcp23008 libraries</p>
+<h2 id="b203-b202">b203, b202</h2>
+<p>Added login utility for busybox
+Changed shellinabox to launch busybox login utility</p>
+<h2 id="b199">b199</h2>
+<p>Fix for shellinabox default PATH variable</p>
+<h2 id="b198-b197">b198, b197</h2>
+<p>Added relay-exp application driver for the Relay expansion
+Added i2c-tools as built-in module</p>
+<h2 id="b196">b196</h2>
+<p>Infra update: automatically updates the firmware db when a new image is released</p>
+<h2 id="b193">b193</h2>
+<p>New version of pwm-exp: 
+* fix for setting pwm frequency
+* command line arguments can now be float
+* supports only doing pwm init from command line
+* added input mode where pulse width and period can be used
+* added error checking for i2c reads</p>
+<h2 id="b192-b191">b192, b191</h2>
+<p>Added support for ext2/3/4 filesystems</p>
+<h2 id="b190">b190</h2>
+<p>New version of fast-gpio: now disables running pwm if set or set-direction commands are used</p>
+<h2 id="b189-b188">b189, b188</h2>
+<p>Added Onion Console, removed setup wizard. Incremented to version 0.0.3</p>
+<h2 id="b187">b187</h2>
+<p>Removed Pwm Expansion test script</p>
+<h2 id="b186-b185">b186, b185</h2>
+<p>Temporary: added test script for pwm expansion</p>
+<h2 id="b184">b184</h2>
+<p>Changed shellinabox default css</p>
+<h2 id="b183-b182">b183, b182</h2>
+<p>Added Onion PWM Expansion Driver</p>
+<h2 id="b181">b181</h2>
+<p>Updated shellinabox daemon management again: enabled auto-start</p>
+<h2 id="b180">b180</h2>
+<p>Added i2c-tools package as a module</p>
+<h2 id="b179-b178">b179, b178</h2>
+<p>Login banner and shellinabox changes
+179: Updated shellinabox package to pull from Onion repo, fixed issue with build setup script
+178: Changed login banner, changes to shellinabox daemon management (no longer auto-starts or auto-respawns)</p>
+<h2 id="b177">b177</h2>
+<p>Onion sh lib updates for use with the Console</p>
+<h2 id="b176">b176</h2>
+<p>Added GPS expansion usb drivers</p>
+<h2 id="b175">b175</h2>
+<p>Added several usb-serial drivers</p>
+<h2 id="b174-b173-b172">b174, b173, b172</h2>
+<p>Fixes for fast-gpio
+* b174: added ability to set and read direction of pins</p>
+<h2 id="b171">b171</h2>
+<p>Added libugpio and gpioctl packages to the build</p>
+<h2 id="b170">b170</h2>
+<p>Following changes:
+* oupgrade: added build number to text-based check
+* wifisetup: added option to specify Omega's IP addr when setting up AP network
+* added fast-gpio
+* added onion-sh-lib, only used by fast-gpio for now</p>
+<h2 id="b169">b169</h2>
+<p>Added fix for opkg sources</p>
+<h2 id="b168">b168</h2>
+<p>Added omega-led service to onion-ubus
+Enables ubus control of the LED built-in to the Omega</p>
+<h2 id="b167-b166">b167, b166</h2>
+<p>Updates to oupgrade and onion-ubus
+* oupgrade: JSON output update: Now outputs build numbers for device and repo, and build_mismatch boolean (if the device and repo are the same version, checks the build numbers)
+* Added dir-list to onion ubus service: returns an array of all directories within a specified directory</p>
+<h2 id="b165-b164-b163">b165, b164, b163</h2>
+<p>Added shellinabox to the build. Shellinabox provides an AJAX interface to the command line shell.</p>
+<h2 id="b159">b159</h2>
+<p>Updated to Version 0.0.2</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

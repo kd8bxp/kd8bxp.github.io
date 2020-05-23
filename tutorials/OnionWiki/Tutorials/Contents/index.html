@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Tutorials Wiki - Random Wire!</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#tutorials-wiki">Tutorials Wiki</a></li>
+        <li class="main "><a href="#connecting-to-the-omega">Connecting to the Omega</a></li>
+        <li class="main "><a href="#introduction-to-linux">Introduction to Linux</a></li>
+        <li class="main "><a href="#introduction-to-openwrt">Introduction to OpenWRT</a></li>
+        <li class="main "><a href="#updating-the-omega">Updating the Omega</a></li>
+        <li class="main "><a href="#using-the-docks-and-expansions">Using the Docks and Expansions</a></li>
+            <li><a href="#the-expansion-dock">The Expansion Dock</a></li>
+            <li><a href="#the-power-dock">The Power Dock</a></li>
+            <li><a href="#the-expansions">The Expansions</a></li>
+            <li><a href="#the-arduino-dock">The Arduino Dock</a></li>
+            <li><a href="#the-bluetooth-low-energy-expansion-42">The Bluetooth Low Energy Expansion *</a></li>
+            <li><a href="#the-camera-kit-42">The Camera Kit *</a></li>
+        <li class="main "><a href="#the-omega-and-connectivity">The Omega and Connectivity</a></li>
+            <li><a href="#the-omega-and-networking">The Omega and Networking</a></li>
+        <li class="main "><a href="#storage-space">Storage Space</a></li>
+        <li class="main "><a href="#using-software-on-the-omega">Using Software on the Omega</a></li>
+            <li><a href="#python">Python</a></li>
+            <li><a href="#lamp-stack">LAMP Stack</a></li>
+            <li><a href="#php">PHP</a></li>
+            <li><a href="#nodejs">NodeJS</a></li>
+        <li class="main "><a href="#reading-sensor-data">Reading Sensor Data</a></li>
+        <li class="main "><a href="#cross-compilation">Cross Compilation</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="tutorials-wiki">Tutorials Wiki</h1>
+<p>The Tutorials Wiki contains guides on a variety of Omega topics, from the basics of Linux, to how to use the Omega Expansions, to using specific software or accomplishing a certain task.</p>
+<p>[[<em>TOC</em>]]</p>
+<h1 id="connecting-to-the-omega">Connecting to the Omega</h1>
+<blockquote>
+<p>The wiki is moving! These articles can be found <a href="https://docs.onion.io/omega2-docs/the-command-line.html">in the Onion Docs</a> already, and will be updated there.</p>
+</blockquote>
+<p>Taking the first step, connecting to the Omega's command line:
+* <a href="./Connecting-to-Omega-via-Serial-Terminal">Connecting to Omega via Serial Terminal</a>
+* <a href="./Connecting-to-Omega-via-SSH">Connecting to Omega via SSH</a>
+  * <a href="./Adding-Public-Key-to-Omega">Adding your Public key to the Omega</a></p>
+<h1 id="introduction-to-linux">Introduction to Linux</h1>
+<p>This series of tutorials is meant to get you comfortable with using a Linux environment:</p>
+<ul>
+<li><a href="./LinuxBasics/Linux_Intro_Part1">Introduction to Linux</a></li>
+<li><a href="./LinuxBasics/CLI_Part2">The Command Line</a></li>
+<li><a href="./LinuxBasics/FileSystem_Part3">The File System</a></li>
+<li><a href="./LinuxBasics/Redirection_Part4">Redirection</a></li>
+<li><a href="./LinuxBasics/ShellScript_Part5">Shell Scripting</a></li>
+<li><a href="./LinuxBasics/Permissions_Part6">Ownership and Permissions</a></li>
+</ul>
+<h1 id="introduction-to-openwrt">Introduction to OpenWRT</h1>
+<p>This mini-series is meant to introduce users to OpenWRT.</p>
+<ul>
+<li><a href="./OpenWRT Tutorials/OPKG_Tutorial/opkg-tutorial">OPKG Basics</a></li>
+<li><a href="./OpenWRT Tutorials/UBUS_Tutorial/Part1_Ubus_Intro">UBUS Basics Part 1</a></li>
+<li><a href="./OpenWRT Tutorials/UBUS_Tutorial/Part2_RPCD">UBUS Basics Part 2</a></li>
+<li><a href="./OpenWRT Tutorials/UBUS_Tutorial/Part3_RPCD">UBUS Basics Part 3</a></li>
+<li><a href="./OpenWRT Tutorials/UCI_Tutorial/uci_introduction">UCI Basics</a></li>
+</ul>
+<h1 id="updating-the-omega">Updating the Omega</h1>
+<p>Follow this guide to update the Omega's firmware:</p>
+<blockquote>
+<p>The wiki is moving! This article can be found <a href="https://docs.onion.io/omega2-docs/updating-the-omega-using-console.html">in the</a> <a href="https://docs.onion.io/omega2-docs/updating-the-omega.html">Onion Docs</a> already, and will be updated there.</p>
+</blockquote>
+<ul>
+<li><a href="./Updating-the-Omega">Omega Firmware Updates</a></li>
+</ul>
+<p>In case your Omega's firmware gets corrupted during installation, it is possible to reflash a fresh firmware:
+* <a href="./Reflash-The-Firmware-With-Ethernet-Expansion">Reflash Firmware using an Ethernet Expansion</a>
+* <a href="./Reflash-the-Firmware-with-Improvised-Ethernet">Reflash Firmware by Improvising an Ethernet Connection</a></p>
+<h1 id="using-the-docks-and-expansions">Using the Docks and Expansions</h1>
+<blockquote>
+<p>The wiki is moving! These articles can be found <a href="https://docs.onion.io/omega2-docs/hardware-overview.html">in the Onion Docs</a> already, and will be updated there. (* - denotes articles that do not yet exist in the Onion Docs as of time of writing)</p>
+</blockquote>
+<p>The Omega's functionality can be greatly extended with the different available Docks and Expansions.</p>
+<p>The Omega itself has an LED onboard, it can be controlled to blink in a variety of patterns:
+* <a href="./Blinking-Morse-Code-on-LED">Blinking Morse Code on the Omega's LED</a></p>
+<h2 id="the-expansion-dock">The Expansion Dock</h2>
+<p>The Expansion Dock provides a breakout for the Omega's GPIOs, allowing you to use the Expansions or simply drive the GPIOs. It also has an RGB LED that can be programmed to show different colours:</p>
+<ul>
+<li><a href="./Using-the-GPIOs">How to use the GPIOs</a></li>
+<li><a href="./Using-PWM-on-Exp-Dock">Creating PWM signals on the GPIOs</a></li>
+<li><a href="./Controlling-RGB-LED">Controlling the RGB LED</a></li>
+</ul>
+<h2 id="the-power-dock">The Power Dock</h2>
+<p>The Power Dock also provides a breakout for the Omega's GPIOs, allowing you to use the Expansions or drive the GPIOs. However, the Power Dock can also be powered by just a battery, and has battery management to intelligently charge the connected battery:
+* <a href="./Expansions/Using-the-Power-Dock">How to use the Power Dock</a></p>
+<h2 id="the-expansions">The Expansions</h2>
+<p>The Expansions provide additional functionality and features to the Omega:</p>
+<ul>
+<li><a href="./Expansions/Using-the-Ethernet-Expansion">How to use the Ethernet Expansion</a></li>
+<li><a href="./Expansions/Using-the-Relay-Expansion">How to use the Relay Expansion</a></li>
+<li><a href="./Expansions/Using-the-Servo-Expansion">How to use the Servo Expansion</a></li>
+<li><a href="./Expansions/Using-the-OLED-Expansion">How to use the OLED Expansion</a></li>
+<li><a href="./Expansions/Using-the-GPS-Expansion">How to use the GPS Expansion</a></li>
+</ul>
+<h2 id="the-arduino-dock">The Arduino Dock</h2>
+<p>The Arduino Dock has an ATmega microcontroller and can be used just like an Arduino:</p>
+<ul>
+<li><a href="./Arduino-Dock/Initial-Setup">Initial Setup</a></li>
+<li><a href="./Arduino-Dock/Using-the-Arduino-Dock">Using the Arduino Dock</a></li>
+<li><a href="./Arduino-Dock/Controlling-Neopixels">Controlling Neopixels</a></li>
+</ul>
+<h2 id="the-bluetooth-low-energy-expansion-42">The Bluetooth Low Energy Expansion *</h2>
+<p>The BLE Expansion can be used to add Bluetooth connectivity to the Omega:</p>
+<ul>
+<li><a href="./Bluetooth-Streaming-Audio">Streaming Bluetooth Audio on the Omega</a></li>
+</ul>
+<h2 id="the-camera-kit-42">The Camera Kit *</h2>
+<p>The Camera Kit includes a 720p webcam and a pan &amp; tilt servo mount. Assembly instructions are below:</p>
+<ul>
+<li><a href="../camera-kit-assembly-tutorial/">Camera Kit Assembly Tutorial</a></li>
+</ul>
+<h1 id="the-omega-and-connectivity">The Omega and Connectivity</h1>
+<blockquote>
+<p>The wiki is moving! These articles can be found <a href="https://docs.onion.io/omega2-docs/omega-and-connectivity.html">in the Onion Docs</a> already, and will be updated there.</p>
+</blockquote>
+<p>The Omega is very versatile when it comes to WiFi networks, the following guides illustrate some of that flexibility:</p>
+<ul>
+<li><a href="./Connecting-Omega-to-Wifi-Hotspot-that-Requres-Login">Connecting to a WiFi Hotspot that requires a login</a></li>
+<li><a href="./Find-the-Omegas-IP-address">Finding the Omega's IP address</a></li>
+<li><a href="./Connecting-to-Enterprise-Secured-Wifi">Connect to Enterpise-Secured Wifi that requires a username and password</a></li>
+<li><a href="./Sharing-with-Samba">Sharing Directories on the Omega using Samba</a></li>
+<li><a href="./WinSCP-For-File-Transfers">Using WinSCP for File Transfers</a></li>
+</ul>
+<h2 id="the-omega-and-networking">The Omega and Networking</h2>
+<ul>
+<li><a href="./Using-Omega-As-A-Router">Using the Omega as a Router</a></li>
+<li><a href="./Using-Omega-As-Wifi-Range-Extender">Using the Omega as a WiFi Range Extender</a></li>
+<li><a href="./Using-Omega-As-Wifi-Ethernet-Bridge">Using the Omega as a WiFi Ethernet Bridge</a></li>
+</ul>
+<h1 id="storage-space">Storage Space</h1>
+<p>The Omega has 16MB of flash memory, this might be a little limiting in some cases. Plugging in a USB drive to the Omega's USB Host can help alleviate this issue:</p>
+<blockquote>
+<p>The wiki is moving! These articles can be found <a href="https://docs.onion.io/omega2-docs/usb-storage.html">in the Onion Docs</a> already, and will be updated there.</p>
+</blockquote>
+<ul>
+<li><a href="./Using-USB-Storage">Using USB Storage</a></li>
+<li><a href="./Extending-RAM-with-a-swap-file">The Omega's RAM can also be extended using USB Storage</a> (This article can be found <a href="https://docs.onion.io/omega2-docs/extending-omega-memory.html">here.</a>)</li>
+</ul>
+<p>It is also possible to run the Omega's OS from USB storage:
+* <a href="./Using-USB-Storage-as-Rootfs">Using USB Storage as ROOTFS</a></p>
+<h1 id="using-software-on-the-omega">Using Software on the Omega</h1>
+<p>Since the Omega runs a full Linux distribution, it is very flexible in the software that it can run. The following guides illustrate how to install and use different software:</p>
+<ul>
+<li><a href="./Using-Git">Using Git</a></li>
+</ul>
+<h2 id="python">Python</h2>
+<blockquote>
+<p>The wiki is moving! The Python articles can be found <a href="https://docs.onion.io/omega2-docs/software-installing-and-using-python.html">in the Onion Docs</a> already, and will be updated there.</p>
+</blockquote>
+<ul>
+<li><a href="./Installing-Python">Installing Python</a></li>
+<li><a href="./Sending-Emails-With-Python">Sending Emails with Python</a></li>
+<li><a href="./Python-GPIO-LED-Example">A Python GPIO Example</a></li>
+<li><a href="./Python-I2C-LCD-Display">Controlling an I2C-based LCD Display with Python</a></li>
+</ul>
+<h2 id="lamp-stack">LAMP Stack</h2>
+<ul>
+<li><a href="./How-To-Install-LAMP-Stack-on-the-Omega">Instaling the LAMP Stack on the Omega</a></li>
+</ul>
+<h2 id="php">PHP</h2>
+<ul>
+<li><a href="./PHP-GPIO-Example">Using PHP on the Omega</a></li>
+<li><a href="./PHP-PushBullet-Example">Using PHP with PushBullet</a></li>
+<li><a href="./PHP-DHT11-DHT22-Sensor-Examples">Using PHP with the DHT11/22 Sensors</a></li>
+<li><a href="./PHP-Date-Time-Functions">Fixing and Using the PHP Date &amp; Time Functions</a></li>
+</ul>
+<h2 id="nodejs">NodeJS</h2>
+<ul>
+<li><a href="./Installing-NodeJS">Using NodeJS on the Omega</a></li>
+</ul>
+<p>We've added support for installing a few Node modules via opkg:
+* <a href="./onoff-node">OnOff - GPIO control</a>
+* <a href="./blynk-library">Blynk Library</a></p>
+<h1 id="reading-sensor-data">Reading Sensor Data</h1>
+<p>The Omega can be used with a variety of different communication protocols. I2C is supported out of the box, for others, additional work is required:</p>
+<ul>
+<li><a href="./Using-SPI">Using SPI to communicate with peripherals</a></li>
+<li><a href="./Reading-1Wire-Sensor-Data">Using 1Wire to read sensor data</a></li>
+</ul>
+<p>The Omega supports Ubidots, a third-party data visualization service:
+* <a href="./Using-Ubidots-with-Omega">The Omega and Ubidots</a></p>
+<h1 id="cross-compilation">Cross Compilation</h1>
+<p>The Omega can run C and C++ programs, however, it does not host a C compiler, so these programs will have to be cross-compiled on another machine and then installed on your Omega:
+* <a href="./Cross-Compile">Cross Compilation</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Arduino Dock Neopixel Library - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#arduino-dock-neopixel-library">Arduino Dock Neopixel Library</a></li>
+        <li class="main "><a href="#programming-flow">Programming Flow</a></li>
+        <li class="main "><a href="#the-c-c-library">The C &amp; C++ Library</a></li>
+            <li><a href="#installing-the-library">Installing the Library</a></li>
+            <li><a href="#return-values">Return Values</a></li>
+            <li><a href="#the-c-library">The C++ Library</a></li>
+            <li><a href="#the-c-library_1">The C Library</a></li>
+        <li class="main "><a href="#the-python-module">The Python Module</a></li>
+            <li><a href="#installing-the-module">Installing the Module</a></li>
+            <li><a href="#return-values_1">Return Values</a></li>
+            <li><a href="#using-the-module">Using the Module</a></li>
+            <li><a href="#the-python-class">The Python Class</a></li>
+            <li><a href="#example-code_1">Example Code</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="arduino-dock-neopixel-library">Arduino Dock Neopixel Library</h1>
+<p>The Omega + Arduino Dock can be used to control Neopixels, with the Omega sending the commands and colour codes, and the Arduino Dock acting as a communication channel. </p>
+<p><img alt="Omega+Arduino Dock w/ Neopixel Array" src="http://i.imgur.com/l5oVLdi.jpg" /></p>
+<p>The Onion Arduino Dock Neopixel C &amp; C++ library, <code>libonionneopixel</code> provides functions to interact with the Neopixels. Also available is a module for use in Python called <code>neopixel</code> that is part of the <code>OmegaArduinoDock</code> package.</p>
+<p>[[<em>TOC</em>]]</p>
+<h1 id="programming-flow">Programming Flow</h1>
+<p>The first action that must be performed is always the initialization of the Arduino Dock for controlling Neopixels. This entails setting which Arduino Dock pin will be used as data output, setting the number of Neopixels, and running the initalization function.</p>
+<p>Afterwards, the colours of the Neopixels can be changed at will. The colour changes will be queued up, and a function to show the queued up changes must be run for the changes to take effect on the actual Neopixels.</p>
+<p>After each power-cycle, the chip that controls the Relay Expansion must be programmed with an initialization sequence. After the initialization, the relays can be turned on and off at will.</p>
+<h1 id="the-c-c-library">The C &amp; C++ Library</h1>
+<p>The dynamic C &amp; C++ library, <code>libonionneopixel</code> provides a C++ class and C functions that wrap around this class.</p>
+<h2 id="installing-the-library">Installing the Library</h2>
+<p>The library can be installed by running the following commands:</p>
+<pre><code>opkg update
+opkg install libonionneopixel
+</code></pre>
+
+<p>Note that it will automatically be installed when the <code>neopixel-tool</code> utility is installed.</p>
+<h2 id="return-values">Return Values</h2>
+<p>All functions follow the same pattern with return values:</p>
+<p>If the function operation is successful, the return value will be <code>EXIT_SUCCESS</code> which is a macro defined as <code>0</code> in <code>cstdlib.h.</code></p>
+<p>If the function operation is not successful, the function will return <code>EXIT_FAILURE</code> which is defined as <code>1</code>. </p>
+<p>A few reasons why the function might not be successful:
+* The specified device address cannot be found on the I2C bus (the Expansion is not plugged in)
+* The system I2C interface is currently in use elsewhere</p>
+<p>An error message will be printed that will give more information on the reason behind the failure.</p>
+<h2 id="the-c-library">The C++ Library</h2>
+<p>The C++ library is implemented around an <code>onionNeopixel</code> class. It provides public class functions to perform all of the actions specified in the <a href="#Programming-Flow">Programming Flow section</a>.</p>
+<h3 id="using-the-c-library">Using the C++ Library</h3>
+<p><strong>Header File</strong></p>
+<p>To add the Onion Neopixel Library to your program, include the header file in your code:</p>
+<pre><code class="c++">#include &lt;neopixel.h&gt;
+</code></pre>
+
+<p><strong>Library for Linker</strong></p>
+<p>In your project's makefile, you will need to add the following dynamic libraries to the linker command:</p>
+<pre><code class="c++">-lonionneopixel
+</code></pre>
+
+<p>The dynamic libraries are stored in <code>/usr/lib</code> on the Omega.</p>
+<h3 id="class-functions">Class Functions</h3>
+<p>The <code>onionNeopixel</code> class contains all of the routines required to control Neopixels using the Arduino Dock.</p>
+<h4 id="the-constructor">The Constructor</h4>
+<p>The constructor for the <code>onionNeopixel</code> class will initialize all class variables. It also has an optional argument that sets the I2C device address of the Arduino Dock. By default this address is 0x08 and if you have made no changes to the Onion Arduino Library, there is no need to include this argument.</p>
+<p><strong>Examples</strong></p>
+<p>To initialize an <code>onionNeopixel</code> object called <code>neopixelObj</code>:</p>
+<pre><code class="c++">onionNeopixel*  neopixelObj = new onionNeopixel();
+</code></pre>
+
+<p>To initialize an <code>onionNeopixel</code> object called <code>npixel</code> where the Arduino Dock's I2C address is 0x09:</p>
+<pre><code class="c++">onionNeopixel*  npixel  = new onionNeopixel(0x09);
+</code></pre>
+
+<h4 id="set-the-arduino-dock-pin">Set the Arduino Dock Pin</h4>
+<p>This class function sets the Arduino Dock pin that will act as the data port for the Neopixels:</p>
+<pre><code class="c++">int SetPin (int input);
+</code></pre>
+
+<p><strong>Examples</strong></p>
+<p>To set the pin to 6 for an <code>npixel</code> object:</p>
+<pre><code class="c++">status = npixel-&gt;SetPin(6); 
+</code></pre>
+
+<h4 id="set-the-number-of-neopixels">Set the Number of Neopixels</h4>
+<p>This class function programs the total number of Neopixels that are connected to the Arduino Dock pin:</p>
+<pre><code class="c++">int SetLength (int input);
+</code></pre>
+
+<p><strong>Examples</strong></p>
+<p>For an <code>npixel</code> object, set that it controls 64 neopixels:</p>
+<pre><code class="c++">status = npixel-&gt;SetLength(64); 
+</code></pre>
+
+<h4 id="initialize-the-arduino-dock-and-neopixels">Initialize the Arduino Dock and Neopixels</h4>
+<p>This function will perform an initialization on the Arduino Dock and afterwards, the Neopixels will be ready to use:</p>
+<pre><code class="c++">int Init ();
+</code></pre>
+
+<p>Note that the <code>SetPin</code> and <code>SetLength</code> functions <strong>must</strong> be called prior to the <code>Init</code> function is called.</p>
+<p><strong>Examples</strong></p>
+<p>For an <code>npixel</code> object, initialize the Arduino Dock for neopixels:</p>
+<pre><code class="c++">status = npixel-&gt;Init();    
+</code></pre>
+
+<h4 id="initialize-the-arduino-dock-and-neopixels-in-a-single-step">Initialize the Arduino Dock and Neopixels in a Single Step</h4>
+<p>This function will perform the functions of <code>SetPin</code>, <code>SetLength</code>, and <code>Init</code> in a single function call:</p>
+<pre><code class="c++">int Init (int pin, int length);
+</code></pre>
+
+<p>It is an overloaded function so it has the same name as the initialization function above. It provides a simplification</p>
+<p><strong>Examples</strong></p>
+<p>For an <code>npixel</code> object, initialize the Arduino Dock to use pin 5 and control 32 neopixels:</p>
+<pre><code class="c++">status = npixel-&gt;Init(5, 32);   
+</code></pre>
+
+<h4 id="set-the-maximum-pixel-brightness">Set the Maximum Pixel Brightness</h4>
+<p>This class function will set the maximum brightness of a pixel by defining a maximum for the colour components:</p>
+<pre><code class="c++">int SetBrightness (int input);
+</code></pre>
+
+<p>The brightness change will not take effect on the physical Neopixels until the <a href="#the-c-c-library_the-c-library_class-functions_show-all-queued-colour-changes"><code>ShowPixels</code> function</a> function is called.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>input</code> argument sets the the maximum colour intensity for all colour components. The range is <strong>0 to 255</strong>.</p>
+<p><strong>Examples</strong></p>
+<p>For an <code>npixel</code> object, set the brightness to the maximum:</p>
+<pre><code class="c++">status = npixel-&gt;SetBrightness(255);    
+</code></pre>
+
+<p>For an <code>npixel</code> object, set the brightness to half the maximum and have it take effect right away:</p>
+<pre><code class="c++">status =  npixel-&gt;SetBrightness(127);
+status |= npixel-&gt;ShowPixels();
+</code></pre>
+
+<p>For an <code>npixel</code> object, set the brightness to a quarter of the maximum:</p>
+<pre><code class="c++">status = npixel-&gt;SetBrightness(63);
+</code></pre>
+
+<h4 id="set-the-colour-of-a-pixel">Set the Colour of a Pixel</h4>
+<p>This class function will queue up a change in the colour intensity of a single pixel:</p>
+<pre><code class="c++">int SetPixel (int pixelId, int red, int green, int blue);
+</code></pre>
+
+<p>The pixels colours changes setup with this function will not be shown on the physical Neopixels until the <a href="#the-c-c-library_the-c-library_class-functions_show-all-queued-colour-changes"><code>ShowPixels</code> function</a> function is called.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>pixelId</code> argument defines which pixel in the Neopixel array is to be controlled, with the first pixel in the strip being pixel 0. Note that this pixel id should be less than the total number of pixels.</p>
+<p>The <code>red</code>, <code>green</code>, and <code>blue</code> arguments are the colour intensity values for the respective colour. Neopixels are 8-bits per colour component, so the values can range from <strong>0 to 255</strong>. Experiment with a <a href="http://www.w3schools.com/tags/ref_colorpicker.asp">colour wheel</a> to find the primary colour intensities for your desired colours.</p>
+<p><strong>Examples</strong></p>
+<p>For an <code>npixel</code> object, set the first pixel to white:</p>
+<pre><code class="c++">status = npixel-&gt;SetPixel(0, 0xff, 0xff, 0xff); 
+</code></pre>
+
+<p>For an <code>npixel</code> object, set the 18th pixel to purple:</p>
+<pre><code class="c++">status = npixel-&gt;SetPixel(18, 0xcc, 0x00, 0x99);    
+</code></pre>
+
+<p>For an <code>npixel</code> object, set the 64th pixel to orange:</p>
+<pre><code class="c++">status = npixel-&gt;SetPixel(63, 0xff, 0x8c, 0x1a);    
+</code></pre>
+
+<h4 id="set-the-colour-of-many-pixels">Set the Colour of many Pixels</h4>
+<p>This class function will queue the change of the colour intensity for many pixels using a buffer of colour components:</p>
+<pre><code class="c++">int SetBuffer (int *buf, int size);
+</code></pre>
+
+<p>The first pixel in the buffer will be displayed on pixel 0 of the physical Neopixels. The pixels colours setup with this function will not be shown on the physical Neopixels until the <a href="#the-c-c-library_the-c-library_class-functions_show-all-queued-colour-changes"><code>ShowPixels</code> function</a> function is called.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>buf</code> argument is an array that should hold colour component triplets for however many pixels are desired:</p>
+<table>
+<thead>
+<tr>
+<th><code>buf</code> Element</th>
+<th>Pixel</th>
+<th>Colour Component</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>buf[0]</code></td>
+<td>0</td>
+<td>Red</td>
+</tr>
+<tr>
+<td><code>buf[1]</code></td>
+<td>0</td>
+<td>Green</td>
+</tr>
+<tr>
+<td><code>buf[2]</code></td>
+<td>0</td>
+<td>Blue</td>
+</tr>
+<tr>
+<td><code>buf[3]</code></td>
+<td>1</td>
+<td>Red</td>
+</tr>
+<tr>
+<td><code>buf[4]</code></td>
+<td>1</td>
+<td>Green</td>
+</tr>
+<tr>
+<td><code>buf[5]</code></td>
+<td>1</td>
+<td>Blue</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td><code>buf[n*3]</code></td>
+<td>n</td>
+<td>Red</td>
+</tr>
+<tr>
+<td><code>buf[n*3+1]</code></td>
+<td>n</td>
+<td>Green</td>
+</tr>
+<tr>
+<td><code>buf[n*3+2]</code></td>
+<td>n</td>
+<td>Blue</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>size</code> argument represents the number of elements in the <code>buf</code> array, so it should be the number of pixels multiplied by three colour components.</p>
+<p><strong>Examples</strong></p>
+<p>For an <code>npixel</code> object, set 3 pixels to brown:</p>
+<pre><code class="c++">int colours[9] = {0x99, 0x66, 0x00, 0x99, 0x66, 0x00, 0x99, 0x66, 0x00};
+status = npixel-&gt;SetBuffer(colours, 9); 
+</code></pre>
+
+<p>For an <code>npixel</code> object, set 12 pixels to lime:</p>
+<pre><code class="c++">int length      = 12*3;
+int *buffer     = new int[length];
+
+for (int i = 0; i &lt; length; i += 3) {
+    buffer[i]   = 0xcc;
+    buffer[i+1] = 0xff;
+    buffer[i+2] = 0x33;
+}
+
+status = npixel-&gt;SetBuffer(buffer, length);
+</code></pre>
+
+<h4 id="show-all-queued-colour-changes">Show All Queued Colour Changes</h4>
+<p>This class function will send a command to the Arduino Dock to display all queued colour and/or brightness changes on the physical Neopixels:</p>
+<pre><code class="c++">int ShowPixels ();
+</code></pre>
+
+<p><strong>Examples</strong></p>
+<p>For an <code>npixel</code> object, show all queued colour changes:</p>
+<pre><code class="c++">status = npixel-&gt;ShowPixels();  
+</code></pre>
+
+<h3 id="example-code">Example Code</h3>
+<p>Example code that uses the <code>onionNeopixel</code> class can be found in the source code for <a href="../../Tutorials/Arduino-Dock/Controlling-Neopixels#omega-command-line-tool">the <code>neopixel-tool</code> command line utility</a>. Please take a look at the <a href="https://github.com/OnionIoT/neopixel-tool">neopixel-tool GitHub repo</a>. </p>
+<p>The files of interest are:
+* <a href="https://github.com/OnionIoT/neopixel-tool/blob/master/include/main.h"><code>include/main.h</code></a>
+* <a href="https://github.com/OnionIoT/neopixel-tool/blob/master/src/main.cpp"><code>src/main.cpp</code></a></p>
+<h2 id="the-c-library_1">The C Library</h2>
+<p>The C library is a series of C functions that provide wrappers to the C++ <code>onionNeopixel</code> class. It provides the same functionality as the C++ class but in code that can be used in C.</p>
+<h3 id="using-the-c-library_1">Using the C Library</h3>
+<p><strong>Header File</strong></p>
+<p>To add the Onion Neopixel Library to your program, include the header file in your code:</p>
+<pre><code class="c">#include &lt;neopixel_Cwrapper.h&gt;
+</code></pre>
+
+<p><strong>Library for Linker</strong></p>
+<p>In your project's makefile, you will need to add the following dynamic libraries to the linker command:</p>
+<pre><code class="c">-lonionneopixel
+</code></pre>
+
+<p>The dynamic libraries are stored in <code>/usr/lib</code> on the Omega.</p>
+<h3 id="library-functions">Library Functions</h3>
+<p>The following functions implement all of the routines required to control Neopixels using the Arduino Dock.</p>
+<h4 id="initialize-the-arduino-dock-and-neopixels_1">Initialize the Arduino Dock and Neopixels</h4>
+<p>This function will perform the following:
+* Set the Arduino Dock pin that will act as the data port for the Neopixels
+* Set the total number of Neopixels
+* Run the initalization sequence</p>
+<pre><code class="c">int neopixelInit (int devAddr, int pin, int length);
+</code></pre>
+
+<p><strong>Arguments</strong></p>
+<p>The <code>devAddr</code> argument provides the I2C device address of the Arduino Dock. By default this address is 0x08 and if you have made no changes to the Onion Arduino Library, the <code>NEOPIXEL_I2C_DEVICE_ADDR</code> macro can be used.</p>
+<p>The <code>pin</code> argument defines the Arduino Dock pin. And the <code>length</code> argument defines the number of Neopixels.</p>
+<p><strong>Examples</strong></p>
+<p>Initialize the Arduino Dock to use pin 9 and control 12 neopixels:</p>
+<pre><code class="c">status = neopixelInit (NEOPIXEL_I2C_DEVICE_ADDR, 9, 12);
+</code></pre>
+
+<p>Initialize the Arduino Dock to use pin 10 and control 128 neopixels:</p>
+<pre><code class="c">status = neopixelInit (NEOPIXEL_I2C_DEVICE_ADDR, 10, 128);
+</code></pre>
+
+<h4 id="set-the-maximum-pixel-brightness_1">Set the Maximum Pixel Brightness</h4>
+<p>This function will set the maximum brightness of a pixel by defining a maximum for the colour components:</p>
+<pre><code class="c">int neopixelSetBrightness (int brightness);
+</code></pre>
+
+<p>The brightness change will not take effect on the physical Neopixels until the <a href="#the-c-c-library_the-c-library_library-functions_show-all-queued-colour-changes"><code>neopixelShowPixels</code> function</a> function is called.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>brightness</code> argument sets the the maximum colour intensity for all colour components. The range is <strong>0 to 255</strong>.</p>
+<p><strong>Examples</strong></p>
+<p>Set the brightness to the maximum:</p>
+<pre><code class="c">status = neopixelSetBrightness(255);    
+</code></pre>
+
+<p>Set the brightness to half the maximum and have it take effect right away:</p>
+<pre><code class="c">status =  neopixelSetBrightness(127);
+status |= neopixelShowPixels();
+</code></pre>
+
+<p>Set the brightness to a quarter of the maximum:</p>
+<pre><code class="c">status = neopixelSetBrightness(63);
+</code></pre>
+
+<h4 id="set-the-colour-of-a-pixel_1">Set the Colour of a Pixel</h4>
+<p>This function will queue up a change in the colour intensity of a single pixel:</p>
+<pre><code class="c">int neopixelSetPixel (int pixelId, int red, int green, int blue);
+</code></pre>
+
+<p>The changes to the pixel will not show up on the physical Neopixels until the <a href="#the-c-c-library_the-c-library_library-functions_show-all-queued-colour-changes"><code>neopixelShowPixels</code> function</a> function is called.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>pixelId</code> argument defines which pixel in the Neopixel array is to be controlled, with the first pixel in the strip being pixel 0. Note that this pixel id should be less than the total number of pixels.</p>
+<p>The <code>red</code>, <code>green</code>, and <code>blue</code> arguments are the colour intensity values for the respective colour. Neopixels are 8-bits per colour component, so the values can range from <strong>0 to 255</strong>. Experiment with a <a href="http://www.w3schools.com/tags/ref_colorpicker.asp">colour wheel</a> to find the primary colour intensities for your desired colours.</p>
+<p><strong>Examples</strong></p>
+<p>Set the first pixel to white:</p>
+<pre><code class="c">status = neopixelSetPixel(0, 0xff, 0xff, 0xff); 
+</code></pre>
+
+<p>Set the 18th pixel to purple:</p>
+<pre><code class="c">status = neopixelSetPixel(18, 0xcc, 0x00, 0x99);    
+</code></pre>
+
+<p>Set the 64th pixel to orange:</p>
+<pre><code class="c">status = neopixelSetPixel(63, 0xff, 0x8c, 0x1a);    
+</code></pre>
+
+<h4 id="set-the-colour-of-many-pixels_1">Set the Colour of many Pixels</h4>
+<p>This function will queue the change of the colour intensity for many pixels using a buffer of colour components:</p>
+<pre><code class="c">int neopixelSetBuffer (int *buf, int size);
+</code></pre>
+
+<p>The first pixel in the buffer will be displayed on pixel 0 of the physical Neopixels.
+The changes to the pixels will not show up on the physical Neopixels until the <a href="#the-c-c-library_the-c-library_library-functions_show-all-queued-colour-changes"><code>neopixelShowPixels</code> function</a> function is called.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>buf</code> argument is an array that should hold colour component triplets for however many pixels are desired:</p>
+<table>
+<thead>
+<tr>
+<th><code>buf</code> Element</th>
+<th>Pixel</th>
+<th>Colour Component</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>buf[0]</code></td>
+<td>0</td>
+<td>Red</td>
+</tr>
+<tr>
+<td><code>buf[1]</code></td>
+<td>0</td>
+<td>Green</td>
+</tr>
+<tr>
+<td><code>buf[2]</code></td>
+<td>0</td>
+<td>Blue</td>
+</tr>
+<tr>
+<td><code>buf[3]</code></td>
+<td>1</td>
+<td>Red</td>
+</tr>
+<tr>
+<td><code>buf[4]</code></td>
+<td>1</td>
+<td>Green</td>
+</tr>
+<tr>
+<td><code>buf[5]</code></td>
+<td>1</td>
+<td>Blue</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td><code>buf[n*3]</code></td>
+<td>n</td>
+<td>Red</td>
+</tr>
+<tr>
+<td><code>buf[n*3+1]</code></td>
+<td>n</td>
+<td>Green</td>
+</tr>
+<tr>
+<td><code>buf[n*3+2]</code></td>
+<td>n</td>
+<td>Blue</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>size</code> argument represents the number of elements in the <code>buf</code> array, so it should be the number of pixels multiplied by three colour components.</p>
+<p><strong>Examples</strong></p>
+<p>Set 3 pixels to brown:</p>
+<pre><code class="c">int colours[9] = {0x99, 0x66, 0x00, 0x99, 0x66, 0x00, 0x99, 0x66, 0x00};
+status = neopixelSetBuffer(colours, 9); 
+</code></pre>
+
+<p>Set 12 pixels to lime:</p>
+<pre><code class="c">int length      = 12*3;
+int *buffer     = new int[length];
+
+for (int i = 0; i &lt; length; i += 3) {
+    buffer[i]   = 0xcc;
+    buffer[i+1] = 0xff;
+    buffer[i+2] = 0x33;
+}
+
+status = neopixelSetBuffer(buffer, length);
+</code></pre>
+
+<h4 id="show-all-queued-colour-changes_1">Show All Queued Colour Changes</h4>
+<p>This function will send a command to the Arduino Dock to display all queued colour changes on the physical Neopixels:</p>
+<pre><code class="c">int neopixelShowPixels ();
+</code></pre>
+
+<p><strong>Examples</strong></p>
+<p>Show all queued colour changes:</p>
+<pre><code class="c">status = neopixelShowPixels();  
+</code></pre>
+
+<h4 id="clean-up">Clean-Up</h4>
+<p>Since the C functions are a wrapper around the C++ class, at the end of your program, it's required to run a function to clean-up any dynamically allocated memory.</p>
+<pre><code class="c">void neopixelFree ();
+</code></pre>
+
+<p><strong>Examples</strong></p>
+<p>Perform the clean-up:</p>
+<pre><code class="c">neopixelFree(); 
+</code></pre>
+
+<h1 id="the-python-module">The Python Module</h1>
+<p>The Python module <code>neopixel</code> in the <code>OmegaArduinoDock</code> package provides a class, <code>OnionNeopixel</code> to control Neopixels. It's essentially a wrapper of the C++ library so the functions are very similar.</p>
+<h2 id="installing-the-module">Installing the Module</h2>
+<p>The library can be installed by running the following commands:</p>
+<pre><code>opkg update
+opkg install pyNeopixel python-light
+</code></pre>
+
+<h2 id="return-values_1">Return Values</h2>
+<p>All functions follow the same pattern with return values:</p>
+<p>If the function operation is successful, the return value will be <code>0</code>.</p>
+<p>If the function operation is not successful, the function will return <code>1</code>. </p>
+<h2 id="using-the-module">Using the Module</h2>
+<p>To add the Onion Neopixel Module to your Python program, include the following in your code:</p>
+<pre><code class="python">from OmegaArduinoDock import neopixel
+</code></pre>
+
+<h2 id="the-python-class">The Python Class</h2>
+<p>The Python class, <code>OnionNeopixel</code> is very similar to the C++ class; it provides public class functions to perform all of the actions specified in the <a href="#Programming-Flow">Programming Flow section</a>.</p>
+<h3 id="the-constructor_1">The Constructor</h3>
+<p>The constructor for the <code>OnionNeopixel</code> class will perform the following: 
+* initialize all class variables
+* Set the Arduino Dock pin that will act as the data port for the Neopixels
+* Set the total number of Neopixels
+* Run the initalization sequence</p>
+<p>It also has an optional argument that sets the I2C device address of the Arduino Dock. By default this address is 0x08 and if you have made no changes to the Onion Arduino Library, there is no need to include this argument.</p>
+<p><strong>Examples</strong></p>
+<p>To initialize an <code>OnionNeopixel</code> object called <code>npixel</code>:</p>
+<pre><code class="python">npixel  = neopixel.OnionNeopixel(6, 64)
+</code></pre>
+
+<p>To initialize an <code>onionNeopixel</code> object called <code>npixel</code> where the Arduino Dock's I2C address is 0x09:</p>
+<pre><code class="python">npixel  = neopixel.OnionNeopixel(6, 64, 0x09)
+</code></pre>
+
+<h3 id="set-the-maximum-pixel-brightness_2">Set the Maximum Pixel Brightness</h3>
+<p>This function will set the maximum brightness of a pixel by defining a maximum for the colour components:</p>
+<pre><code class="python">setBrightness (int brightness);
+</code></pre>
+
+<p>The brightness change will not take effect on the physical Neopixels until the <a href="#the-python-module_the-python-class_show-all-queued-colour-changes"><code>showPixels()</code> function</a> function is called.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>brightness</code> argument sets the the maximum colour intensity for all colour components. The range is <strong>0 to 255</strong>.</p>
+<p><strong>Examples</strong></p>
+<p>For an <code>npixel</code> object, set the brightness to the maximum:</p>
+<pre><code class="python">status = npixel.setBrightness(255); 
+</code></pre>
+
+<p>For an <code>npixel</code> object, set the brightness to half the maximum and have it take effect right away:</p>
+<pre><code class="python">status = npixel.setBrightness(127); 
+status = npixel.showPixels();
+</code></pre>
+
+<p>For an <code>npixel</code> object, set the brightness to a quarter of the maximum:</p>
+<pre><code class="python">status = npixel.setBrightness(63);
+</code></pre>
+
+<h3 id="set-the-colour-of-a-pixel_2">Set the Colour of a Pixel</h3>
+<p>This function will queue up a change in the colour intensity of a single pixel:</p>
+<pre><code class="python">setPixel (pixelId, red, green, blue)
+</code></pre>
+
+<p>Note the changes will not take effect on the physical Neopixels until the <a href="#the-python-module_the-python-class_show-all-queued-colour-changes"><code>showPixels()</code> function</a> is called.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>pixelId</code> argument defines which pixel in the Neopixel array is to be controlled, with the first pixel in the strip being pixel 0. Note that this pixel id should be less than the total number of pixels.</p>
+<p>The <code>red</code>, <code>green</code>, and <code>blue</code> arguments are the colour intensity values for the respective colour. Neopixels are 8-bits per colour component, so the values can range from <strong>0 to 255</strong>. Experiment with a <a href="http://www.w3schools.com/tags/ref_colorpicker.asp">colour wheel</a> to find the primary colour intensities for your desired colours.</p>
+<p><strong>Examples</strong></p>
+<p>For an <code>npixel</code> object, set the first pixel to white:</p>
+<pre><code class="python">status = npixel.setPixel(0, 0xff, 0xff, 0xff);  
+</code></pre>
+
+<p>For an <code>npixel</code> object, set the 18th pixel to purple:</p>
+<pre><code class="python">status = npixel.setPixel(18, 0xcc, 0x00, 0x99); 
+</code></pre>
+
+<p>For an <code>npixel</code> object, set the 64th pixel to orange:</p>
+<pre><code class="python">status = npixel.setPixel(63, 0xff, 0x8c, 0x1a); 
+</code></pre>
+
+<h3 id="set-the-colour-of-many-pixels_2">Set the Colour of many Pixels</h3>
+<p>This function will queue the change of the colour intensity for many pixels using a python list of colour components:</p>
+<pre><code class="c">setBuffer (pyBuf)
+</code></pre>
+
+<p>The first pixel in the buffer will be displayed on pixel 0 of the physical Neopixels.
+Note the changes will not take effect on the physical Neopixels until the <a href="#the-python-module_the-python-class_show-all-queued-colour-changes"><code>showPixels()</code> function</a> is called.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>pyBuf</code> argument is a Python list that should hold colour component triplets for however many pixels are desired:</p>
+<table>
+<thead>
+<tr>
+<th><code>buf</code> Element</th>
+<th>Pixel</th>
+<th>Colour Component</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>buf[0]</code></td>
+<td>0</td>
+<td>Red</td>
+</tr>
+<tr>
+<td><code>buf[1]</code></td>
+<td>0</td>
+<td>Green</td>
+</tr>
+<tr>
+<td><code>buf[2]</code></td>
+<td>0</td>
+<td>Blue</td>
+</tr>
+<tr>
+<td><code>buf[3]</code></td>
+<td>1</td>
+<td>Red</td>
+</tr>
+<tr>
+<td><code>buf[4]</code></td>
+<td>1</td>
+<td>Green</td>
+</tr>
+<tr>
+<td><code>buf[5]</code></td>
+<td>1</td>
+<td>Blue</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td><code>buf[n*3]</code></td>
+<td>n</td>
+<td>Red</td>
+</tr>
+<tr>
+<td><code>buf[n*3+1]</code></td>
+<td>n</td>
+<td>Green</td>
+</tr>
+<tr>
+<td><code>buf[n*3+2]</code></td>
+<td>n</td>
+<td>Blue</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples</strong></p>
+<p>Set 3 pixels to brown for an <code>npixel</code> object:</p>
+<pre><code class="c">buf = [0x99, 0x66, 0x00, 0x99, 0x66, 0x00, 0x99, 0x66, 0x00]
+status = npixel.setBuffer(buf)  
+</code></pre>
+
+<h3 id="show-all-queued-colour-changes_2">Show All Queued Colour Changes</h3>
+<p>This function will send a command to the Arduino Dock to display all queued colour changes on the physical Neopixels:</p>
+<pre><code class="python">showPixels()
+</code></pre>
+
+<p><strong>Examples</strong></p>
+<p>Show all queued colour changes for an <code>npixel</code> object:</p>
+<pre><code class="python">status = npixel.showPixels();   
+</code></pre>
+
+<h2 id="example-code_1">Example Code</h2>
+<p>Example code that uses the <code>OnionNeopixel</code> Python class can be found for <a href="https://downloads.onion.io/arduino-dock/slowColourChange.py">download here.</a></p>
+<p>This is a Python program that shows a single colour on an entire Neopixel strip or array. It slowly loops between seven different colours, with 25 intermediate steps between the colour changes, creating a smooth transition effect.</p>
+<p><img alt="slowColourChange Gif" src="http://i.imgur.com/QFxAq9M.gif" /></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

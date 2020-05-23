@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>OLED Expansion Node Module - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#oled-expansion-for-nodejs">OLED Expansion for Node.js</a></li>
+        <li class="main "><a href="#programming-flow">Programming Flow</a></li>
+            <li><a href="#understanding-the-display">Understanding the Display</a></li>
+        <li class="main "><a href="#the-node-addon">The Node Addon</a></li>
+            <li><a href="#install-the-addon">Install the Addon</a></li>
+            <li><a href="#importing-the-addon-into-your-node-script">Importing the addon into your Node Script</a></li>
+            <li><a href="#example-code">Example Code</a></li>
+            <li><a href="#return-values">Return Values</a></li>
+            <li><a href="#calling-methods">Calling Methods</a></li>
+            <li><a href="#available-methods">Available Methods</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#further-reading">Further Reading</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="oled-expansion-for-nodejs"><strong>OLED Expansion for Node.js</strong></h1>
+<p>As a part of our efforts to add expansion support to node.js, we have added control of the OLED expansion by way of node.js addon. To use the display within your node.js programs, all you have to do is import the OLED addon in the same way as a module and call methods to control the display. </p>
+<p><img alt="Omega+OLED Expansion" src="http://i.imgur.com/tqcRlgG.jpg" /></p>
+<p>The addon is a wrapper around the OLED C library. The library's documentation can be found <a href="https://wiki.onion.io/Documentation/Libraries/OLED-Expansion-Library">here</a>, many of the node functions follow the same input-output structure as the C library.</p>
+<p>[[<em>TOC</em>]]</p>
+<h1 id="programming-flow">Programming Flow</h1>
+<p>After each power-cycle, the chip that controls the OLED Expansion must be programmed with an initialization sequence to setup the display and enable it to receive additional commands.</p>
+<p>After the initialization, the other functions can be used to adjust vaious screen settings or display text or images. </p>
+<h2 id="understanding-the-display"><strong>Understanding the Display</strong></h2>
+<p>The screen has a resolution of 128x64 pixels. It is addressable by 128 vertical columns and 8 horizontal pages:</p>
+<p><img alt="imgur" src="http://i.imgur.com/4JsaahS.png" /></p>
+<p>Each page consists of 8 horizontal pixel rows. When a byte is written to the display, the Least Significant Byte (LSB) corresponds to the top-most pixel of the page in the current column. The Most Significant Byte (MSB) corresponds to the bottom-most pixel of the page in the current column.</p>
+<p><img alt="imgur" src="http://i.imgur.com/8DIiN2n.png" /></p>
+<p>So writing 0x0f would produce the top 4 pixels being coloured in, and the bottom 4 being left blank.</p>
+<p>The display keeps a cursor pointer in memory that indicates the current page and column being addressed. The cursor will automatically be incremented after each byte is written, the cursor can also be moved by the user through functions discussed below.</p>
+<h1 id="the-node-addon"><strong>The Node Addon</strong></h1>
+<p>The OLED Expansion addon exposes a series of methods that perform all of the actions specified in the Programming Flow section.</p>
+<h2 id="install-the-addon"><strong>Install the Addon</strong></h2>
+<p>Install the addon on your Omega:</p>
+<pre><code>opkg update
+opkg install oled-exp-node
+</code></pre>
+
+<p>NodeJS will need to be installed for Node programs to actually run:</p>
+<pre><code>opkg install nodejs
+</code></pre>
+
+<h2 id="importing-the-addon-into-your-node-script"><strong>Importing the addon into your Node Script</strong></h2>
+<p>To use the addon within your script you have to import it into your node program as you would a module. Use the following command in your node script. </p>
+<pre><code>var oledAddon = require(&quot;/usr/bin/oled-exp-addon&quot;);
+</code></pre>
+
+<h2 id="example-code"><strong>Example Code</strong></h2>
+<p>Example code that uses the <code>oled-exp-node</code> addon can be <a href="https://github.com/OnionIoT/i2c-exp-node-addons/blob/master/Examples/oled_node_example.js">found here</a> in the <code>i2c-exp-node-addons</code> Onion GitHub Repo.</p>
+<h2 id="return-values"><strong>Return Values</strong></h2>
+<p>All of the functions will either return a 0 indicating success or 1 indicating failure.</p>
+<h2 id="calling-methods"><strong>Calling Methods</strong></h2>
+<p>Methods are called in the following format. </p>
+<pre><code>oledAddon.method();
+</code></pre>
+
+<p>Replace method with your funcion of interest. </p>
+<h2 id="available-methods"><strong>Available Methods</strong></h2>
+<p>Refer to the table below for a list and brief description of available OLED methods. </p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Inputs</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>init()</td>
+<td>none</td>
+<td>Initializes the display. Must be called once before using display</td>
+</tr>
+<tr>
+<td>clear()</td>
+<td>none</td>
+<td>Clears the Display of all contents.</td>
+</tr>
+<tr>
+<td>setDisplayPower(int)</td>
+<td>1,0</td>
+<td>Turns the screen on or off. Preserves screen content</td>
+</tr>
+<tr>
+<td>setDisplayMode(int)</td>
+<td>1,0</td>
+<td>Inverts the color settings.</td>
+</tr>
+<tr>
+<td>setBrightness(int)</td>
+<td>0-255</td>
+<td>Adjust display brightness by inputting value from 0(dimmest)-255(brightest), 207 by default.</td>
+</tr>
+<tr>
+<td>setDim(int)</td>
+<td>1,0</td>
+<td>Similar to the setBrightness method where 0:Normal brightness 207 and 1:Dimmed Screen 0</td>
+</tr>
+<tr>
+<td>setMemoryMode(int)</td>
+<td>0,1,2</td>
+<td>Implements the ability to select the display's memory mode, ie, how the cursor is automatically advanced when the display memory is written to with text or images. 0=Horizontal Addressing Mode, 1=Vertical Addressing Mode, 2=Page Addressing Mode</td>
+</tr>
+<tr>
+<td>setCursor(int row, int column)</td>
+<td>0-7,0-20</td>
+<td>Position the cursor on a specific page and character column.</td>
+</tr>
+<tr>
+<td>setCursorByPixel(int row, int pixel)</td>
+<td>0-7,0-127</td>
+<td>This function positions the cursor on a specific page and pixel row</td>
+</tr>
+<tr>
+<td>setColumnAddressing(int startPixel, int endPixel)</td>
+<td>0-127,0-127</td>
+<td>Used to determine where each page starts and ends horizontally</td>
+</tr>
+<tr>
+<td>setTextColumns()</td>
+<td>none</td>
+<td>Defines the column addressing specifically for text. Sets the start pixel to 0 and end pixel to 125. This allows for 21 text characters per line. This function should be run before setting the cursor for writing text.</td>
+</tr>
+<tr>
+<td>setImageColumns()</td>
+<td>none</td>
+<td>This function defines the column addressing to cover the entire screen. It sets the start pixel to 0 and end pixel to 127.</td>
+</tr>
+<tr>
+<td>writeChar(char "A")</td>
+<td>single character in a string input</td>
+<td>Writes a single character to the current position of the cursor. Any unrecognized characters will be ignored, for a list of acceptable characters refer to asciiTable in oled-exp.h</td>
+</tr>
+<tr>
+<td>write(msg)</td>
+<td>string "HelloWorld"</td>
+<td>Write an entire string of characters, starting at the current positon of the cursor</td>
+</tr>
+<tr>
+<td>writeByte(int byte)</td>
+<td>0x00 - 0xFF</td>
+<td>Write a single byte, eight vertical pixels, to the current position of the cursor.</td>
+</tr>
+<tr>
+<td>scroll(int direction, int scrollSpeed, int startPage, int stopPage)</td>
+<td>*</td>
+<td>Scroll the contents of the screen horizontally or upwards at a 45 degree angle. The displayed contents will wrap around when it reaches the edge of the display.</td>
+</tr>
+<tr>
+<td>scrollDiagonal( int direction, int scrollSpeed, int fixedRows, int scrollRows, int verticalOffset, int startPage, int stopPage)</td>
+<td>**</td>
+<td>Scroll all or part of the screen diagonally upwards</td>
+</tr>
+<tr>
+<td>scrollStop()</td>
+<td>none</td>
+<td>Disables all active scrolling</td>
+</tr>
+<tr>
+<td>readLcdFile("path")</td>
+<td>"Path to LCD File"</td>
+<td>Displays lcd image file on the screen</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usage"><strong>Usage</strong></h2>
+<h3 id="initialization"><strong>Initialization</strong></h3>
+<p>This function programs the initilization sequence on the OLED Expansion, after this step is completed, the various OLED functions can be used with success:</p>
+<pre><code>oledAddon.init();
+</code></pre>
+
+<h3 id="functions-to-adjust-settings"><strong>Functions to Adjust Settings</strong></h3>
+<p>There is a series of functions that adjust various settings on the OLED Display. The adjustable settings are:</p>
+<ul>
+<li>Screen on/off</li>
+<li>Color inversion</li>
+<li>Setting screen brightness</li>
+<li>Setting the memory mode</li>
+<li>Defining the width of each page</li>
+<li>Setting the cursor position</li>
+</ul>
+<h4 id="turn-display-offon"><strong>Turn Display Off/On</strong></h4>
+<p>The screen cab be turned on and off while still preserving the displayed contents.Note: turning on a screen that is already on, or turning off a screen that is already off will have no effect. </p>
+<pre><code>oledAddon.setDisplayPower(int bPowerON);
+</code></pre>
+
+<p><strong>Arguments</strong></p>
+<p>The <code>bPowerOn</code> argument determines whether to turn the display on or off.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Turn the screen off</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Turn the screen on</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples</strong></p>
+<p>Turn the screen off with:</p>
+<pre><code>oledAddon.setDisplayPower(0);
+</code></pre>
+
+<p>Turn the screen on with:</p>
+<pre><code>oledAddon.setDisplayPower(1);
+</code></pre>
+
+<h4 id="invert-display-color"><strong>Invert Display Color</strong></h4>
+<p>The screen driver has the ability to invert the display colors, meaning that black becomes white and vice versa. To invert the colors:</p>
+<pre><code>oledAddon.setDisplayMode(int bInvert);
+</code></pre>
+
+<p><strong>Arguments</strong></p>
+<p>The <code>bInvert</code> argument determines whether to inver the colors or not.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Normal color settings</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Inverted color settings</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples</strong></p>
+<p>To invert the colors:</p>
+<pre><code>oledAddon.setDisplayMode(1);
+</code></pre>
+
+<p>To revert back to the normal colors:</p>
+<pre><code>oledAddon.setDisplayMode(0);
+</code></pre>
+
+<h4 id="set-the-display-brightness"><strong>Set the Display Brightness</strong></h4>
+<p>The brightness of the display can be adjusted in a granularity of 256 steps. The default brightness after initialization is 207.</p>
+<pre><code>oledAddon.setBrightness(int brightness);
+</code></pre>
+
+<p><strong>Arguments</strong></p>
+<p>The <code>brightness</code> argument determines the brightness with a range of 0-255, with 255 being the brightest setting and 0 being the dimmest.</p>
+<p><strong>Examples</strong></p>
+<p>So to set the maximum brightness:</p>
+<pre><code>oledAddon.setBrightness(255);
+</code></pre>
+
+<p>To set the lowest brightness:</p>
+<pre><code>oledAddon.setBrightness(0);
+</code></pre>
+
+<p>And to set the middle brightness:</p>
+<pre><code>oledAddon.setBrightness(127);
+</code></pre>
+
+<h4 id="dim-the-display"><strong>Dim the Display</strong></h4>
+<p>This function implements a 'dim' and a 'normal' setting for the display:</p>
+<pre><code>oledAddon.setDim(int dim);
+</code></pre>
+
+<p>While the brightness adjustment function described just above impleents the same feature, this function 
+simplifies the procedure with two distinct settings.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>dim</code> argument determines whether to enable the dim setting</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Normal Brightness: 207</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Dimmed Screen:0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples</strong></p>
+<p>Dim the Display:</p>
+<pre><code>oledAddon.setDim(1);
+</code></pre>
+
+<p>Set the Display to normal brightness:</p>
+<pre><code>oledAddon.setDim(0);
+</code></pre>
+
+<h4 id="set-memory-mode"><strong>Set Memory Mode</strong></h4>
+<p>Implements the ability to select the display's memory mode:</p>
+<pre><code>oledAddon.setMemoryMode(int mode);
+</code></pre>
+
+<p>The memory mode affects how the cursor is automatically advanced when the display memory is written with text or images.</p>
+<p><strong>Horizontal Addressing Mode</strong></p>
+<p><img alt="imgur" src="http://i.imgur.com/sU0WyZY.png" /></p>
+<p>After each write, the column cursor advances horizontally to the right along the page, once the end of the page is reached, the page cursor is advanced onto the next page.</p>
+<p><strong>Vertical Addressing Mode</strong></p>
+<p><img alt="imgur" src="http://i.imgur.com/Dv1smND.png" /></p>
+<p>After each write, the page cursor advances vertically downward through the pages, once the last page is reached, the column cursor is advanced to the next pixel column. </p>
+<p><strong>Page Addressing Mode</strong></p>
+<p><img alt="imgur" src="http://i.imgur.com/oW4giq6.png" /></p>
+<p>The column cursor advances horizontally to the right along each page, once the end of the page is reached, the column cursor wraps around to column 0 and the page cursor remains the same. </p>
+<p>By default, <strong>Horizontal Addressing</strong> is used.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>mode</code> argument determines which memory mode is active. </p>
+<table>
+<thead>
+<tr>
+<th>Memory Mode</th>
+<th>Input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Horizontal Addressing Mode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Vertical Addressing Mode</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Page Addressing Mode</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples</strong></p>
+<p>Set to the page addressing mode:</p>
+<pre><code>oledAddon.setMemoryMode(2);
+</code></pre>
+
+<h4 id="set-column-addressing"><strong>Set Column Addressing</strong></h4>
+<p>This function is used to define where each page starts and ends horizontally:</p>
+<pre><code>oledAddon.setColumnAddressing(int startPixel, int endPixel);
+</code></pre>
+
+<p>Changing the start and end pixels changes the width of each page. By default, the column addressing is set from 0 to pixel 127. This means that each page has 128 usable columns, once the cursor reaches the last column, the display knows this page is filled.</p>
+<p>For example, when writing text, the oledWrite function will set the columns to run from 0 to 125 in order for the characters to display properly. Since each character is 6 columns, 21 full characters can be displayed on a single line, the end pixel is set to 125 so that the 22nd character gets placed on the next line instead.</p>
+<p>Note: the column cursor is not preserved after a column addressing change.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>startPixel</code> argument sets the starting column for each page.</p>
+<p>The <code>endPixel</code> argument sets the end column for each page.</p>
+<p>Both arguments must be between the 0-127 and the startPixel must be <strong>less than</strong> endPixel.</p>
+<p><strong>Examples</strong></p>
+<p>Set the column addressing display text:</p>
+<pre><code>oledAddon.setColumnAddressing(0,127);
+</code></pre>
+
+<p>Set the column addressing to the full display width:</p>
+<pre><code>oledAddon.setColumnAddressing(0,63);
+</code></pre>
+
+<p>Set each column to start halfway across an to enf three quartes of the way accross the display:</p>
+<pre><code>oledAddon.setColumnAddressing(63,95);
+</code></pre>
+
+<h4 id="set-columns-for-text"><strong>Set Columns for Text</strong></h4>
+<p>A function exists to define the column addressing specifically for text:</p>
+<pre><code>oledAddon.setTextColumns();
+</code></pre>
+
+<p>It sets the start pixel to 0 and the end pixel to 125. This allows for the 21 text characters per line This function should be run, before setting the cursor for writing text. </p>
+<h4 id="set-columns-for-images"><strong>Set Columns for Images</strong></h4>
+<p>Also, a function exists to define the column addressing to cover the entire screen:</p>
+<pre><code>oledAddon.setImageColumns();
+</code></pre>
+
+<p>It sets the start pixel to 0 and te end pixel to 127. This enables the use of the entire screen.</p>
+<h3 id="set-cursor-position"><strong>Set Cursor Position</strong></h3>
+<p>Any data written to the screen gets writting to the current position of the cursor. This position can be adjusted. </p>
+<p>Two methods exist:</p>
+<ul>
+<li>Specifying the page row and character column</li>
+<li>Specifying the page row and pixel column</li>
+</ul>
+<h4 id="set-cursor-position-by-character-column"><strong>Set Cursor Position by Character Column</strong></h4>
+<p>This function is used to position the cursor on a specific page and character column. After this call, the next bytes written to the screen will be displayed at the new position of the cursor:</p>
+<pre><code>oledAddon.setCursor(int row, int column);
+</code></pre>
+
+<p>Note: since the column cursor is not preserved after a column addressing change, the column addressing <strong>needs be set to 0-125 using the oledSetTextColumns() function to properly display text before the cursor position is programmed.</strong></p>
+<p><strong>Arguments</strong></p>
+<p>The <code>row</code> argument sets the page for the cursor, so the range is 0 to 7.</p>
+<p>The <code>column</code> argument sets the character column position of the cursor, the range is 0 to 20.</p>
+<p><strong>Examples</strong></p>
+<p>Set the cursor to the start of the last page:</p>
+<pre><code>oledAddon.setCursor(7,0);
+</code></pre>
+
+<p>Set the cursor to the middle of the 4th row:</p>
+<pre><code>oledAddon.setCursor(3,10);
+</code></pre>
+
+<p>Set the cursor to the starting position at the top-left:</p>
+<pre><code>oledAddon.setCursor(0,0);
+</code></pre>
+
+<h4 id="set-cursor-position-by-pixel"><strong>Set Cursor Position by Pixel</strong></h4>
+<p>This function is used to position the cursor on a specific page and pixel row. This gives more fine grain control than setting by character column.</p>
+<p>After this call, the next bytes written to the screen will be displayed at the new position of the cursor:</p>
+<pre><code>oledAddon.setCursorByPixel(int row, int pixel);
+</code></pre>
+
+<p>It allows for cursor positions that are not aligned with the 21 possible character columns.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>row</code> argument sets the page for the cursor, so the range is 0-7</p>
+<p>The <code>pixel</code> argument sets the horizontal pixel position of the cursor, the range is 0 to 127</p>
+<p><strong>Examples</strong></p>
+<p>Set the cursor to the start of the last page:</p>
+<pre><code>oledAddon.setCursorByPixel(7,0);
+</code></pre>
+
+<p>Set the cursor to the middle of the 4th row:</p>
+<pre><code>oledAddon.setCursorByPixel(3,63);
+</code></pre>
+
+<p>Set the cursor to the bottom-left</p>
+<pre><code>oledAddon.setCursorByPixel(7,0);
+</code></pre>
+
+<h4 id="clearing-the-display"><strong>Clearing the Display</strong></h4>
+<p>To clear the screen and move the cursor to the starting position at the top-left of the screen:</p>
+<pre><code>oledAddon.clear();
+</code></pre>
+
+<h3 id="writing-text-to-the-display"><strong>Writing Text to The Display</strong></h3>
+<p>Listed below are the functions that write bytes, characters, strings, or images to the display.</p>
+<h4 id="write-a-single-byte"><strong>Write a Single Byte</strong></h4>
+<p>Write a single byte, eight vertical pixels, to the current position of the cursor:</p>
+<pre><code>oledAddon.oledWriteByte(int byte);
+</code></pre>
+
+<p><strong>Arguments</strong></p>
+<p>The <code>byte</code> argument holds the eight bits that will be written to the screen. The Least Significant Bit (LSB) in the byte corresponds to the top-most pixel in the column, the Most Significant Bit (MSB) corresponds to the bottom-most pixel in the column.</p>
+<p><img alt="imgur" src="http://i.imgur.com/8DIiN2n.png" /></p>
+<p>After the byte is set, the cursor will automatically move to the next page column.</p>
+<p><strong>Examples</strong></p>
+<p>Draw the following pattern:</p>
+<p><img alt="imgur" src="http://i.imgur.com/lxs1q8J.png" /></p>
+<pre><code>oledAddon.writeByte(0x3f);
+</code></pre>
+
+<h4 id="write-a-single-character"><strong>Write a Single Character</strong></h4>
+<p>Write a single character to the current position of the cursor:</p>
+<pre><code>oledAddon.writeChar(character);
+</code></pre>
+
+<p><strong>Arguments</strong></p>
+<p>The <code>character</code> argument is the character that is to be written to the screen.</p>
+<p>Make sure to check the asciiTable dynamic array found in oled-exp.h, it defines the bitmap pattern of each allowed character. Any characters not found in the table will be ignored.</p>
+<p><strong>Examples</strong></p>
+<p>Write an 'O'</p>
+<pre><code>oledAddon.writeChar('O');
+</code></pre>
+
+<h4 id="write-a-string"><strong>Write a String</strong></h4>
+<p>Write an entire string of characters, starting at the current position of the cursor:</p>
+<pre><code>oledAddon.write(msg);
+</code></pre>
+
+<p>Underneath, this uses the writeChar function to display characters and also implements newline functionality.</p>
+<p>The newline functionality is implemented by using a global variable to keep track where the cursor is in each row (I know... shameful...). Once the characters '\' and 'n' are detected, the write function will print spaces to the display until it reaches the end of the current page and the cursor increments its position to the next page.</p>
+<p>Note: the column addressing will be set to 0-125 to properly display text during this call, at the end of the function it will be reset back to 0-127.</p>
+<p><strong>Arguments</strong></p>
+<p>The <code>msg</code> argument is the string to be written to the display. Any characters not found in the asciiTable array will be ignored.</p>
+<p><strong>Examples</strong></p>
+<p>Write 'Onion Omega':</p>
+<pre><code>oledAddon.write('Onion Omega');
+</code></pre>
+
+<p>Write 'Onion Omega', then 'Inventing the Future' on the next line, and then 'Today' two lines below:</p>
+<pre><code>oledAddon.write(&quot;Onion Omega\nInventing the Future\n\nToday&quot;);
+</code></pre>
+
+<h3 id="scrolling-the-display-contents"><strong>Scrolling the Display Contents</strong></h3>
+<p>The OLED can scroll the contents of the screen horizontally or upwards at a 45 degree angle. The displayed content will wrap around when it reaches the edge of the display.</p>
+<h4 id="horizontal-scrolling"><strong>Horizontal Scrolling</strong></h4>
+<p>Scroll the contents of the screen horizontally or upwards at a 45 degree angle. Contents will wrap around after reaching edge of display</p>
+<pre><code>oledAddon.scroll(int direction, int scrollSpeed, int startPage, int stopPage);
+</code></pre>
+
+<h5 id="arguments"><strong>Arguments</strong></h5>
+<p><strong>Direction</strong></p>
+<p>Indicates whether to scroll left or right.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Scrolling Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Left</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Right</td>
+</tr>
+</tbody>
+</table>
+<p><strong>scrollSpeed</strong></p>
+<p>Determines the number of frames between each scroll step.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Scroll Speed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>5 Frames</td>
+</tr>
+<tr>
+<td>1</td>
+<td>64 Frames</td>
+</tr>
+<tr>
+<td>2</td>
+<td>128 Frames</td>
+</tr>
+<tr>
+<td>3</td>
+<td>256 Frames</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3 Frames</td>
+</tr>
+<tr>
+<td>5</td>
+<td>4 Frames</td>
+</tr>
+<tr>
+<td>6</td>
+<td>25 Frames</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2 Frames</td>
+</tr>
+</tbody>
+</table>
+<p><strong>startPage and stopPage</strong></p>
+<p>Thes two arguments define which page to start and stop scrolling at respectively. Both can have values between 0-7, however <strong><em>startPage must be less than stopPage</em></strong>.</p>
+<p><strong>Example</strong></p>
+<p>Let's scroll the entire screen to the left</p>
+<pre><code>oledAddon.scroll(0,0,0,7);
+</code></pre>
+
+<h4 id="diagonal-scrolling"><strong>Diagonal Scrolling</strong></h4>
+<p>Scroll all or part of the screen diagonally upwards:</p>
+<pre><code>scrollDiagonal(int direction, int scrollSpeed, int fixedRows, int scrollRows, int verticalOffset, int startPage, int stopPage);
+</code></pre>
+
+<h5 id="arguments_1"><strong>Arguments</strong></h5>
+<p><strong>Direction</strong></p>
+<p>Indicates whether to scroll up-left or up-right.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Scrolling Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Upwards and Left</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Upwards and Right</td>
+</tr>
+</tbody>
+</table>
+<p><strong>scrollSpeed</strong></p>
+<p>Determines the number of frames between each scroll step.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Scroll Speed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>5 Frames</td>
+</tr>
+<tr>
+<td>1</td>
+<td>64 Frames</td>
+</tr>
+<tr>
+<td>2</td>
+<td>128 Frames</td>
+</tr>
+<tr>
+<td>3</td>
+<td>256 Frames</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3 Frames</td>
+</tr>
+<tr>
+<td>5</td>
+<td>4 Frames</td>
+</tr>
+<tr>
+<td>6</td>
+<td>25 Frames</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2 Frames</td>
+</tr>
+</tbody>
+</table>
+<p><strong>fixedRows</strong></p>
+<p>Defines the amount of pixel rows, starting from the top, that will not have vertical scrolling. Can take a range from 0-63.</p>
+<p><strong>scrollRows</strong></p>
+<p>Defines the amount of pixel rows, starting from the top, that will have vertical scrolling. Can take a range from 0-63.</p>
+<p><strong>verticalOffset</strong></p>
+<p>Defines the number of vertical rows to scroll by each frame.</p>
+<p><strong>startPage and stopPage</strong></p>
+<p>Thes two arguments define which page to start and stop scrolling at respectively. Both can have values between 0-7, however <strong><em>startPage must be less than stopPage</em></strong>.</p>
+<p><strong>Examples</strong></p>
+<p>Let's scroll the entire screen upwards to the left.</p>
+<pre><code>oledAddon.scrollDiagonal(0,5,0,127,1,0,7);
+</code></pre>
+
+<h4 id="stop-scrolling"><strong>Stop Scrolling</strong></h4>
+<p>Disables all active scrolling</p>
+<pre><code>oledAddon.scrollStop();
+</code></pre>
+
+<h2 id="further-reading"><strong>Further Reading</strong></h2>
+<p>If you are unsure of how the display works. We recommend you take a look at the documentation for the Dynamic C library for the OLED Expansion, which can be found <a href="https://wiki.onion.io/Documentation/Libraries/OLED-Expansion-Library">here</a>. </p>
+<p>The node functions are a direct mapping to the functions available from the C library. </p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

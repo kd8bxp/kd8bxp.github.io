@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Tessel 2 Hardware API - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#tessel-2-hardware-api">Tessel 2 Hardware API</a></li>
+            <li><a href="#ports-and-pins">Ports and pins</a></li>
+            <li><a href="#leds">LEDs</a></li>
+            <li><a href="#button">Button</a></li>
+            <li><a href="#usb-ports">USB Ports</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="tessel-2-hardware-api">Tessel 2 Hardware API</h1>
+<ul>
+<li><a href="#ports-and-pins">Ports and pins</a></li>
+<li><a href="#modules">Modules</a></li>
+<li><a href="#pin-mapping">Pin mapping</a></li>
+<li><a href="#pull-up-and-pull-down-pins">Pull-up and Pull-down pins</a></li>
+<li><a href="#digital-pins">Digital pins</a></li>
+<li><a href="#analog-pins">Analog pins</a></li>
+<li><a href="#interrupt-pins">Interrupts</a></li>
+<li><a href="#pwm-pins">PWM pins</a></li>
+<li><a href="#terms-used">Terms used</a></li>
+<li><a href="#i2c">I2C</a></li>
+<li><a href="#spi">SPI</a></li>
+<li><a href="#uartserial">UART/Serial</a></li>
+<li><a href="#power-management">Power management</a></li>
+<li><a href="#leds">LEDs</a></li>
+<li><a href="#button">Button</a></li>
+<li><a href="#usb-ports">USB ports</a></li>
+</ul>
+<p>When you <code>require('tessel')</code> within a script which is executed on Tessel 2, this loads a library which interfaces with the Tessel 2 hardware, including pins, ports, and LEDs, just like Tessel 1 (<a href="https://github.com/tessel/t1-docs/blob/master/hardware-api.md">Tessel 1 hardware documentation</a>). The code for Tessel 2's hardware object can be found <a href="https://github.com/tessel/t2-firmware/blob/master/node/tessel-export.js">here</a>.</p>
+<h2 id="ports-and-pins">Ports and pins</h2>
+<p>Tessel has two ports, A and B. They are referred to as <code>tessel.port.B</code>. <code>tessel.port['B']</code> is also an acceptable reference style.</p>
+<p>Tessel's ports can be used as module ports as in Tessel 1 (e.g. <code>accelerometer.use(tessel.port.B)</code>), or used as flexible GPIO pins (e.g. <code>myPin = tessel.port.A.pin[0]</code>).</p>
+<h3 id="modules">Modules</h3>
+<p>Tessel 2's module ports can be used with <a href="//tessel.io/modules">Tessel modules</a> much as in <a href="http://start.tessel.io/modules">Tessel 1</a>.</p>
+<p>Here is an example of using the Tessel Climate module on Tessel's port B:</p>
+<pre><code class="js">var tessel = require('tessel');
+var climatelib = require('climate-si7020').use(tessel.port.B);
+</code></pre>
+
+<h3 id="pin-mapping">Pin mapping</h3>
+<p>The module ports are not just for modules! They can also be used as flexible, simply addressable General purpose input-output (GPIO) pins. GPIO pins provide access for digital and analog signal lines. Available pins are exposed through the .pin, .digital, .analog, and .pwm arrays.</p>
+<p>The pin capabilities for ports A and B are as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Port</th>
+<th>Pin</th>
+<th>Digital I/O</th>
+<th>SCL</th>
+<th>SDA</th>
+<th>SCK</th>
+<th>MISO</th>
+<th>MOSI</th>
+<th>TX</th>
+<th>RX</th>
+<th>Analog In</th>
+<th>Analog Out</th>
+<th>Interrupt</th>
+<th>PWM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>0</td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>A</td>
+<td>1</td>
+<td>✓</td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>A</td>
+<td>2</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td>A</td>
+<td>3</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>A</td>
+<td>4</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>A</td>
+<td>5</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>A</td>
+<td>6</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>A</td>
+<td>7</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td>0</td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td>1</td>
+<td>✓</td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td>2</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td>3</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td>4</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td>5</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>B</td>
+<td>6</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>B</td>
+<td>7</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Pin Mapping for Tessel" src="/images/pindiagram.jpg" /></p>
+<p><a href="https://raw.githubusercontent.com/tessel/t2-docs/master/images/pindiagram.jpg">Tessel 2 Pin Diagram</a></p>
+<p>If you're newer to hardware and these functions look like alphabet soup to you, take a look at our <a href="https://tessel.io/docs/communicationProtocols">communication protocols documentation</a> to get an idea of how these pins should be used.</p>
+<p>By default, all of the pins are pulled high if not specifically set.</p>
+<h3 id="pull-up-and-pull-down-pins">Pull-up and Pull-down pins</h3>
+<p>Pins 2-7 on both Ports are available for pull-up and pull-down.</p>
+<p>The basic function of a pull-up resistor is to ensure that given no other input, a circuit assumes a default value. The 'pullup' mode pulls the line high and the 'pulldown' mode pulls it low.</p>
+<h3 id="usage">Usage</h3>
+<pre><code class="js">// Invoke this method to set the pull mode. pullType can be - pullup, pulldown or none.
+pin.pull(pullType, callback);
+</code></pre>
+
+<p>Example : </p>
+<pre><code class="js">var tessel= require('tessel'); // Import Tessel
+
+var pin = tessel.port.A.pin[2]; // Select pin 2 on port A
+
+pin.pull('pullup', (error, buffer) =&gt; {
+    if (error) {
+        throw error;
+    }
+
+    console.log(buffer.toString('hex')); // The output would be 88. Which is an OK Signal from SAMD21
+})
+</code></pre>
+
+<p><a href="/Tutorials/pinpull.html">Learn more about using the Pullup / Pulldown API.</a></p>
+<h3 id="digital-pins">Digital pins</h3>
+<p>A digital pin is either high (on/3.3V) or low (off/0V). Any pin on both ports A and B, other than 3.3V and GND, can be used be used as a digital pin. All pins are pulled high to 3.3V by default.</p>
+<p><strong>pin.write:</strong></p>
+<p>Set the digital value of a pin.</p>
+<pre><code class="js">pin.write(number, callback(error, buffer));
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>number</td>
+<td>Number</td>
+<td>0 for "low", 1 for "high"</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>callback</td>
+<td>Function</td>
+<td>Called when write is complete</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>error</td>
+<td>Error</td>
+<td>Contains information if an error occured, otherwise <code>null</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>buffer</td>
+<td><a href="https://nodejs.org/docs/latest-v4.x/api/buffer.html">Buffer</a></td>
+<td>Value written to the pin</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class="js">var tessel = require('tessel'); // Import tessel
+var pin = tessel.port.A.pin[2]; // Select pin 2 on port A
+pin.write(1, (error, buffer) =&gt; {
+  if (error) {
+    throw error;
+  }
+
+  console.log(buffer.toString()); // Log the value written to the pin
+});
+</code></pre>
+
+<p><strong>pin.read:</strong></p>
+<p>Read the digital value of a pin.</p>
+<pre><code class="js">pin.read(callback(error, number));
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>callback</td>
+<td>Function</td>
+<td>Called when read is complete</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>error</td>
+<td>Error</td>
+<td>Contains information if an error occured, otherwise <code>null</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>number</td>
+<td>Number</td>
+<td>1 if "high", 0 if "low"</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class="js">var tessel = require('tessel'); // Import tessel
+var pin = tessel.port.A.pin[2]; // Select pin 2 on port A
+pin.read(function(error, number) {
+  if (error) {
+    throw error;
+  }
+
+  console.log(number); // 1 if &quot;high&quot;, 0 if &quot;low&quot;
+});
+</code></pre>
+
+<p><strong>pin.toggle:</strong></p>
+<p>Toggle the value of a digital pin. When the value of a pin is high, then it is set to low, and vice versa.</p>
+<pre><code class="js">pin.toggle(callback(error, buffer));
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>callback</td>
+<td>Function</td>
+<td>Called when action is complete</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>error</td>
+<td>Error</td>
+<td>Contains information if an error occured, otherwise <code>null</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>buffer</td>
+<td><a href="https://nodejs.org/docs/latest-v4.x/api/buffer.html">Buffer</a></td>
+<td>Value written to the pin</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="js">var tessel = require('tessel'); // Import tessel
+var pin = tessel.port.A.pin[3]; // Select pin 3 on port A
+pin.toggle((error, buffer) =&gt; {
+  if (error) {
+    throw error;
+  }
+
+  console.log(buffer.toString()); // Log the value written to the pin
+});
+</code></pre>
+
+<h3 id="analog-pins">Analog pins</h3>
+<p>An analog pin is a pin whose value can vary in the range between 0V and 3.3V. The analog pin API represents these this value as a percentage, between 0 and 1, where 1 stands for 3.3V.</p>
+<p><strong>pin.analogWrite:</strong></p>
+<p>Set the analog value of a pin. Enabled on pin 7 of Port B.</p>
+<pre><code class="js">pin.analogWrite(number);
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>number</td>
+<td>Number</td>
+<td>Minimum value 0, maximum value 1</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class="js">var tessel = require('tessel'); // Import tessel
+var pin = tessel.port.B.pin[7]; // Select pin 7 on port B
+pin.analogWrite(0.6);  // Turn pin to 60% of high voltage
+</code></pre>
+
+<p><strong>pin.analogRead:</strong></p>
+<p>Read the analog value of a pin. Enabled on pins 4 and 7 on Port A,and all pins on Port B. On both ports, all pins are pulled high by default, which means a pin not connected to any sort of sensor or resistor can still return a value over 0.</p>
+<pre><code class="js">pin.analogRead(callback(error, number));
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>callback</td>
+<td>Function</td>
+<td>Called when read is complete</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>error</td>
+<td>Error</td>
+<td>Contains information if an error occured, otherwise <code>null</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>number</td>
+<td>Number</td>
+<td>Minimum value 0, maximum value 1</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class="js">var tessel = require('tessel'); // Import tessel
+var pin = tessel.port.A.pin[4]; // Select pin 4 on port A
+pin.analogRead((error, number) =&gt; {
+  if (error) {
+    throw error;
+  }
+
+  console.log(number); // The number is a value between 0 and 1
+});
+</code></pre>
+
+<h3 id="interrupt-pins">Interrupt Pins</h3>
+<p>Pins 2, 5, 6, 7 on both Ports are available for interrupts.</p>
+<p>Interrupts allow us to register events based on state changes in a pin.</p>
+<h4 id="usage_1">Usage</h4>
+<pre><code class="js">// Invoke the callback whenever the event occurs
+pin.on(eventName, callback);
+
+// Invoke the callback the first time the event occurs
+pin.once(eventName, callback);
+</code></pre>
+
+<h4 id="available-events">Available Events</h4>
+<table>
+<thead>
+<tr>
+<th>Event Name</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rise</td>
+<td>Pin voltage rises</td>
+<td></td>
+</tr>
+<tr>
+<td>fall</td>
+<td>Pin voltage falls</td>
+<td></td>
+</tr>
+<tr>
+<td>change</td>
+<td>Pin voltage changes</td>
+<td>Passes current value of pin to callback</td>
+</tr>
+<tr>
+<td>high*</td>
+<td>Pin voltage goes high</td>
+<td>Only available via pin.once()</td>
+</tr>
+<tr>
+<td>low*</td>
+<td>Pin voltage goes low</td>
+<td>Only available via pin.once()</td>
+</tr>
+</tbody>
+</table>
+<p>* Only one of these events may be registered at a time.</p>
+<p><a href="/Tutorials/Interrupts.html">Learn more about using the interrupt API.</a></p>
+<h3 id="pwm-pins">PWM pins</h3>
+<p>Tessel has four PWM pins: pins 5 and 6 on each module port.</p>
+<h4 id="usage_2">Usage</h4>
+<p><strong>tessel.pwmFrequency:</strong></p>
+<p>Set the signal frequency in hertz. 1 hertz equals 1 cycle of signal per second.</p>
+<pre><code class="js">tessel.pwmFrequency(number);
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>number</td>
+<td>Number</td>
+<td>Minimum value 1, maximum value 5000</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Note: the <code>pwmFrequency</code> function <em>must</em> be called before <code>pwmDutyCycle</code>. Re-setting
+<code>pwmFrequency</code> will disable PWM output until <code>pwmDutyCycle</code> is called again.</p>
+<p><strong>pin.pwmDutyCycle:</strong></p>
+<p>Set the percentage amount of time the pin is active each cycle of signal.</p>
+<pre><code class="js">pin.pwmDutyCycle(number);
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>number</td>
+<td>Number</td>
+<td>Minimum value 0, maximum value 1, e.g. 0.6</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><a href="/Tutorials/Pulse_Width_Modulation.html">Learn more about using the PWM API.</a></p>
+<h3 id="terms-used">Terms Used</h3>
+<p>The following sections use industry standard technical terms that are considered non-inclusive. They are used here in an explicitly technical manner and only to be accurate in describing these wire communication protocols. The terms are used strictly as defined here:</p>
+<p><strong>Master:</strong> A machine or device directly controlling another (source: <a href="http://www.oxforddictionaries.com/us/definition/american_english/master#master__7">Oxford Dictionary</a>)</p>
+<p><strong>Slave:</strong> A device, or part of one, directly controlled by another (source: <a href="http://www.oxforddictionaries.com/us/definition/american_english/slave#slave__7">Oxford Dictionary</a>)</p>
+<h3 id="i2c">I2C</h3>
+<p>An I2C channel uses the SCL and SDA pins (0 and 1 on Tessel 2). If you are unfamiliar with the I2C protocol, please see the <a href="https://tessel.io/docs/communicationProtocols#i2c">communication protocols tutorial</a>.</p>
+<h4 id="usage_3">Usage</h4>
+<p>There are three different commands you can send over I2C: transfer, send, and read.</p>
+<p><strong>i2c.transfer</strong></p>
+<p>Write data to the slave device and then subsequently read data from the slave device. Can be used to read from a specific register (depending on the communication details of the slave device– read the datasheet!).</p>
+<p>A common use of this method is to send the address of a register, then receive back the information contained in that register.</p>
+<pre><code class="js">var tessel = require('tessel');
+
+// Connect to device
+var port = tessel.port.A; // Use the SCL/SDA pins of Port A
+var slaveAddress = 0xDE; // Specific to device
+var i2c = new port.I2C(slaveAddress); // Initialize I2C communication
+
+// Details of I2C transfer
+var bytesToSend = [0xde, 0xad, 0xbe, 0xef]; // An array,can be the address of a register or data to write (depends on device)
+var numBytesToRead = 4; // Read back this number of bytes
+
+// Send/recieve data over I2C using i2c.transfer
+i2c.transfer(new Buffer(bytesToSend), numBytesToRead, function (error, dataReceived) {
+  // Print data received (buffer of hex values)
+  console.log('Buffer returned by I2C slave device ('+slaveAddress.toString(16)+'):', dataReceived);
+});
+</code></pre>
+
+<p><strong>i2c.send</strong></p>
+<p>Write data over I2C to the slave device without reading data back.</p>
+<pre><code class="js">var tessel = require('tessel');
+
+// Connect to device
+var port = tessel.port.A; // Use the SCL/SDA pins of Port A
+var slaveAddress = 0xDE; // Specific to device
+var i2c = new port.I2C(slaveAddress); // Initialize I2C communication
+
+// Details of I2C transfer
+var bytesToSend = [0xde, 0xad, 0xbe, 0xef]; // An array,can be the address of a register or data to write (depends on device)
+
+// Send data over I2C using i2c.send
+i2c.send(new Buffer(bytesToSend), function (error) {
+  // Print confirmation
+  console.log('Wrote', bytesToSend, 'to slave device', slaveAddress.toString(16), 'over I2C.');
+});
+</code></pre>
+
+<p><strong>i2c.read</strong></p>
+<p>Read data over I2C but do not write to the slave device.</p>
+<pre><code class="js">var tessel = require('tessel');
+
+// Connect to device
+var port = tessel.port.A; // Use the SCL/SDA pins of Port A
+var slaveAddress = 0xDE; // Specific to device
+var i2c = new port.I2C(slaveAddress); // Initialize I2C communication
+
+// Details of I2C transfer
+var numBytesToRead = 4; // Read back this number of bytes
+
+// Read data over I2C using i2c.transfer
+i2c.read(numBytesToRead, function (error, dataReceived) {
+  // Print data received (buffer of hex values)
+  console.log('Buffer returned by I2C slave device ('+slaveAddress.toString(16)+'):', dataReceived);
+});
+</code></pre>
+
+<h3 id="spi">SPI</h3>
+<p>A SPI channel uses the SCK, MISO, and MOSI pins (2, 3, and 4 on Tessel 2). If you are unfamiliar with the SPI protocol, please see the <a href="https://tessel.io/docs/communicationProtocols#spi">communication protocols tutorial</a>.</p>
+<p>Here is an example using Tessel's SPI protocol:</p>
+<pre><code class="js">var port = tessel.port.A;
+var spi = new port.SPI({
+  clockSpeed: 4*1000*1000, // 4MHz
+  polarity: 0, // Polarity - optional
+  phase: 0, // Clock phase - optional
+  chipSelect: port.pin[7] // Chip select - optional
+});
+
+spi.transfer(new Buffer([0xde, 0xad, 0xbe, 0xef]), function (error, dataReceived) {
+  console.log('buffer returned by SPI slave:', dataReceived);
+});
+</code></pre>
+
+<p>Wikipedia's article on SPI has an excellent <a href="https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus#Clock_polarity_and_phase">section</a> on polarity (cpol) and clock phase (cpha).</p>
+<h3 id="uartserial">UART/Serial</h3>
+<p>A UART (serial) channel uses the TX and RX pins (5 and 6 on Tessel 2). If you are unfamiliar with the UART protocol, please see the <a href="https://tessel.io/docs/communicationProtocols#uart">communication protocols tutorial</a>.</p>
+<p>Here is an example using Tessel's UART protocol:</p>
+<pre><code class="js">var port = tessel.port.A;
+var uart = new port.UART({
+  baudrate: 115200
+});
+
+uart.write('ahoy hoy\n')
+uart.on('data', function (data) {
+  console.log('received:', data);
+})
+
+// UART objects are streams!
+// pipe all incoming data to stdout:
+uart.pipe(process.stdout);
+</code></pre>
+
+<h3 id="power-management">Power management</h3>
+<h4 id="board">Board</h4>
+<p><strong>tessel.reboot:</strong></p>
+<p>Power cycle the board. This will clear RAM and restart the program once reboot is complete. This can be done with the <a href="/API/CLI.html#tessel-management"><code>t2 reboot</code></a> command as well.</p>
+<pre><code>tessel.reboot();
+</code></pre>
+
+<h4 id="ports">Ports</h4>
+<p>Tessel 2's firmware turns off power to the port if a program does not require the <code>tessel</code> module. However, if <code>tessel</code> is required in the code, both will be turned on by default. It is possible to control the power to module ports with an explicit call:</p>
+<pre><code class="js">var Tessel = require('tessel-export');
+
+var tessel = new Tessel({
+ ports: {
+   A: false,
+   B: false,
+ }
+});
+</code></pre>
+
+<p><strong>tessel.open:</strong></p>
+<p>Allow power to one or both Tessel ports.</p>
+<pre><code class="js">tessel.open(portName);
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>portName</td>
+<td>String</td>
+<td>Either 'A' or 'B'</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>Leaving out the port name will turn on power to both ports, i.e. <code>tessel.open()</code>.</p>
+<p><strong>tessel.close:</strong></p>
+<p>Disallow power to one or both Tessel ports.</p>
+<pre><code class="js">tessel.close(portName);
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>portName</td>
+<td>String</td>
+<td>Either 'A' or 'B'</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>Leaving out the port name will turn off power to both ports, i.e. <code>tessel.close()</code>.</p>
+<h2 id="leds">LEDs</h2>
+<p>There are 4 LEDs available on the Tessel 2, you may see them labeled on the board as <code>ERR</code>, <code>WLAN</code>, <code>LED0</code>, and <code>LED1</code>. They are available through the <code>tessel.led</code> object.</p>
+<pre><code class="js">// an array of available LEDs
+var leds = tessel.led;
+
+// ERR - Red
+var red = leds[0];
+
+// WLAN - Amber
+var amber = leds[1];
+
+// LED0 - Green
+var green = leds[2];
+
+// LED1 - Blue
+var blue = leds[3];
+</code></pre>
+
+<p>Each LED has a few methods for controlling it.</p>
+<pre><code class="js">// Green LED
+var led = tessel.led[2];
+
+/*
+* Property: isOn
+* Returns: boolean (true or false) if led is on
+*
+* Checks the led to see if it is on or not.
+*/
+if (led.isOn) {
+  console.log('The green LED is currently on.');
+}
+
+/*
+* Method: on
+* Returns: the led object (this makes it a chainable function)
+*
+* Turns the led ON.
+*/
+led.on();
+
+/*
+* Method: off
+* Returns: the led object (this makes it a chainable function)
+*
+* Turns the led OFF.
+*/
+led.off();
+
+/*
+* Method: toggle
+* Arguments:
+* - callback: function to call once the led's value has been set and is passed an error object if one occured
+*
+* Toggles the current state of the led and calls the callback function once that is done.
+*/
+led.toggle(function (error) {
+  if (error) {
+    console.log('There was an error with toggling the led.', error);
+  } else {
+    console.log('The green led is now on OR off!');
+  }
+});
+</code></pre>
+
+<h2 id="button">Button</h2>
+<p>Tessel 2's button is not programmable.</p>
+<p>During operation of a script, pressing the button will restart the script.</p>
+<p>If you hold down the button while plugging in power, Tessel 2 boots into DFU mode. This is typically used to load firmware built from source.</p>
+<h2 id="usb-ports">USB Ports</h2>
+<p>USB modules do not need to be accessed through the Tessel object. See <a href="https://github.com/tessel/tessel-av">tessel-av</a> for an example USB module.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

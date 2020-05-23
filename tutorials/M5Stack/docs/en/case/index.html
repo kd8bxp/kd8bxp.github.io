@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>M5Stack Cases {docsify-ignore-all} - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#m5stack-cases-docsify-ignore-all">M5Stack Cases {docsify-ignore-all}</a></li>
+            <li><a href="#stem-education-cases">STEM Education Cases</a></li>
+            <li><a href="#m5stack-awesome">M5Stack Awesome</a></li>
+            <li><a href="#hardware">Hardware</a></li>
+            <li><a href="#web-site">Web site</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="m5stack-cases-docsify-ignore-all">M5Stack Cases {docsify-ignore-all}</h1>
+<h2 id="stem-education-cases">STEM Education Cases</h2>
+<h2 id="m5stack-awesome">M5Stack Awesome</h2>
+<ul>
+<li>
+<p><a href="https://github.com/tobozo/M5Stack-SD-Updater">M5Stack-SD-Updater</a> - Customizable menu system for M5Stack - loads apps from the Micro SD card</p>
+</li>
+<li>
+<p><a href="https://github.com/Bodmer/TFT_eSPI">TFT_eSPI</a>  - TFT library for the ESP8266 and ESP32 that supports different driver chips</p>
+</li>
+<li>
+<p><a href="https://github.com/biblepaywallet/M5Widgets">M5Widgets</a> - Widgets for the M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/tomsuch/M5StackSAM">M5StackSAM</a> - Simple Applications Menu Arduino Library for M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/JF002/cfGUI">cfGUI</a> - A simple GUI library for M5Stack (ESP32)</p>
+</li>
+<li>
+<p><a href="https://github.com/ImpulseAdventure/GUIslice">GUIslice</a> - A lightweight GUI framework suitable for embedded displays</p>
+</li>
+<li>
+<p><a href="https://github.com/ropg/M5ez">M5ez</a> - The easy way to program on the M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/botofancalin/M5Stack-MultiApp-Advanced">M5Stack MultiApp Advanced</a> - A M5Stack firmware made on PlatformIO</p>
+</li>
+<li>
+<p><a href="https://github.com/botofancalin/M5Stack-ESP32-Oscilloscope">M5Stack ESP32 Oscilloscope</a> - A fully functional oscilloscope based on ESP32 M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/meganetaaan/m5stack-avatar">M5Stack-Avatar</a> - An M5Stack library for rendering avatar faces</p>
+</li>
+<li>
+<p><a href="https://github.com/nomolk/M5Stack_CrackScreen">M5Stack_CrackScreen</a> - Crack your M5Stack!!</p>
+</li>
+<li>
+<p><a href="https://github.com/n0bisuke/M5_Shuttle_Run">M5_Shuttle_Run</a> - M5_Shuttle_Run</p>
+</li>
+<li>
+<p><a href="https://github.com/drayde/nixietubeM5">nixietubeM5</a> - (Fake) Nixie Tube Display on a M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/dankelley2/M5Stack_BTCTicker">M5Stack_BTCTicker</a> - A small Bitcoin price ticker using an M5Stack (ESP32) and the Coindesk API</p>
+</li>
+<li>
+<p><a href="https://github.com/donma/M5StackWifiSettingWithETHPrice">M5Stack_ETHPrice</a> - Dependence on example Wifi Setting to get ETH Price from Maicoin</p>
+</li>
+<li>
+<p><a href="https://github.com/tobozo/M5Stack-PacketMonitor">M5Stack-PacketMonitor</a> - M5Stack ESP32 Packet Monitor</p>
+</li>
+<li>
+<p><a href="https://github.com/ElectroMagus/M5-FFT">M5-FFT</a> - Graphic Equalizer on the M5Stack platform</p>
+</li>
+<li>
+<p><a href="https://github.com/anton-b/M5Stack_ESP32_radio">M5Stack_ESP32_radio</a> - Playing mp3 stream out of internet using M5Stack prototype</p>
+</li>
+<li>
+<p><a href="https://github.com/dsiberia9s/mp3-player-m5stack">mp3-player-m5stack</a> - MP3 player for M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/moononournation/ArduinoWiFiPhotoBackup">ArduinoWiFiPhotoBackup</a> - M5STACK Arduino WiFi Photo Backup device</p>
+</li>
+<li>
+<p><a href="https://github.com/mhama/M5StackHIDCtrlAltDel">M5StackHIDCtrlAltDel</a> - You can send ctrl+alt+del to your PC from M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/m4k3r-net/M5Stack-MarkdownWebServer">M5Stack Markdown Web Server</a> - Markdown &amp; icons loaded from an Micro SD card/TF card to run a web page</p>
+</li>
+<li>
+<p><a href="https://github.com/PartsandCircuits/M5Stack-Tetris">M5Stack-Tetris</a> - Tetris for M5Stack Ported to M5Stack by macsbug - https://macsbug.wordpress.com/</p>
+</li>
+<li>
+<p><a href="https://github.com/pcelli85/M5Stack_FlappyBird_game">M5Stack_FlappyBird_game</a> - M5Stack FlappyBird Playable</p>
+</li>
+<li>
+<p><a href="https://github.com/PartsandCircuits/M5Stack-SpaceShooter">M5Stack-SpaceShooter</a> - Space Invaders knock-off for M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/tobozo/M5Stack-Pacman-JoyPSP">M5Stack-Pacman-JoyPSP</a> - Pacman on M5Stack/PSP Joypad, with sounds</p>
+</li>
+<li>
+<p><a href="https://github.com/hkoffer/M5Stack-Thermal-Camera-">M5Stack-Thermal-Camera</a> - M5Stack Thermal Camera with AMG8833 thermal sensor</p>
+</li>
+<li>
+<p><a href="https://github.com/m4k3r-net/M5Stack-3DPrintFiles">M5Stack-3DPrintFiles</a> - Links to files for 3D printing custom case parts for the M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/ropg/truetype2gfx">truetype2gfx</a> - Converting fonts from TrueType to Adafruit GFX</p>
+</li>
+<li>
+<p><a href="https://github.com/yellowelise/m5stack-onscreen-keyboard">m5stack-onscreen-keyboard</a> - Full size qwerty keyboard for M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/lifedebug/m5stack">gui for m5stack by micropython</a> - gui for m5stack by micropython</p>
+</li>
+<li>
+<p><a href="https://github.com/PartsandCircuits/M5Stack-Tetris-using-RCWController">M5Stack-Tetris-using-RCWController</a> - Play Tetris on an M5Stack using the RCWController iPhone app to control the action</p>
+</li>
+<li>
+<p><a href="https://github.com/EternityForest/AcornsM5">AcornsM5</a> - Squirrel based OS for the M5Stack, can run apps from SD card</p>
+</li>
+<li>
+<p><a href="https://github.com/lovyan03/M5Stack_TreeView">M5Stack_TreeView</a> - Tree view menu library</p>
+</li>
+<li>
+<p><a href="https://github.com/lovyan03/M5Stack_LovyanLauncher">M5Stack_LovyanLauncher</a> - M5Stack Launcher by lovyan03</p>
+</li>
+<li>
+<p><a href="https://github.com/lovyan03/M5Stack_OnScreenKeyboard">M5Stack_OnScreenKeyboard</a> - full keyboard on M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/robo8080/M5Stack_WebRadio_Avator">M5Stack_WebRadio_Avator</a> - WebRadio with Avatar</p>
+</li>
+<li>
+<p><a href="https://github.com/robo8080/M5Bala_Avatar">M5Bala_Avatar</a> - Avatar with M5Bala</p>
+</li>
+<li>
+<p><a href="https://github.com/robo8080/SD_Updater_TestData">SD_Updater_TestData</a> - testing data for SD Updater</p>
+</li>
+<li>
+<p><a href="https://github.com/robo8080/M5Stack_Sokoban">M5Stack_Sokoban</a> - Sokoban (Backyard management) with M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/Moddable-OpenSource/moddable">Moddable SDK</a> - Javascript SDK</p>
+</li>
+<li>
+<p><a href="https://github.com/ktansai/TrainDia">TrainDia</a> - Tell me what time leave next train from the neigbor station.</p>
+</li>
+<li>
+<p><a href="https://github.com/necobit/M5Stack-MIDI-Module/tree/master/Arduino-IDE-Sketch/8bitNESSynth">M5Stack-MIDI-Module</a> - 8bit NES Synthesizer</p>
+</li>
+<li>
+<p><a href="https://github.com/MhageGH/M5Stack_MMD">M5Stack_MMD</a> - 3D rendering by M5Stack</p>
+</li>
+<li>
+<p><a href="http://shikarunochi.matrix.jp/?p=2964">M5Stack PC-8801 Emulator!</a> - PC-8801 emulator</p>
+</li>
+<li>
+<p><a href="https://github.com/eggfly/StickWatch">StickWatch</a> - M5Stick watch</p>
+</li>
+<li>
+<p><a href="https://github.com/opendime/m5verifier">m5verifier</a> - to verify for OPENDIME</p>
+</li>
+<li>
+<p><a href="https://github.com/dsiberia9s/SpaceDefense-m5stack">SpaceDefense-m5stack</a> - Shooting game</p>
+</li>
+<li>
+<p><a href="https://github.com/elect-gombe/esp32_mmd">esp32_mmd</a> - Real time rendering animation for MMD</p>
+</li>
+<li>
+<p><a href="https://github.com/xoseperez/m5stack-rfm95">m5stack-rfm95</a> - LoRaWAN node base develop platform</p>
+</li>
+<li>
+<p><a href="https://github.com/naoki-sawada/m5stack-ble">m5stack-ble</a> - BLE sample for M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/donma/M5StackBLE">M5StackBLE</a> - BLE sample for M5Stack</p>
+</li>
+<li>
+<p><a href="https://github.com/tobozo/M5Tube">M5Tube</a> - video player</p>
+</li>
+<li>
+<p><a href="https://github.com/moononournation/M5Stack-Cam-Viewer">M5Stack-Cam-Viewer</a> - Arduino M5Cam viewer for M5Stack</p>
+</li>
+<li>
+<p><a href="https://gist.github.com/shioken/fa2c3f5923170d86dd358b313d6ab244">M5Stack_lifegame</a> - Life game</p>
+</li>
+<li>
+<p><a href="https://github.com/EiichiroIto/m5squeak">m5squeak</a> - m5squeak is a squeak implementation of m5stack microcontroller</p>
+</li>
+<li>
+<p><a href="https://github.com/tobozo/ESP32-AmigaBoingBall">ESP32-AmigaBoingBall</a> - The famous Amiga Boing Ball Demo on ESP32</p>
+</li>
+<li>
+<p><a href="http://www.team-rh.com/?p=232">ETERNAL_STRIKER</a> - Shooting game for M5Stack</p>
+</li>
+</ul>
+<h2 id="hardware">Hardware</h2>
+<ul>
+<li>
+<p><a href="https://thousandiy.wordpress.com/2018/06/16/usb-host-for-m5stack/">USB Host Shield for M5Stack</a> - USB Host Shield based on MAX3421E</p>
+</li>
+<li>
+<p><a href="https://thousandiy.wordpress.com/2018/10/20/servo-driver-shield-for-m5stack/">Servo Driver Shield for M5Stack</a> - Servo Driver Shield based on PCA9685</p>
+</li>
+<li>
+<p><a href="https://thousandiy.wordpress.com/2018/10/20/motor-driver-shield-for-m5stack/">Motor Driver Shield for M5Stack</a> - Motor Driver Shield for M5Stack based on L293D</p>
+</li>
+<li>
+<p><a href="https://necobit.com/denshi/m5stack-midi-module/">MIDI Module for M5Stack</a> - MIDI Module for M5Stack</p>
+</li>
+<li>
+<p><a href="https://windesign.work/%E8%A3%BD%E5%93%81%E4%B8%80%E8%A6%A7/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/m5stack%E7%94%A8%E3%83%A6%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB%E5%9F%BA%E6%9D%BF/">Universal board module for M5Stack</a> - Universal board Module for M5Stack</p>
+</li>
+<li>
+<p><a href="https://www.switch-science.com/catalog/4009/">3GIM adapter board for M5Stack</a> - tabrain 3G communication board adapter for M5Stack</p>
+</li>
+<li>
+<p><a href="http://asukiaaa.blogspot.com/2018/11/m5stacksidebb.html">M5StackSideBB</a> - Universal board module for M5Stack</p>
+</li>
+<li>
+<p><a href="https://www.switch-science.com/catalog/5379/">EEG Sensor（M5STACK-Analog）-PULSE06-M5STACK-A</a> - EEG sensor for M5Stack (Analog output model)</p>
+</li>
+<li>
+<p><a href="https://www.switch-science.com/catalog/5380/">EEG Sensor（M5STACK-Serial）-PULSE07-M5STACK-S</a> - EEG sensor for M5Stack (Serial communication model)</p>
+</li>
+<li>
+<p><a href="https://macsbug.wordpress.com/2019/02/05/use-ili9488-with-m5stack/?fbclid=IwAR0DTAgtwmv-AjdZW2NheQrZByM185OqbrHLwgdG0eGcDdMbqGWuZLewctM">Use ILI9488 with M5Stack</a> - External Display for M5Stack</p>
+</li>
+<li>
+<p><a href="https://macsbug.wordpress.com/2018/12/30/production-of-proto-module-of-m5stack/">Production of PROTO MODULE of M5Stack</a> - Proto module for M5Stack</p>
+</li>
+<li>
+<p><a href="https://macsbug.wordpress.com/2018/10/31/usb-host-module-for-m5stack/">USB HOST Module for M5STACK</a> - USB Host module for M5Stack</p>
+</li>
+</ul>
+<h2 id="web-site">Web site</h2>
+<h3 id="espressif">Espressif</h3>
+<ul>
+<li><a href="https://www.espressif.com/">Espressif</a></li>
+<li><a href="https://www.espressif.com/en/support/download/overview">ESP32 Datasheet</a></li>
+<li><a href="https://www.espressif.com/en/support/download/other-tools">ESP32 tools</a></li>
+<li><a href="https://github.com/espressif/arduino-esp32">arduino-esp32</a></li>
+<li><a href="https://github.com/espressif/esp-idf">esp-idf</a></li>
+<li><a href="https://docs.espressif.com/projects/esp-idf/en/latest/">esp-idf guide</a></li>
+<li><a href="https://github.com/espressif/esp-mdf">esp-mdf</a></li>
+<li><a href="https://docs.espressif.com/projects/esp-mdf/en/latest/">esp-mdf guide</a></li>
+<li><a href="https://github.com/espressif/esp-adf">esp-adf</a></li>
+<li><a href="https://docs.espressif.com/projects/esp-adf/en/latest/">esp-adf guide</a></li>
+<li><a href="https://github.com/espressif/esp-iot-solution">esp-iot-solution</a></li>
+<li><a href="https://github.com/espressif/esp-iot-solution/blob/master/documents/readme_en.md">esp-iot-solution guide</a></li>
+</ul>
+<h3 id="knowledge">knowledge</h3>
+<ul>
+<li><a href="http://mag.switch-science.com/">Switch Science Magazine!</a></li>
+<li><a href="https://www.facebook.com/groups/M5Stack-User-Group-Japan-154504605228235/">M5Stack User Group Japan @facebook</a></li>
+<li><a href="https://m5stack.connpass.com/">M5Stack User Group Japan @connpass</a></li>
+<li><a href="https://www.mgo-tec.com/">mgo-tec electronic work</a></li>
+<li><a href="http://watako-lab.com/">Watako-Lab.</a></li>
+<li><a href="https://macsbug.wordpress.com/">macsbug</a></li>
+<li><a href="https://ambidata.io/tag/m5stack/">Ambient</a></li>
+<li><a href="http://itoi.jp/M5Stack.html?fbclid=IwAR1S45pVpY96XtrgGiszuohnuVluvN8P7_t68WtJEl_saWjBAov7mAG7jso">Attic or Garret</a></li>
+<li><a href="https://www.nicovideo.jp/mylist/20341298">niconico m-hage</a></li>
+<li><a href="https://www.nicovideo.jp/tag/M5Stack">niconico M5Stack tag</a></li>
+<li><a href="https://github.com/kriswiner/MPU6050/wiki/Affordable-9-DoF-Sensor-Fusion">9 DoF sensor fusion</a></li>
+<li><a href="https://www.youtube.com/user/robo8080z/">robo8080 applications</a></li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

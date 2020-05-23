@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Using the Arduino Dock - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#using-the-arduino-dock">Using the Arduino Dock</a></li>
+            <li><a href="#this-procedure-is-meant-to-be-carried-out-on-the-original-arduino-dock-do-not-perform-this-on-the-arduino-dock-2-for-information-on-flashing-sketches-on-the-arduino-dock-2-see-the-onion-docs-for-the-arduino-dock-2">This procedure is meant to be carried out on the original Arduino Dock. Do not perform this on the Arduino Dock 2, for information on flashing sketches on the Arduino Dock 2, see the Onion Docs for the Arduino Dock 2</a></li>
+            <li><a href="#the-hardware">The Hardware</a></li>
+            <li><a href="#initial-setup">Initial Setup</a></li>
+            <li><a href="#using-the-arduino-dock_1">Using the Arduino Dock</a></li>
+            <li><a href="#the-onion-arduino-library">The Onion Arduino Library</a></li>
+            <li><a href="#acknowledgements">Acknowledgements</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="using-the-arduino-dock">Using the Arduino Dock</h1>
+<h2 id="this-procedure-is-meant-to-be-carried-out-on-the-original-arduino-dock-do-not-perform-this-on-the-arduino-dock-2-for-information-on-flashing-sketches-on-the-arduino-dock-2-see-the-onion-docs-for-the-arduino-dock-2">This procedure is meant to be carried out on the original Arduino Dock. Do <strong>not</strong> perform this on the Arduino Dock 2, for information on flashing sketches on the Arduino Dock 2, see the <a href="https://docs.onion.io/omega2-docs/flash-arduino-dock-wirelessly.html">Onion Docs for the Arduino Dock 2</a></h2>
+<p>The Onion Arduino Dock is meant to be an interface between the Omega and the popular ATmega microcontroller, allowing you to bring the flexibility of the Omega into the world of microcontrollers.</p>
+<p><img alt="Onion Arduino Dock" src="http://i.imgur.com/ykPHEiJ.png" /></p>
+<p>[[<em>TOC</em>]]</p>
+<h2 id="the-hardware">The Hardware</h2>
+<p>It is essentially our (supercharged) version of an Arduino Uno R3 board, since they share the same microcontroller, the ATmel ATmega328P microcontroller (MCU), and have identical pin layouts. This allows users to use any Arduino shields in conjunction with the Arduino Dock and the Omega.</p>
+<p>The Dock also includes an In-Circuit Serial Programming (ICSP) header to break out the SPI pins which can be used to program the IC. Additionally, there is a USB-host port that is connected to the Omega.</p>
+<h2 id="initial-setup">Initial Setup</h2>
+<p>Before you can get started with the Arduino Dock, there are a few things that need to be done on your computer and then on the Arduino Dock.</p>
+<p>Follow the steps outlined in the [[Initial Setup]] article.</p>
+<h2 id="using-the-arduino-dock_1">Using the Arduino Dock</h2>
+<p><img alt="Omega + Arduino Dock" src="//i.imgur.com/B47pqlW.jpg" /></p>
+<h3 id="connectivity">Connectivity</h3>
+<p>When the Omega is plugged into the Arduino Dock, the serial terminal is not available. Ensure that the Omega is connected to a local WiFi network to allow communication via SSH or the Console.</p>
+<h3 id="power">Power</h3>
+<p>The Arduino Dock and attached Omega can be powered in the following ways:
+* Micro USB cable plugged into the Micro USB port
+* <strong>5V DC</strong> power supply plugged into the DC barrel jack
+* Any 5V source connected via the 5V and GND pins on the Arduino Dock
+* Any 3.3V source connected via the 3V3 and GND pins on the Arduino Dock</p>
+<p>The Arduino Dock has a voltage regulator to ensure the Omega is being supplied with the correct voltage.</p>
+<p>Note that the Arduino Dock's DC barrel jack should only be used with 5V DC power supplies. If a higher voltage is used, your Omega and Arduino Dock have a high chance of being damaged!</p>
+<h3 id="flashing-sketches">Flashing Sketches</h3>
+<p><em>Ensure you are on Omega firmware b220 or later.</em></p>
+<p>Now we get to the fun part, flashing sketches to the ATmega chip!</p>
+<p>Ensure that all sketches include the Onion Arduino Library and that an Onion object is instantiated in the <code>setup()</code> function. If this is not done, the MCU_RESET button on the Omega will have to be pressed before uploading the Sketch.</p>
+<h4 id="using-the-arduino-ide-wirelessly">Using the Arduino IDE wirelessly</h4>
+<p>Thanks to the setup you did on your computer and the Arduino Dock, you can actually use the Arduino IDE on your computer to wirelessly flash Sketches to the Arduino Dock, so long as your computer and the Omega on your Arduino Dock are on the same wifi network.</p>
+<p>In the Arduino Tools menu, select "Arduino/Guinuino Uno" for the Board, and your Omega-ABCD hostname as the Port:
+<img alt="Arduino IDE Tools-&gt;Port menu" src="//i.imgur.com/1xAEBmT.png" /></p>
+<p>If your Omega does not show up in the Port menu as a network port, restart the Arduino and wait for 30 seconds:</p>
+<p>When your sketch is ready, hit the Upload button. Once the sketch is compiled, it will require your Omega password to upload:
+<img alt="Arduino IDE Uploading Sketch" src="//i.imgur.com/UDXIDVL.png" /></p>
+<p>The IDE actually creates an SSH connection with the Omega to transfer the compiled hex file, and the Omega with then flash the ATmega chip via I2C!
+(If your previous sketch did not include the Onion Arduino Library you will have to press the MCU_RESET button on the Arduino Dock right after entering your password in order to flash successfully)</p>
+<p>Once the upload completes, the info screen will show something along the lines of:
+<img alt="Arduino IDE Upload Done" src="//i.imgur.com/oPOB4Vl.png" /></p>
+<p>The ATmega chip is now running your sketch, enjoy!</p>
+<p><strong>Note:</strong> An orange message saying <code>ash: merge-sketch-with-bootloader.lua: not found</code> may appear in the info screen. You can <strong>safely ignore this message</strong>, it does not affect the sketch upload.</p>
+<h4 id="using-the-omega">Using the Omega</h4>
+<p>The Omega can actually flash the ATmega chip as well. This is handy if the Arduino IDE cannot detect your Omega as a Network Port due to any connection/setup issues.</p>
+<p>First, enable verbose output during compilation in the Arduino IDE Preferences:
+<img alt="Arduino IDE Preferences" src="//i.imgur.com/A6uXT6Y.png" /></p>
+<p>Hit the verify button to compile the sketch, once it's complete you will have to scroll to the right to find the path to the compiled hex file:
+<img alt="Arduino IDE Compiled Hex file" src="//i.imgur.com/QEiDwu8.png" /></p>
+<p>Copy this path and then transfer the file to your Omega.</p>
+<p>I personally like to use rsync to transfer files from my computer to the Omega, the rsync command on my computer to transfer to the Omega is as follows:</p>
+<pre><code>rsync -va &lt;path to compiled sketch&gt; root@omega-abcd.local:/root/&lt;hex name&gt;
+</code></pre>
+
+<p>As an example:</p>
+<pre><code>rsync -va /var/folders/55/7v7wrbcs57jflv83zgz8v67m0000gn/T/builddf059f74b6cb24ac573e131020699c2d.tmp/blink2.ino.hex root@omega-1302.local:/root/blink2.hex
+</code></pre>
+
+<p>On the Omega, you will need to install the Onion Arduino Dock software package:</p>
+<pre><code>opkg update
+opkg install arduino-dock
+</code></pre>
+
+<p>Now that the hex file is on your Omega, you can flash it to the ATmega chip from the Omega's terminal:</p>
+<pre><code>sh /usr/bin/arduino-dock flash &lt;hex file&gt;
+</code></pre>
+
+<p>For example:</p>
+<pre><code># sh /usr/bin/arduino-dock flash /root/blink2.hex 
+&gt; Flashing application '/root/blink2.hex' ...
+device         : /dev/i2c-0       (address: 0x29)
+version        : TWIBOOTm328pv2.1??x (sig: 0x1e 0x95 0x0f =&gt; AVR Mega 32p)
+flash size     : 0x7800 / 30720   (0x80 bytes/page)
+eeprom size    : 0x0400 /  1024
+writing flash  : [**************************************************#?] (3210)
+verifying flash: [**************************************************#?] (3210)
+&gt; Done
+</code></pre>
+
+<p>The sketch has been flashing and is running on the Arduino Dock, enjoy!</p>
+<p>(If your previous sketch did not include the Onion Arduino Library you will have to press the MCU_RESET button on the Arduino Dock just before pressing Enter for the arduino-dock command)</p>
+<h2 id="the-onion-arduino-library">The Onion Arduino Library</h2>
+<p>The library provides some essential functionality for the Arduino Dock. For info on installing the Onion Arduino Library, check out <a href="Initial-Setup#computer-setup_installation-of-onion-arduino-library">the installation instructions in the Arduino Dock Initial Setup article</a>. The Onion Arduino Library has dependencies on other libraries so make sure to follow all of the listed steps.</p>
+<h3 id="basic-setup-in-sketch">Basic Setup in Sketch</h3>
+<p>To add the Onion library to your Sketch in the IDE, open the Sketch menu, navigate to Include Library -&gt; Onion
+<img alt="Add the Onion Library" src="//i.imgur.com/MjYaLTO.png" /></p>
+<p>Once the library has been added, create a global instance of the Onion object. 
+Add the following line on the global scope:</p>
+<pre><code>Onion* onionSetup;
+</code></pre>
+
+<p>To initialize and activate the library functions, add the following line to the <code>setup()</code> function in the sketch:</p>
+<pre><code>  onionSetup = new Onion();
+</code></pre>
+
+<p>Check out our blink2 example to see this in action. The example can be accessed in the Arduino IDE through File -&gt; Examples -&gt; Onion -&gt; blink2</p>
+<h3 id="library-functionality">Library Functionality</h3>
+<p>For now the library setups up the ATmega to join the I2C bus. It then listens on the bus for a command from the Omega to go into Reset so a new Sketch can be flashed.</p>
+<p>As described above, if the Onion library is not used in your sketch, the MCU_RESET button on the Arduino Dock will have to be manually pressed right before a new sketch is uploaded.</p>
+<p>We're working on more functionality for this library, namely using the Serial Port as a bridge between the Omega and ATmega chip! Stay tuned!</p>
+<h4 id="if-the-library-is-not-includeed">If the Library is Not Includeed</h4>
+<p>If the library is not included in your sketch, you will likely see a message like the following in the Arduino IDE the next time you try to upload a sketch:</p>
+<pre><code>Sketch uses 1,030 bytes (3%) of program storage space. Maximum is 32,256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2,039 bytes for local variables. Maximum is 2,048 bytes.
+ash: merge-sketch-with-bootloader.lua: not found
+Flashing application '/tmp/sketch.hex' ...
+Error: Write failed
+Done
+Flash complete!
+failed to switch to bootloader (invalid address?): No such device or address
+</code></pre>
+
+<p>To remedy this, press the MCU_RESET button on the Arduino Dock right before loading the sketch. While Arduino Dock LED is flickering super quickly, the sketch upload will work.</p>
+<h3 id="using-i2c-in-a-sketch">Using I2C in a Sketch</h3>
+<p>Right now the Onion Library joins the I2C bus with an address of 0x08 and listens for a write of <code>0xde 0xad</code> (get it? 'dead' ha ha ha) when resetting. If you need a Sketch to use I2C, make sure to build this functionality into your I2C handling to comply with the Arduino Dock flashing procedure. </p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>Special thanks to Olaf Rempel for creating the original TWI bootloader and boot tool.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

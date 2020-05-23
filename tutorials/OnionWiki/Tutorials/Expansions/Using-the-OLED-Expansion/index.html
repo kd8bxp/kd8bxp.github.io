@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Using the OLED Expansion - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#using-the-oled-expansion">Using the OLED Expansion</a></li>
+        <li class="main "><a href="#the-hardware">The Hardware</a></li>
+        <li class="main "><a href="#using-the-oled-expansion_1">Using the OLED Expansion</a></li>
+            <li><a href="#command-usage">Command Usage</a></li>
+            <li><a href="#programming-flow">Programming Flow</a></li>
+            <li><a href="#options">Options</a></li>
+            <li><a href="#commands">Commands</a></li>
+            <li><a href="#drawing-images-on-the-display">Drawing Images on the Display</a></li>
+        <li class="main "><a href="#supported-characters">Supported Characters</a></li>
+        <li class="main "><a href="#using-the-libraries">Using the Libraries</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="using-the-oled-expansion">Using the OLED Expansion</h1>
+<p>The OLED Expansion allows you to display images and text on the small black and white OLED Display. It can be used to display project status, sensor info, or other information from the Omega, allowing you to have data from the digital world displayed in the real world!</p>
+<p><img alt="Omega+OLED Expansion" src="http://i.imgur.com/tqcRlgG.jpg" /></p>
+<p>[[<em>TOC</em>]]</p>
+<h1 id="the-hardware">The Hardware</h1>
+<p>The OLED Expansion has a 0.96" 128x64 black and white OLED display. When displaying text, there are 8 rows, with 21 possible characters in each row.</p>
+<h1 id="using-the-oled-expansion_1">Using the OLED Expansion</h1>
+<p><em>Make sure that your Omega has the latest firmware!</em></p>
+<p>On the command line, a tool called <code>oled-exp</code> will be your helper in all things related to the OLED Expansion.</p>
+<p>Also available are a C library and Python module that will allow you to create your own programs that use the OLED Expansion.</p>
+<h2 id="command-usage">Command Usage</h2>
+<p>For a print-out of the command's usage, run it with just a -h argument</p>
+<pre><code>oled-exp -h
+</code></pre>
+
+<p>In general, the commands will be in this form:</p>
+<pre><code>oled-exp [OPTIONS] COMMAND PARAMETER
+</code></pre>
+
+<h2 id="programming-flow">Programming Flow</h2>
+<p>When it is first powered on, the OLED Expansion must first be programmed with an <strong>initialization sequence</strong> in order to accept further commands. </p>
+<p>After the initialization, it can accept a series of commands to do the following:
+* clear the display
+* turn it on and off (while preserving the image)
+* invert the display colours
+* dim the brightness
+* set the text cursor to a particular position
+* write a message
+* enable horizontal or diagonal scrolling
+* display an image</p>
+<p>A single <code>oled-exp</code> call can have one or many cascaded commands:</p>
+<pre><code>// single command
+oled-exp write &quot;Hello!&quot;
+
+// multiple cascaded commands (execute in order from left to right)
+oled-exp write &quot;Onion Omega\nMy favourite&quot; dim on cursor 4,0 write &quot;:)&quot;
+</code></pre>
+
+<h3 id="command-and-option-table">Command and Option Table</h3>
+<p>To reconcile all of the above features to <code>oled-exp</code>, refer to the table below:</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Option/Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>initialization</td>
+<td><code>-i</code></td>
+</tr>
+<tr>
+<td>clear the display</td>
+<td><code>-c</code></td>
+</tr>
+<tr>
+<td>toggle display on or off</td>
+<td><code>power &lt;on|off&gt;</code></td>
+</tr>
+<tr>
+<td>invert colours</td>
+<td><code>invert &lt;on|off&gt;</code></td>
+</tr>
+<tr>
+<td>dim the screen</td>
+<td><code>dim &lt;on|off&gt;</code></td>
+</tr>
+<tr>
+<td>set the cursor</td>
+<td><code>cursor &lt;row&gt;,&lt;column&gt;</code></td>
+</tr>
+<tr>
+<td>set the cursor by pixel</td>
+<td><code>cursorPixel &lt;row&gt;,&lt;pixel&gt;</code></td>
+</tr>
+<tr>
+<td>write text</td>
+<td><code>write &lt;string&gt;</code></td>
+</tr>
+<tr>
+<td>write a single byte</td>
+<td><code>writeByte &lt;byte&gt;</code></td>
+</tr>
+<tr>
+<td>enable scrolling</td>
+<td><code>scroll &lt;direction&gt;</code></td>
+</tr>
+<tr>
+<td>display an image</td>
+<td><code>draw &lt;lcd file&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="options">Options</h2>
+<p>The option arguments can be run by themselves or in conjunction with any other command. They will always be executed first.</p>
+<h3 id="initialization">Initialization</h3>
+<p>To initialize the display to accept further commands:</p>
+<pre><code>// just initialize the display
+oled-exp -i     
+
+// initialize the display and write a message
+oled-exp -i write &quot;Freshly initialized&quot;
+</code></pre>
+
+<h3 id="clear-the-screen">Clear the Screen</h3>
+<p>To clear the screen and set the cursor to the top left:</p>
+<pre><code>// just clear the screen
+oled-exp -c
+
+// clear the screen and draw an image
+oled-exp -c draw /root/onion.lcd
+</code></pre>
+
+<h2 id="commands">Commands</h2>
+<p>The commands are more complex and each requires one argument.</p>
+<h3 id="power">Power</h3>
+<p>Turn the display on or off. Can be used to toggle the display after it has been initialized.</p>
+<pre><code>oled-exp power &lt;on|off&gt;
+</code></pre>
+
+<p>Note that any text or images on the screen will be preserved.</p>
+<h3 id="invert">Invert</h3>
+<p>Invert black and white on the display. Setting to <code>on</code> will enable the invert, setting to <code>off</code> will disable the inversion.</p>
+<pre><code>oled-exp invert &lt;on|off&gt;
+</code></pre>
+
+<h3 id="dim">Dim</h3>
+<p>Enable dimming the display. Setting to <code>on</code> will dim the display, setting to <code>off</code> will restore the default brightness.</p>
+<pre><code>oled-exp dim &lt;on|off&gt;
+</code></pre>
+
+<h3 id="write">Write</h3>
+<p>Write a string to the display <em>at the current position of the cursor</em>:</p>
+<pre><code>oled-exp write &lt;string&gt;
+</code></pre>
+
+<p>If the string contains spaces or any special characters (newlines, !?(){}[] etc), it needs to be wrapped with double quotes:</p>
+<pre><code>oled-exp write &quot;This is so exciting!\nIsn't it?!?!\n\n(I love the Omega)&quot;
+</code></pre>
+
+<p>A list outlining the supported characters can be found in a <a href="#supported-characters">section below.</a></p>
+<h3 id="write-a-single-byte">Write a Single Byte</h3>
+<p>Write a single byte of data (eight vertical pixels) to the display <em>at the current position of the cursor</em>:</p>
+<pre><code>oled-exp writeByte &lt;byte&gt;
+</code></pre>
+
+<p>The Least Significant Bit (LSB) in the byte corresponds to the top-most pixel in the column, the Most Significant Bit (MSB) corresponds to the bottom-most pixel in the column.</p>
+<p>The cursor will be incremented to the next pixel column after this command.</p>
+<p>For example, the following command:</p>
+<pre><code>oled-exp writeByte 0x0f
+</code></pre>
+
+<p>Will fill in the top four pixels and will leave the bottom four pixels in a column blank.</p>
+<h3 id="set-the-cursor-position">Set the Cursor Position</h3>
+<p>Set the cursor position on the display, any writes after this command will start at the specified row and column.</p>
+<p>The <code>row</code> parameter represents each character row (8 pixel rows) on the display, so the range is <strong>0 to 7</strong></p>
+<p>The <code>column</code> parameter represents each character column, the range is <strong>0 to 20</strong></p>
+<pre><code>oled-exp cursor &lt;row&gt;,&lt;column&gt;
+</code></pre>
+
+<p><strong>Examples</strong></p>
+<p>To write <code>Hello</code> on the first line, and then <code>How are you?</code> on the 4th row:</p>
+<pre><code>oled-exp write Hello cursor 3,0 write &quot;How are you?&quot;
+</code></pre>
+
+<p>Set the cursor to the start of the last character row:</p>
+<pre><code>oled-exp cursor 7,0
+</code></pre>
+
+<p>Set the cursor to the middle of the 2nd row:</p>
+<pre><code>oled-exp cursor 2,10
+</code></pre>
+
+<h3 id="set-the-cursor-position-by-pixel-column">Set the Cursor Position by Pixel Column</h3>
+<p>Set the cursor position on the display, any writes after this command will start at the specified row and <strong>pixel</strong>.</p>
+<p>The <code>row</code> parameter represents each character row (8 pixel rows) on the display, so the range is <strong>0 to 7</strong></p>
+<p>The <code>pixel</code> parameter represents each pixel column, the range is <strong>0 to 127</strong></p>
+<pre><code>oled-exp cursorPixel &lt;row&gt;,&lt;pixel&gt;
+</code></pre>
+
+<p><strong>Examples</strong></p>
+<p>To write <code>Hello</code> a quarter of the way through the first line, and then <code>How are you?</code> in the middle of the 4th row:</p>
+<pre><code>oled-exp cursorPixel 0,31 write Hello cursorPixel 3,63 write &quot;How are you?&quot;
+</code></pre>
+
+<p>Set the cursor to the start of the last character row:</p>
+<pre><code>oled-exp cursorPixel 7,0
+</code></pre>
+
+<p>Set the cursor to the middle of the 2nd row:</p>
+<pre><code>oled-exp cursorPixel 2,63
+</code></pre>
+
+<h3 id="scrolling">Scrolling</h3>
+<p>The OLED can scroll whatever is on the screen horizontally or diagonally upwards. The text/image will wrap around the edges.</p>
+<pre><code>oled-exp scroll &lt;direction&gt;
+</code></pre>
+
+<p>Supported directions:
+* left
+* right
+* diagonal-left
+* diagonal-right
+* stop
+  * To disable scrolling</p>
+<p><img alt="left scroll" src="http://i.imgur.com/nytY4Xw.gif" /></p>
+<p><img alt="diagonal-right scroll" src="http://i.imgur.com/9JcoKEj.gif" /></p>
+<h3 id="displaying-images">Displaying Images</h3>
+<h2 id="drawing-images-on-the-display">Drawing Images on the Display</h2>
+<p>The OLED Screen can also be used to display images. The Console can be used to convert existing images into a format that is compatible with the OLED Expansion and save the output to an Omega. Functions in the C library can read the image data and display it on the OLED Expansion. Alternatively, a buffer can be created programatically and displayed on the OLED.</p>
+<h3 id="creating-image-files">Creating Image Files</h3>
+<p>The Console OLED App can be used to create OLED Expansion compatible image files. Navigate to the Image tab of the OLED App:</p>
+<p><img alt="OLED Console App Image Tab" src="http://i.imgur.com/FPCVp8x.png" /></p>
+<p>Once an image has been selected, a button and form will appear that allow you to save the OLED image file to your Omega:</p>
+<p><img alt="OLED Console App Loaded Image" src="http://i.imgur.com/xKx5KHa.png" /></p>
+<p>After the image name and location are selected, click the Save to Omega button.</p>
+<h3 id="oled-image-file-details">OLED Image File Details</h3>
+<p>The OLED image files store the image data as 1024 bytes represented in hexadecimal. Each byte represents eight vertical pixels, with the first 128 bytes representing the columns in Page 0, the following 128 bytes representing the columns in Page 1, and so on. </p>
+<p>If this is unclear, see the <a href="https://wiki.onion.io/Documentation/Libraries/OLED-Expansion-C-Library#programming-flow_understanding-the-display">Understanding the Display Section in the OLED Expansion Library documentation article</a> for details on how the display is addressed.</p>
+<h3 id="displaying-images-from-a-file">Displaying Images from a File</h3>
+<p>To display the OLED image file on the OLED Expansion:</p>
+<pre><code>oled-exp draw &lt;path to oled image file&gt;
+</code></pre>
+
+<p><strong>Example</strong></p>
+<p>Draw an image saved to <code>/root/image.lcd</code> on the display:</p>
+<pre><code>oled-exp draw /root/image.lcd
+</code></pre>
+
+<p>Initialize the display and draw an image saved to <code>/tmp/onion.lcd</code>:</p>
+<pre><code>oled-exp -i draw /tmp/onion.lcd
+</code></pre>
+
+<h1 id="supported-characters">Supported Characters</h1>
+<p>The OLED Display supports the following characters:</p>
+<ul>
+<li>SPACE</li>
+<li>!</li>
+<li>"</li>
+<li>
+<h1 id="_1"></h1>
+</li>
+<li>$</li>
+<li>%</li>
+<li>&amp;</li>
+<li>'</li>
+<li>(</li>
+<li>)</li>
+<li>*</li>
+<li>+</li>
+<li>,</li>
+<li>-</li>
+<li>.</li>
+<li>/</li>
+<li>0</li>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+<li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+<li>e</li>
+<li>f</li>
+<li>g</li>
+<li>h</li>
+<li>i</li>
+<li>j</li>
+<li>k</li>
+<li>l</li>
+<li>m</li>
+<li>n</li>
+<li>o</li>
+<li>p</li>
+<li>q</li>
+<li>r</li>
+<li>s</li>
+<li>t</li>
+<li>u</li>
+<li>v</li>
+<li>w</li>
+<li>x</li>
+<li>y</li>
+<li>z</li>
+<li>A</li>
+<li>B</li>
+<li>C</li>
+<li>D</li>
+<li>E</li>
+<li>F</li>
+<li>G</li>
+<li>H</li>
+<li>I</li>
+<li>J</li>
+<li>K</li>
+<li>L</li>
+<li>M</li>
+<li>N</li>
+<li>O</li>
+<li>P</li>
+<li>Q</li>
+<li>R</li>
+<li>S</li>
+<li>T</li>
+<li>U</li>
+<li>V</li>
+<li>W</li>
+<li>X</li>
+<li>Y</li>
+<li>Z</li>
+<li>:</li>
+<li>;</li>
+<li>&lt;</li>
+<li>=</li>
+<li>
+<blockquote></blockquote>
+</li>
+<li>?</li>
+<li>@</li>
+<li>[</li>
+<li>\</li>
+<li>]</li>
+<li>^</li>
+<li>_</li>
+<li>`</li>
+<li>{</li>
+<li>|</li>
+<li>}</li>
+<li>~</li>
+</ul>
+<h1 id="using-the-libraries">Using the Libraries</h1>
+<p>The C library and Python module will give you the flexibility to use the OLED Expansion however you want in your own programs.</p>
+<p>For more information, see <a href="../../Documentation/Libraries/OLED-Expansion-C-Library">this guide</a>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

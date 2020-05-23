@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../../img/favicon.ico">
+        <title>I/O (GPIO/ADC/DAC/PWM) - Random Wire!</title>
+        <link href="../../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#io-gpioadcdacpwm">I/O (GPIO/ADC/DAC/PWM)</a></li>
+            <li><a href="#digitalread">digitalRead()</a></li>
+            <li><a href="#digitalwrite">digitalWrite()</a></li>
+            <li><a href="#pinmode">pinMode()</a></li>
+            <li><a href="#analogread">analogRead()</a></li>
+            <li><a href="#dacwrite">dacWrite()</a></li>
+            <li><a href="#ledcsetup">ledcSetup()</a></li>
+            <li><a href="#ledcattachpin">ledcAttachPin()</a></li>
+            <li><a href="#ledcwrite">ledcWrite()</a></li>
+            <li><a href="#ledcdetachpin">ledcDetachPin()</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="io-gpioadcdacpwm">I/O (GPIO/ADC/DAC/PWM)</h1>
+<p><em>Refer to Arduino API of <a href="http://www.arduino.cc">Arduino</a></em></p>
+<p><em>For the sake of convenience, I will focus on things that are closely related to M5Stack</em></p>
+<p><em>M5STACK PIN allocation:</em></p>
+<table>
+<thead>
+<tr>
+<th>pin No</th>
+<th>Name</th>
+<th>allocation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>G0</td>
+<td>downloader</td>
+</tr>
+<tr>
+<td>1</td>
+<td>T1</td>
+<td>UART</td>
+</tr>
+<tr>
+<td>2</td>
+<td>G2</td>
+<td>Side terminal (except M5FIRE),M5-BUS</td>
+</tr>
+<tr>
+<td>3</td>
+<td>R1</td>
+<td>UART</td>
+</tr>
+<tr>
+<td>4</td>
+<td>G4</td>
+<td>TF</td>
+</tr>
+<tr>
+<td>5</td>
+<td>G5</td>
+<td>Side terminal (except M5FIRE),M5-BUS</td>
+</tr>
+<tr>
+<td>6</td>
+<td>G6</td>
+<td>SDIO</td>
+</tr>
+<tr>
+<td>7</td>
+<td>G7</td>
+<td>SDIO</td>
+</tr>
+<tr>
+<td>8</td>
+<td>G8</td>
+<td>SDIO</td>
+</tr>
+<tr>
+<td>9</td>
+<td>G9</td>
+<td>SDIO</td>
+</tr>
+<tr>
+<td>10</td>
+<td>G10</td>
+<td>SDIO</td>
+</tr>
+<tr>
+<td>11</td>
+<td>G11</td>
+<td>SDIO</td>
+</tr>
+<tr>
+<td>12</td>
+<td>G12</td>
+<td>LCD</td>
+</tr>
+<tr>
+<td>13</td>
+<td>G13</td>
+<td>LCD</td>
+</tr>
+<tr>
+<td>14</td>
+<td>G14</td>
+<td>LCD</td>
+</tr>
+<tr>
+<td>15</td>
+<td>G15</td>
+<td>LCD</td>
+</tr>
+<tr>
+<td>16</td>
+<td>R2</td>
+<td>UART</td>
+</tr>
+<tr>
+<td>17</td>
+<td>T2</td>
+<td>UART</td>
+</tr>
+<tr>
+<td>18</td>
+<td>G18</td>
+<td>TF,Top terminal(SCK),M5-BUS</td>
+</tr>
+<tr>
+<td>19</td>
+<td>G19</td>
+<td>TF,Top terminal(MISO),M5-BUS</td>
+</tr>
+<tr>
+<td>21</td>
+<td>G21</td>
+<td>GROVE-A(SDA)</td>
+</tr>
+<tr>
+<td>22</td>
+<td>G22</td>
+<td>GROVE-A(SCL)</td>
+</tr>
+<tr>
+<td>23</td>
+<td>G23</td>
+<td>TF,Top terminal(MOSI)</td>
+</tr>
+<tr>
+<td>25</td>
+<td>G25</td>
+<td>Speaker,Side terminal (except M5FIRE),M5-BUS</td>
+</tr>
+<tr>
+<td>26</td>
+<td>G26</td>
+<td>Side terminal (except M5FIRE),M5-BUS</td>
+</tr>
+<tr>
+<td>27</td>
+<td>G27</td>
+<td>LCD</td>
+</tr>
+<tr>
+<td>32</td>
+<td>G32</td>
+<td>LCD BackLight</td>
+</tr>
+<tr>
+<td>33</td>
+<td>G33</td>
+<td>LCD</td>
+</tr>
+<tr>
+<td>34</td>
+<td>G34</td>
+<td>None</td>
+</tr>
+<tr>
+<td>35</td>
+<td>G35</td>
+<td>Side terminal (except M5FIRE)</td>
+</tr>
+<tr>
+<td>36</td>
+<td>G36</td>
+<td>Side terminal (except M5FIRE)</td>
+</tr>
+<tr>
+<td>37</td>
+<td>G37</td>
+<td>Button C</td>
+</tr>
+<tr>
+<td>38</td>
+<td>G38</td>
+<td>Button B</td>
+</tr>
+<tr>
+<td>39</td>
+<td>G39</td>
+<td>Button A</td>
+</tr>
+</tbody>
+</table>
+<h2 id="digitalread">digitalRead()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>int digitalRead(uint8_t pin);</mark></p>
+<p><strong>Description:</strong></p>
+<p>Reads the state of the terminal.</p>
+<p><strong>Function argument</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pin</td>
+<td><code>uint8</code></td>
+<td>Pin No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>Pin input state(0/1)</p>
+<p><strong>Note</strong></p>
+<p>1)If the pin mode is not set to INPUT, the correct result will not be returned.</p>
+<p>2)If there are other circuits in the control line, they will be affected.</p>
+<p><strong>Example of use;</strong></p>
+<pre><code class="arduino">uint32_t pin21_data;
+pin21_data = digitalRead(21);
+</code></pre>
+
+<h2 id="digitalwrite">digitalWrite()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>void digitalWrite(uint8_t pin, uint8_t val);</mark></p>
+<p><strong>Description:</strong></p>
+<p>Writes the state of the terminal.</p>
+<p><strong>Function argument</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pin</td>
+<td><code>uint8</code></td>
+<td>pin No</td>
+</tr>
+<tr>
+<td>val</td>
+<td><code>uint8</code></td>
+<td>出力状態(0/1)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None.</p>
+<p><strong>Note</strong></p>
+<p>1)If the pin mode is not set to OUTPUT, the correct result will not be returned.</p>
+<p>2)If there are other circuits in the control line, please note it as it may be physically damaged.</p>
+<p><strong>Example of use;</strong></p>
+<pre><code class="arduino">digitalWrite(2,1);
+</code></pre>
+
+<h2 id="pinmode">pinMode()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>void pinMode(uint8_t pin, uint8_t mode);</mark></p>
+<p><strong>Description:</strong></p>
+<p>Set terminal input / output mode.</p>
+<p><strong>Function argument</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pin</td>
+<td><code>uint8</code></td>
+<td>pin No</td>
+</tr>
+<tr>
+<td>mode</td>
+<td><code>uint8</code></td>
+<td>INPUT,OUTPUT,INPUT_PULLUPのいずれか</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None.</p>
+<p><strong>Note</strong></p>
+<p>If there are other circuits on the bus, please note that there is a possibility of physical damage.</p>
+<p>For example, when the speaker (G25) terminal is set to INPUT mode, the current flowing to the speaker causes the main unit to generate heat.</p>
+<p>Make sure that the operations are correct as there is a risk of damage.</p>
+<p><strong>Example of use;</strong></p>
+<pre><code class="arduino">pinMode(2,INPUT);
+</code></pre>
+
+<h2 id="analogread">analogRead()</h2>
+<p><strong>Syntax:</strong>
+<mark>uint16_t analogRead(uint8_t pin);</mark></p>
+<p><strong>Description:</strong></p>
+<p>Reads the value of the analog terminal.</p>
+<p><strong>Function argument</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pin</td>
+<td><code>uint8</code></td>
+<td>pin No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>Read result. The maximum value of the response is determined by analogSetWidth ().</p>
+<p><strong>Note</strong></p>
+<p>G35 and G36 can be used in M5Stack.</p>
+<p><strong>Example of use;</strong></p>
+<pre><code class="arduino">uint16_t ret;
+ret=analogRead(35);
+</code></pre>
+
+<h2 id="dacwrite">dacWrite()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>void dacWrite(uint8_t pin, uint8_t value);</mark></p>
+<p><strong>Description:</strong></p>
+<p>Output command to analog terminal.</p>
+<p><strong>Function argument</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pin</td>
+<td><code>uint8</code></td>
+<td>pin No</td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>uint8</code></td>
+<td>set output voltage</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None.。</p>
+<p><strong>Note</strong></p>
+<p>G25 and G26 can be used in M5Stack.</p>
+<p><strong>Example of use;</strong></p>
+<pre><code class="arduino">dacWrite(25,0x40);
+</code></pre>
+
+<h2 id="ledcsetup">ledcSetup()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>double ledcSetup(uint8_t channel, double freq, uint8_t resolution_bits);</mark></p>
+<p><strong>Description:</strong></p>
+<p>Set the duty output</p>
+<p><strong>Function argument</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>channel</td>
+<td><code>uint8</code></td>
+<td>channel (0～15)</td>
+</tr>
+<tr>
+<td>freq</td>
+<td><code>double</code></td>
+<td>frequency (Hz)</td>
+</tr>
+<tr>
+<td>resolution_bits</td>
+<td><code>uint8_t</code></td>
+<td>Number of full scale bits for duty indication</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>Actual output frequency.</p>
+<p><strong>Note</strong></p>
+<p>Channel and GPIO port numbers are not identical.</p>
+<p>It is good to recognize that it is a number to memorize the setting.</p>
+<h2 id="ledcattachpin">ledcAttachPin()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>void ledcAttachPin(uint8_t pin, uint8_t chan);</mark></p>
+<p><strong>Description:</strong></p>
+<p>Specify the port to output.</p>
+<p><strong>Function argument</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pin</td>
+<td><code>uint8_t</code></td>
+<td>pin No)</td>
+</tr>
+<tr>
+<td>chan</td>
+<td><code>uint8_t</code></td>
+<td>Channel(0～15)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None.</p>
+<h2 id="ledcwrite">ledcWrite()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>void ledcWrite(uint8_t chan, uint32_t duty);</mark></p>
+<p><strong>Description:</strong></p>
+<p>Output with the specified duty value.</p>
+<p><strong>Function argument</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chan</td>
+<td><code>uint8_t</code></td>
+<td>Channel(0～15)</td>
+</tr>
+<tr>
+<td>duty</td>
+<td><code>uint32_t</code></td>
+<td>Duty</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None.</p>
+<p><strong>Note</strong></p>
+<p>The unit of duty depends on the bit scale set at initialization.</p>
+<p>When specifying with 8 bits, specifying 0xFF results in 100% output.</p>
+<h2 id="ledcdetachpin">ledcDetachPin()</h2>
+<p><strong>Syntax:</strong></p>
+<p><mark>void ledcDetachPin(uint8_t pin);</mark></p>
+<p><strong>Description:</strong></p>
+<p>Release the assigned port and stop the output.</p>
+<p><strong>Function argument</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pin</td>
+<td><code>uint8_t</code></td>
+<td>pin No)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function return value:</strong></p>
+<p>None.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../../js/base.js" defer></script>
+        <script src="../../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Lone Ranger - Random Wire!</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../tutorials/blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../tutorials/document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../tutorials/TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../tutorials/ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../tutorials/syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../tutorials/azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#lone-ranger">Lone Ranger</a></li>
+        <li class="main "><a href="#green-hornet">Green Hornet</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="lone-ranger">Lone Ranger</h1>
+<p>Mark Ellis writes:</p>
+<p>Writing a coherent chronology for the Lone Ranger was a difficult task for a variety of reasons. The Masked Man has appeared in so many different mediums with attendant revisions and embellishments regarding his origin it was almost impossible to reconcile and meld them all into a single whole.</p>
+<p>To simplify matters, I restricted the chronology to visual media--films, the three TV series and books. Even that decision isn't satisfactory, since I didn't have access to the 8 issues of the Lone Ranger pulp magazine, the Big Little Books, or the many years worth of newspaper strips and comic book stories. Fortunately, I did have a complete set of the Lone Ranger novels published between 1936-57</p>
+<p>With only a couple of exceptions, the long-running radio series isn't included because I've heard very few of its 2,596 episodes. It went off the air the year I was born and they weren't regularly re-run like the TV show. Also, since so many of the TV episodes were adapted from the radio segments, to try and include them seemed like a duplication of effort.</p>
+<p>I used 1981's feature film, The Legend of the Lone Ranger, as the basic foundation for information about his early years. Despite its many flaws, this film was remarkably faithful to most of the elements in the mythos, including references to the Ranger's nephew, Dan, Jr.</p>
+<p>This is not a perfect chronology and I prefer to view it as a work in progress. I welcome anyone to add to it.</p>
+<p>Win Eckert writes:</p>
+<p>With respect to the Green Hornet information, I have heard very few of the original radio episodes. This chronology certainly encompasses those adventures, but they are not listed individually. The same goes for the Green Hornet comics from the '40s, of which I have only a few.</p>
+<p>This timeline is based on NOW Comics' attempt to resolve the different versions of the Hornet into a generational continuity, which I felt was a thoroughly enjoyable and admirable effort. It also includes the 1940s serials, the 1960s television series, novels, Big Little Books which I have, and Whitman Books. As Mark said, suggestions for additions are welcome.</p>
+<p>Legend:</p>
+<p>R = The Lone Ranger radio episodes</p>
+<p>TLR-TV= The Lone Ranger television series</p>
+<p>N = Novel</p>
+<p>TLR-A = The first Lone Ranger animated series</p>
+<p>TNALR-A = The second Lone Ranger animated series, The New Adventures of the Lone Ranger</p>
+<p>TLR-S = The first Lone Ranger serial, The Lone Ranger</p>
+<p>TLRRA-S = The second Lone Ranger serial, The Lone Ranger Rides Again</p>
+<p>C = It Crawls! = Topps Comics' Lone Ranger &amp; Tonto mini-series</p>
+<p>LOTLR = The Legend of the Lone Ranger movie</p>
+<p>FF = The two Lone Ranger feature films, The Lone Ranger and The Lone Ranger and the Lost City of Gold</p>
+<p>1842</p>
+<p>Dan Reid is born on a homestead near Del Rio, Texas.</p>
+<p>Sept. 14, 1850</p>
+<p>John Reid is born.</p>
+<p>1854</p>
+<p>Tonto is born.</p>
+<p>1860</p>
+<p>John saves Tonto's life from a band of outlaw raiders. The same raiders go on to kill his parents and burn their ranch. John is adopted into the Potawatomai tribe as Tonto's blood brother. Tonto gives John an amulet to symbolize their friendship and bestows upon him the name, "Kemo Sabe," which means trusted friend (in some versions, it means trusty scout).</p>
+<p>Later that year, Dan comes searching for his younger brother and sends him to Detroit to live with their Aunt Martha (LOTLR).</p>
+<p>Note: The 1854 date provided in the film is in error.</p>
+<p>1861</p>
+<p>The American Civil War begins. John is too young to participate, but Dan probably does. It is not known what side he fought on, but it is during or shortly after the war that he meets a fine woman from Richmond, Virginia named Linda.</p>
+<p>1863</p>
+<p>The battle of Chattanooga takes place on Nov. 23-25. The Confederates' failure to take the city puts an end to their hopes of occupying Tennessee and Kentucky. During the battle, Union cavalry Major Bartholomew Cavendish earns the title of "Butcher" (later shortened to Butch) due to the brutality he displays toward the rebel forces (LOTLR).</p>
+<p>1864</p>
+<p>Early in the year, Cavendish is brought up on charges and court-martialed. He is dismissed from the army. General Ulysses S. Grant signs the papers (LOTLR).</p>
+<p>1865</p>
+<p>The Civil War ends.</p>
+<p>1868 (Approximate date)</p>
+<p>Dan and Linda return to Texas where John joins them for a time. In the company of ex-Ranger Jim Blane, John and Dan spend some time prospecting and find a rich silver mine, possibly the legendary San Saba mine sought by James Bowie. They agree to keep its location secret while they take care of other matters. John goes back east to study law, and Dan becomes a Texas Ranger.</p>
+<p>Ulysses S. Grant is elected President.</p>
+<p>1869</p>
+<p>Earliest reports of "Butch" Cavendish gang operating in Texas.</p>
+<p>1870-71</p>
+<p>Cavendish organizes an army of renegades, bribing and blackmailing government officials including Sheriff Wyatt of Del Rio, and Collins, a member of Dan's Ranger troop (LOTLR)</p>
+<p>1872</p>
+<p>John Reid finishes school and becomes a lawyer.</p>
+<p>Dan Reid Jr. is born.</p>
+<p>Conjecture: It is possible that while in college, John dabbled briefly in theater, learning the art of disguise and accents which serve him so well later in life.</p>
+<p>1873</p>
+<p>Linda, fearing for her baby's safety, returns with him to Richmond. Dan Sr. is now a captain in the Rangers, and stays to end the growing threat of the Cavendish gang. John returns to Del Rio, meets Amy Striker and her uncle Lucas (LOTLR).</p>
+<p>John briefly joins his brother's Ranger troop but quits in disgust when he learns of the massacre of a band of Potawatomai. The massacre was orchestrated by the corrupt Sheriff Barrett. Tonto's wife, child and sister are killed in the massacre, unbeknownst to John (It Crawls!, LOTLR).</p>
+<p>On New Year's Eve, minions of Cavendish kill Amy Striker's uncle.</p>
+<p>New Year's Day, 1874</p>
+<p>Captain Reid and his Ranger troop, accompanied by John, pursue the killers. Unfortunately, Collins leads the six men into an ambush at the bottom of Bryant's Gap where they are all gunned down (LOTLR).</p>
+<p>January</p>
+<p>Tonto finds the rangers and nurses John, the only survivor, back to health, and tells him "...others dead, you lone ranger now." Tonto digs six graves so that the gang will not suspect that there was a survivor. John spends most of the winter and early spring months recovering from his wounds.</p>
+<p>Informed of her husband's death, Linda and Dan Jr. return to Texas. The wagon train carrying them is attacked by Apaches. Dan is found and cared for by "Grandma Frisbie" for the next several years.</p>
+<p>John and Tonto have heard of a fabulous wild stallion in a nearby valley. After saving the magnificent animal from a frenzied bison, they nurse the horse back to health. John wins the animal's trust and, at Tonto's suggestion, names him "Silver."</p>
+<p>At Tonto's suggestion, John fashions bullets out silver taken from the mine he and Dan discovered. He makes a mask out of his brother's vest and becomes the Lone Ranger. He begins his career by tracking down and bringing to justice the members of the Cavendish gang who participated in the ambush –– including the corrupt Collins.</p>
+<p>1874-1876</p>
+<p>The Lone Ranger and Tonto scour Texas for Cavendish gang members who scatter from the main band. He captures them and turns them in to await trail and ultimately to hang. Sheriff Wyatt of Del Rio is so rattled by the Masked Man's activities he takes refuge at Cavendish's hidden headquarters.</p>
+<p>1876</p>
+<p>Touring the western states, President Grant is kidnapped by Cavendish. He is rescued by the Lone Ranger, Tonto, Wild Bill Hickok, Buffalo Bill Cody, George Armstrong Custer, and a contingent of the Seventh Calvary. Cavendish is arrested (LOTLR).</p>
+<p>June</p>
+<p>Custer is killed at the Battle of Little Big Horn. (Conjecture: Barrett, although an ex-Confederate soldier, joins the army during its campaign against the Sioux and Cheyenne. He is part of Major Reno's command during the Little Big Horn battle. Years later, when the Lone Ranger tells Tonto about Barrett's experience, it was information he learned after their initial encounter in 1873).</p>
+<p>August</p>
+<p>Wild Bill Hickok is murdered in Deadwood, South Dakota.</p>
+<p>Sept.</p>
+<p>The Lone Ranger takes the name of Allen King and joins a Ranger troop. They are opposing the depredations of a criminal mastermind who has assumed the identity of Marcus Jefferies, a government land agent (TLR-S).</p>
+<p>Oct.</p>
+<p>The Lone Ranger foils an assassination plot against President Grant. Episode 4 of (TNATLR-A The President Plot).</p>
+<p>1877</p>
+<p>The Lone Ranger takes the name of Bill Andrews in order to defeat the plans of Bart Dolan, the nephew of a powerful cattleman who is trying to rid the San Ramon valley of settlers. With the aid of Tonto and Juan Vasquez, he is able to foil the schemes of Dolan's marauders (TLRRA-S).</p>
+<p>Events depicted in The Lone Ranger (N).</p>
+<p>March</p>
+<p>Ulysses S. Grant leaves the office of president and is replaced by Rutherford B. Hayes.</p>
+<p>1878</p>
+<p>Events depicted in Season One (TLR-TV) and The Lone Ranger and the Mystery Ranch and The Lone Ranger and the Gold Robbery (N). Conjecture: The Lone Ranger and Tonto meet Wu Chan (It Crawls!).</p>
+<p>1879</p>
+<p>Events depicted in Season Two (TLR-TV) and The Lone Ranger and the Outlaw Stronghold (N).</p>
+<p>Conjecture:Tonto finds and trains Taka the eagle (TLR-A).</p>
+<p>Conjecture:The former Sheriff Barrett turns to outlawry and prairie piracy.</p>
+<p>1880</p>
+<p>Events depicted in Season Three (TLR-TV), episodes 1 through 4 of The Lone Ranger animated series (TLR-A) and The Lone Ranger and Tonto (N).</p>
+<p>1881</p>
+<p>Events depicted episodes 4 through 12 of (TLRA), and The Lone Ranger And the Haunted Gulch (N).</p>
+<p>1882</p>
+<p>The Lone Ranger and Tonto encounter Barrett. When the Ranger reveals to Tonto the massacre of Potawatomis he unwittingly helped Barrett perpetrate nearly 10 years before, he and his friend have a falling out. Fortunately, they are able to repair the breach in their friendship and end the murderous reign of an extraterrestrial Barrett revived. (Events depicted in It Crawls! (C)).</p>
+<p>Events depicted in The Lone Ranger Traps Smugglers (N) and episodes 13 through 17 of (TLR-A).</p>
+<p>1883</p>
+<p>The Lone Ranger and Tonto oppose the greedy (and seemingly psychotic) Reese Kilgore's attempts to orchestrate a war with a local Indian tribe in order to steal their silver mine. Events depicted in The Lone Ranger (FF).</p>
+<p>Events depicted in The Lone Ranger Rides Again (N), The Lone Ranger Rides North (N) and episodes 18 through 20 of (TLR-A)</p>
+<p>1884</p>
+<p>The Lone Ranger and Tonto contend with a female criminal mastermind and corrupt town officials when they attempt to wrest control of land sacred to local Indians. Events depicted in The Lone Ranger and the Lost City of Gold (FF).</p>
+<p>Events depicted in The Lone Ranger and the Silver Bullet (N),and episodes 21 through 30 of (TLR-A).</p>
+<p>1885</p>
+<p>Events depicted in episodes 30 through 43 of (TLR-A), and The Lone Ranger on Powderhorn Trail (N).</p>
+<p>1886</p>
+<p>The Lone Ranger and Tonto finally find young Dan Reid, Jr. who had been raised by a kindly Grandma Frisbie. She dies during the encounter, but not before helping unravel the secret of his true identity. Dan is sent back to Richmond to live with his mother's family and receive an education. He returns quite often to share adventures with his Uncle John.</p>
+<p>Events depicted in Season Four of (TLR-TV) and The Lone Ranger West of the Maverick Pass (N)</p>
+<p>1887</p>
+<p>Events depicted in Season Five of (TLR-TV), and episodes 1 through 3 of The New Adventures of The Lone Ranger Animated (TNATLR-A).</p>
+<p>1888</p>
+<p>Events depicted in episodes 5 through 12 of (TNATLR-A) and The Lone Ranger On Gunsight Mesa (N).</p>
+<p>1889</p>
+<p>Events depicted in episodes 13 through 19 of (TNATLR-A), The Lone Ranger and The Bitter Spring Feud (N).</p>
+<p>1890</p>
+<p>Events depicted in episodes 20 and 21 of (TNATLR-A), The Lone Ranger and the Code of the West (N).</p>
+<p>1891</p>
+<p>Events depicted in The Lone Ranger And Trouble on the Sante Fe (N) and the beginning of his war against the Black Arrow syndicate, a group whose ultimate goal is the takeover of the U.S. Government (R).</p>
+<p>1892</p>
+<p>The Black Arrow war continues with the Lone Ranger and Tonto capturing members of the conspiracy one by one (R).</p>
+<p>1893</p>
+<p>The Black Arrow war ends when the Lone Ranger and Tonto expose the secret leader of the syndicate, the acting governor of a western state (R)</p>
+<p>1894</p>
+<p>Butch Cavendish escapes from prison and follows the Lone Ranger to Bryant's Gap, where he has taken his nephew Dan to visit his father's grave on the 20th anniversary of his death. Cavendish ambushes the two, but the Ranger fights back, mortally wounding him. As Cavendish is dying, the Masked Man reveals his true identity and the outlaw's last words are, "I wish I could have died not knowing."</p>
+<p>Events depicted in The Lone Ranger and Red Butte Trail (N).</p>
+<p>1895</p>
+<p>One of the last captures officially credited to the Lone Ranger is the break-up of the Ace Perigon Gang. During this encounter, he is recognized by a former Texas Ranger named Martin who has gone bad and is a member of the gang. At the cost of his own life, he helps the Ranger escape and bring the gang to justice. As he lays dying, he makes the Lone Ranger promise to continue his war on injustice by training someone else to take his place (R).</p>
+<p>1896</p>
+<p>Conjecture: At the age of 45, with the worst of the lawless elements in the west pacified, John Reid most probably hangs up his mask and guns. He marries Amy Striker and years later, her nephew Fran immortalizes his Uncle John's exploits on radio and a series of novels.</p>
+<p>1899</p>
+<p>Conjecture: Dan Reid, Jr. inherits the silver mine and moves to an unnamed Eastern city, possibly Detroit. He founds the Daily Sentinel newspaper.</p>
+<p>The Wild, Wild Ranger?</p>
+<p>It is possible that several of the villains encountered in the first Lone Ranger animated series were in actuality enemies of James West and Artemus Gordon operating under aliases. Tiny Tom could very well have been Dr. Miguelito Loveless and The Puppetmaster might have been Zachariah Skull. Professor Whitaker in the episode Quicksilver evidently discovered a similar process to acquire super-speed as Morgan Midas in the WWW episode, The Night of the Burning Diamond.</p>
+<p>Inasmuch as West and Gordon answered only to President Grant, it's reasonable to assume when he was not re-elected in 1877, they were discharged from the Secret Service. It is known that by 1885, West had retired to a Mexican village where he evidently fathered a number of illegitimate children (many of whom appeared to be 8 to 10 years old) and Gordon was touring with a shabby theatrical company. (See our The Wild, Wild West Chronology).</p>
+<p>Since the two agents could no longer operate officially by the end of 1876, it is not out of the realm of likelihood that several of their old foes felt they had carte blanche in their criminal activities. However, they hadn't factored in the Lone Ranger and Tonto and it appears the Masked Man pretty much cleaned out these super-criminals by the mid-1880s. If Tiny Tom was indeed Loveless, he died shortly after his last encounter with the Ranger. He apparently held no permanent grudge against the Masked Man since he passed on only his enmity of West and Gordon to his son, Miguelito, Jr.</p>
+<h1 id="green-hornet">Green Hornet</h1>
+<p>M = Serial Movie</p>
+<p>GHT = Green Hornet television episode</p>
+<p>BT = Batman television episode</p>
+<p>FC = Dell Comics' Four Color Comics</p>
+<p>GK = Gold Key Comics' The Green Hornet</p>
+<p>GH1 = Volume 1 of Now Comics' The Green Hornet</p>
+<p>GH2 = Volume 2 of Now Comics' The Green Hornet</p>
+<p>GHAnn = Now Comics' The Green Hornet Annual</p>
+<p>T1 = Volume 1 of Now Comics' Tales of the Green Hornet</p>
+<p>T2 = Volume 2 of Now Comics' Tales of the Green Hornet</p>
+<p>T3 = Volume 3 of Now Comics' Tales of the Green Hornet</p>
+<p>K1 = Volume 1 of Now Comics' Kato of the Green Hornet</p>
+<p>K2 = Volume 2 of Now Comics' Kato of the Green Hornet</p>
+<p>m = Now Comics' mini-series</p>
+<p>1900</p>
+<p>Conjecture: Dan Reid, Jr. marries.</p>
+<p>1906</p>
+<p>Britt Reid, son of Dan Reid, Jr., and great nephew of the Lone Ranger, is born.</p>
+<p>1915</p>
+<p>Conjecture: Birth of Ikano Kato.</p>
+<p>1934</p>
+<p>Britt Reid becomes a crime reporter at The Daily Sentinel.</p>
+<p>1935</p>
+<p>Britt saves Ikano Kato's life in Japan and Ikano comes to America with the Reids.</p>
+<p>1936-1953</p>
+<p>The complete adventures of the Green Hornet and Kato as revealed in radio programs and 1940s comics.</p>
+<p>1936</p>
+<p>T2 1-2 Destiny: The Origin of the Green Hornet (Britt becomes publisher of The Sentinel. Britt and Ikano go to work as the Green Hornet and Kato.)</p>
+<p>T3 1 Death House</p>
+<p>T3 2 Wolf Pack (Just after Death House.)</p>
+<p>1939</p>
+<p>M The Green Hornet</p>
+<p>1940</p>
+<p>N The Green Hornet Strikes! (A Big Little Book.)</p>
+<p>M The Green Hornet Strikes Again</p>
+<p>May 1942</p>
+<p>m 1-4 Sting of the Green Hornet (Britt and Kato encounter The Shadow, who poses as a government agent. Kato meets Private Steve Rogers, a product of the War Department's "Project Gladiator" (aka "Operation Rebirth") and the future Captain America. Britt also barely misses running into reporters Clark Kent and Lois Lane.)</p>
+<p>1945</p>
+<p>GH1 1 My Last Case (The first Green Hornet goes into semi-retirement, but still continues to work on highly important cases.)</p>
+<p>1953</p>
+<p>FC 496 The Freightyard Robberies</p>
+<p>FC 496 Proof of Treason (The Green Hornet brings down a mayoral candidate who is secretly a Communist, placing this adventure squarely in the McCarthy era.)</p>
+<p>The second Green Hornet &amp; Kato</p>
+<p>1966</p>
+<p>Britt Reid's nephew, Britt Reid II, becomes the second Green Hornet and Ikano Kato's son Hayashi becomes the new Kato (see GH1 2-3; the 1968 date given is incorrect).</p>
+<p>GHT 1 Programmed for Death</p>
+<p>GHT 2 The Silent Gun</p>
+<p>GHT 3 Give 'Em Enough Rope</p>
+<p>GHT 4 Crime Wave</p>
+<p>GHT 5 The Frog is a Deadly Weapon</p>
+<p>GHT 6 Eat, Drink, and Be Dead</p>
+<p>GHT 7-8 Beautiful Dreamer</p>
+<p>GHT 9 The Ray is for Killing</p>
+<p>GHT 10 The Preying Mantis</p>
+<p>GHT 11 The Hunters and the Hunted</p>
+<p>GHT 12 Deadline for Death</p>
+<p>GHT 13 The Secret of the Sally Bell</p>
+<p>GHT 14 Freeway to Death</p>
+<p>GHT 15 May the Best Man Lose</p>
+<p>GHT 16 Seek, Stalk and Destroy</p>
+<p>GHT 17-18 Corpse of the Year</p>
+<p>GHT 19 Bad Bet on a 459 - Silent</p>
+<p>GHT 20 Ace in the Hole</p>
+<p>GHT 21 Trouble for Price Charming</p>
+<p>GHT 22 Alias the Scarf</p>
+<p>GHT 23 Hornet, Save Thyself</p>
+<p>BT A Piece Of The Action / Batman's Satisfaction</p>
+<p>GHT 24 The Hornet and the Firefly</p>
+<p>GHT 25-26 Invasion from Outer Space</p>
+<p>1967</p>
+<p>GK 1 Ring of Terror</p>
+<p>GK 2 The Threat of the Red Dragons</p>
+<p>GK 3 The Counterplot Affair</p>
+<p>GK 3 Masquerade</p>
+<p>1968</p>
+<p>N The Case of the Disappearing Doctor (a Whitman Book)</p>
+<p>N The Infernal Light</p>
+<p>May</p>
+<p>T2 4 Targets (It is May, 1968.)</p>
+<p>Oct.</p>
+<p>T3 3 New Dreams, Old Nightmares (It's Oct. 1968; the 1967 date given must be incorrect because this episode takes place after Targets. Also after Alias the Scarf.)</p>
+<p>1969</p>
+<p>T2 3 Gun Metal Green (It is 1969.)</p>
+<p>1971</p>
+<p>The Green Hornet and Kato help put away mobster Arlan Mitchell (GH1 11).</p>
+<p>1977</p>
+<p>T1 1-2 The Burma Horse (It is June, 1977. Hayashi Kato makes his first Hollywood connections.)</p>
+<p>1979</p>
+<p>Britt Reid II retires as the second Green Hornet after suffering a heart attack (see GH1 2-3).</p>
+<p>1981</p>
+<p>Hayashi Kato is a movie star in California (GH1 4).</p>
+<p>1986</p>
+<p>Alan Reid, nephew of Britt Reid II, becomes the third Green Hornet and Hayashi Kato returns to work as his partner. Alan is killed on his first mission and Kato blames himself (GH1 4-5).</p>
+<p>1989</p>
+<p>Britt Reid, the first Green Hornet, is killed (GH1 5). Paul Reid, brother of Alan, becomes the fourth Green Hornet. Mishi Kato, half-sister of Hayashi and daughter of Ikano, becomes the new Kato (GH1 6-7).</p>
+<p>1990</p>
+<p>GH1 8-9 On the Pad</p>
+<p>K1 1-4 Kato (Hayashi Kato travels to China on a solo mission.)</p>
+<p>GH1 10 The Road Pirates (Mishi retires as Kato.)</p>
+<p>GH1 11-12 A Memory of Death (Hayashi becomes Paul's partner as Kato.)</p>
+<p>GH1 13-14 Forever Green</p>
+<p>Nov. 1990-Jan. 1991</p>
+<p>m 1-3 Solitary Sentinel</p>
+<p>Mid 1991</p>
+<p>GH2 1-3 Money Kills (Mishi Kato returns as the vigilante Crimson Wasp to battle the villain Johnny Dollar.)</p>
+<p>GH2 4 Smoke and Mirrors</p>
+<p>GH2 5 To Pardon Blood</p>
+<p>GH2 6 The Wall</p>
+<p>GHAnn 1 The Blue and the Green</p>
+<p>1992</p>
+<p>GH2 7-8 Street Lethal (The third Black Beauty is destroyed and Paul commissions the building of the fourth Black Beauty.)</p>
+<p>GH2 16 A Tip of the Hat (Takes place just after Street Lethal.)</p>
+<p>GH2 9 Deadline</p>
+<p>K2 1-2 Kato II (Hayashi Kato is on another solo mission.)</p>
+<p>GH2 10-11 The Huntsmen (The Crimson Wasp returns.)</p>
+<p>Nov.</p>
+<p>GH2 12-14 The Odyssey of the Crimson Wasp (The Crimson Wasp kills Johnny Dollar.)</p>
+<p>GH2 15 Second Sight</p>
+<p>1993</p>
+<p>GH2 17 Showdown at Midnight</p>
+<p>GH2 18-19 Sister-Hood</p>
+<p>GH2 20 Crimes of the Heart (It is April 1993. Mishi Kato is in Japan.)</p>
+<p>GH2 21 The Return of Mr. Death</p>
+<p>GH2 22 The Beast Inside (Mishi Kato.)</p>
+<p>GH2 23-24 The Karate Wars</p>
+<p>GH2 25 Deadly Admirer</p>
+<p>GH2 26-28 Heart of the Dragon (Mishi Kato returns as the Crimson Wasp.)</p>
+<p>Jan. 1994</p>
+<p>GH2 29-30 The Acquisition (Thirteen months after The Odyssey of the Crimson Wasp. Johnny Dollar is back.)</p>
+<p>March</p>
+<p>GH2 31 Transitions (Two months after The Acquisition.)</p>
+<p>GH2 32 The Master Plan</p>
+<p>GH2 33-34 Obsessive (Sister Hood)</p>
+<p>GH2 35 Good Cop, Bad Cop</p>
+<p>GH2 36-37 Old Wounds (Johnny Dollar, Mishi.)</p>
+<p>Late Aug-Late Sept.</p>
+<p>GHAnn 2 Operation: Sting</p>
+<p>GH2 38-39 Best Served Cold (The Crimson Wasp. Hayashi retires and his nephew Kono (grandson of Ikano) becomes the new Kato.)</p>
+<p>GH2 40 Changing of the Guard</p>
+<hr />
+<p>2080</p>
+<p>m 1-3 Dark Tomorrow</p>
+<p><a href="http://www.pjfarmer.com/woldnewton/Reid.htm">PJFarmer.com</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

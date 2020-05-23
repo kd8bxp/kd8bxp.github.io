@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Tessel 2 Command Line Interface - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#tessel-2-command-line-interface">Tessel 2 Command Line Interface</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#updating-tessel-2-on-board-osfirmware">Updating Tessel 2 On-board OS/Firmware</a></li>
+            <li><a href="#setup">Setup</a></li>
+            <li><a href="#usage">Usage</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="tessel-2-command-line-interface">Tessel 2 Command Line Interface</h1>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#updating-tessel-2-on-board-osfirmware">Updating Tessel</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#usage">Usage/CLI commands</a></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Prerequisites for installation: <a href="https://nodejs.org/">Node.js</a> 4.2.x or greater</p>
+<p><code>npm install -g t2-cli</code></p>
+<p>The best place to go next is <a href="http://tessel.io/t2-start">the Tessel 2 start experience</a>, which will walk you through a tutorial.</p>
+<h2 id="updating-tessel-2-on-board-osfirmware">Updating Tessel 2 On-board OS/Firmware</h2>
+<h3 id="how-do-i-know-if-i-need-to-update-my-t2">How do I know if I need to update my T2?</h3>
+<p>t2-cli and t2-firmware are separately versioned.</p>
+<ul>
+<li>For updating t2-cli:</li>
+</ul>
+<p>When a CLI command is run on an internet-connected computer, the CLI automatically checks for updates to the <code>t2-cli</code> module. If an update is available, the CLI will provide the update instructions using a notifier to the user (as shown below). The CLI can be updated with a global npm re-install of the CLI using the command <code>npm install -g t2-cli</code>.</p>
+<p><em>The CLI only checks once per day to ensure that the CLI functioning does not slow down.</em></p>
+<p><img src="/images/CLI_Update.png" width="400"></p>
+<ul>
+<li>For updating t2-firmware:</li>
+</ul>
+<p>The user does not get update information for t2-firmware from the CLI. The most convenient and fastest way to find out if a firmware update is needed is by running the <code>t2 update</code> command and the <code>t2-firmware</code> will update automatically if there is a newer firmware version available. Otherwise, you can run <code>t2 version</code> to get the version running on your Tessel, and then <code>t2 update -l</code> to see the 10 newest versions available.</p>
+<h3 id="updating">Updating</h3>
+<p>Simply run <code>t2 update</code>. If you want to update to a specific version, run <code>t2 update -v VERSION_NUM</code> where <code>VERSION_NUM</code> is one of the versions returned by <code>t2 update -l</code> (like <code>t2 update -v 0.0.6</code>).</p>
+<h2 id="setup">Setup</h2>
+<h3 id="usb">USB</h3>
+<p>Connecting to a Tessel 2 over USB requires no special setup.</p>
+<h3 id="lan">LAN</h3>
+<p>In order to authorize the device with your computer to work over a LAN connection, call <code>t2 provision</code> after connecting it via USB. This will place an SSH key on the device. Use the <code>t2 wifi</code> command as described below to connect Tessel 2 to a local network. You should now be able to access your Tessel 2 remotely.</p>
+<h3 id="ssh">SSH</h3>
+<p>To connect to your Tessel 2 over SSH use the <code>t2 root</code> command. Before you connect, call <code>t2 provision</code> to authorize your computer to access your Tessel via SSH.</p>
+<p>Usage
+*  <code>t2 root</code>
+    * <code>[--timeout]</code> Set timeout in seconds for scanning networked Tessels. The default is <code>5</code> seconds.
+    *  <code>[--key]</code> SSH key for authorization with your Tessel.  Optional, only required if you have changed the keypath after your Tessel was provisioned.
+    *  <code>[--name]</code> The name of the Tessel where the command will be executed.
+    *  <code>[--output]</code>  Enable or disable writing command output to stdout/stderr. Useful for CLI API consumers.  Set to <code>true</code> by default
+    *  <code>[--loglevel]</code>  Set the loglevel.  It is set to <code>basic</code> by default.  Available options are <code>'trace', 'debug', 'basic', 'info', 'http', 'warn', 'error'</code></p>
+<h3 id="virtual-machine">Virtual Machine</h3>
+<p>Check out the <a href="https://github.com/tessel/t2-vm">Virtual Machine repo</a> for instructions on how to set up the VM. All CLI commands except <code>provision</code> and <code>wifi</code> should be functional with the VM.</p>
+<h2 id="usage">Usage</h2>
+<p>Specify which Tessel to use with the <code>--name &lt;name&gt;</code> option appended to any command.
+If <code>--name</code> is not specified, CLI will look for an environment variable, e.g. <code>export TESSEL=Bulbasaur</code>. If none of the above are specified and there is one Tessel connected over USB, this Tessel will be preferred. Finally, if there is only one Tessel available and none of the above are specified, CLI will choose that Tessel.</p>
+<h3 id="starting-projects">Starting Projects</h3>
+<ul>
+<li><code>t2 init</code> in the current directory, create a package.json and index.js with <a href="http://tessel.github.io/t2-start/blinky.html">Hello World code</a>.</li>
+</ul>
+<h3 id="project-files">Project Files</h3>
+<p>Along with the package.json and index.js included in the <code>t2 init</code> process, there are some other files that may be useful for your project:
+* <code>.tesselignore</code> similar to .gitignore or <a href="https://docs.npmjs.com/misc/developers#keeping-files-out-of-your-package">.npmignore</a>, this file should list any files or directories you want ignored by the T2 bundling and deployment process. This is handy when using the <code>--full</code> flag, which tells T2 to bundle everything in the project directory.
+* <code>.tesselinclude</code> the overriding and opposite behavior of <code>.tesselignore</code>, this file should list any files or directories you want included with the T2 bundling and deployment process. This is handy for including non-JavaScript assets, like HTML, CSS, and images, for use within your project.
+  * In your JavaScript program, assets listed in the <code>.tesselinclude</code> file should always be accessed using <code>__dirname</code> (read more about <code>__dirname</code> in the <a href="https://nodejs.org/api/globals.html#globals_dirname">Node.js docs</a>). For example, if there is a file at <code>public/index.html</code> and it's listed in your <code>.tesselinclude</code>, from your JavaScript program, you'd read it like this: <code>fs.readFile(path.join(__dirname, "public/index.html"), "utf8", (error, contents) =&gt; ...);</code>.</p>
+<h3 id="tessel-management">Tessel Management</h3>
+<ul>
+<li><code>t2 key</code> will generate a local SSH keypair for authenticating to a Tessel.  Use with the <code>generate</code> argument to generate a new local SSH keypair for authenticating to a Tessel.</li>
+<li><code>t2 list</code> will show what Tessels are available over WiFi and USB.</li>
+<li><code>t2 provision</code> will authorize your computer to access a Tessel over SSH. (USB-connected Tessel only)</li>
+<li><code>t2 rename</code> will change the name of a Tessel.</li>
+<li><code>t2 reboot</code> will reboot your Tessel.</li>
+<li><code>t2 restore</code> Restore your Tessel to factory defaults by installing the factory version of <a href="https://github.com/tessel/openwrt-tessel">OpenWrt-Tessel</a>, and <a href="https://github.com/tessel/t2-firmware">T2-Firmware</a>.</li>
+</ul>
+<h3 id="code-deployment">Code Deployment</h3>
+<p>During code deployment, CLI looks for <code>.tesselignore</code> and <code>.tesselinclude</code> files to let it know which files it should bundle up and push over to Tessel. In the default bundling process, CLI takes the file passed into the <code>run</code> or <code>push</code> command and uses it as an entry point to build a dependency graph (similar to <a href="https://github.com/substack/browserify-handbook#how-browserify-works">Browserify</a>). Once the dependencies are known, binary modules are replaced by pre-compiled (for mips) binaries, assets are copied, and everything is tarred before sent to the awaiting Tessel.
+* <code>t2 run &lt;file&gt;</code> copy the file and its dependencies into Tessel's RAM &amp; run immediately. Use this during development of your device application.
+  * <code>[--lan]</code> deploy over LAN connection
+  * <code>[--usb]</code> deploy over USB connection
+  * <code>[--slim]</code> true by default, copy only files needed by the program to run
+  * <code>[--full]</code> the opposite of --slim, copy all the files in the project directory
+  * <code>[--compress]</code> true by default, compress and minify the project code prior to copying it to the device
+  * <code>[--binopts]</code> Arguments sent to the binary (e.g. Node.js, Python). For example, to enable ES modules in Node use <code>--binopts="--experimental-modules"</code> 
+* <code>t2 push &lt;file&gt;</code> copy the file and its dependencies into Tessel's Flash memory &amp; run immediately. Once deployed with <code>push</code> command, the device application will automatically run every time the Tessel restarts.
+  * <code>[--lan]</code> deploy over LAN connection
+  * <code>[--usb]</code> deploy over USB connection
+  * <code>[--slim]</code> true by default, copy only files needed by the program to run
+  * <code>[--full]</code> the opposite of --slim, copy all the files in the project directory
+  * <code>[--compress]</code> true by default, compress and minify the project code prior to copying it to the device
+  * <code>[--binopts]</code> Arguments sent to the binary (e.g. Node.js, Python). For example, to enable ES modules in Node use <code>--binopts="--experimental-modules"</code> 
+* <code>t2 erase</code> erase any code pushed using the <code>t2 push</code> command</p>
+<h3 id="using-wifi">Using Wifi</h3>
+<ul>
+<li><code>t2 wifi</code> show details about an existing WiFi connection</li>
+<li><code>[-l]</code> lists the available networks</li>
+<li><code>[-n SSID]</code> required, connects to the provided SSID</li>
+<li><code>[-p PASS]</code> optional, connects with the given password</li>
+<li><code>[-s SECURITY]</code> connects with the given security type, valid options:<ul>
+<li><code>none</code> open network, no need for a password</li>
+<li><code>wep</code> WEP network, password required</li>
+<li><code>psk</code> WPA Personal, password required</li>
+<li><code>psk2</code> WPA2 Personal, password required</li>
+<li><code>wpa</code> WPA Enterprise, password required</li>
+<li><code>wpa2</code> WPA2 Enterprise, password required</li>
+</ul>
+</li>
+<li><code>[--off]</code> disconnects from the current network</li>
+<li><code>[--on]</code> connects to the last configured network</li>
+</ul>
+<h3 id="create-an-access-point">Create An Access Point</h3>
+<ul>
+<li><code>t2 ap</code></li>
+<li><code>[-n SSID]</code> required, creates a network with the given ssid</li>
+<li><code>[-p PASS]</code> optional for open networks, creates a network with the given password</li>
+<li><code>[-s SECURITY]</code>  creates a network with the given security, valid options:<ul>
+<li><code>none</code> open network, default if no password is given</li>
+<li><code>wep</code> WEP network, password required</li>
+<li><code>psk</code> WPA Personal, password required</li>
+<li><code>psk2</code> WPA2 Personal, reccomended, password required &amp; default if password is given without security</li>
+</ul>
+</li>
+<li><code>[--off]</code> turn off the current access point</li>
+<li><code>[--on]</code> turn on the most recently used access point</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

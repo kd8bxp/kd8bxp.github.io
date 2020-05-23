@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Tessel 2 Technical Overview - Random Wire!</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../../document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../../livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../../RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../../mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../../ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../../CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../../SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../../../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../hamradio/hotspot/">MMDVM Hotspot Info</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/greenhornet/greenhornet/">Green Hornet</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#tessel-2-technical-overview">Tessel 2 Technical Overview</a></li>
+            <li><a href="#relevant-github-repositories">Relevant Github Repositories</a></li>
+            <li><a href="#system-architecture">System Architecture</a></li>
+            <li><a href="#a-code-deploy-example">A Code Deploy Example</a></li>
+            <li><a href="#questions">Questions?</a></li>
+            <li><a href="#more-useful-links">More Useful Links</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="tessel-2-technical-overview">Tessel 2 Technical Overview</h1>
+<p>This guide is intended to help code contributors understand how relevant system components of Tessel 2 work, where to find code and design files, and accelerate the development process through technical transparency.</p>
+<ul>
+<li><a href="#relevant-github-repositories">T2 Github Repositories</a><ul>
+<li><a href="#tessel-2-core-repos">Core</a><ul>
+<li><a href="#tessel-2-command-line-interface-cli">Command Line Interface</a></li>
+<li><a href="#tessel-2-operation-system-openwrt">OpenWRT OS</a></li>
+<li><a href="#tessel-2-co-processor-firmware">Co-processor Firmware</a></li>
+</ul>
+</li>
+<li><a href="#tessel-2-tools">Tools</a><ul>
+<li><a href="#tessel-2-virtual-machine-vm">Virtual Machine</a></li>
+<li><a href="#tessel-2-compiler">Binary Compiler</a></li>
+</ul>
+</li>
+<li><a href="#hardware-designs">Hardware Designs</a><ul>
+<li><a href="#tessel-2-hardware-design-files">Tessel 2 Hardware Design Files</a></li>
+<li><a href="#tessel-parts-library">Tessel 2 Parts Library</a></li>
+</ul>
+</li>
+<li><a href="#modules">Modules</a><ul>
+<li><a href="#10-pin-modules">10-Pin Modules</a></li>
+<li><a href="#usb-modules">USB Modules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#system-architecture">System Architecture</a><ul>
+<li><a href="#high-level-look-at-hardware">Hardware Overview</a></li>
+<li><a href="#software-architecture">Software Overview</a></li>
+</ul>
+</li>
+<li><a href="#a-code-deploy-example">Code Deploy Walkthrough</a></li>
+<li><a href="#questions">Getting Questions Answered</a></li>
+<li><a href="#more-useful-links">Links to more information</a></li>
+</ul>
+<h2 id="relevant-github-repositories">Relevant Github Repositories</h2>
+<p>Quick guide to the Tessel stack (in order of complexity):</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Stack</th>
+<th>Repo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>User / Module Code</td>
+<td>JS</td>
+<td>(Many)</td>
+</tr>
+<tr>
+<td>CLI</td>
+<td>JS</td>
+<td><a href="https://github.com/tessel/t2-cli">t2-cli</a></td>
+</tr>
+<tr>
+<td>Tessel Library</td>
+<td>Linux / JS / Comms</td>
+<td><a href="https://github.com/tessel/t2-firmware">t2-firmware</a></td>
+</tr>
+<tr>
+<td>OpenWRT</td>
+<td>Linux / C / Shell / More</td>
+<td><a href="https://github.com/tessel/t2-firmware">t2-firmware</a></td>
+</tr>
+<tr>
+<td>SSH/GPIO Daemons</td>
+<td>Linux / C</td>
+<td><a href="https://github.com/tessel/t2-firmware">t2-firmware</a></td>
+</tr>
+<tr>
+<td>Firmware</td>
+<td>C / Comms</td>
+<td><a href="https://github.com/tessel/t2-firmware">t2-firmware</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="tessel-2-core-repos">Tessel 2 Core Repos:</h3>
+<p>You can find all of the Tessel repositories <a href="https://github.com/tessel/">on the organization page</a> but this section provides some guidance over relevant Tessel 2-specific repositories.</p>
+<h5 id="tessel-2-command-line-interface-cli"><a href="https://www.github.com/tessel/t2-cli">Tessel 2 Command Line Interface</a> (CLI)</h5>
+<p>The CLI is the primary method of interacting with Tessel for users and developers. It provides useful functions like listing available Tessels, deploying code, and setting wifi credentials on the device.</p>
+<h5 id="tessel-2-operation-system-openwrt"><a href="https://www.github.com/tessel/openwrt-tessel">Tessel 2 Operation System (OpenWRT)</a></h5>
+<p>The primary processor of the Tessel 2 runs a very lightweight version of Linux called OpenWRT. OpenWRT provides all of the TCP/IP drivers, threading/schedule support, and runs Node, Rust or whatever other language you're using with Tessel 2. This repo contains all of the source files of the Tessel build of OpenWRT.</p>
+<h5 id="tessel-2-co-processor-firmware"><a href="https://www.github.com/tessel/t2-firmware">Tessel 2 Co-processor Firmware</a></h5>
+<p>Tessel 2 features a SAMD21 co-processor that manages a handful of responsibilities like routing USB communication from the CLI and the realtime operations on the GPIO pins of the two module ports. This repo contains not only the firmware that drives this microcontroller but hardware-related scripts that define the interface to other languages (like <a href="https://www.github.com/tessel/t2-firmware/node/tessel.js">tessel.js</a> for Node scripts) so that the available hardware functionality doesn't get out of sync with what is exposed to the OpenWRT processor.</p>
+<h3 id="tessel-2-tools">Tessel 2 Tools</h3>
+<h5 id="tessel-2-virtual-machine-vm"><a href="https://www.github.com/tessel/t2-vm">Tessel 2 Virtual Machine</a> (VM)</h5>
+<p>The VM is used primarily by Tessel developers who either don't have hardware available or want to develop on a faster computer. The repo provides the ability to create and run these Tessel virtual machines. You can use the CLI (see above) to interact with the running VM just as you would an actual Tessel 2. The VM has the limitation of not being able to set wifi credentials (it passes through the host network interface). It is not able to use 10-pin hardware modules but USB devices do get passed through.</p>
+<h5 id="tessel-2-compiler"><a href="https://www.github.com/tessel/t2-compiler">Tessel 2 Compiler</a></h5>
+<p>The Tessel 2 compiler is another virtual machine with all the build tools needed to develop <a href="https://nodejs.org/api/addons.html">native add-ons</a> to Node modules. These add-ons are built to perform faster or interact with lower level hardware than JS alone would provide. The compiler is being used, for example, to develop the <a href="https://github.com/tessel/node-audiovideo">audio-video Node module</a> for webcams and recording audio from microphones.</p>
+<h3 id="hardware-designs">Hardware Designs</h3>
+<h5 id="tessel-2-hardware-design-files"><a href="https://www.github.com/tessel/t2-hardware">Tessel 2 Hardware Design Files</a></h5>
+<p>These are the production schematic and assembly files for the Tessel 2 hardware. You can find information about the parts that are used and how they are all connected to each other. These files were created with <a href="http://www.kicad-pcb.org/display/KICAD/KiCad+EDA+Software+Suite">KiCad</a>, a completely open source electronics design tool.</p>
+<h5 id="tessel-parts-library"><a href="https://github.com/tessel/tm-kicad-library">Tessel Parts Library</a></h5>
+<p>This repo contains all of the KiCad part models for all Tessel hardware (not just Tessel 2). You will need this library in order to recreate the schematic and PCB of the hardware design files above.</p>
+<h3 id="modules">Modules</h3>
+<h5 id="10-pin-modules">10-Pin Modules</h5>
+<p>There are 9 compatible 10-pin hardware modules for Tessel 2 available at the time of this writing. Each of these modules have a repo that contains the JavaScript driver. These repos can also be found on NPM under their respective Node modules names.</p>
+<ul>
+<li><a href="https://github.com/tessel/ambient-attx4">Ambient (Light &amp; Sound) Module</a></li>
+<li><a href="https://github.com/tessel/rfid-pn532">RFID/NFC Module</a></li>
+<li><a href="https://github.com/tessel/accel-attx4">Accelerometer Module</a></li>
+<li><a href="https://github.com/tessel/ble-ble113a">Bluetooth Low Energy Module</a></li>
+<li><a href="https://github.com/tessel/climate-si7020">Climate (temperature &amp; humidity) Module</a></li>
+<li><a href="https://github.com/tessel/gps-a2235h">GPS Module</a></li>
+<li><a href="https://github.com/tessel/ir-attx4">Infrared Module</a></li>
+<li><a href="https://github.com/tessel/relay-mono">Relay Module</a></li>
+<li><a href="https://github.com/tessel/servo-pca9685">Servo Module</a></li>
+</ul>
+<h5 id="usb-modules">USB Modules</h5>
+<p>Tessel supports interfacing with USB devices. Here are libraries we support for Tessel to interoperate with USB modules, available from many vendors:</p>
+<ul>
+<li><a href="https://github.com/sandeepmistry/noble">Bluetooth Low Energy Dongles</a></li>
+<li>Cellular (3G/4G) Dongles (no Github module, it just works through the Node <code>http</code> module and similar for other languages)</li>
+<li><a href="https://github.com/tessel/node-audiovideo">Audio Recording/Playback</a></li>
+<li><a href="https://github.com/tessel/node-audiovideo">Video Cameras (specifically, webcams)</a></li>
+<li>Flash Storage Devices (no Github module, it just works through the Node <code>fs</code> module and similar for other languages)</li>
+</ul>
+<h2 id="system-architecture">System Architecture</h2>
+<h3 id="high-level-look-at-hardware">High Level Look At Hardware</h3>
+<p>Below is a high level diagram of the hardware architecture:
+<img alt="T2 Hardware Diagram" src="https://docs.google.com/drawings/d/124Qrry4MCywzKJq1mQSo8Xwk_S58YT4IG4OHf_2oUWM/pub?w=960&amp;h=720" /></p>
+<p>As you can see from the diagram, the Atmel co-processor manages the USB connection and can communicate with the MediaTek through a SPI bus. The MediaTek can execute user scripts, and when it interprets hardware commands (like pulling a GPIO high or sending data over I2C), it packages it up and sends it over to the Atmel over a pre-defined protocol on that SPI bus.</p>
+<h3 id="software-architecture">Software Architecture</h3>
+<p>The MediaTek is responsible for managing the two USB Host ports, the ethernet port, and the WiFi network interace directly from the OpenWRT Operating System.</p>
+<p>Let's take a look at the software architecture of Tessel 2:
+<img alt="T2 Software Architecture Diagram" src="https://docs.google.com/drawings/d/1PHXdbOQEIMa7lVsBzazaMPgGdrh_LRcIpF4FlbPXmxo/pub?w=782&amp;h=1097" /></p>
+<p>The USB Port on the Atmel actually has three interfaces to the to the MediaTek:
+1. A UART connection that acts a serial terminal to the MediaTek. You can use a program like <a href="http://decimus.net/dterm"><code>dterm</code></a> to access the console through this connection.
+2. A direct connection to the SPI Flash bus of the MediaTek. This allows the Atmel to rewrite the OpenWRT image and helps prevent the Tessel from becoming bricked by any corruptions to OS.
+3. A SPI bus connection to the MediaTek for arbitrary data.</p>
+<h2 id="a-code-deploy-example">A Code Deploy Example</h2>
+<p>A good method of understanding all the components of the system is to go through an example of running a simple script on Tessel 2:</p>
+<h4 id="the-user-code-to-light-up-an-led">The user code to light up an LED</h4>
+<p>The user might have code like the example below to light up LED 0 on Tessel 2.</p>
+<pre><code class="js">var tessel = require('tessel');
+tessel.led[0].high();
+</code></pre>
+
+<h4 id="deploy-with-the-cli">Deploy with the CLI</h4>
+<p>First, the user will use the <a href="https://www.github.com/tessel/t2-cli">command line interface</a> to deploy the script from the host computer:</p>
+<pre><code>t2 run index.js
+</code></pre>
+
+<p>The CLI will compress the code and break this simple <code>run</code> command into a <a href="https://github.com/tessel/t2-cli/blob/master/lib/tessel/commands.js">number of bash commands</a> required to deploy the code like <a href="https://github.com/tessel/t2-cli/blob/90bb45d4c82f019f6de97306a6fecf15e64d0a04/lib/tessel/commands.js#L17">untarring the code</a> and <a href="https://github.com/tessel/t2-cli/blob/90bb45d4c82f019f6de97306a6fecf15e64d0a04/lib/tessel/commands.js#L20">running it with Node</a>.</p>
+<h4 id="accepting-usb-communication-on-the-atmel">Accepting USB Communication On The Atmel</h4>
+<p>The utf-8 encoding of each command is sent over the USB connection via a <a href="https://github.com/tessel/t2-firmware/blob/85c37ea67c9a85cf4f2d87aa8c27c7e0f41c4ffc/firmware/usbpipe.c">USB pipe</a>. The USB pipe driver hands off the data to the general purpose <a href="https://github.com/tessel/t2-firmware/blob/85c37ea67c9a85cf4f2d87aa8c27c7e0f41c4ffc/firmware/bridge.c">SPI bridge</a> (labeled as "SPI SLAVE SERCOMMx" in the diagram above) which transfers the command to the MediaTek.</p>
+<h4 id="relaying-data-to-the-mediatek-spi-daemon">Relaying Data to the MediaTek SPI Daemon</h4>
+<p>On the MediaTek, the <a href="https://github.com/tessel/t2-firmware/blob/85c37ea67c9a85cf4f2d87aa8c27c7e0f41c4ffc/soc/spid.c">SPI Daemon</a> is constantly waiting for data over the SPI bus and checks whether this data is from one of the module ports (for example, if an analog voltage was previously requested and was now returning the result) or from the USB port.</p>
+<p>The <a href="https://github.com/tessel/t2-firmware/blob/85c37ea67c9a85cf4f2d87aa8c27c7e0f41c4ffc/soc/spid.sh">shell script</a> that starts up the SPI Daemon on boot also creates three unix domain sockets: one for Module Port A (<code>/var/run/tessel/port_a</code>), one for Module Port B  (<code>/var/run/tessel/port_b</code>), and one for USB  (<code>/var/run/tessel/usb</code>). We'll get to the two module ports in a moment, but first, the data from the CLI is passed into the USB domain socket.</p>
+<h4 id="one-more-relay-into-the-usb-daemon">One More Relay Into The USB Daemon</h4>
+<p>Waiting on the other end of the domain socket is <a href="https://github.com/tessel/t2-firmware/blob/85c37ea67c9a85cf4f2d87aa8c27c7e0f41c4ffc/soc/usbexecd.c">the USB Daemon</a>. This program has the thrilling task of accepting shell commands, initializing new threads to execute them, and routing stdin, stdout, and stderr of those threads back to the CLI.</p>
+<p>So by this point, the CLI has executed <a href="https://github.com/tessel/t2-cli/blob/90bb45d4c82f019f6de97306a6fecf15e64d0a04/lib/tessel/deploy.js#L24-L48">a handful of bash commands</a> that transferred the code onto the Tessel 2 and started a Node process to run it. The next question is how we actually do anything with the hardware.</p>
+<h4 id="accessing-hardware-through-tesseljs">Accessing Hardware Through <code>tessel.js</code></h4>
+<p>For JavaScript files, the answer comes from the <code>var tessel = require('tessel')</code> line of the user script. When Node executes this on the MediaTek, it finds the <a href="https://github.com/tessel/t2-firmware/blob/85c37ea67c9a85cf4f2d87aa8c27c7e0f41c4ffc/node/tessel.js"><code>tessel</code> module</a> in <code>/usr/lib/node/tessel.js</code>. When this file is executed, <a href="https://github.com/tessel/t2-firmware/blob/85c37ea67c9a85cf4f2d87aa8c27c7e0f41c4ffc/node/tessel.js#L12-L15">it connects to a domain socket for each module port</a>: two of the three domain sockets created by the SPI Daemon earlier! That means that whenever you run a command on a port like <code>tessel.led[0].high()</code>, it's <a href="https://github.com/tessel/t2-firmware/blob/85c37ea67c9a85cf4f2d87aa8c27c7e0f41c4ffc/node/tessel.js#L298">packaging that command into a array of bytes</a> and sending it back over the SPI bus to the Atmel bridge firmware! That firmware then parses the command as pulling the specific GPIO high, and executes it. It can then return the result of that operation back through the SPI bus to the MediaTek SPI Daemon.</p>
+<h4 id="why-domain-sockets">Why Domain Sockets?</h4>
+<p>The beauty of this architecture with domain sockets is that most legitimate programming langauges have the capability to utilize domain sockets. This is how Tessel 2 can be used by any language, not just JavaScript (the code that packages up the commands into array bytes just has to be ported to that language first).</p>
+<h4 id="how-does-deploying-code-over-lan-work-into-this">How Does Deploying Code over LAN Work Into This?</h4>
+<p>In the case of a LAN connection over WiFi or Ethernet, the procedure is much the same except all of the shell commands are executed over SSH. All of the module port communication between the SPI Daemon and the USB Bridge firmware is entirely the same. That's why the CLI is able to abstract out USB and LAN interfaces <a href="https://github.com/tessel/t2-cli/blob/90bb45d4c82f019f6de97306a6fecf15e64d0a04/lib/tessel/tessel.js#L7">into a single <code>Connection</code> object</a> that simply accepts shell commands and returns a process object with the three streams (stdin, stdout, stderr) regardless of physical connection.</p>
+<h4 id="what-is-uciubus-on-the-diagram-above">What is UCI/ubus on the diagram above?</h4>
+<p><a href="http://wiki.openwrt.org/doc/uci/system">UCI</a> and <a href="http://wiki.openwrt.org/doc/techref/ubus">ubus</a> are unique features of OpenWRT that essentially let you access system configuration programmatically and receive results in a JSON format. It's very handy for the command line interface. You can see that the CLI makes <a href="https://github.com/tessel/t2-cli/blob/90bb45d4c82f019f6de97306a6fecf15e64d0a04/lib/tessel/commands.js#L35">use of these features</a> heavily, especially for wifi related settings.</p>
+<h2 id="questions">Questions?</h2>
+<p>Ask us on <a href="https://tessel.slack.com">Slack</a> (join <a href="http://tessel-slack.herokuapp.com/">here</a> if you haven't already) or ask on <a href="https://forums.tessel.io">the forums</a>.</p>
+<h2 id="more-useful-links">More Useful Links</h2>
+<ul>
+<li><a href="https://github.com/tessel/t2-cli#development-milestones">Current CLI Development Roadmap</a></li>
+<li><a href="https://openwrt.org/">OpenWRT website</a></li>
+<li><a href="http://www.anz.ru/files/mediatek/MT7620_Datasheet.pdf">MediaTek MT7620 datasheet</a></li>
+<li><a href="http://www.atmel.com/images/atmel-42181-sam-d21_datasheet.pdf">Atmel SAMD21 datasheet</a></li>
+<li><a href="https://tessel.io/blog">Tessel Project Blog</a></li>
+<li><a href="https://nodejs.org/documentation/tutorials/">Getting Started with Node</a></li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
