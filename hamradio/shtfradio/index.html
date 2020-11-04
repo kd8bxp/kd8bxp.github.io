@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>SHTF Radio Info - Random Wire!</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../tutorials/blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">APRS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../aprs/">APRS Info</a>
+</li>
+            
+<li >
+    <a href="../more_APRS/">More</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../bandplan/">Band Plan</a>
+</li>
+                                    
+<li >
+    <a href="../dapnet/">Dapnet (Amatuer Pager)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DMR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../dmr/">Information</a>
+</li>
+            
+<li >
+    <a href="../dmrnets/">Nets</a>
+</li>
+            
+<li >
+    <a href="../dmrsms/">Send SMS</a>
+</li>
+            
+<li >
+    <a href="../k4usd_network/">K4USD Network Information</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../digitalinformation/">Digital Information</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry Pi Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hamvoip/">Allstar Link</a>
+</li>
+            
+<li >
+    <a href="../hamclock/">Hamclock</a>
+</li>
+            
+<li >
+    <a href="../raspberryPi/">Ham Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MMDVM Hotspot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hotspot/">Setup</a>
+</li>
+            
+<li >
+    <a href="../hotspothardware/">Hardware</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../arduino/">Arduino Shields</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Aredn Broadband Hamnet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../aredn_broadband_hamnet/">AREDN Info</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../atv/">Amatuer TV</a>
+</li>
+                                    
+<li >
+    <a href="../QSL/">Virtual QSL cards</a>
+</li>
+                                    
+<li >
+    <a href="../ham/">What do amatuer modes sound like</a>
+</li>
+                                    
+<li >
+    <a href="../NCPacket/">North Carolina Packet</a>
+</li>
+                                    
+<li >
+    <a href="../new_packet_radio/">New Packet Radio</a>
+</li>
+                                    
+<li >
+    <a href="../contacts/">Contacts</a>
+</li>
+                                    
+<li >
+    <a href="../homeQTH/">Home QTH Information</a>
+</li>
+                                    
+<li >
+    <a href="../gmrs/">GMRS Live feeds</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">SHTF Radio Info</a>
+</li>
+                                    
+<li >
+    <a href="../offgridcommunication/">Off Grid Communication Devices</a>
+</li>
+                                    
+<li >
+    <a href="../peanut/">Peanut APP</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">LoRa (LoRaHam/LoRaAPS)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../lora_radio/">Projects</a>
+</li>
+            
+<li >
+    <a href="../moreLoRa/">More Projects</a>
+</li>
+            
+<li >
+    <a href="../lorameshinfo/">Mesh Projects</a>
+</li>
+            
+<li >
+    <a href="../lora_ideas/">General</a>
+</li>
+            
+<li >
+    <a href="../LoRaHam/">LoRaHam/LoraMador/LoraAPS</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../wxinfo/">WX Stuff</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../trisquare/">Trisquare Radios</a>
+</li>
+            
+<li >
+    <a href="../weirdmessengers/">Weird Messengers</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batman (1966)</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Green Hornet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/greenhornet/greenhornet/">Info</a>
+</li>
+            
+<li >
+    <a href="../../other/greenhornet/familytree/">Family Tree</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../other/pythagoras/">Pythagoras</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">My Cars</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../other/books/">Free eBooks</a>
+</li>
+            
+<li >
+    <a href="../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+            
+<li >
+    <a href="../../other/surplusstore/">Electronics Surplus</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../gmrs/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../offgridcommunication/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>International distress frequencys</p>
+<p>https://en.wikipedia.org/wiki/International_distress_frequency#:~:text=FRS%3A%20FRS%20channel%201%3A%20462.5625,(476.525%2F477.275%20MHz).</p>
+<p>International distress frequencies, currently in use are:</p>
+<p>2182 kHz for medium range maritime voice use. The US Coast Guard has said "beginning August 1st, 2013 the Coast Guard would no longer monitor 2182 kHz".[4] Many other MRCCs, for example most in Northern Europe, now only have MF capabilities and no HF.[5]
+Several HF maritime voice frequencies exist for long-distance distress calls:[6]
+4125 kHz
+6215 kHz
+8291 kHz
+12290 kHz
+16420 kHz
+Marine VHF radio Channel 16 (156.8 MHz) for short range maritime use
+406 MHz to 406.1 MHz is used by the Cospas-Sarsat international satellite-based search and rescue (SAR) distress alert detection and information distribution system
+Digital selective calling frequencies
+Several maritime frequencies are used for digital selective calling (DSC), and they are also monitored for DSC distress signals:[6][7]</p>
+<p>2.1875 MHz
+4.2075 MHz
+6.312 MHz
+8.4145 MHz
+12.577 MHz
+16.8045 MHz
+156.525 MHz, Marine VHF radio Channel 70
+Aeronautical frequencies
+121.5 MHz is the civilian aircraft emergency frequency or International Air Distress frequency. It is used by some civilian emergency locator beacons; however, the Cospas-Sarsat system no longer monitors the frequency.
+243 MHz for NATO military aircraft emergency frequencies
+406 MHz to 406.1 MHz is used by the Cospas-Sarsat international satellite-based search and rescue (SAR) distress alert detection and information distribution system
+Search And Rescue frequencies
+123.1 MHz: Aeronautical Auxiliary Frequency (International voice for coordinated SAR operations).
+138.78 MHz— U.S. military voice SAR on-the-scene use. This frequency is also used for direction finding (DF).
+155.160 MHz
+172.5 MHz— U.S. Navy emergency sonobuoy communications and homing use. This frequency is monitored by all U.S. Navy ASW aircraft assigned to a SAR mission.
+282.8 MHz— Joint/combined on-the-scene voice and DF frequency used throughout NATO
+406 MHz / 406.1 MHz - Cospas-Sarsat international satellite-based search and rescue (SAR) distress alert detection and information distribution system
+Emergency position-indicating radiobeacon station (EPIRB)
+Search and rescue transponder (SART)
+Survival radio
+Amateur radio frequencies
+VHF, UHF calling frequencies can also be used to make emergency calls
+Band    Global  Region 1
+Europe, Africa  Region 2
+The Americas[8] Region 3
+Asia
+13 cm             <br />
+23 cm           1294.500 MHz (U.S.) 
+33 cm       N/A 927.500 MHz (U.S.)  N/A
+70 cm       433.500 MHz (EU)    446.00 MHz (U.S.)
+1.25 m      N/A 223.500 MHz (U.S.)  N/A
+2 m     145.500 MHz (EU)    146.520 MHz (U.S. &amp; Canada) 145.000 MHz (Philippines, Indonesia &amp; Thailand)
+4 m     70.450 MHz (EU) N/A
+6 m         52.525 MHz<br />
+10 m            29.600 MHz<br />
+12 m            RTTY/Packet only  <br />
+MF and HF frequencies
+Emergency Centre of Activity (ECOA) frequencies informally established by the International Amateur Radio Union regional organizations:
+Band    Global[9][10]   Region 1[11]
+Europe, Africa  Region 2[12]
+The Americas    Region 3[13]
+Asia
+15 m    21360 kHz
+17 m    18160 kHz
+20 m    14300 kHz
+30 m              <br />
+40 m    n/a 7110 kHz    7060 kHz
+7240 kHz 7275 kHz</p>
+<p>7110 kHz
+60 m    n/a       <br />
+80 m    n/a 3760 kHz    3750 kHz
+3985 kHz</p>
+<p>3600 kHz
+Emergency/Disaster Relief Interoperation Voice Channels of the amateur radio Global ALE High Frequency Network:[14]
+3791.0 kHz USB
+7185.5 kHz USB
+10145.5 kHz USB
+14346.0 kHz USB
+18117.5 kHz USB
+21432.5 kHz USB
+24932.0 kHz USB
+28312.5 kHz USB
+Other frequencies
+Citizens band (CB) radio (not available in all countries)
+Emergency channels 9 (27.065 MHz AM) and 19 (27.185 MHz AM)
+GMRS: 462.675 MHz is a UHF mobile distress and road information calling frequency allocated to the General Mobile Radio Service and used throughout Alaska and Canada for emergency communications; sometimes referred to as "Orange Dot" by some transceiver manufacturers who associated a frequency with a color-code for ease of channel coordination, until the creation of the Family Radio Service, in 1996, "GMRS 675" or Channel 6/20 on mobile radios today. Its bandwidth can vary between 12.5, 25 and 50 kHz, and is also allocated to Ch. 20 on 22-channel FRS/GMRS "blister pack" radios. It can have a repeater input frequency of 467.675 MHz, and a tone squelch of 141.3 Hz. After FCC deregulation of simplex FRS/GMRS radios, FRS users may transmit up to 2 watts on the GMRS emergency channel 20 (462.675 MHz) with 141.3 Hz CTCSS, or channel 20-22.
+MURS: 151.940 MHz (only available in the United States)
+FRS: FRS channel 1: 462.5625 MHz (carrier squelch, no tone or sub-channel), channel 3: 462.6125 MHz[15] and channel 20: 462.6750 MHz (141.3 Hz CTCSS - channel 20, code 22 or channel 20-22).
+UHF CB (Australia): Emergency channels 5/35 (476.525/477.275 MHz).[16] Channel 5 is the designated simplex and repeater output emergency channel, while channel 35 is used as the repeater input frequency for duplex operation. UHF CB is only available in Australia and New Zealand.
+PMR446 (Europe): Channel 1 analog (446.00625 MHz, CTCSS 100.0 Hz, channel 1/12), Channel 8 analog (446.09375 MHz, CTCSS 123.0 Hz, channel 8/18).</p>
+<p>SHTF Survivalist Radio Freqs
+https://radiofreeq.wordpress.com/2013/06/29/shtf-survivalist-radio-frequency-list/</p>
+<p>==== SHTF SURVIVALIST RADIO FREQUENCY LIST BASIC CHART ====
+=== BAND === | CHAN. | FREQUENCY MHZ| DESCRIPTION
+============ | ===== | ============ | ==================
+FRS UHF ==== | FRS 3 | 462.6125 FM =| PREPPER
+GMRS UHF === |GMRS17 | 462.6000 FM =| SURVIVALIST
+PMR UHF ==== | PMR 3 | 446.03125FM =| SURVIVALIST PREPR
+MURS VHF === |MURS 3 | 151.9400 FM =| SURVIVALIST PREPR
+CB AM ====== |CB 3AM | 026.9850 AM =| PREPPER
+CB AM ====== |CB 9AM | 027.0650 AM =| HIGHWAY SAFETY
+CB SSB ===== |CB 37U | 027.3750 USB | SURVIVALIST PREPR
+CB FREEBAND= |FB425U | 027.4250 USB | SURVIVALIST PREPR
+LOWBAND VHF= |LOW334 | 033.4000 FM =| SURVIVALIST
+HAM UHF ==== |HAM U3 | 446.0300 FM =| PREPPER
+HAM VHF ==== |HAM 42 | 146.4200 FM =| PREPPER
+HAM VHF ==== |HAM 52 | 146.5200 FM =| HAM CALLING
+HAM VHF ==== |HAM 55 | 146.5500 FM =| SURVIVALIST
+HAM HF ===== |HAM10M | 028.3050 USB | SURVIVALIST PREPR
+HAM HF ===== |HAM20M | 014.2420 USB | PREPPER
+HAM HF ===== |HAM40M | 007.2420 LSB | PREPPER
+HAM HF ===== |HAM60M | 005.3570 USB | SURVIVALIST NVIS
+HAM HF ===== |HAM80M | 003.8180 LSB | PREPPER
+LAND SAR VHF |SAREMT | 155.1600 FM =| SEARCH AND RESCUE
+MARINE VHF = |MAR 16 | 156.8000 FM =| SAFETY CALLING
+MARINE VHF - |MAR 72 | 156.6250 FM =| BOAT PREPPER
+The source of this chart is RadioMaster Reports.
+Updated 2015. Entered into public domain. Free to copy.</p>
+<p>CB Freeband</p>
+<p>https://radiofreeq.wordpress.com/2013/07/01/survivalist-ssb-cb-freeband-channel-frequency-list/</p>
+<p>========= ============== ======= ====== ======================
+CHAN TYPE| CHANNEL NAME | FREQ. | MODE | COMMON CHANNEL USAGE
+========= ============== ======= ====== ======================
+NORMAL CB| CHANNEL ===3 | 26.985 AM == PREPPER CH 3 AM
+NORMAL CB| CHANNEL ==37 | 27.375 USB = PREPPER SURVIVALIST
+FREEBAND | CHANNEL ==42 | 27.425 USB = PREPPER SURVIVALIST
+HAM BAND | HAM ==28.305 | 28.305 USB = HAM PREPPER SURVIVALIST</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

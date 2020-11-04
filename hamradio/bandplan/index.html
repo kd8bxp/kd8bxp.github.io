@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Band Plan - Random Wire!</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../tutorials/blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">APRS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../aprs/">APRS Info</a>
+</li>
+            
+<li >
+    <a href="../more_APRS/">More</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li class="active">
+    <a href="./">Band Plan</a>
+</li>
+                                    
+<li >
+    <a href="../dapnet/">Dapnet (Amatuer Pager)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DMR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../dmr/">Information</a>
+</li>
+            
+<li >
+    <a href="../dmrnets/">Nets</a>
+</li>
+            
+<li >
+    <a href="../dmrsms/">Send SMS</a>
+</li>
+            
+<li >
+    <a href="../k4usd_network/">K4USD Network Information</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../digitalinformation/">Digital Information</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry Pi Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hamvoip/">Allstar Link</a>
+</li>
+            
+<li >
+    <a href="../hamclock/">Hamclock</a>
+</li>
+            
+<li >
+    <a href="../raspberryPi/">Ham Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MMDVM Hotspot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hotspot/">Setup</a>
+</li>
+            
+<li >
+    <a href="../hotspothardware/">Hardware</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../arduino/">Arduino Shields</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Aredn Broadband Hamnet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../aredn_broadband_hamnet/">AREDN Info</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../atv/">Amatuer TV</a>
+</li>
+                                    
+<li >
+    <a href="../QSL/">Virtual QSL cards</a>
+</li>
+                                    
+<li >
+    <a href="../ham/">What do amatuer modes sound like</a>
+</li>
+                                    
+<li >
+    <a href="../NCPacket/">North Carolina Packet</a>
+</li>
+                                    
+<li >
+    <a href="../new_packet_radio/">New Packet Radio</a>
+</li>
+                                    
+<li >
+    <a href="../contacts/">Contacts</a>
+</li>
+                                    
+<li >
+    <a href="../homeQTH/">Home QTH Information</a>
+</li>
+                                    
+<li >
+    <a href="../gmrs/">GMRS Live feeds</a>
+</li>
+                                    
+<li >
+    <a href="../shtfradio/">SHTF Radio Info</a>
+</li>
+                                    
+<li >
+    <a href="../offgridcommunication/">Off Grid Communication Devices</a>
+</li>
+                                    
+<li >
+    <a href="../peanut/">Peanut APP</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">LoRa (LoRaHam/LoRaAPS)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../lora_radio/">Projects</a>
+</li>
+            
+<li >
+    <a href="../moreLoRa/">More Projects</a>
+</li>
+            
+<li >
+    <a href="../lorameshinfo/">Mesh Projects</a>
+</li>
+            
+<li >
+    <a href="../lora_ideas/">General</a>
+</li>
+            
+<li >
+    <a href="../LoRaHam/">LoRaHam/LoraMador/LoraAPS</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../wxinfo/">WX Stuff</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../trisquare/">Trisquare Radios</a>
+</li>
+            
+<li >
+    <a href="../weirdmessengers/">Weird Messengers</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batman (1966)</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Green Hornet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/greenhornet/greenhornet/">Info</a>
+</li>
+            
+<li >
+    <a href="../../other/greenhornet/familytree/">Family Tree</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../other/pythagoras/">Pythagoras</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">My Cars</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../other/books/">Free eBooks</a>
+</li>
+            
+<li >
+    <a href="../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+            
+<li >
+    <a href="../../other/surplusstore/">Electronics Surplus</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../more_APRS/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../dapnet/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>Band Plan
+A band plan refers to a voluntary division of a band to avoid interference between incompatible modes.</p>
+<p>Resources
+Sharing arrangements
+Detailed packet frequencies [PDF]
+Phone patch, autopatch and HF/VHF/UHF operating guidelines
+"Considerate Operator's Frequency Guide"
+ 2200 and 600 - meter bands</p>
+<p>General, Advanced and Amateur Extra class licensees are authorized to use these Amateur Bands</p>
+<p>Amateurs wishing to operate on either 2,200 or 630 meters must first register with the Utilities Technology Council online at https://utc.org/plc-database-amateur-notification-process/. You need only register once for each band.</p>
+<p>135.7 – 137.8 1 W EIRP maximum</p>
+<p>472 - 479 KHz:  5 W EIRP maximum, except in Alaska within 496 miles of Russia where the power limit is 1 W EIRP.</p>
+<p>160 Meters (1.8-2.0 MHz)
+1.800 - 2.000   CW
+1.800 - 1.810   Digital Modes
+1.810   CW QRP
+1.843-2.000 SSB, SSTV and other wideband modes
+1.910   SSB QRP
+1.995 - 2.000   Experimental
+1.999 - 2.000   Beacons</p>
+<p>80 Meters (3.5-4.0 MHz)
+3.590   RTTY/Data DX
+3.570-3.600 RTTY/Data
+3.790-3.800 DX window
+3.845   SSTV
+3.885   AM calling frequency</p>
+<p>60 Meters (5 MHz channels)
+*Only one signal at a time is permitted on any channel</p>
+<p>*Maximum effective radiated output is 100 W PEP</p>
+<p>5330.5  USB phone1 and CW/RTTY/data2
+5346.5  USB phone1 and CW/RTTY/data2
+5357.0  USB phone1 and CW/RTTY/data2
+5371.5  USB phone1 and CW/RTTY/data2
+5403.5  USB phone1 and CW/RTTY/data2</p>
+<ol>
+<li>
+<p>USB is limited to 2.8 kHz</p>
+</li>
+<li>
+<p>CW and digital emissions must be centered 1.5 kHz above the channel frequencies indicated in the above chart</p>
+</li>
+</ol>
+<p>40 Meters (7.0-7.3 MHz)
+7.040   RTTY/Data DX
+7.080-7.125 RTTY/Data
+7.171   SSTV
+7.290   AM calling frequency</p>
+<p>30 Meters (10.1-10.15 MHz)
+10.130-10.140   RTTY
+10.140-10.150   Packet</p>
+<p>20 Meters (14.0-14.35 MHz)
+14.070-14.095   RTTY
+14.095-14.0995  Packet
+14.100  NCDXF Beacons
+14.1005-14.112  Packet
+14.230  SSTV
+14.286  AM calling frequency</p>
+<p>17 Meters (18.068-18.168 MHz)
+18.100-18.105   RTTY
+18.105-18.110   Packet</p>
+<p>15 Meters (21.0-21.45 MHz)
+21.070-21.110   RTTY/Data
+21.340  SSTV</p>
+<p>12 Meters (24.89-24.99 MHz)
+24.920-24.925   RTTY
+24.925-24.930   Packet</p>
+<p>10 Meters (28-29.7 MHz)
+28.000-28.070   CW
+28.070-28.150   RTTY
+28.150-28.190   CW
+28.200-28.300   Beacons
+28.300-29.300   Phone
+28.680  SSTV
+29.000-29.200   AM
+29.300-29.510   Satellite Downlinks
+29.520-29.590   Repeater Inputs
+29.600  FM Simplex
+29.610-29.700   Repeater Outputs</p>
+<p>6 Meters (50-54 MHz)
+50.0-50.1   CW, beacons
+50.060-50.080   beacon subband
+50.1-50.3   SSB, CW
+50.10-50.125    DX window
+50.125  SSB calling
+50.3-50.6   All modes
+50.6-50.8   Nonvoice communications
+50.62   Digital (packet) calling
+50.8-51.0   Radio remote control (20-kHz channels)
+51.0-51.1   Pacific DX window
+51.12-51.48 Repeater inputs (19 channels)
+51.12-51.18 Digital repeater inputs
+51.5-51.6 <br />
+Simplex (six channels)</p>
+<p>51.62-51.98 Repeater outputs (19 channels)
+51.62-51.68 Digital repeater outputs
+52.0-52.48  Repeater inputs (except as noted; 23 channels)
+52.02, 52.04    FM simplex
+52.2    TEST PAIR (input)
+52.5-52.98  Repeater output (except as noted; 23 channels)
+52.525  Primary FM simplex
+52.54   Secondary FM simplex
+52.7    TEST PAIR (output)
+53.0-53.48  Repeater inputs (except as noted; 19 channels)
+53.0    Remote base FM simplex
+53.02   Simplex
+53.1, 53.2, 53.3, 53.4  Radio remote control
+53.5-53.98  Repeater outputs (except as noted; 19 channels)
+53.5, 53.6, 53.7, 53.8  Radio remote control
+53.52, 53.9 Simplex</p>
+<p>2 Meters (144-148 MHz)
+144.00-144.05   EME (CW)
+144.05-144.10   General CW and weak signals
+144.10-144.20   EME and weak-signal SSB
+144.200 National calling frequency
+144.200-144.275 General SSB operation
+144.275-144.300 Propagation beacons
+144.30-144.50   New OSCAR subband
+144.50-144.60   Linear translator inputs
+144.60-144.90   FM repeater inputs
+144.90-145.10   Weak signal and FM simplex (145.01,03,05,07,09 are widely used for packet)
+145.10-145.20   Linear translator outputs
+145.20-145.50   FM repeater outputs
+145.50-145.80   Miscellaneous and experimental modes
+145.80-146.00   OSCAR subband
+146.01-146.37   Repeater inputs
+146.40-146.58   Simplex
+146.52  National Simplex Calling Frequency
+146.61-146.97   Repeater outputs
+147.00-147.39   Repeater outputs
+147.42-147.57   Simplex
+147.60-147.99   Repeater inputs
+Notes: The frequency 146.40 MHz is used in some areas as a repeater input. This band plan has been proposed by the ARRL VHF-UHF Advisory Committee.</p>
+<p>1.25 Meters (222-225 MHz)
+222.0-222.150   Weak-signal modes
+222.0-222.025   EME
+222.05-222.06   Propagation beacons
+222.1   SSB &amp; CW calling frequency
+222.10-222.15   Weak-signal CW &amp; SSB
+222.15-222.25   Local coordinator's option; weak signal, ACSB, repeater inputs, control
+222.25-223.38   FM repeater inputs only
+223.40-223.52   FM simplex
+223.52-223.64   Digital, packet
+223.64-223.70   Links, control
+223.71-223.85   Local coordinator's option; FM simplex, packet, repeater outputs
+223.85-224.98   Repeater outputs only
+Note: The 222 MHz band plan was adopted by the ARRL Board of Directors in July 1991.</p>
+<p>70 Centimeters (420-450 MHz)
+420.00-426.00   ATV repeater or simplex with 421.25 MHz video carrier control links and experimental
+426.00-432.00   ATV simplex with 427.250-MHz video carrier frequency
+432.00-432.07   EME (Earth-Moon-Earth)
+432.07-432.10   Weak-signal CW
+432.10  70-cm calling frequency
+432.10-432.30   Mixed-mode and weak-signal work
+432.30-432.40   Propagation beacons
+432.40-433.00   Mixed-mode and weak-signal work
+433.00-435.00   Auxiliary/repeater links
+435.00-438.00   Satellite only (internationally)
+438.00-444.00   ATV repeater input with 439.250-MHz video carrier frequency and repeater links
+442.00-445.00   Repeater inputs and outputs (local option)
+445.00-447.00   Shared by auxiliary and control links, repeaters and simplex (local option)
+446.00  National simplex frequency
+447.00-450.00   Repeater inputs and outputs (local option)</p>
+<p>33 Centimeters (902-928 MHz)
+Frequency Range</p>
+<p>Mode</p>
+<p>Functional Use</p>
+<p>Comments</p>
+<p>902.000-902.075</p>
+<p>FM / other including DV Or CW/SSB</p>
+<p>Repeater inputs 25 MHz split paired with those in 927.000-927.075 or Weak signal</p>
+<p>12.5 kHz channel spacing Note 2)</p>
+<p>902.075-902.100</p>
+<p>CW/SSB</p>
+<p>Weak signal</p>
+<p>902.100                    </p>
+<p>CW/SSB</p>
+<p>Weak signal calling</p>
+<p>Regional option</p>
+<p>902.100-902.125</p>
+<p>CW/SSB</p>
+<p>Weak signal</p>
+<p>902.125-903.000</p>
+<p>FM/other including DV</p>
+<p>Repeater inputs 25 MHz split paired with those in 927.1250-928.0000</p>
+<p>12.5 kHz channel spacing</p>
+<p>903.000-903.100</p>
+<p>CW/SSB</p>
+<p>Beacons and weak signal</p>
+<p>903.100</p>
+<p>CW/SSB</p>
+<p>Weak signal calling</p>
+<p>Regional option</p>
+<p>903.100-903.400</p>
+<p>CW/SSB</p>
+<p>Weak signal</p>
+<p>903.400-909.000</p>
+<p>Mixed modes</p>
+<p>Mixed operations including control links</p>
+<p>909.000-915.000</p>
+<p>Analog/digital</p>
+<p>Broadband multimedia including ATV, DATV and SS</p>
+<p>Notes 3) 4)</p>
+<p>915.000-921.000</p>
+<p>Analog/digital</p>
+<p>Broadband multimedia including ATV, DATV and SS</p>
+<p>Notes 3) 4)</p>
+<p>921.000-927.000</p>
+<p>Analog/digital</p>
+<p>Broadband multimedia including ATV, DATV and SS</p>
+<p>Notes 3) 4)</p>
+<p>927.000-927.075</p>
+<p>FM / other including DV</p>
+<p>Repeater outputs 25 MHz split paired with those in 902.0000-902.0750</p>
+<p>12.5 kHz channel spacing</p>
+<p>927.075-927.125</p>
+<p>FM / other including DV</p>
+<p>Simplex</p>
+<p>927.125-928.000</p>
+<p>FM / other including DV</p>
+<p>Repeater outputs 25 MHz split paired with those in 902.125-903.000</p>
+<p>12.5 kHz channel spacing Notes 5) 6)</p>
+<p>Notes:
+1) Significant regional variations in both current band utilization and the intensity and frequency distribution of noise sources preclude one plan that is suitable for all parts of the country.  These variations will require many regional frequency coordinators to maintain band plans that differ in some respects from any national plan.  As with all band plans, locally coordinated plans always take precedence over any general recommendations such as a national band plan.</p>
+<p>2) May be used for either repeater inputs or weak-signal as regional needs dictate</p>
+<p>3) Division into channels and/or separation of uses within these segments may be done regionally based on needs and usage, such as for 2 MHz-wide digital TV.</p>
+<p>4) These segments may also be designated regionally to accommodate alternative repeater splits.</p>
+<p>5) Simplex FM calling frequency 927.500 or regionally selected alternative.</p>
+<p>6) Additional FM simplex frequencies may be designated regionally.</p>
+<p>23 Centimeters (1240-1300 MHz)
+Frequency Range</p>
+<p>Suggested Emission Types</p>
+<p>Functional Use</p>
+<p>1240.00-1246.000</p>
+<p>ATV</p>
+<p>ATV Channel #1</p>
+<p>1246.000-1248.000</p>
+<p>FM, digital</p>
+<p>Point-to-point links paired with 1258.000-1260.000</p>
+<p>1248.000-1252.000</p>
+<p>Digital</p>
+<p>1252.000-1258.000</p>
+<p>ATV</p>
+<p>ATV Channel #2</p>
+<p>1258.000-1260.000</p>
+<p>FM, digital</p>
+<p>Point-to-point links paired with 1246.000-1248.000</p>
+<p>1240.000-1260.000</p>
+<p>FM ATV</p>
+<p>Regional option</p>
+<p>1260.000-1270.000</p>
+<p>Various</p>
+<p>Satellite uplinks, Experimental, Simplex ATV</p>
+<p>1270.000-1276.000</p>
+<p>FM, digital</p>
+<p>Repeater inputs, 25 kHz channel spacing, paired with 1282.000-1288.000</p>
+<p>1270.000-1274.000</p>
+<p>FM, digital</p>
+<p>Repeater inputs, 25 kHz channel spacing, paired with 1290.000-1294.000 (Regional option)</p>
+<p>1276.000-1282.000</p>
+<p>ATV</p>
+<p>ATV Channel #3</p>
+<p>1282.000-1288.000</p>
+<p>FM, digital</p>
+<p>Repeater outputs, 25 kHz channel spacing, paired with 1270.000-1276.000</p>
+<p>1288.000-1294.000</p>
+<p>Various</p>
+<p>Broadband Experimental, Simplex ATV</p>
+<p>1290.000-1294.000</p>
+<p>FM, digital</p>
+<p>Repeater outputs, 25 kHz channel spacing, paired with 1270.000-1274.000 (Regional option)</p>
+<p>1294.000-1295.000</p>
+<p>FM</p>
+<p>FM simplex</p>
+<p>FM</p>
+<p>National FM simplex calling frequency 1294.500</p>
+<p>1295.000-1297.000</p>
+<p>Narrow Band Segment</p>
+<p>1295.000-1295.800</p>
+<p>Various</p>
+<p>Narrow Band Image, Experimental</p>
+<p>1295.800-1296.080</p>
+<p>CW, SSB, digital</p>
+<p>EME</p>
+<p>1296.080-1296.200</p>
+<p>CW, SSB</p>
+<p>Weak Signal</p>
+<p>CW, SSB</p>
+<p>CW, SSB calling frequency 1296.100</p>
+<p>1296.200-1296.400</p>
+<p>CW, digital</p>
+<p>Beacons</p>
+<p>1296.400-1297.000</p>
+<p>Various</p>
+<p>General Narrow Band</p>
+<p>1297.000-1300.000</p>
+<p>Digital</p>
+<p>Note: The need to avoid harmful interference to FAA radars may limit amateur use of certain frequencies in the vicinity of the radars.</p>
+<p>13 Centimeters (2300-2310 and 2390-2450 MHz)
+Frequency Range</p>
+<p>Emission
+Bandwidth</p>
+<p>Functional Use</p>
+<p>2300.000-2303.000</p>
+<p>0.05 - 1.0 MHz                   </p>
+<p>Analog &amp; Digital, including full duplex; paired with 2390 - 2393 </p>
+<p>2303.000-2303.750</p>
+<p>&lt; 50 kHz</p>
+<p>Analog &amp; Digital; paired with 2393 - 2393.750</p>
+<p>2303.75-2304.000</p>
+<p>SSB, CW, digital weak-signal</p>
+<p>2304.000-2304.100</p>
+<p>3 kHz or less</p>
+<p>Weak Signal EME Band</p>
+<p>2304.10-2304.300</p>
+<p>3 kHz or less</p>
+<p>SSB, CW, digital weak-signal (Note 1)</p>
+<p>2304.300-2304.400</p>
+<p>3 kHz or less</p>
+<p>Beacons</p>
+<p>2304.400-2304.750</p>
+<p>6 kHz or less</p>
+<p>SSB, CW, digital weak-signal &amp; NBFM</p>
+<p>2304.750-2305.000</p>
+<p>&lt; 50 kHz</p>
+<p>Analog &amp; Digital; paired with 2394.750 - 2395</p>
+<p>2305.000-2310.000</p>
+<p>0.05 - 1.0 MHz</p>
+<p>Analog &amp; Digital, paired with 2395 - 2400 (Note 2)</p>
+<p>2310.000-2390.000                                                      NON-AMATEUR</p>
+<p>2390.000-2393.000</p>
+<p>0.05 - 1.0 MHz</p>
+<p>Analog &amp; Digital, including full duplex; paired with 2300- 2303</p>
+<p>2393.000-2393.750</p>
+<p>&lt; 50 kHz</p>
+<p>Analog &amp; Digital; paired with 2303 - 2303.750</p>
+<p>2393.750-2394.750</p>
+<p>Experimental</p>
+<p>2394.750-2395.000</p>
+<p>&lt; 50 kHz</p>
+<p>Analog &amp; Digital; paired with 2304.750 - 2305</p>
+<p>2395.000-2400.000</p>
+<p>0.05 - 1.0 MHz</p>
+<p>Analog &amp; Digital, including full duplex; paired with 2305- 2310</p>
+<p>2400.000-2410.000</p>
+<p>6 kHz or less</p>
+<p>Amateur Satellite Communications</p>
+<p>2410.000-2450.000</p>
+<p>22 MHz max.</p>
+<p>Broadband Modes (Notes 3, 4)</p>
+<p>Notes:
+1: 2304.100 is the National Weak-Signal  Calling Frequency
+2:  2305 - 2310 is allocated on a primary basis to Wireless Communications Services (Part 27). Amateur operations in this segment, which are secondary, may not be possible in all areas.
+3:  Broadband segment may be used for any combination of high-speed data (e.g. 802.11 protocols), Amateur Television and other high-bandwidth activities.  Division into channels and/or separation of uses within this segment may be done regionally based on needs and usage.
+4:  2424.100 is the Japanese EME transmit frequency</p>
+<p>Note: The following band plans were adopted by the ARRL Board of Directors in 2012.</p>
+<p>3300-3500 MHz
+Level I - Major Band Divisions  Level II - Sub-Band Divisions   Level III   Suggested   Suggested  <br />
+Frequency Range (MHz)   Frequency Range (MHz)   Specific Freq.  Emission Types  Emission B.W.  <br />
+From    To  Width   From    To  Width   MHz (Note 1)    (Note 1)    Functional Use
+3300.000    3309.000    9.0                 Analog &amp; Digital, including Full Duplex 0.1 - 1.0 MHz   Analog &amp; Digital; paired with 3430.0-3439.0; 130 MHz Split
+3309.000    3310.000    1.0                         Experimental
+3310.000    3330.000    20.0                    Analog &amp; Digital, including Full Duplex &gt;1.0 MHz    Analog &amp; Digital; paired with 3410.0-3430.0; 100 MHz Split
+3330.000    3332.000    2.0                         Experimental
+3332.000    3339.000    7.0                         RADIO ASTRONOMY PROTECTED BAND (Note 4)
+3339.000    3345.800    6.8                 Analog &amp; Digital, including Full Duplex 0.1 - 1.0 MHz   Analog &amp; Digital; paired with 3439.0-3445.8; 100 MHz Split
+3345.800    3352.500    6.7                         RADIO ASTRONOMY PROTECTED BAND (Note 4)
+3352.500    3355.000    2.5                 Analog &amp; Digital, including Full Duplex 0.05 - 0.2 MHz  Analog &amp; Digital; paired with 3452.5-3455.0; 100 MHz Split
+3355.000    3357.000    2.0                         Experimental
+3357.000    3360.000    3.0                 Analog &amp; Digital, including Full Duplex 50 kHz or less  Analog &amp; Digital; paired with 3457.0-3460.0
+3360.000    3400.000    40.0                    OFDM, others    22 MHz max. Broadband Modes (Note 3)
+            3360.000    3380.000    20.0        ATV     Amateur Television of all authorized modulation standards/formats at local option
+3400.000    3410.000    10.0                    CW, SSB, NBFM   6 kHz or less   Amateur Satellite Communications
+            3400.000    3400.300    0.3     CW, SSB, Digital    3 kHz or less   Weak Signal EME Band 
+            3400.300    3401.000    0.7     CW, SSB, Digital    3 kHz or less   Terrestrial Weak Signal Band - Future (Note 2)
+                        3400.100    CW, SSB, Digital        EME Calling Frequency
+3410.000    3430.000    20.0                    Analog &amp; Digital, including Full Duplex &gt;1.0 MHz    Analog &amp; Digital; paired with 3310.0-3330.0; 100 MHz Split
+3430.000    3439.000    9.0                 Analog &amp; Digital, including Full Duplex 0.1 - 1.0 MHz   Analog &amp; Digital; paired with 3300.0-3309.0; 130 MHz Split
+3439.000    3445.800    6.8                 Analog &amp; Digital, including Full Duplex 0.1 - 1.0 MHz   Analog &amp; Digital; paired with 3339.0-3345.8; 100 MHz Split
+3445.800    3452.500    6.7                         Experimental
+3452.500    3455.000    2.5                 Analog &amp; Digital, including Full Duplex 0.05 - 0.2 MHz  Analog &amp; Digital; paired with 3352.5-3355.0; 100 MHz Split
+3455.000    3455.500    0.5                     100 kHz or less Crossband linear translator (input or output)
+3455.500    3457.000    1.5                 CW, SSB, NBFM, Digital  6 kHz or less   Terrestrial Weak Signal Band - Legacy (Note 2)
+                        3456.100        6 kHz or less   Weak Signal Terrestrial Calling Frequency
+            3456.300    3457.000    0.1     CW, Digital 1 kHz or less   Propagation Beacons
+3457.000    3460.000    3.0                 Analog &amp; Digital, including Full Duplex 50 kHz or less  Analog &amp; Digital; paired with 3357.0-3360.0; 100 MHz Split
+3460.000    3500.000    40.0                    OFDM, others    22 MHz max. Broadband Modes (Note 3)
+            3460.000    3480.000    20.0        ATV     Amateur Television of all authorized modulation standards/formats at local option
+9 cm Band Plan Notes </p>
+<p>Note 1 – Includes all other emission modes authorized in the 9 cm amateur band whose necessary bandwidth does not exceed the suggested bandwidths listed.</p>
+<p>Note 2 – Weak Signal Terrestrial legacy users are encouraged to move to 3400.3 to 3401.0 MHz as time and resources permit.</p>
+<p>Note 3 – Broadband segments may be used for any combination of high-speed data (e.g. 802.11 protocols), Amateur Television and other high-bandwidth activities.  Division into channels and/or separation of uses within these segments may be done regionally based on need and usage.</p>
+<p>Note 4 – Per ITU RR 5.149 from WRC-07, these band segments are also used for Radio Astronomy.  Amateur use of these frequencies should be first coordinated with the National Science Foundation (esm@nsf.gov).</p>
+<p>5 Centimeters (5650.0-5925.0 MHz)</p>
+<p>Frequency Range</p>
+<p>Emission
+Bandwidth</p>
+<p>Functional Use</p>
+<p>5650.0-5670.0</p>
+<p>Amateur Satellite; Up-Link Only </p>
+<p>5650.0-5675.0</p>
+<p>0.05 - 1.0 MHz</p>
+<p>Experimental</p>
+<p>5675.0-5750.0</p>
+<blockquote>
+<p>= 1.0 MHz</p>
+</blockquote>
+<p>Analog &amp; Digital; paired with 5850-5925 MHz (Note 2)</p>
+<p>5750.0-5756.0</p>
+<blockquote>
+<p>= 25 kHz and &lt;1 MHz</p>
+</blockquote>
+<p>Analog &amp; Digital; paired with 5820-5826 MHz</p>
+<p>5756.0-5759.0</p>
+<p>&lt;= 50 kHz</p>
+<p>Analog &amp; Digital; paired with 5826-5829 MHz</p>
+<p>5759.0-5760.0</p>
+<p>&lt; 6 kHz</p>
+<p>SSB, CW, Digital Weak-Signal</p>
+<p>5760.0-5760.1</p>
+<p>&lt; 3kHz</p>
+<p>EME</p>
+<p>5760.1-5760.3</p>
+<p>&lt; 6 KHz</p>
+<p>SSB, CW, Digital Weak-Signal (Note 1)</p>
+<p>5760.3-5760.4</p>
+<p>&lt; 3 KHz</p>
+<p>Beacons</p>
+<p>5760.4-5761.0</p>
+<p>&lt; 6 KHz</p>
+<p>SSB, CW, Digital Weak-Signal</p>
+<p>5761.0-5775.0</p>
+<p>&lt;=50 kHz</p>
+<p>Experimental</p>
+<p>5775.0-5800.0</p>
+<blockquote>
+<p>=100 kHz</p>
+</blockquote>
+<p>Experimental</p>
+<p>5800.0-5820.0</p>
+<p>Experimental</p>
+<p>5820.0-5826.0</p>
+<blockquote>
+<p>=25 kHz and &lt;1 MHz</p>
+</blockquote>
+<p>Analog &amp; Digital; paired with 5750-5756 MHz</p>
+<p>5826.0-5829.0</p>
+<p>&lt;=50 kHz</p>
+<p>Analog &amp; Digital; paired with 5756-5759 MHz</p>
+<p>5829.0-5850.0</p>
+<p>0.05-1.0 MHz</p>
+<p>Experimental</p>
+<p>5830.0-5850.0       Amateur Satellite; Down-Link Only
+5850.0-5925.0   &gt;=1.0 MHz   Analog &amp; Digital; paired with 5675-5750 MHz (Note 2)
+Note 1: 5760.1 is the National Weak-Signal Calling Frequency</p>
+<p>Note 2: Broadband segment may be used for any combination of high-speed data (eg: 802.11 protocols), Amateur Television and other high-bandwidth activities. Division into channels and/or separation of uses within this segment may be done regionally based on needs and usage.</p>
+<p>3 Centimeters (10000.000-10500.000 MHz )
+Frequency Range</p>
+<p>Emission
+Bandwidth</p>
+<p>Functional Use</p>
+<p>10000.00 - 10050.000        Experimental
+10050.000-10100.000 &lt;=100 kHz   Analog &amp; Digital; paired with 10300-10350
+10100.000-10115.000 &gt;=25 kHz and &lt;1 MHz Analog &amp; Digital; paired with 10350-10365
+10115.000-10117.000 &lt;=50 kHz    Analog &amp; Digital; paired with 10365-10367
+10117.000-10120.000     Experimental
+10120.000-10125.000 &lt;=50 kHz    Analog &amp; Digital; paired with 10370-10375
+10125.000-10200.000 &gt;=1 MHz Analog &amp; Digital; paired with 10375-10450 (Note 2)
+10200.000-10300.000     Wideband Gunnplexers
+10300.000-10350.000 &lt;=100 kHz   Analog &amp; Digital; paired with 10050-10100
+10350.000-10365.000 &gt;=25 kHz and &lt;1 MHz Analog &amp; Digital; paired with 10100-10115
+10365.000-10367.000 &lt;=50 kHz    Analog &amp; Digital; paired with 10115-10117
+10367.000-10368.300 6 kHz or less   SSB, CW, Digital Weak-Signal &amp; NBFM (Note 1
+10368.300-10368.400 6 kHz or less   Beacons
+10368.400-10370.000 6 kHz or less   SSB, CW, Digital Weak-Signal &amp; NBFM
+10370.000-10375.000 &lt;=50 kHz    Analog &amp; Digital; paired with 10120-10125
+10375.000-10450.000 &gt;=1 MHz Analog &amp; Digital; paired with 10125-10200 (Note 2)
+10450.000-10500.000     Space, Earth &amp; Telecommand Stations
+Note 1: 10368.100 is the National Weak-Signal Calling Frequency</p>
+<p>Note 2: Broadband segment may be used for any combination of high-speed data (eg: 802.11 protocols), Amateur Television and other high-bandwidth activities. Division into channels and/or separation of uses within this segment may be done regionally based on needs and usage.</p>
+<p>Above 10.50 GHz*
+All modes and licensees (except Novices) are authorized Amateur Bands above 10.5 GHz.</p>
+<ul>
+<li>US amateurs must check Sections 97.301, 97.303, 97.305 and 97.307 for sharing requirements before operating.</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

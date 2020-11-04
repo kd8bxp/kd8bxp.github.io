@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>More - Random Wire!</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../tutorials/blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">APRS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../aprs/">APRS Info</a>
+</li>
+            
+<li class="active">
+    <a href="./">More</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../bandplan/">Band Plan</a>
+</li>
+                                    
+<li >
+    <a href="../dapnet/">Dapnet (Amatuer Pager)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DMR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../dmr/">Information</a>
+</li>
+            
+<li >
+    <a href="../dmrnets/">Nets</a>
+</li>
+            
+<li >
+    <a href="../dmrsms/">Send SMS</a>
+</li>
+            
+<li >
+    <a href="../k4usd_network/">K4USD Network Information</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../digitalinformation/">Digital Information</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry Pi Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hamvoip/">Allstar Link</a>
+</li>
+            
+<li >
+    <a href="../hamclock/">Hamclock</a>
+</li>
+            
+<li >
+    <a href="../raspberryPi/">Ham Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MMDVM Hotspot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hotspot/">Setup</a>
+</li>
+            
+<li >
+    <a href="../hotspothardware/">Hardware</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../arduino/">Arduino Shields</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Aredn Broadband Hamnet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../aredn_broadband_hamnet/">AREDN Info</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../atv/">Amatuer TV</a>
+</li>
+                                    
+<li >
+    <a href="../QSL/">Virtual QSL cards</a>
+</li>
+                                    
+<li >
+    <a href="../ham/">What do amatuer modes sound like</a>
+</li>
+                                    
+<li >
+    <a href="../NCPacket/">North Carolina Packet</a>
+</li>
+                                    
+<li >
+    <a href="../new_packet_radio/">New Packet Radio</a>
+</li>
+                                    
+<li >
+    <a href="../contacts/">Contacts</a>
+</li>
+                                    
+<li >
+    <a href="../homeQTH/">Home QTH Information</a>
+</li>
+                                    
+<li >
+    <a href="../gmrs/">GMRS Live feeds</a>
+</li>
+                                    
+<li >
+    <a href="../shtfradio/">SHTF Radio Info</a>
+</li>
+                                    
+<li >
+    <a href="../offgridcommunication/">Off Grid Communication Devices</a>
+</li>
+                                    
+<li >
+    <a href="../peanut/">Peanut APP</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">LoRa (LoRaHam/LoRaAPS)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../lora_radio/">Projects</a>
+</li>
+            
+<li >
+    <a href="../moreLoRa/">More Projects</a>
+</li>
+            
+<li >
+    <a href="../lorameshinfo/">Mesh Projects</a>
+</li>
+            
+<li >
+    <a href="../lora_ideas/">General</a>
+</li>
+            
+<li >
+    <a href="../LoRaHam/">LoRaHam/LoraMador/LoraAPS</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../wxinfo/">WX Stuff</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../trisquare/">Trisquare Radios</a>
+</li>
+            
+<li >
+    <a href="../weirdmessengers/">Weird Messengers</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batman (1966)</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Green Hornet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/greenhornet/greenhornet/">Info</a>
+</li>
+            
+<li >
+    <a href="../../other/greenhornet/familytree/">Family Tree</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../other/pythagoras/">Pythagoras</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">My Cars</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../other/books/">Free eBooks</a>
+</li>
+            
+<li >
+    <a href="../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+            
+<li >
+    <a href="../../other/surplusstore/">Electronics Surplus</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../aprs/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../bandplan/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#aprs-to-sms-gateway-how-to-register">APRS to SMS gateway how to register</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>APRS
+Apr 11, 2020, Categories: radio</p>
+<p>Another post in my burst of amateur radio blog posts.</p>
+<p>To say that the documentation for APRS is not great is an understatement. What should be the best source of information, aprs.org, is just a collection of angry rants by the inventor of APRS, angrily accusing implementations and operators of using his invention the wrong way. There?s no documentation about what the right way is, just that everyone is wrong.</p>
+<p>So here I?ll attempt to write down what it is, in one place, in an effort to both teach others, and for people who know more than me to correct me.</p>
+<p>The best source of APRS information for me has actually been Kenwood radio manuals. See resources at the bottom.</p>
+<p>Update: My new favourite reference: Section 9.5 of the Direwolf user guide.</p>
+<p>APRS in short
+APRS is a way to send short pieces of digital information as packets of data. The messages are:</p>
+<p>Status about you
+Your position (optionally not exact)
+Your heading
+Your QSY (frequency you?re tuned to if someone wants to call)
+Weather reports
+Status about ?items? and ?objects?. This is objects that are not you, and aren?t a radio. For example where the meeting point is, or a hurricane.
+Short messages
+The protocol
+As an operator you don?t have to care much about what AX.25 is, or how it relates to X.25. But no explanation is complete without mentioning it.</p>
+<p>As on operator there?s no need to read up much about this, so while I have links in this section, you don?t need to follow them.</p>
+<p>AX.25 is a modified version of X.25 for Amateur radio operators. It can be used for ?connections? just like dialing into a BBS, but APRS only uses connectionless packets. So I?ll say no more about ?connections?.</p>
+<p>Unless you?re programming your own implementation of APRS there?s no need to read the protocol specs. Suffice to say that APRS uses AX.25 connectionless packets for everything it does.</p>
+<p>Block diagram of operating APRS
+APRS diagram</p>
+<p>Components:</p>
+<p>GPS satellites send data to GPS receivers to tell them what time it is, and where they are.</p>
+<p>A GPS receiver takes those signals and provides time and position coordinates</p>
+<p>The APRS implementation periodically (or on demand, or using fancy algorithms to decide when) constructs position reports as AX.25 packets, and gives them to the TNC for transmission. Also the other types of packets, such as messages and object locations, are constructed here.</p>
+<p>The TNC is a modem that turns packets into analog sounds. The digital side of the TNC uses an interface called KISS.</p>
+<p>The radio takes the sounds and turns them into radiowaves.</p>
+<p>WIDE1 digipeaters (repeaters of packets) are more local collectors of information, and repeat them so that they can be seen by a WIDE2 repeater.</p>
+<p>WIDE2 digipeters are in a position to cover a wider area, but are otherwise just like other digipeaters. Exactly how much WIDE1 &amp; WIDE2 repeat a packet is described below.</p>
+<p>An IGate is a digipeater that may not actually repeat your packet over radio, but reports to some place over the Internet. Eventually somehow (I?m not clear on exactly how) it?ll be visible on aprs.fi.</p>
+<p>The receiving path is just the revers path (except of course you don?t broadcast back to the GPS satellites).</p>
+<p>Different radios require more or less extra hardware or software. See ?How to send/receive APRS?, below.</p>
+<p>Packet path
+An APRS packet sent out has a path. For a handheld it?s usually WIDE1-1,WIDE2-1. This means that it should be repeated by both WIDE1 and WIDE2 digipeaters, and that it should only be repeated once (per type).</p>
+<p>To demonstrate the repeat counter I?ll use WIDE1-2,WIDE2-2. If your WIDE1-2,WIDE2-2 packet is seen by a WIDE1 digipeater, it?ll repeat it as WIDE1-1,WIDE2-2. The WIDE1 counter (the second number) was decreased by one. Let?s say it?s then picked up by a WIDE2 digipeater. It?ll rebroadcast as WIDE1-1,WIDE2-1 (the WIDE2 counter having now been decremented). Another WIDE2 repeater hears it, and repeats it as (I?m not sure) either WIDE1-1,WIDE2-0, or just WIDE1-1.</p>
+<p>NOTE: I?m not sure about exactly the content of the PATH as it propagates, but that is the general idea of how the counter works.</p>
+<p>Actually WIDE2 digipeaters can simultaneously act as WIDE1, so if you only have WIDE1-1 in your path, and a WIDE2 digipeater hears it, it?ll still process and repeat it.</p>
+<p>SSID
+In order to support multiple radios per call sign, all sources and destinations are in the format of the callsign, a dash, and a number. This number is the SSID. E.g. I set M0THC-7 on my Kenwood D74, and M0THC-2 on my Yaesu FT3D. They don?t have to be different numbers, since when out in the field you?re probably not using two at the same time, so there will be no confusion.</p>
+<p>Especially you won?t use two handheld radios in two different locations. If someone else is using your radio then they should program in their call sign, not yours, so you can use the same SSID.</p>
+<p>I set different numbers because I often experiment with the two, and need to have different addresses for them, so that I can send messages between them.</p>
+<p>The SSID is supposed to have meaning (e.g 5 is ?smartphone?, 8 is ?boats or maritime mobile?, 15 is ?generic other?), but it?s just convention and you won?t break anything (to my knowledge) if you have to use the ?wrong? SSID. There are enough ?generic? SSIDs that you should be able to follow it though.</p>
+<p>How to send/receive APRS
+This depends on what hardware you have. If you have a radio with APRS and GPS support (e.g. Kenwood D74, Yaesu FT3D, AnyTone 878UV) then it can act as GPS receiver, APRS implementation, TNC, and radio all in one. Except the AnyTone can only send its position, not receive anything. See your manual for how to set that up. It?s a more or less pleasant experience, as I mentioned in my FT3D vs D74 review.</p>
+<p>If you have a regular analog radio, such as Baofeng UV-5R, then from the diagram above it only implements the ?Radio? bit. That?s fine, you don?t need more. You can run a software TNC such as Dire Wolf, which implements both APRS and the TNC.</p>
+<p>You can set your radio to VOX, meaning it?ll start transmitting when the TNC sends audio to it. That way you don?t need to worry about pressing PTT to transmit.</p>
+<p>Or you can use a Mobilinkd TNC, and which connects to a ?computer? (your phone, which has a GPS receiver) over bluetooth, and triggers PTT ?properly? instead of using VOX.</p>
+<p>The radio then simply takes the sound it?s provided, and broadcasts. And of course it works the other way too, it receiving the data for decoding by the TNC.</p>
+<p>APRS is done on 144.800 MHz in most of the world. The US uses 144.390MHz, and some other places use other frequencies. That?s one piece of information that aprs.org actually does provide.</p>
+<p>APRS over JS8Call
+JS8Call is a great low power slow transmission digital messaging protocol usually run on HF frequencies. JS8Call is FT8 but made for doing more than just exchanging signal reports.</p>
+<p>Specially formatted JS8Call messages are picked up by IGates and forwarded over the Internet. That way you can be in the middle of nowhere. Literally anywhere on the planet with a decent view of the sky, and if HF propagation is good enough that day and time of day, you should be able to send your position for aprs.fi to display.</p>
+<p>Curiously though, when I send out my location it shows up wrong on aprs.fi. Not sure why, but it?s off by a bit.</p>
+<p>So this sends APRS messages without encapsulating APRS in AX.25. An example message sending an APRS message APRS over JS8CALL is @ALLCALL APRS::M0THC-7 :hello{01} (the number of spaces matter). See this repo for how to construct these messages)</p>
+<p>Messages
+Simple messages can be sent between APRS-capable handhelds by simply using their APRS addresses. E.g. I can send between my two handhelds by sending from M0THC-7 to M0THC-2. The message is retried a couple of times, until an acknowledgement is received.</p>
+<p>Email
+Like IGates repeating your position to the Internet, and WIDE1/WIDE2 digipeaters repeating over RF, there are special recipients that will forward your message through other mediums.</p>
+<p>E.g. you can send short emails by sending a message to EMAIL-2. The message must begin with the destination email address, but you can teach EMAIL-2 about aliases by sending foo foo@bar.com, making foo an alias for foo@bar.com. A short alias makes you able to send slightly longer messages.</p>
+<p>You can also receive emails (well, the subject line) this way, but only from addresses you?ve programmed in as aliases. In the example of foo above the email would be:</p>
+<p>From: foo@bar.com
+To: aprsemail2@ae5pl.net
+Subject: M0THC-7:Hello this is the message</p>
+<p>In the email body I must somewhere have exactly this:
+  userid:foo:
+The body of the email is not part of the message. It only needs to
+contain the line above
+So you can?t merely forward your emails to APRS. These are for short messages.</p>
+<p>Sending SMS
+Similarly you can send SMS via APRS. You just send a message to SMSGTE with @447xxxxxxxxx test via APRS as content.</p>
+<p>Items and Objects
+Aside from reporting your own position, you can also report the position of other things. This could be base camp (or another meetup point), or a something that moves, like a storm or a car (without a radio, since a car with a radio can broadcast its own location).</p>
+<p>APRS is a? not great designed protocol, at least by modern standards. It has ?Items? and ?Objects?, but the difference between them is only their semantic meaning. They?ll show up on most software exactly the same. The only technical difference is that Objects can have timestamps associated with them, and Items can?t. Both can have a course and speed, and other data associated with them.</p>
+<p>The specs say that Objects are for moving objects, and Items are for ?things that are occasionally posted on a map?. That? doesn?t actually mean anything. Essentially the Items/Objects distinction is a layer violation.</p>
+<p>Messaging the International Space Station
+VHF/UHF doesn?t have great reach. It only works line of sight (mostly true. There?s sporadic E but it?s? sporadic. VHF/UHF gets its reach through repeaters, or for APRS that?s digipeaters. But you need line of sight to the digipeater, and a path to your recipient.</p>
+<p>This is where satellites come in, and in particular the International Space Station (ISS).</p>
+<p>You can bounce messages off of the ISS. It has a digipeater. It?s not on the standard APRS frequency, but on 145.825 MHz. This way you can reach really far in one hop.</p>
+<p>Sure, terrestrial digipeaters with a correctly configured PATH can reach very far too, but bouncing on the ISS is a different level of cool.</p>
+<p>I?ve not done this yet though.</p>
+<p>Digital APRS
+Everything described in this post is ?analog APRS?. ?Digital APRS? is a term for putting the data in another digital protocol (such as DMR), and sending your position that way.</p>
+<p>Probably the JS8Call APRS above would be classified as ?digital APRS?.</p>
+<h1 id="aprs-to-sms-gateway-how-to-register">APRS to SMS gateway how to register</h1>
+<p>https://smsgte.org/how-to-register/</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

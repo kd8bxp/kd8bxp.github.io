@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Send SMS - Random Wire!</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../tutorials/blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">APRS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../aprs/">APRS Info</a>
+</li>
+            
+<li >
+    <a href="../more_APRS/">More</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../bandplan/">Band Plan</a>
+</li>
+                                    
+<li >
+    <a href="../dapnet/">Dapnet (Amatuer Pager)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DMR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../dmr/">Information</a>
+</li>
+            
+<li >
+    <a href="../dmrnets/">Nets</a>
+</li>
+            
+<li class="active">
+    <a href="./">Send SMS</a>
+</li>
+            
+<li >
+    <a href="../k4usd_network/">K4USD Network Information</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../digitalinformation/">Digital Information</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry Pi Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hamvoip/">Allstar Link</a>
+</li>
+            
+<li >
+    <a href="../hamclock/">Hamclock</a>
+</li>
+            
+<li >
+    <a href="../raspberryPi/">Ham Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MMDVM Hotspot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hotspot/">Setup</a>
+</li>
+            
+<li >
+    <a href="../hotspothardware/">Hardware</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../arduino/">Arduino Shields</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Aredn Broadband Hamnet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../aredn_broadband_hamnet/">AREDN Info</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../atv/">Amatuer TV</a>
+</li>
+                                    
+<li >
+    <a href="../QSL/">Virtual QSL cards</a>
+</li>
+                                    
+<li >
+    <a href="../ham/">What do amatuer modes sound like</a>
+</li>
+                                    
+<li >
+    <a href="../NCPacket/">North Carolina Packet</a>
+</li>
+                                    
+<li >
+    <a href="../new_packet_radio/">New Packet Radio</a>
+</li>
+                                    
+<li >
+    <a href="../contacts/">Contacts</a>
+</li>
+                                    
+<li >
+    <a href="../homeQTH/">Home QTH Information</a>
+</li>
+                                    
+<li >
+    <a href="../gmrs/">GMRS Live feeds</a>
+</li>
+                                    
+<li >
+    <a href="../shtfradio/">SHTF Radio Info</a>
+</li>
+                                    
+<li >
+    <a href="../offgridcommunication/">Off Grid Communication Devices</a>
+</li>
+                                    
+<li >
+    <a href="../peanut/">Peanut APP</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">LoRa (LoRaHam/LoRaAPS)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../lora_radio/">Projects</a>
+</li>
+            
+<li >
+    <a href="../moreLoRa/">More Projects</a>
+</li>
+            
+<li >
+    <a href="../lorameshinfo/">Mesh Projects</a>
+</li>
+            
+<li >
+    <a href="../lora_ideas/">General</a>
+</li>
+            
+<li >
+    <a href="../LoRaHam/">LoRaHam/LoraMador/LoraAPS</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../wxinfo/">WX Stuff</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../trisquare/">Trisquare Radios</a>
+</li>
+            
+<li >
+    <a href="../weirdmessengers/">Weird Messengers</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batman (1966)</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Green Hornet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/greenhornet/greenhornet/">Info</a>
+</li>
+            
+<li >
+    <a href="../../other/greenhornet/familytree/">Family Tree</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../other/pythagoras/">Pythagoras</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">My Cars</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../other/books/">Free eBooks</a>
+</li>
+            
+<li >
+    <a href="../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+            
+<li >
+    <a href="../../other/surplusstore/">Electronics Surplus</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../dmrnets/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../k4usd_network/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>SMS functions via DMR
+The Brandmeister network has some functions to request information via SMS messages. To access these functions specific keywords are to be sent to DMR ID 262993. Then the system responds as well via SMS on these requests. Below you’ll find an overview of these commands with some explanation. The commands are not case sensitive.</p>
+<p>Command Explanation
+help Shows an overview of the available functions
+echo Sends immediately a response to test the SMS function
+wx Weather at the repeater site
+wx help Overview of all available weather commands
+wx Town Weather in the city ‘Town’
+wx zip Town Weather in the area ‘zip’ in the city ‘Town’
+wx zip, cc Weather in the area ‘zip’ in country ‘cc’
+wx Town, cc Weather in the city ‘Town’ in country ‘cc’
+wx zip Town, cc Weather in area ‘zip’ in city ‘Town’ in country ‘cc’
+wx gps Weather at the actual position of the DMR user according to the radio’s GPS
+metar xxxx METAR message at the airport identified by ICAO code ‘xxxx’
+gps help Overview of all GPS commands
+gps Shows actual GPS position including the name of the location (street, city) of the DMR radio. Also direction and distance in relation to the actual repeater are provided
+gps set Stores the actual position as ‘Home’ location
+gps home Shows distance and direction of the actual position in relation to the previously stored ‘Home’ position
+gps callsign Shows distance and direction in relation to DMR user identified by ‘callsign’</p>
+<p>Furthermore it’s possible to route DMR messages into the DAPNet pager network. More information regarding DAPNet can be found at the website of Dutch Amateur Pagernetwork and RWTH Aachen (Aachen University). Messages for DAPNet are to be sent to DMR ID 262994.</p>
+<p>A pager message for DAPNet is to be sent in the format [callsign] [message], for instance PX0XXX This is a message from DMR to DAPNet . This sends a messagetext ‘This is a message from DMR to DAPNet’ to user PX0XXX . Prerequisite is that ‘PX0XXX’ is a registered DAPNet user.</p>
+<p>From: https://www.pe2kmv.nl/wp/en/dmr-en/sms-functions-via-dmr/</p>
+<p>SMS functions via DMR
+Posted on September 27, 2017 | By Ronald Bouwens | 1 Comment
+The Brandmeister network has some functions to request information via SMS messages. To access these functions specific keywords are to be sent to DMR ID 262993. Then the system responds as well via SMS on these requests. Below you’ll find an overview of these commands with some explanation. The commands are not case sensitive.</p>
+<p>Command Explanation
+help    Shows an overview of the available functions
+echo    Sends immediately a response to test the SMS function
+wx  Weather at the repeater site
+wx help Overview of all available weather commands
+wx Town Weather in the city 'Town'
+wx zip Town Weather in the area 'zip' in the city 'Town'
+wx zip, cc  Weather in the area 'zip' in country 'cc'
+wx Town, cc Weather in the city 'Town' in country 'cc'
+wx zip Town, cc Weather in area 'zip' in city 'Town' in country 'cc'
+wx gps  Weather at the actual position of the DMR user according to the radio's GPS
+metar xxxx  METAR message at the airport identified by ICAO code 'xxxx'
+gps help    Overview of all GPS commands
+gps Shows actual GPS position including the name of the location (street, city) of the DMR radio. Also direction and distance in relation to the actual repeater are provided
+gps set Stores the actual position as 'Home' location
+gps home    Shows distance and direction of the actual position in relation to the previously stored 'Home' position
+gps callsign    Shows distance and direction in relation to DMR user identified by 'callsign'</p>
+<p>Furthermore it’s possible to route DMR messages into the DAPNet pager network. More information regarding DAPNet can be found at the website of Dutch Amateur Pagernetwork and  RWTH Aachen (Aachen University). Messages for DAPNet are to be sent to DMR ID 262994.</p>
+<p>A pager message for DAPNet is to be sent in the format [callsign] [message], for instance PX0XXX This is a message from DMR to DAPNet . This sends a messagetext ‘This is a message from DMR to DAPNet’ to user PX0XXX . Prerequisite is that ‘PX0XXX’ is a registered DAPNet user.</p>
+<p>From: https://www.lucifernet.com/2020/04/27/sms-functions-via-dmr/</p>
+<p>Original post and credit to : Ronald PE2KMV https://www.pe2kmv.nl/wp/en/dmr-en/sms-functions-via-dmr/</p>
+<p>The Brandmeister network has some functions to request information via SMS messages. To access these functions specific keywords are to be sent to DMR ID 262993. Then the system responds as well via SMS on these requests. Below you’ll find an overview of these commands with some explanation. The commands are not case sensitive.</p>
+<p>Command Explanation
+help    Shows an overview of the available functions
+echo    Sends immediately a response to test the SMS function
+wx  Weather at the repeater site
+wx help Overview of all available weather commands
+wx Town Weather in the city ‘Town’
+wx zip Town Weather in the area ‘zip’ in the city ‘Town’
+wx zip, cc  Weather in the area ‘zip’ in country ‘cc’
+wx Town, cc Weather in the city ‘Town’ in country ‘cc’
+wx zip Town, cc Weather in area ‘zip’ in city ‘Town’ in country ‘cc’
+wx gps  Weather at the actual position of the DMR user according to the radio’s GPS
+metar xxxx  METAR message at the airport identified by ICAO code ‘xxxx’
+gps help    Overview of all GPS commands
+gps Shows actual GPS position including the name of the location (street, city) of the DMR radio. Also direction and distance in relation to the actual repeater are provided
+gps set Stores the actual position as ‘Home’ location
+gps home    Shows distance and direction of the actual position in relation to the previously stored ‘Home’ position
+gps callsign    Shows distance and dire</p>
+<p>Furthermore it’s possible to route DMR messages into the DAPNet pager network. More information regarding DAPNet can be found at the website of Dutch Amateur Pagernetwork and  RWTH Aachen (Aachen University). Messages for DAPNet are to be sent to DMR ID 262994.</p>
+<p>A pager message for DAPNet is to be sent in the format [callsign] [message], for instance PX0XXX This is a message from DMR to DAPNet . This sends a messagetext ‘This is a message from DMR to DAPNet’ to user PX0XXX . Prerequisite is that ‘PX0XXX’ is a registered DAPNet user.</p>
+<p>From: https://vk3tbs.home.blog/2020/05/15/sms-via-radio-or-hotspot/</p>
+<p>SMS via Radio or Hotspot
+May 15, 2020Ben
+One of the most underutilised by very cool feature that comes with some digital networks is the ability to send and receive SMS messages. You can send it fairly easily to another radio, but did you know you can also receive a weather report, see where your last GPS transmitted location is, and send messages to your mobile phone. The best thing is there no cost either.</p>
+<p>While not all networks and not all radio’s support sending SMS’s. Some hotspots do and some done also just to make it even more confusing. While I don’t plan to list all networks available, as they there are more all the time, and the settings change also. However, at the time of writing this (2020), the VK-DMR network does not support GPS or SMS (you must turn it off to use the system), but the BrandMeister one does. So, I will talk from here on about the BrandMeister network. If you use a different network, then check with that network first.</p>
+<p>BrandMeister Setup
+First you need to setup your BrandMeister account to send and receive SMS. From the BrandMeister page, login at the right of the screen. Then under Services on the left side, select selfcare. I usually set the radio brand to either ETSI or Motorola, however this will depend on the radio you have. While you are here, you might want to turn on or off your GPS location and check everything looks good.</p>
+<p>Radio Setup
+Would you believe most digital radios allow you to send and receive messages right from the screen easily. However not all. Unfortunately, at the time of writing this (2020), the OpenGD-77 does not support text messaging as yet. However, it is on the job list. I do understand that since text messaging isn’t the most used option in digital radio, probably leaving this setup until last is fair enough. However, I have done it on the original GD-77 firmware, and seen it done on other radio’s also.</p>
+<p>If your fortunate enough, you may have a hotspot that can do it anyway.</p>
+<p>Hotspot Sending
+I am not going to talk about every hotspot available, mainly because I don’t own every hotspot available. But I will talk about the OpenSpot as I have a couple of them myself, and I know they work.</p>
+<p>From a PC, the menu on the right side has DMR SMS chat that will bring up a box much like the picture below.</p>
+<p>DMR SMS Chat in OpenSpot
+262993 GPS and Weather
+If you send the message help to destination ID 262993 you will get a prompt much like above. It may take a little while to reply. As I live in Melbourne, you can see above I then sent a private message to 262993 again and typed in the message wx Melbourne, AU. You can see above the message on the left I received. Remember, the reply’s do take a while to come back and usually arrive just as you have given up waiting!</p>
+<p>You could also send the message gps help to the same number, 262993, to get an overview of all the GPS commands which includes setting your home position, and so on. If you have transmitted your GPS location with the same callsign you set up in the selfcare then it will reply with your last location sent. If you want to save that as your home location, send GPS SET and it will save your last location as your home location. Then you will get from now on your home location and your last transmitted location.</p>
+<p>If you send RSSI to 262993 it will reply with the repeater and connected talk group you were last using. If you send a message INFO <em>callsign where </em>callsign is replaced with your call sign you will get a reply when you last spoke. If you have two digital ID numbers, then it will send both of them back to you.</p>
+<p>262994 Repeater, POCSAG and dapnet
+If you send RPT SMS to 262994 you will get a reply of what static talk groups you are currently connected to.</p>
+<p>You can also send a message to a call sign using this 262994 number. For example, if you want to send a message to me, send VK3TBS followed by your message to number 262994. However, I couldn’t get this to work – maybe because I was messaging myself! If you get it to work, please let me know what I did wrong.</p>
+<p>262995 SMSC – SMS-ing to a mobile phone
+This is taking SMS-ing to the next level. I was even able to SMS my wife who doesn’t have a licence.</p>
+<p>To do this, send the following message SMSGTE @[phone number] [message] to 262995. where [phone number] is your country number (e.g. 61 for Australia) followed by the mobile number. Remember to remove the first 0 if you’re in Australia.</p>
+<p>There is more information on sending messages to and from your radio to mobile phones on the smsgte.org web site. There is heaps of information under the User Guide menu.</p>
+<p>UPDATE – Before I finish, I discovered the hard way that when you send a message from a mobile phone to a radio, I got a bill. I am not sure if it was because I am in Australia, or my phone carrier saw the oppertunity, but I think with a few tests it was only $1 or so.</p>
+<p>APRS Chat
+APRS is almost a bit easier and can quickly send messages to and from a mobile phone. Once you have done the above setup, I selected APRS chat in my OpenSpot2 dashboard. Then I sent a message with the destination callsign of SMSGTE then the message was @[phone number] [message] there [phone number] is your country number (e.g. 61 for Australia) followed by the mobile number. Remember to remove the first 0 if you’re in Australia.</p>
+<p>You can see in the picture below I sent a message Test from hotspot to my phone which appeared instantly. I then sent one back from my phone saying This is from my mobile phone which then appeared instantly. It worked really well.</p>
+<p>From: https://on7lds.net/42/BM262_service_numbers
+BrandMeister Service Numbers</p>
+<p>BM262 Service Numbers
+The BrandMeister Germany team has implemented some nice features.
+They coded some 'SMS servicenumbers', these are services you can address via BM SMS.</p>
+<p>Their documentation can be found in the BM262 BrandMeister Wiki</p>
+<p>I made an English translation of te SMSC service number.</p>
+<p>262995 - SMSC
+English translation by ON7LDS</p>
+<p>Preface
+set the correct Brand for your transceiver in your BrandMeister SelfCare
+all commands should be sent as a private call to the 262995
+the commands are case-insensitive
+there should be only one space between query parts
+information in <brackets> are placeholders for parameters, '&lt;' and '&gt;' should not be sent
+some Chinese devices (eg Anytone or RT3) unfortunately can not receive long text messages and may show only parts of the message or ignore the message completely.
+AnyTone has also problems with the reception of SMS while the hang time after sending an SMS is still active. For this and for short SMSses, it is possible to activate a "Special Configuration" (see point 10)</p>
+<ol>
+<li>ECHO - Function test
+Format : ECHO
+Example: ECHO</li>
+</ol>
+<p>The ECHO command can be used to test whether the SMS send / receive works correctly.
+When a text message comes back, everything is OK.
+If no SMS is coming back, there is no need to test the other functions (except for the "Special Configuration") , since these will most likely not work :-(</p>
+<p>The answer may look like this:</p>
+<p>Hi Jens,
+SMS which received by the system.</p>
+<p>When you do not receive any answer and you did set the correct Brand for your transceiver in your BrandMeister SelfCare, please follow the instructions described in section 10 "Special Configuration".</p>
+<ol>
+<li>Write SMS
+Format: <CALLSIGN> <message>
+Example: DK5RAS This is a test
+To send an SMS to someone, start with the callsign, followed by a space and then the desired message.</li>
+</ol>
+<p>As some transceivers (eg AnyTone or RT3) have problems with longer text messages, you should make sure that the message is not too long.</p>
+<p>Mostly, SMSses containing more than 256 characters will be truncated to 256 characters. Furthermore, you can optionally enable the reduction to 127 characters (more information at section 10 at the end of this manual).</p>
+<p>The receiver will be notified, next to your call, of the sending time of the SMS. These characters have to be deducted from the actual message !</p>
+<p>When the recipient retrieves the SMS on the same day it was sent to him/her, the date will be suppressed.</p>
+<p>DO1JG (23:06)
+This is a test</p>
+<p>If the SMS is retrieved the next day or later, the SMS also contains the date (and thus making it longer).</p>
+<p>Retrieved the same year :</p>
+<p>DO1JG (30.08 -. 17:50)
+This is a test</p>
+<p>Retrieved another year :</p>
+<p>DO1JG (08/30/2018 - 17:50)
+This is a test</p>
+<p>This means that the header in can be 24 or 28 characters (line break are 2 characters), and in the case of a 6-digit callsign: 25 or 29 characters.</p>
+<p>For example, since the AnyTone can receive only 127 characters, you should limit the actual message to 98 characters.</p>
+<p>After having sent your SMS, you get a confirmation from the system that the message has been stored in the system.</p>
+<p>Your SMS to DO1JG has been stored in the system</p>
+<p>When you do not want the confirmation, you can disable it:</p>
+<p>Format: SEND <ON | OFF>
+Disable: SEND OFF
+Enable: SEND ON</p>
+<ol>
+<li>Receive SMS
+There are several possibilities:</li>
+</ol>
+<p>automatic delivery
+notification that an SMS has been received
+manual retrieval</p>
+<p>2.0 Requirements
+For the notification and for automatic delivery, the radio ARS (Motorola) or RRS (Hytera) must have been enabled or the GPS position has to be sent regularly.
+When the transceiver communicates with the BrandMeister system (via ID xxx999 (eg 262999)), it is checked if there are new SMSses available.</p>
+<p>When using the automatic delivery, however, there is also the possibility that SMSses are lost. This can be when the time slot is blocked by other traffic short after communicating with the SMSC or when the reception is interrupted or bad.
+When further automatic delivery or notification does not take place, the SMSses, however, are not lost and can still be accessed manually.</p>
+<p>2.1 SMS Notification
+By default, the "SMS Notification" option is enabled. This will send, by SMS, the number of messages in the INBOX (Conditions see 2.0)</p>
+<p>You have 5 new SMS in your INBOX.
+Send INBOX to 262995 to get a list or send GET to receive all SMS.</p>
+<p>The number of new SMSses in this notification relates to SMSses for which you do not yet have been informed. When another SMS arrives at this point, the next notification would only give notice about 1 SMS.
+The advantage of this system is that one can make free space for SMSses in the radio first, before retrieving them. Also, there will be no sudden reception of many unexpected messages.</p>
+<p>2.2 Automatic Delivery:
+The automatic notification is disabled by default, but can be enabled/disabled using the following command:</p>
+<p>Format: DIRECT <ON | OFF>
+Enable: DIRECT ON
+Disable: DIRECT OFF
+Once this feature is enabled, you get (under the conditions of 2.0) the SMS sent immediately to your device. The message is not deleted by the system after delivery and can thus later once again be retrieved.
+The advantage of this system is obvious: you do not have to send commands to retrieve the SMSses. The downside is that you can get an unexpected number of SMSses at once and at least the AnyTone has issues with this (not receiving all SMSses or reboots).</p>
+<p>Everyone must decide which system suits him or her the best. When you use Hytera or Motorola devices and you are not expecting a lot of SMSses, it makes sense to activate automatic delivery.
+Nevertheless, one should query its INBOX regularly (see below) because SMSses can be lost sometimes.</p>
+<p>2.3 Manual retrieval
+No matter which option you have chosen, you can always retrieve the SMSses manually.</p>
+<p>Format: INBOX
+Example: INBOX
+With the command INBOX (or short IN) you get a list of SMSses, stored in your inbox.
+It is a numbered list, with the most recent SMS first.</p>
+<p>A possible answer may look like this:</p>
+<p>You have 9 SMS in your INBOX
+1. DO1JG (23:06)
+2. DO1JG (22:27)
+3. DO1JG (22:21)
+4. DO1JG (08/30/2018 - 17:50 )
+5. DO1JG (08/30/2018 - 17:46)
+6. DO1JG (08/30/2018 - 13:59)
+7. DO1JG (08/30/2018 - 05:12)
+8. DO1JG (08/30/2018 - 03:42)
+9 . DO1JG (08/30/2018 - 03:41)</p>
+<p>This answer would be 268 characters long and would not be displayed correctly on 'problematic' devices. Even Motorola and Hytera devices would not show the complete message.
+For this reason, SMSses which are longer than 256 characters are generally shortened to 256 characters. Optionally you can, as already mentioned above, activate the reduction to 127 characters.
+It is advised to regularly erase your SMSses from the INBOX (see below).</p>
+<p>2.3.1 Retrieveof all SMSses in one go
+Format: ALL
+Example: ALL
+With the command ALL (or alternatively GET) you instruct the system to send all SMSses to your device.
+Note that, as mentioned above, not all devices may possibly handle a high number of SMSses at once.
+The messages are not deleted from the system by this command and can be queried again if, for example, some text messages were not received.</p>
+<p>2.3.2 query a specific SMS
+Format: GET <NUMBER>
+Example: GET 4
+With the GET command (or alternatively READ) one can retrieve a specific SMS.
+<NUMBER> is the number of the SMS as shown with the INBOX command.
+It should be noted that the number is not fixed to the SMS, but always the actual index in the INBOX. So if you delete a message in the middle of the list, the following SMSses will shift to the top and thus will be renumbered.</p>
+<p>This feature is interesting for devices which can not process all SMSses at once.
+In this case, with GET 1 one can always retrieve the most recent SMS.</p>
+<ol>
+<li>Delete SMS
+There are two possibilities: delete all SMS in the INBOX at once or delete a specific SMS.</li>
+</ol>
+<p>3.1 Delete all SMSses
+Format: DELETE
+Example: DELETE
+With the command DELETE (or alternatively DEL) you can delete all SMSses in the INBOX at once.
+It makes sense once you have accessed the SMSses, to use this command to keep the INBOX clean.</p>
+<p>answer:</p>
+<p>All SMS to you has been deleted.</p>
+<p>3.2. Delete a specific SMS
+Format: DELETE <NUMBER>
+Example: DELETE 4
+With the DELETE <NUMBER> command (or alternatively DEL <NUMBER>) you can delete specific SMS.
+<NUMBER> is the number of the SMS as shown with the INBOX command.
+It should be noted that the number is not fixed to the SMS, but always the actual index in the INBOX. So if you delete a message in the middle of the list, the following SMSses will shift to the top and thus will be renumbered.</p>
+<p>Answer:</p>
+<p>SMS has been deleted.</p>
+<ol>
+<li>"Special configuration"
+Note:
+The "Special Configuration" is also valid for the service number 262993.
+so the "Special Configuration" commands can also be sent to 262993.</li>
+</ol>
+<p>10.1 query the current configuration
+Format: CONFIG
+Example: CONFIG
+If one sends the command CONFIG, the current "Special Configuration" will be sent to the device by SMS.
+When you do not get a SMS as a response, it is an indication you have to activate the "Special Configuration".</p>
+<p>10.2 Enable or disable "Special Configuration"
+Format: CONFIG <ON | OFF>
+Enable: CONFIG ON
+Disable: CONFIG OFF
+You can enable or disable the "Special Configuration" as needed, depending on the device used.
+Note : The settings will only be considered if the configuration is enabled.</p>
+<p>10.3 SMS length for reception
+Format: CONFIG <SHORT | LONG>
+To cut received SMSses to 127 characters: CONFIG SHORT
+To cut received SMSses to 256 characters: CONFIG LONG
+AnyTone or RT3 users are strongly advised to activate the SHORT option, and of course also the "Special Configuration".</p>
+<p>10.4 transmitting / receiving delay
+Format: CONFIG DELAY &lt;1-10&gt;
+delay for 8 seconds: CONFIG DELAY 8
+The transmission / reception delay (an integer number, minimum 1 second and maximum of 10 seconds) is the time that elapses before the system will answer upon receiving an SMS command.
+The default is 2.5 seconds.</p>
+<p>The Anytone has an bug where no SMSses will be received during the hang time after sending an SMS.
+Values of 7...10 have been proved to solve this.</p>
+<p>10.5 Reset Configuration
+Format: CONFIG RESET
+Example: CONFIG RESET
+The CONFIG RESET command will reset the "Special Configuration" back to the system default.
+In the meantime, the "Special Configuration" is also disabled.</p>
+<p>More Information: http://wiki.bm262.de/doku.php (translated from German)</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

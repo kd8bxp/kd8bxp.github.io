@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Nets - Random Wire!</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../tutorials/blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/MQTT-Services/brokers/">Brokers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/azuresphere/">Azure Sphere General Information</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">APRS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../aprs/">APRS Info</a>
+</li>
+            
+<li >
+    <a href="../more_APRS/">More</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../bandplan/">Band Plan</a>
+</li>
+                                    
+<li >
+    <a href="../dapnet/">Dapnet (Amatuer Pager)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DMR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../dmr/">Information</a>
+</li>
+            
+<li class="active">
+    <a href="./">Nets</a>
+</li>
+            
+<li >
+    <a href="../dmrsms/">Send SMS</a>
+</li>
+            
+<li >
+    <a href="../k4usd_network/">K4USD Network Information</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../digitalinformation/">Digital Information</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry Pi Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hamvoip/">Allstar Link</a>
+</li>
+            
+<li >
+    <a href="../hamclock/">Hamclock</a>
+</li>
+            
+<li >
+    <a href="../raspberryPi/">Ham Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MMDVM Hotspot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hotspot/">Setup</a>
+</li>
+            
+<li >
+    <a href="../hotspothardware/">Hardware</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../arduino/">Arduino Shields</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Aredn Broadband Hamnet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../aredn_broadband_hamnet/">AREDN Info</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../atv/">Amatuer TV</a>
+</li>
+                                    
+<li >
+    <a href="../QSL/">Virtual QSL cards</a>
+</li>
+                                    
+<li >
+    <a href="../ham/">What do amatuer modes sound like</a>
+</li>
+                                    
+<li >
+    <a href="../NCPacket/">North Carolina Packet</a>
+</li>
+                                    
+<li >
+    <a href="../new_packet_radio/">New Packet Radio</a>
+</li>
+                                    
+<li >
+    <a href="../contacts/">Contacts</a>
+</li>
+                                    
+<li >
+    <a href="../homeQTH/">Home QTH Information</a>
+</li>
+                                    
+<li >
+    <a href="../gmrs/">GMRS Live feeds</a>
+</li>
+                                    
+<li >
+    <a href="../shtfradio/">SHTF Radio Info</a>
+</li>
+                                    
+<li >
+    <a href="../offgridcommunication/">Off Grid Communication Devices</a>
+</li>
+                                    
+<li >
+    <a href="../peanut/">Peanut APP</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">LoRa (LoRaHam/LoRaAPS)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../lora_radio/">Projects</a>
+</li>
+            
+<li >
+    <a href="../moreLoRa/">More Projects</a>
+</li>
+            
+<li >
+    <a href="../lorameshinfo/">Mesh Projects</a>
+</li>
+            
+<li >
+    <a href="../lora_ideas/">General</a>
+</li>
+            
+<li >
+    <a href="../LoRaHam/">LoRaHam/LoraMador/LoraAPS</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../wxinfo/">WX Stuff</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../trisquare/">Trisquare Radios</a>
+</li>
+            
+<li >
+    <a href="../weirdmessengers/">Weird Messengers</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batman (1966)</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Green Hornet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/greenhornet/greenhornet/">Info</a>
+</li>
+            
+<li >
+    <a href="../../other/greenhornet/familytree/">Family Tree</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../other/pythagoras/">Pythagoras</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">My Cars</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../other/books/">Free eBooks</a>
+</li>
+            
+<li >
+    <a href="../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+            
+<li >
+    <a href="../../other/surplusstore/">Electronics Surplus</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../dmr/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../dmrsms/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#ohio-section-nets">Ohio Section Nets</a></li>
+        <li class="main "><a href="#digital-mobile-radio-nets-times-listed-in-utc">Digital Mobile Radio Nets. Times Listed in UTC.</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>The following list is a summary of nets available for DMR users on BrandMeister repeaters.
+You should check with your local repeater operator for timeslot usage.</p>
+<p>Last Updated: 23-Feb-2019</p>
+<p>Name    Day Time    Talkgroup
+PAPA DMR Roundtable Mon 20:00 PST   California 3106
+Crossroads Indiana  Mon 18:00 CEN   Crossroads Statewide
+31189
+Oklahoma    Mon 20:15 CEN   Oklahoma 3140
+Reddit Net  Mon 20:00 EST   Reddit 98003
+RVing Hams  Mon 21:00 EST   KC2RC WIRESX
+31653
+Idaho Statewide Tue 19:00 MST   Idaho 3116
+Pennsylvania Statewide  Tue 20:00 EST   Pennsylvania 3142
+DMR Information Net Tue 19:30 CEN   DMR Info
+Network 31648
+Ventura County Digital
+Radio Club Net  Tue 19:30 PST   VCDRC 31070
+SNARS DMR Net   Tue 20:00 PAC   SNARS 31328
+Indiana Statewide   Tue 20:00 EST   Indiana 3118
+Arkansas Statewide  Tue 21:00 EST   ARWX 31051
+North Star Digital Net  Tue 21:00 EST   STEM 31630
+Munich Net (Germany)    Tue 19:00 CET1  Region München
+26283
+Canada DMR Net  Tue 20:00 PDT   Canada English 3026
+North American
+Astronomy Net   Wed 20:00 CST   TAC 312 312
+Ohio Statewide Net  Wed 20:30 EST   Ohio 3139
+Pafos Club diginet  Wed 18:00 UTC   Paphos
+North America Tech Net  Wed 18:00 PST   North America 93
+After HamNation Net Wed 19:10 PST   TAC-311 311
+Pacific NW  Wed 19:00 PST   PNWR 31771
+Oregon Statewide    Wed 20:00 PST   Oregon 3141
+Minnesota Statewide Wed 19:00 CEN   Minnesota 3127
+Northwest Alabama DMR Net   Wed 20:30 CT    NW Alabama 31016
+Net in Portuguese   Wed 21:30 UTC   Portuguese 915
+Kentucky Net    Thu 20:00 EST   Kentucky 3121
+West Virginia DMR and
+Service net Thu 20:00 EST   West Virginia 3154
+Arkansas Skywarn    Thu 20:00 EST   Arkansas 3105
+PAPA Technical Round
+Table (cross-mode)  Thu 20:00 PST   PAPA Bridge 31078
+NorCal  Thu 19:00 PST   NorCal 31068
+Ventura County Digital
+Radio Club (VCDRC)  Thu 19:00 PST   Ventura 310652
+Tennessee Statewide Fri 21:00 EST   Tennessee 3147
+The Guild   Fri 14:00 PST   The Guild 31674
+Colorado HD Net Fri 19:30 MST   Colorado HD 31088
+BM Worldwide Net    Sat 14:00 UTC   Worldwide 91
+Outdoor Adventure Net   Sat 10:00 PST   OAG 31772
+Outdoor 4×4 Net Sat 12:30 PST   OAG 31772
+DigiComm Breakfast  Sat 06:00 PST   The Guild 31674
+Hawaii Net (all islands)    Sat 19:00 HST   Hawaii 3115
+TAC-310 Net Sun 00:00 UTC   TAC-310 310
+Iowa Statewide Net  Sun 19:30 CEN   Iowa 3119
+Southeast Florida Net   Sun 20:00 EST   3112529
+Connecticut Statewide   Sun 20:30 EST   Connecticut 3109
+Hawaii Newsline Net Sun 17:00 HST   Hawaii 3115
+Canada DMR  Sun 21:00 EST   Canada 302
+DMRTrack Net    Sun 18:00 CEN   DMR Track 31489
+Midnight Net    Sun 21:00 PST   TAC-310 310
+IECRO   Sun 19:30 GMT   IECRO 98007
+1 CET – Central European Time</p>
+<p>https://www.k6bkd.org/dmr-nets/</p>
+<p>his is from R. Michael Rickey’s page at http://mrickey.com/dmr-nets/.</p>
+<p>Just posting it here so I can find it later.</p>
+<p>The following list is a summary of nets available for DMR users on BrandMeister repeaters.
+You should check with your local repeater operator for timeslot usage.</p>
+<p>Monday
+PAPA DMR Roundtable 20:00 PAC   California 3106
+Crossroads Indiana  18:00 CEN   Crossroads Statewide 31189
+Oklahoma    20:15 CEN   Oklahoma 3140
+Tuesday
+Idaho Statewide 19:00 MST   Idaho 3116
+Pennsylvania Statewide  20:00 EST   Pennsylvania 3142
+Texas Tech Net  19:30 CEN   Texas 3148
+Ventura County Digital Radio Club Net   19:30 PAC   VCDRC 31070
+SNARS DMR Net   20:00 PAC   SNARS 31328
+Indiana Statewide   20:00 EST   Indiana 3118
+Arkansas Statewide  21:00 EST   ARWX 31051
+Chestnut Ridge Digital Net  21:00 EST   New York 3136
+Munich Net (Germany)    19:00 CET1  Region München 26283
+Wednesday
+North American Astronomy Net    02:00 UTC   NA Astronomy 31175
+Ohio Statewide Net  19:30 CEN   Ohio 3139
+Texas Statewide Net 17:30 CEN   Texas 3148
+North America Tech Net  17:00 EST   North America 93
+After HamNation Net 19:00 PST   TAC-311 311
+Pacific NW  19:00 PST   PNWR 31771
+Oregon Statewide    20:00 PST   Oregon 3141
+Minnesota Statewide 19:00 CEN   Minnesota 3127
+Thursday
+Kentucky Net    20:00 EST   Kentucky 3121
+West Virginia DMR and Service net   20:00 EST   West Virginia 3154
+Arkansas Skywarn    20:00 EST   Arkansas 3105
+PAPA Technical Round Table (cross-mode) 20:00 PST   XLX013 31078
+NorCal  19:00 PST   NorCal 31068
+Ventura County Digital Radio Club (VCDRC)   19:00 PST   Ventura 310652
+Hytera USA  19:30 PST   Hytera 31089
+Friday
+Tennessee Statewide 21:00 CEN   Tennessee 3147
+TGIF Net    20:30 EST   TGIF 31665
+Saturday
+BM Worldwide Net    14:00 UTC   Worldwide 91
+Outdoor Adventure Net   10:00 PST   OAG 31772
+Outdoor 4×4 Net 12:30 PST   OAG 31772
+Sunday
+TAC-310 Net 17:00 PST   TAC-310 310
+Iowa Statewide Net  19:30 CEN   Iowa 3119
+Southeast Florida Net   20:00 EST   South-East-Florida 31124
+Connecticut Statewide   20:30 EST   Connecticut 3109
+Hawaii Newsline Net 17:00 HST   Hawaii 3115
+Canada DMR  21:00 EST   Canada 302
+DMRTrack Net    18:00 CEN   DMR Track 31489
+Midnight Net    21:00 PST   TAC-310 310
+1 CET – Central European Time</p>
+<p>If you see anything that needs to be updated, added, or removed please let me know.</p>
+<p>Please note, I am only listing nets available on the BrandMeister network.</p>
+<h1 id="ohio-section-nets">Ohio Section Nets</h1>
+<p>http://arrl-ohio.org/digital/nets.html</p>
+<p>Digital Mobile Radio - DMR</p>
+<p>Known DMR Nets</p>
+<p>Updated: 03/27/2018 11:23 PM</p>
+<p>BrandMeister Worldwide Net Saturday 16:00 UTC (11 am ET) TG: 91
+DMR World-Wide Net Saturday 17:00 UTC (12 noon ET) TG: 1
+Outdoor Adventure Group Saturday    1:00 pm ET  TG: 31772
+D-Star Users Net    Saturday    8:00 pm ET  TG: 4001
+Christian DMR Net   Sunday  6:00 pm ET  TG: 31479
+Southeast Ohio DMR Net Sunday 7:30 pm ET TG:  313953
+TAC310 Net Sunday 0100 UTC (8 pm ET Sunday) TG: 310
+Iowa DMR Net Sunday 8:30 pm EST (8:15 pre-check-ins) TG:  3119
+DMR Track Net Sunday    9:00 pm ET  TG: 31489
+Canada DMR Net  Sunday  9:00 pm ET  TG: 302
+New England Wide DMR Net Monday 8:00 pm ET  TG: 3181
+Indiana DMR/C-Bridge Net Monday 8:00 pm ET TG: 31189 TG: 8710(c-bridge)
+Oklahoma ARES DMR Net Monday 9:15 pm ET TG:  3140
+PAPA DMR Roundtable Net Monday 11:00 pm ET TG: 3106
+Indiana ARES DMR Net Tuesday 8:00 pm ET TG:  3118
+Pennsylvania DMR Net    Tuesday 8:00 pm ET  TG: 3142
+Power Sports Net    Tuesday 8:00 pm ET  TG: 4001
+Ontario Canada DMR Net  Tuesday 8:00 pm ET  TG: 3026
+Texas “Tech” Net Tuesday 8:30 pm ET TG:  3148
+New York "Chestnut Ridge" Digital Net   Tuesday 9:00 pm ET  TG: 3136
+Idaho DMR Net   Tuesday 9:00 pm ET  TG: 3116
+SNARS DMR Net Tuesday 10:00 pm ET TG: 31268
+Truckers &amp; RV'ers Travelers Net Wednesday   8:00 pm EST; 9:00 pm EDT    TG: 4003
+Ohio ARES Net -- Net Preamble Wednesday 8:30 pm ET TG: 3139
+DMR Astronomy Net / North America Astronomy Wednesday 9:00 pm ET (0200z Thursday) TG: 31175
+North American Tech Net Wednesday 9:00 pm EST TG: 3
+After HamNation Net Wednesday   Following HamNation Program TG: 311
+Kentucky ARES DMR Net Thursday 8:00 pm ET TG: 3121
+West Virginia DMR Net Thursday 8:00 pm ET TG:  3154
+Illinois Digital Net Thursday 8:00 pm ET TG:  31171
+Arkansas ARES WX DMR Net Thursday 8:00 pm ET TG: 31051
+Tech Net    Thursday    9:00 pm ET  TG: 3
+Arkansas DMR Net    Thursday    10:00 pm ET TG: 3105
+D-Star Round Table Net  Thursday    10:00 pm ET TG: 4001
+Hytera North American Net Thursday 10:30 pm ET TG: 31089
+Tennessee ARES DMR Net Friday 8:00 pm EST; 9:00 pm EDT TG:  3147
+TGIF (Thank God It's Friday) Net Friday 8:30 pm ET TG: 31665
+Louisiana Statewide DMR Net Friday 9:00 pm ET TG: 31224</p>
+<h1 id="digital-mobile-radio-nets-times-listed-in-utc">Digital Mobile Radio Nets. Times Listed in UTC.</h1>
+<p>https://calendar.google.com/calendar/u/0/embed?src=ppfjiq6e31pnvcdmn3fue4rul0@group.calendar.google.com&amp;ctz=Etc/GMT&amp;pli=1</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
