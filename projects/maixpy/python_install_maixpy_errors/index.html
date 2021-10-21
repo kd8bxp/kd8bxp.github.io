@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Python install maixpy errors - Random Wire!</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/Arduino/Arduino_Mesh/">Arduino Mesh</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/Arduino/firmata/">Firmata</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/Arduino/tutorials/">Arduino Advanced Tutorials</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Smart Response XE Devices</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/Arduino/smartresponsexe/">Tutorial (needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/Smart_Response_XE/">More Information (needs updated)</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../tutorials/useSTM32asAnArduino/">Setup STM32 for use with Arduino IDE (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP IDF</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/esp-idf/setup/">Setup (needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/esp-idf/esp32s2/">ESP32 S2 (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../tutorials/blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../../tutorials/document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI (needs updated)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/FPGA_Tang_Nano/fpgas/">General Information (needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/FPGA_Tang_Nano/learnFPGAs/">Learn FPGA (needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+            
+<li >
+    <a href="/tutorials/FPGA_Tang_Nano/info.md">Tang Nano (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../tutorials/TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../../tutorials/ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/MQTT-Services/brokers/">Brokers</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/MQTT-Services/MQTT_Bridge_setup/">Bridge Setup (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../tutorials/syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit (AI Camera Info)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/Maix-Amigo-Help/">Maix Amigo</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../tutorials/azuresphere/">Azure Sphere General Information</a>
+</li>
+                                    
+<li >
+    <a href="../../../comingsoon/">Github Learn By Doing</a>
+</li>
+                                    
+<li >
+    <a href="../../../tutorials/M5Stack/">M5Stack Tutorials (out dated)</a>
+</li>
+                                    
+<li >
+    <a href="../../../tutorials/OnionWiki/">Omega Onion</a>
+</li>
+                                    
+<li >
+    <a href="../../../comingsoon/">Robots (needs updated)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI RP2040</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/rp2040/arduino_nano_rp2040/">Arduino Nano RP2040</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Wio Terminal</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/wioterminal/mqtt_intercom/">MQTT Intercom (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../tutorials/BareConductiveTouch/">Bare Conductive Touch Board (needs updated)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Chrome Books (ChromeOS)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/chromeOS/">Chrome OS General Information (Needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/CloudReadyForOldChromeBooks/">Cloud Ready for Old Chrome Books (needs upated)</a>
+</li>
+            
+<li >
+    <a href="../../../tutorials/InstallChromeOSonOldDesktop/">Install ChromeOS on Old Desktops (needs update)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../tutorials/create_InteractiveFiction_and_ebooks_with_markdown/">Create Interactive Fiction with Markdown (needs updated)</a>
+</li>
+                                    
+<li >
+    <a href="../../../tutorials/xenonmesh/">Particle Mesh Information (needs updated)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../tutorials/robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">APRS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../hamradio/aprs/">APRS Info</a>
+</li>
+            
+<li >
+    <a href="../../../hamradio/more_APRS/">More</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../hamradio/bandplan/">Band Plan</a>
+</li>
+                                    
+<li >
+    <a href="../../../hamradio/dapnet/">Dapnet (Amatuer Pager)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DMR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../hamradio/dmr/">Information</a>
+</li>
+            
+<li >
+    <a href="../../../hamradio/dmrnets/">Nets</a>
+</li>
+            
+<li >
+    <a href="../../../hamradio/dmrsms/">Send SMS</a>
+</li>
+            
+<li >
+    <a href="../../../hamradio/k4usd_network/">K4USD Network Information</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../hamradio/digitalinformation/">Digital Information</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry Pi Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../hamradio/hamvoip/">Allstar Link</a>
+</li>
+            
+<li >
+    <a href="../../../hamradio/hamclock/">Hamclock</a>
+</li>
+            
+<li >
+    <a href="../../../hamradio/raspberryPi/">Ham Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MMDVM Hotspot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../hamradio/hotspot/">Setup</a>
+</li>
+            
+<li >
+    <a href="../../../hamradio/hotspothardware/">Hardware</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../hamradio/arduino/">Arduino Shields</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Aredn Broadband Hamnet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../hamradio/aredn_broadband_hamnet/">AREDN Info</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../hamradio/atv/">Amatuer TV</a>
+</li>
+                                    
+<li >
+    <a href="../../../hamradio/QSL/">Virtual QSL cards</a>
+</li>
+                                    
+<li >
+    <a href="../../../hamradio/ham/">What do amatuer modes sound like</a>
+</li>
+                                    
+<li >
+    <a href="../../../hamradio/NCPacket/">North Carolina Packet</a>
+</li>
+                                    
+<li >
+    <a href="../../../hamradio/new_packet_radio/">New Packet Radio</a>
+</li>
+                                    
+<li >
+    <a href="../../../hamradio/contacts/">Contacts</a>
+</li>
+                                    
+<li >
+    <a href="../../../hamradio/homeQTH/">Home QTH Information</a>
+</li>
+                                    
+<li >
+    <a href="../../../hamradio/gmrs/">GMRS Live feeds</a>
+</li>
+                                    
+<li >
+    <a href="../../../hamradio/shtfradio/">SHTF Radio Info</a>
+</li>
+                                    
+<li >
+    <a href="../../../hamradio/offgridcommunication/">Off Grid Communication Devices</a>
+</li>
+                                    
+<li >
+    <a href="../../../hamradio/peanut/">Peanut APP</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">LoRa (LoRaHam/LoRaAPS)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../hamradio/lora_radio/">Projects</a>
+</li>
+            
+<li >
+    <a href="../../../hamradio/moreLoRa/">More Projects</a>
+</li>
+            
+<li >
+    <a href="../../../hamradio/lorameshinfo/">Mesh Projects</a>
+</li>
+            
+<li >
+    <a href="../../../hamradio/lora_ideas/">General</a>
+</li>
+            
+<li >
+    <a href="../../../hamradio/LoRaHam/">LoRaHam/LoraMador/LoraAPS</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../hamradio/wxinfo/">WX Stuff</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../hamradio/trisquare/">Trisquare Radios</a>
+</li>
+            
+<li >
+    <a href="../../../hamradio/weirdmessengers/">Weird Messengers</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Batman (1966)</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Green Hornet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../other/greenhornet/greenhornet/">Info</a>
+</li>
+            
+<li >
+    <a href="../../../other/greenhornet/familytree/">Family Tree</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../../other/pythagoras/">Pythagoras</a>
+</li>
+                                    
+<li >
+    <a href="../../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../../comingsoon/">My Cars</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../../other/books/">Free eBooks</a>
+</li>
+            
+<li >
+    <a href="../../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+            
+<li >
+    <a href="../../../other/surplusstore/">Electronics Surplus</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>lfmiller@Grayson:~$ sudo apt install python3-setuptools
+[sudo] password for lfmiller:        <br />
+Reading package lists... Done
+Building dependency tree     <br />
+Reading state information... Done
+python3-setuptools is already the newest version (39.0.1-2).
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-136 linux-headers-4.15.0-136-generic
+  linux-headers-4.15.0-137 linux-headers-4.15.0-137-generic
+  linux-headers-4.15.0-139 linux-headers-4.15.0-139-generic
+  linux-headers-5.4.0-65-generic linux-headers-5.4.0-66-generic
+  linux-hwe-5.4-headers-5.4.0-65 linux-hwe-5.4-headers-5.4.0-66
+  linux-image-4.15.0-136-generic linux-image-4.15.0-137-generic
+  linux-image-4.15.0-139-generic linux-image-5.4.0-65-generic
+  linux-image-5.4.0-66-generic linux-modules-4.15.0-136-generic
+  linux-modules-4.15.0-137-generic linux-modules-4.15.0-139-generic
+  linux-modules-5.4.0-65-generic linux-modules-5.4.0-66-generic
+  linux-modules-extra-4.15.0-136-generic
+  linux-modules-extra-4.15.0-137-generic
+  linux-modules-extra-4.15.0-139-generic linux-modules-extra-5.4.0-65-generic
+  linux-modules-extra-5.4.0-66-generic
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+lfmiller@Grayson:~$ pip3 install maixpy3
+Defaulting to user installation because normal site-packages is not writeable
+Collecting maixpy3
+  Using cached MaixPy3-0.3.0.tar.gz (10.0 MB)
+Requirement already satisfied: numpy in ./.local/lib/python3.6/site-packages (from maixpy3) (1.18.1)
+Requirement already satisfied: opencv-python==4.1.2.30 in ./.local/lib/python3.6/site-packages (from maixpy3) (4.1.2.30)
+Requirement already satisfied: opencv-contrib-python==4.1.2.30 in ./.local/lib/python3.6/site-packages (from maixpy3) (4.1.2.30)
+Requirement already satisfied: Pillow in ./.local/lib/python3.6/site-packages (from maixpy3) (7.0.0)
+Requirement already satisfied: rpyc in ./.local/lib/python3.6/site-packages (from maixpy3) (5.0.1)
+Requirement already satisfied: gpiod in ./.local/lib/python3.6/site-packages (from maixpy3) (1.4.0)
+Collecting evdev
+  Using cached evdev-1.4.0.tar.gz (26 kB)
+Collecting spidev
+  Using cached spidev-3.5.tar.gz (10 kB)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from maixpy3) (3.4)
+Requirement already satisfied: plumbum in ./.local/lib/python3.6/site-packages (from rpyc-&gt;maixpy3) (1.7.0)
+Using legacy 'setup.py install' for maixpy3, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for evdev, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for spidev, since package 'wheel' is not installed.
+Installing collected packages: spidev, evdev, maixpy3
+    Running setup.py install for spidev ... error
+    ERROR: Command errored out with exit status 1:
+     command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-wmjr0ec1/spidev_179b286134c043bdbcfe4f17596f9662/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-wmjr0ec1/spidev_179b286134c043bdbcfe4f17596f9662/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-aexgwc07/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/spidev
+         cwd: /tmp/pip-install-wmjr0ec1/spidev_179b286134c043bdbcfe4f17596f9662/
+    Complete output (12 lines):
+    running install
+    running build
+    running build_ext
+    building 'spidev' extension
+    creating build
+    creating build/temp.linux-x86_64-3.6
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c spidev_module.c -o build/temp.linux-x86_64-3.6/spidev_module.o
+    spidev_module.c:28:10: fatal error: Python.h: No such file or directory
+     #include <Python.h>
+              ^~~~~~~~~~
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-wmjr0ec1/spidev_179b286134c043bdbcfe4f17596f9662/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-wmjr0ec1/spidev_179b286134c043bdbcfe4f17596f9662/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-aexgwc07/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/spidev Check the logs for full command output.
+lfmiller@Grayson:~$ pip3 install wheel
+Defaulting to user installation because normal site-packages is not writeable
+Collecting wheel
+  Using cached wheel-0.36.2-py2.py3-none-any.whl (35 kB)
+Installing collected packages: wheel
+Successfully installed wheel-0.36.2
+lfmiller@Grayson:~$ pip3 install spidev
+Defaulting to user installation because normal site-packages is not writeable
+Collecting spidev
+  Using cached spidev-3.5.tar.gz (10 kB)
+Building wheels for collected packages: spidev
+  Building wheel for spidev (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-fhul_djm/spidev_00de9aef092049129f37dacf7a3becec/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-fhul_djm/spidev_00de9aef092049129f37dacf7a3becec/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-bq6b800q
+       cwd: /tmp/pip-install-fhul_djm/spidev_00de9aef092049129f37dacf7a3becec/
+  Complete output (12 lines):
+  running bdist_wheel
+  running build
+  running build_ext
+  building 'spidev' extension
+  creating build
+  creating build/temp.linux-x86_64-3.6
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c spidev_module.c -o build/temp.linux-x86_64-3.6/spidev_module.o
+  spidev_module.c:28:10: fatal error: Python.h: No such file or directory
+   #include <Python.h>
+            ^~~~~~~~~~
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1</p>
+<hr />
+<p>ERROR: Failed building wheel for spidev
+  Running setup.py clean for spidev
+Failed to build spidev
+Installing collected packages: spidev
+    Running setup.py install for spidev ... error
+    ERROR: Command errored out with exit status 1:
+     command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-fhul_djm/spidev_00de9aef092049129f37dacf7a3becec/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-fhul_djm/spidev_00de9aef092049129f37dacf7a3becec/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-wlyqo_l9/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/spidev
+         cwd: /tmp/pip-install-fhul_djm/spidev_00de9aef092049129f37dacf7a3becec/
+    Complete output (12 lines):
+    running install
+    running build
+    running build_ext
+    building 'spidev' extension
+    creating build
+    creating build/temp.linux-x86_64-3.6
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c spidev_module.c -o build/temp.linux-x86_64-3.6/spidev_module.o
+    spidev_module.c:28:10: fatal error: Python.h: No such file or directory
+     #include <Python.h>
+              ^~~~~~~~~~
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-fhul_djm/spidev_00de9aef092049129f37dacf7a3becec/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-fhul_djm/spidev_00de9aef092049129f37dacf7a3becec/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-wlyqo_l9/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/spidev Check the logs for full command output.
+lfmiller@Grayson:~$ pip3 install evdev
+Defaulting to user installation because normal site-packages is not writeable
+Collecting evdev
+  Using cached evdev-1.4.0.tar.gz (26 kB)
+Building wheels for collected packages: evdev
+  Building wheel for evdev (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-jszpqfjw/evdev_131c737a73234f4ab1194976698a9851/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-jszpqfjw/evdev_131c737a73234f4ab1194976698a9851/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-b71_5i20
+       cwd: /tmp/pip-install-jszpqfjw/evdev_131c737a73234f4ab1194976698a9851/
+  Complete output (29 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-3.6
+  creating build/lib.linux-x86_64-3.6/evdev
+  copying evdev/eventio_async.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/ff.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/ecodes.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/util.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/device.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/uinput.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/<strong>init</strong>.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/genecodes.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/eventio.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/evtest.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/events.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  running build_ext
+  running build_ecodes
+  writing ecodes.c (using /usr/include/linux/input.h /usr/include/linux/input-event-codes.h /usr/include/linux/uinput.h)
+  building 'evdev._input' extension
+  creating build/temp.linux-x86_64-3.6
+  creating build/temp.linux-x86_64-3.6/evdev
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c evdev/input.c -o build/temp.linux-x86_64-3.6/evdev/input.o -std=c99 -Wno-error=declaration-after-statement
+  evdev/input.c:10:10: fatal error: Python.h: No such file or directory
+   #include <Python.h>
+            ^~~~~~~~~~
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1</p>
+<hr />
+<p>ERROR: Failed building wheel for evdev
+  Running setup.py clean for evdev
+Failed to build evdev
+Installing collected packages: evdev
+    Running setup.py install for evdev ... error
+    ERROR: Command errored out with exit status 1:
+     command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-jszpqfjw/evdev_131c737a73234f4ab1194976698a9851/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-jszpqfjw/evdev_131c737a73234f4ab1194976698a9851/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-y0u_lwwm/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/evdev
+         cwd: /tmp/pip-install-jszpqfjw/evdev_131c737a73234f4ab1194976698a9851/
+    Complete output (28 lines):
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-3.6
+    creating build/lib.linux-x86_64-3.6/evdev
+    copying evdev/eventio_async.py -&gt; build/lib.linux-x86_64-3.6/evdev
+    copying evdev/ff.py -&gt; build/lib.linux-x86_64-3.6/evdev
+    copying evdev/ecodes.py -&gt; build/lib.linux-x86_64-3.6/evdev
+    copying evdev/util.py -&gt; build/lib.linux-x86_64-3.6/evdev
+    copying evdev/device.py -&gt; build/lib.linux-x86_64-3.6/evdev
+    copying evdev/uinput.py -&gt; build/lib.linux-x86_64-3.6/evdev
+    copying evdev/<strong>init</strong>.py -&gt; build/lib.linux-x86_64-3.6/evdev
+    copying evdev/genecodes.py -&gt; build/lib.linux-x86_64-3.6/evdev
+    copying evdev/eventio.py -&gt; build/lib.linux-x86_64-3.6/evdev
+    copying evdev/evtest.py -&gt; build/lib.linux-x86_64-3.6/evdev
+    copying evdev/events.py -&gt; build/lib.linux-x86_64-3.6/evdev
+    running build_ext
+    ecodes.c already exists ... skipping build_ecodes
+    building 'evdev._input' extension
+    creating build/temp.linux-x86_64-3.6
+    creating build/temp.linux-x86_64-3.6/evdev
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c evdev/input.c -o build/temp.linux-x86_64-3.6/evdev/input.o -std=c99 -Wno-error=declaration-after-statement
+    evdev/input.c:10:10: fatal error: Python.h: No such file or directory
+     #include <Python.h>
+              ^~~~~~~~~~
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-jszpqfjw/evdev_131c737a73234f4ab1194976698a9851/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-jszpqfjw/evdev_131c737a73234f4ab1194976698a9851/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-y0u_lwwm/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/evdev Check the logs for full command output.
+lfmiller@Grayson:~$ pip install spidev
+Defaulting to user installation because normal site-packages is not writeable
+Collecting spidev
+  Using cached spidev-3.5.tar.gz (10 kB)
+Building wheels for collected packages: spidev
+  Building wheel for spidev (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-g8m77lzl/spidev_68a9d9a008664a0fa77ca69905bc6eda/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-g8m77lzl/spidev_68a9d9a008664a0fa77ca69905bc6eda/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-33zuopm5
+       cwd: /tmp/pip-install-g8m77lzl/spidev_68a9d9a008664a0fa77ca69905bc6eda/
+  Complete output (12 lines):
+  running bdist_wheel
+  running build
+  running build_ext
+  building 'spidev' extension
+  creating build
+  creating build/temp.linux-x86_64-3.6
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c spidev_module.c -o build/temp.linux-x86_64-3.6/spidev_module.o
+  spidev_module.c:28:10: fatal error: Python.h: No such file or directory
+   #include <Python.h>
+            ^~~~~~~~~~
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1</p>
+<hr />
+<p>ERROR: Failed building wheel for spidev
+  Running setup.py clean for spidev
+Failed to build spidev
+Installing collected packages: spidev
+    Running setup.py install for spidev ... error
+    ERROR: Command errored out with exit status 1:
+     command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-g8m77lzl/spidev_68a9d9a008664a0fa77ca69905bc6eda/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-g8m77lzl/spidev_68a9d9a008664a0fa77ca69905bc6eda/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-nckxymq3/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/spidev
+         cwd: /tmp/pip-install-g8m77lzl/spidev_68a9d9a008664a0fa77ca69905bc6eda/
+    Complete output (12 lines):
+    running install
+    running build
+    running build_ext
+    building 'spidev' extension
+    creating build
+    creating build/temp.linux-x86_64-3.6
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c spidev_module.c -o build/temp.linux-x86_64-3.6/spidev_module.o
+    spidev_module.c:28:10: fatal error: Python.h: No such file or directory
+     #include <Python.h>
+              ^~~~~~~~~~
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-g8m77lzl/spidev_68a9d9a008664a0fa77ca69905bc6eda/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-g8m77lzl/spidev_68a9d9a008664a0fa77ca69905bc6eda/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-nckxymq3/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/spidev Check the logs for full command output.
+lfmiller@Grayson:~$ python --version
+Python 3.6.9
+lfmiller@Grayson:~$ python -m pip --version
+pip 21.0.1 from /home/lfmiller/.local/lib/python3.6/site-packages/pip (python 3.6)
+lfmiller@Grayson:~$ python -m ensurepip --default-pip
+ensurepip is disabled in Debian/Ubuntu for the system python.</p>
+<p>Python modules for the system python are usually handled by dpkg and apt-get.</p>
+<pre><code>apt-get install python-&lt;module name&gt;
+</code></pre>
+<p>Install the python-pip package to use pip itself.  Using pip together
+with the system python might have unexpected results for any system installed
+module, so use it on your own risk, or make sure to only use it in virtual
+environments.</p>
+<p>lfmiller@Grayson:~$ python -m pip install --upgrade pip setuptools wheel
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pip in ./.local/lib/python3.6/site-packages (21.0.1)
+Requirement already satisfied: setuptools in ./.local/lib/python3.6/site-packages (46.1.3)
+Collecting setuptools
+  Downloading setuptools-54.2.0-py3-none-any.whl (785 kB)
+     |████████████████████████████████| 785 kB 1.0 MB/s 
+Requirement already satisfied: wheel in ./.local/lib/python3.6/site-packages (0.36.2)
+Installing collected packages: setuptools
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 46.1.3
+    Uninstalling setuptools-46.1.3:
+      Successfully uninstalled setuptools-46.1.3
+Successfully installed setuptools-54.2.0
+lfmiller@Grayson:~$ pip3 install maixpy3
+Defaulting to user installation because normal site-packages is not writeable
+Collecting maixpy3
+  Using cached MaixPy3-0.3.0.tar.gz (10.0 MB)
+Requirement already satisfied: numpy in ./.local/lib/python3.6/site-packages (from maixpy3) (1.18.1)
+Requirement already satisfied: opencv-python==4.1.2.30 in ./.local/lib/python3.6/site-packages (from maixpy3) (4.1.2.30)
+Requirement already satisfied: opencv-contrib-python==4.1.2.30 in ./.local/lib/python3.6/site-packages (from maixpy3) (4.1.2.30)
+Requirement already satisfied: Pillow in ./.local/lib/python3.6/site-packages (from maixpy3) (7.0.0)
+Requirement already satisfied: rpyc in ./.local/lib/python3.6/site-packages (from maixpy3) (5.0.1)
+Requirement already satisfied: gpiod in ./.local/lib/python3.6/site-packages (from maixpy3) (1.4.0)
+Collecting evdev
+  Using cached evdev-1.4.0.tar.gz (26 kB)
+Collecting spidev
+  Using cached spidev-3.5.tar.gz (10 kB)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from maixpy3) (3.4)
+Requirement already satisfied: plumbum in ./.local/lib/python3.6/site-packages (from rpyc-&gt;maixpy3) (1.7.0)
+Building wheels for collected packages: maixpy3, evdev, spidev
+  Building wheel for maixpy3 (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-4nlb8_9e/maixpy3_668ed8328a11494989669a59c6e1a5b4/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-4nlb8_9e/maixpy3_668ed8328a11494989669a59c6e1a5b4/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-mch7d5ku
+       cwd: /tmp/pip-install-4nlb8_9e/maixpy3_668ed8328a11494989669a59c6e1a5b4/
+  Complete output (39 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-3.6
+  creating build/lib.linux-x86_64-3.6/maix
+  copying maix/rpycs.py -&gt; build/lib.linux-x86_64-3.6/maix
+  copying maix/nn.py -&gt; build/lib.linux-x86_64-3.6/maix
+  copying maix/<strong>init</strong>.py -&gt; build/lib.linux-x86_64-3.6/maix
+  copying maix/video.py -&gt; build/lib.linux-x86_64-3.6/maix
+  copying maix/pwm.py -&gt; build/lib.linux-x86_64-3.6/maix
+  copying maix/camera.py -&gt; build/lib.linux-x86_64-3.6/maix
+  copying maix/display.py -&gt; build/lib.linux-x86_64-3.6/maix
+  creating build/lib.linux-x86_64-3.6/maix/utils
+  copying maix/utils/rtp_packet.py -&gt; build/lib.linux-x86_64-3.6/maix/utils
+  copying maix/utils/<strong>init</strong>.py -&gt; build/lib.linux-x86_64-3.6/maix/utils
+  copying maix/utils/rtsp_packet.py -&gt; build/lib.linux-x86_64-3.6/maix/utils
+  copying maix/utils/video_stream.py -&gt; build/lib.linux-x86_64-3.6/maix/utils
+  running egg_info
+  writing MaixPy3.egg-info/PKG-INFO
+  writing dependency_links to MaixPy3.egg-info/dependency_links.txt
+  writing entry points to MaixPy3.egg-info/entry_points.txt
+  writing requirements to MaixPy3.egg-info/requires.txt
+  writing top-level names to MaixPy3.egg-info/top_level.txt
+  reading manifest file 'MaixPy3.egg-info/SOURCES.txt'
+  writing manifest file 'MaixPy3.egg-info/SOURCES.txt'
+  running build_ext
+  building 'pylibi2c' extension
+  creating build/temp.linux-x86_64-3.6
+  creating build/temp.linux-x86_64-3.6/ext_modules
+  creating build/temp.linux-x86_64-3.6/ext_modules/libi2c
+  creating build/temp.linux-x86_64-3.6/ext_modules/libi2c/src
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iext_modules/libi2c/src -I/usr/include/python3.6m -c ext_modules/libi2c/src/i2c.c -o build/temp.linux-x86_64-3.6/ext_modules/libi2c/src/i2c.o
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iext_modules/libi2c/src -I/usr/include/python3.6m -c ext_modules/libi2c/src/pyi2c.c -o build/temp.linux-x86_64-3.6/ext_modules/libi2c/src/pyi2c.o
+  ext_modules/libi2c/src/pyi2c.c:1:10: fatal error: Python.h: No such file or directory
+   #include <Python.h>
+            ^~~~~~~~~~
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1</p>
+<hr />
+<p>ERROR: Failed building wheel for maixpy3
+  Running setup.py clean for maixpy3
+  Building wheel for evdev (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-4nlb8_9e/evdev_30e6a137bf1f414dad25a17d2e34bc95/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-4nlb8_9e/evdev_30e6a137bf1f414dad25a17d2e34bc95/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-xfce8zxd
+       cwd: /tmp/pip-install-4nlb8_9e/evdev_30e6a137bf1f414dad25a17d2e34bc95/
+  Complete output (29 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-3.6
+  creating build/lib.linux-x86_64-3.6/evdev
+  copying evdev/eventio_async.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/ff.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/ecodes.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/util.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/device.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/uinput.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/<strong>init</strong>.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/genecodes.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/eventio.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/evtest.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/events.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  running build_ext
+  running build_ecodes
+  writing ecodes.c (using /usr/include/linux/input.h /usr/include/linux/input-event-codes.h /usr/include/linux/uinput.h)
+  building 'evdev._input' extension
+  creating build/temp.linux-x86_64-3.6
+  creating build/temp.linux-x86_64-3.6/evdev
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c evdev/input.c -o build/temp.linux-x86_64-3.6/evdev/input.o -std=c99 -Wno-error=declaration-after-statement
+  evdev/input.c:10:10: fatal error: Python.h: No such file or directory
+   #include <Python.h>
+            ^~~~~~~~~~
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1</p>
+<hr />
+<p>ERROR: Failed building wheel for evdev
+  Running setup.py clean for evdev
+  Building wheel for spidev (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-4nlb8_9e/spidev_1a729342da81465d8d18c95862bd94a6/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-4nlb8_9e/spidev_1a729342da81465d8d18c95862bd94a6/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-m7k2cao2
+       cwd: /tmp/pip-install-4nlb8_9e/spidev_1a729342da81465d8d18c95862bd94a6/
+  Complete output (14 lines):
+  /home/lfmiller/.local/lib/python3.6/site-packages/setuptools/dist.py:645: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
+    % (opt, underscore_opt))
+  running bdist_wheel
+  running build
+  running build_ext
+  building 'spidev' extension
+  creating build
+  creating build/temp.linux-x86_64-3.6
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c spidev_module.c -o build/temp.linux-x86_64-3.6/spidev_module.o
+  spidev_module.c:28:10: fatal error: Python.h: No such file or directory
+   #include <Python.h>
+            ^~~~~~~~~~
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1</p>
+<hr />
+<p>ERROR: Failed building wheel for spidev
+  Running setup.py clean for spidev
+Failed to build maixpy3 evdev spidev
+Installing collected packages: spidev, evdev, maixpy3
+    Running setup.py install for spidev ... error
+    ERROR: Command errored out with exit status 1:
+     command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-4nlb8_9e/spidev_1a729342da81465d8d18c95862bd94a6/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-4nlb8_9e/spidev_1a729342da81465d8d18c95862bd94a6/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-g8aqujyo/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/spidev
+         cwd: /tmp/pip-install-4nlb8_9e/spidev_1a729342da81465d8d18c95862bd94a6/
+    Complete output (14 lines):
+    /home/lfmiller/.local/lib/python3.6/site-packages/setuptools/dist.py:645: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
+      % (opt, underscore_opt))
+    running install
+    running build
+    running build_ext
+    building 'spidev' extension
+    creating build
+    creating build/temp.linux-x86_64-3.6
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c spidev_module.c -o build/temp.linux-x86_64-3.6/spidev_module.o
+    spidev_module.c:28:10: fatal error: Python.h: No such file or directory
+     #include <Python.h>
+              ^~~~~~~~~~
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-4nlb8_9e/spidev_1a729342da81465d8d18c95862bd94a6/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-4nlb8_9e/spidev_1a729342da81465d8d18c95862bd94a6/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-g8aqujyo/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/spidev Check the logs for full command output.
+lfmiller@Grayson:~$ python -m pip install --upgrade numpy opencv-python opencv-contrib-python Pillow rpyc gpiod pyserial plumbum
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: numpy in ./.local/lib/python3.6/site-packages (1.18.1)
+Collecting numpy
+  Downloading numpy-1.19.5-cp36-cp36m-manylinux2010_x86_64.whl (14.8 MB)
+     |████████████████████████████████| 14.8 MB 2.9 MB/s 
+Requirement already satisfied: opencv-python in ./.local/lib/python3.6/site-packages (4.1.2.30)
+Collecting opencv-python
+  Downloading opencv_python-4.5.1.48-cp36-cp36m-manylinux2014_x86_64.whl (50.4 MB)
+     |████████████████████████████████| 50.4 MB 28 kB/s 
+Requirement already satisfied: opencv-contrib-python in ./.local/lib/python3.6/site-packages (4.1.2.30)
+Collecting opencv-contrib-python
+  Downloading opencv_contrib_python-4.5.1.48-cp36-cp36m-manylinux2014_x86_64.whl (56.3 MB)
+     |████████████████████████████████| 56.3 MB 114 kB/s 
+Requirement already satisfied: Pillow in ./.local/lib/python3.6/site-packages (7.0.0)
+Collecting Pillow
+  Downloading Pillow-8.1.2-cp36-cp36m-manylinux1_x86_64.whl (2.2 MB)
+     |████████████████████████████████| 2.2 MB 20.7 MB/s 
+Requirement already satisfied: rpyc in ./.local/lib/python3.6/site-packages (5.0.1)
+Requirement already satisfied: gpiod in ./.local/lib/python3.6/site-packages (1.4.0)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (3.4)
+Collecting pyserial
+  Using cached pyserial-3.5-py2.py3-none-any.whl (90 kB)
+Requirement already satisfied: plumbum in ./.local/lib/python3.6/site-packages (1.7.0)
+Installing collected packages: numpy, pyserial, Pillow, opencv-python, opencv-contrib-python
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.18.1
+    Uninstalling numpy-1.18.1:
+      Successfully uninstalled numpy-1.18.1
+  Attempting uninstall: Pillow
+    Found existing installation: Pillow 7.0.0
+    Uninstalling Pillow-7.0.0:
+      Successfully uninstalled Pillow-7.0.0
+  Attempting uninstall: opencv-python
+    Found existing installation: opencv-python 4.1.2.30
+    Uninstalling opencv-python-4.1.2.30:
+      Successfully uninstalled opencv-python-4.1.2.30
+  Attempting uninstall: opencv-contrib-python
+    Found existing installation: opencv-contrib-python 4.1.2.30
+    Uninstalling opencv-contrib-python-4.1.2.30:
+      Successfully uninstalled opencv-contrib-python-4.1.2.30
+Successfully installed Pillow-8.1.2 numpy-1.19.5 opencv-contrib-python-4.5.1.48 opencv-python-4.5.1.48 pyserial-3.5
+lfmiller@Grayson:~$ pip3 install maixpy3
+Defaulting to user installation because normal site-packages is not writeable
+Collecting maixpy3
+  Using cached MaixPy3-0.3.0.tar.gz (10.0 MB)
+Requirement already satisfied: numpy in ./.local/lib/python3.6/site-packages (from maixpy3) (1.19.5)
+Collecting opencv-python==4.1.2.30
+  Using cached opencv_python-4.1.2.30-cp36-cp36m-manylinux1_x86_64.whl (28.3 MB)
+Collecting opencv-contrib-python==4.1.2.30
+  Using cached opencv_contrib_python-4.1.2.30-cp36-cp36m-manylinux1_x86_64.whl (34.3 MB)
+Requirement already satisfied: Pillow in ./.local/lib/python3.6/site-packages (from maixpy3) (8.1.2)
+Requirement already satisfied: rpyc in ./.local/lib/python3.6/site-packages (from maixpy3) (5.0.1)
+Requirement already satisfied: gpiod in ./.local/lib/python3.6/site-packages (from maixpy3) (1.4.0)
+Collecting evdev
+  Using cached evdev-1.4.0.tar.gz (26 kB)
+Collecting spidev
+  Using cached spidev-3.5.tar.gz (10 kB)
+Requirement already satisfied: pyserial in ./.local/lib/python3.6/site-packages (from maixpy3) (3.5)
+Requirement already satisfied: plumbum in ./.local/lib/python3.6/site-packages (from rpyc-&gt;maixpy3) (1.7.0)
+Building wheels for collected packages: maixpy3, evdev, spidev
+  Building wheel for maixpy3 (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-jizffi5r/maixpy3_b99699dd8b0d4103bfa2b4ae30dbce4d/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-jizffi5r/maixpy3_b99699dd8b0d4103bfa2b4ae30dbce4d/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-5rpu5ipq
+       cwd: /tmp/pip-install-jizffi5r/maixpy3_b99699dd8b0d4103bfa2b4ae30dbce4d/
+  Complete output (39 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-3.6
+  creating build/lib.linux-x86_64-3.6/maix
+  copying maix/rpycs.py -&gt; build/lib.linux-x86_64-3.6/maix
+  copying maix/nn.py -&gt; build/lib.linux-x86_64-3.6/maix
+  copying maix/<strong>init</strong>.py -&gt; build/lib.linux-x86_64-3.6/maix
+  copying maix/video.py -&gt; build/lib.linux-x86_64-3.6/maix
+  copying maix/pwm.py -&gt; build/lib.linux-x86_64-3.6/maix
+  copying maix/camera.py -&gt; build/lib.linux-x86_64-3.6/maix
+  copying maix/display.py -&gt; build/lib.linux-x86_64-3.6/maix
+  creating build/lib.linux-x86_64-3.6/maix/utils
+  copying maix/utils/rtp_packet.py -&gt; build/lib.linux-x86_64-3.6/maix/utils
+  copying maix/utils/<strong>init</strong>.py -&gt; build/lib.linux-x86_64-3.6/maix/utils
+  copying maix/utils/rtsp_packet.py -&gt; build/lib.linux-x86_64-3.6/maix/utils
+  copying maix/utils/video_stream.py -&gt; build/lib.linux-x86_64-3.6/maix/utils
+  running egg_info
+  writing MaixPy3.egg-info/PKG-INFO
+  writing dependency_links to MaixPy3.egg-info/dependency_links.txt
+  writing entry points to MaixPy3.egg-info/entry_points.txt
+  writing requirements to MaixPy3.egg-info/requires.txt
+  writing top-level names to MaixPy3.egg-info/top_level.txt
+  reading manifest file 'MaixPy3.egg-info/SOURCES.txt'
+  writing manifest file 'MaixPy3.egg-info/SOURCES.txt'
+  running build_ext
+  building 'pylibi2c' extension
+  creating build/temp.linux-x86_64-3.6
+  creating build/temp.linux-x86_64-3.6/ext_modules
+  creating build/temp.linux-x86_64-3.6/ext_modules/libi2c
+  creating build/temp.linux-x86_64-3.6/ext_modules/libi2c/src
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iext_modules/libi2c/src -I/usr/include/python3.6m -c ext_modules/libi2c/src/i2c.c -o build/temp.linux-x86_64-3.6/ext_modules/libi2c/src/i2c.o
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iext_modules/libi2c/src -I/usr/include/python3.6m -c ext_modules/libi2c/src/pyi2c.c -o build/temp.linux-x86_64-3.6/ext_modules/libi2c/src/pyi2c.o
+  ext_modules/libi2c/src/pyi2c.c:1:10: fatal error: Python.h: No such file or directory
+   #include <Python.h>
+            ^~~~~~~~~~
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1</p>
+<hr />
+<p>ERROR: Failed building wheel for maixpy3
+  Running setup.py clean for maixpy3
+  Building wheel for evdev (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-jizffi5r/evdev_e5aa4faca8d04a39b9a000d0ccd850b2/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-jizffi5r/evdev_e5aa4faca8d04a39b9a000d0ccd850b2/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-6r_ofb3x
+       cwd: /tmp/pip-install-jizffi5r/evdev_e5aa4faca8d04a39b9a000d0ccd850b2/
+  Complete output (29 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-3.6
+  creating build/lib.linux-x86_64-3.6/evdev
+  copying evdev/eventio_async.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/ff.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/ecodes.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/util.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/device.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/uinput.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/<strong>init</strong>.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/genecodes.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/eventio.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/evtest.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  copying evdev/events.py -&gt; build/lib.linux-x86_64-3.6/evdev
+  running build_ext
+  running build_ecodes
+  writing ecodes.c (using /usr/include/linux/input.h /usr/include/linux/input-event-codes.h /usr/include/linux/uinput.h)
+  building 'evdev._input' extension
+  creating build/temp.linux-x86_64-3.6
+  creating build/temp.linux-x86_64-3.6/evdev
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c evdev/input.c -o build/temp.linux-x86_64-3.6/evdev/input.o -std=c99 -Wno-error=declaration-after-statement
+  evdev/input.c:10:10: fatal error: Python.h: No such file or directory
+   #include <Python.h>
+            ^~~~~~~~~~
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1</p>
+<hr />
+<p>ERROR: Failed building wheel for evdev
+  Running setup.py clean for evdev
+  Building wheel for spidev (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-jizffi5r/spidev_bbbd60cabf2d4c26ae2c055320935aa1/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-jizffi5r/spidev_bbbd60cabf2d4c26ae2c055320935aa1/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-3fn25r67
+       cwd: /tmp/pip-install-jizffi5r/spidev_bbbd60cabf2d4c26ae2c055320935aa1/
+  Complete output (14 lines):
+  /home/lfmiller/.local/lib/python3.6/site-packages/setuptools/dist.py:645: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
+    % (opt, underscore_opt))
+  running bdist_wheel
+  running build
+  running build_ext
+  building 'spidev' extension
+  creating build
+  creating build/temp.linux-x86_64-3.6
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c spidev_module.c -o build/temp.linux-x86_64-3.6/spidev_module.o
+  spidev_module.c:28:10: fatal error: Python.h: No such file or directory
+   #include <Python.h>
+            ^~~~~~~~~~
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1</p>
+<hr />
+<p>ERROR: Failed building wheel for spidev
+  Running setup.py clean for spidev
+Failed to build maixpy3 evdev spidev
+Installing collected packages: spidev, opencv-python, opencv-contrib-python, evdev, maixpy3
+    Running setup.py install for spidev ... error
+    ERROR: Command errored out with exit status 1:
+     command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-jizffi5r/spidev_bbbd60cabf2d4c26ae2c055320935aa1/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-jizffi5r/spidev_bbbd60cabf2d4c26ae2c055320935aa1/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-vvmsdqnu/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/spidev
+         cwd: /tmp/pip-install-jizffi5r/spidev_bbbd60cabf2d4c26ae2c055320935aa1/
+    Complete output (14 lines):
+    /home/lfmiller/.local/lib/python3.6/site-packages/setuptools/dist.py:645: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
+      % (opt, underscore_opt))
+    running install
+    running build
+    running build_ext
+    building 'spidev' extension
+    creating build
+    creating build/temp.linux-x86_64-3.6
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c spidev_module.c -o build/temp.linux-x86_64-3.6/spidev_module.o
+    spidev_module.c:28:10: fatal error: Python.h: No such file or directory
+     #include <Python.h>
+              ^~~~~~~~~~
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-jizffi5r/spidev_bbbd60cabf2d4c26ae2c055320935aa1/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-jizffi5r/spidev_bbbd60cabf2d4c26ae2c055320935aa1/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-vvmsdqnu/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/spidev Check the logs for full command output.
+lfmiller@Grayson:~$ pip3 install spidev
+Defaulting to user installation because normal site-packages is not writeable
+Collecting spidev
+  Using cached spidev-3.5.tar.gz (10 kB)
+Building wheels for collected packages: spidev
+  Building wheel for spidev (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-1p_avh9x/spidev_02d4e9d6123f4534a0b14b2a528130fe/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-1p_avh9x/spidev_02d4e9d6123f4534a0b14b2a528130fe/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-o2h7qmhj
+       cwd: /tmp/pip-install-1p_avh9x/spidev_02d4e9d6123f4534a0b14b2a528130fe/
+  Complete output (14 lines):
+  /home/lfmiller/.local/lib/python3.6/site-packages/setuptools/dist.py:645: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
+    % (opt, underscore_opt))
+  running bdist_wheel
+  running build
+  running build_ext
+  building 'spidev' extension
+  creating build
+  creating build/temp.linux-x86_64-3.6
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c spidev_module.c -o build/temp.linux-x86_64-3.6/spidev_module.o
+  spidev_module.c:28:10: fatal error: Python.h: No such file or directory
+   #include <Python.h>
+            ^~~~~~~~~~
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1</p>
+<hr />
+<p>ERROR: Failed building wheel for spidev
+  Running setup.py clean for spidev
+Failed to build spidev
+Installing collected packages: spidev
+    Running setup.py install for spidev ... error
+    ERROR: Command errored out with exit status 1:
+     command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-1p_avh9x/spidev_02d4e9d6123f4534a0b14b2a528130fe/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-1p_avh9x/spidev_02d4e9d6123f4534a0b14b2a528130fe/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-_selb0ya/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/spidev
+         cwd: /tmp/pip-install-1p_avh9x/spidev_02d4e9d6123f4534a0b14b2a528130fe/
+    Complete output (14 lines):
+    /home/lfmiller/.local/lib/python3.6/site-packages/setuptools/dist.py:645: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
+      % (opt, underscore_opt))
+    running install
+    running build
+    running build_ext
+    building 'spidev' extension
+    creating build
+    creating build/temp.linux-x86_64-3.6
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c spidev_module.c -o build/temp.linux-x86_64-3.6/spidev_module.o
+    spidev_module.c:28:10: fatal error: Python.h: No such file or directory
+     #include <Python.h>
+              ^~~~~~~~~~
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-1p_avh9x/spidev_02d4e9d6123f4534a0b14b2a528130fe/setup.py'"'"'; <strong>file</strong>='"'"'/tmp/pip-install-1p_avh9x/spidev_02d4e9d6123f4534a0b14b2a528130fe/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --record /tmp/pip-record-_selb0ya/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/lfmiller/.local/include/python3.6m/spidev Check the logs for full command output.
+lfmiller@Grayson:~$ sudo apt install python3-dev
+Reading package lists... Done
+Building dependency tree     <br />
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-136 linux-headers-4.15.0-136-generic linux-headers-4.15.0-137 linux-headers-4.15.0-137-generic linux-headers-4.15.0-139 linux-headers-4.15.0-139-generic linux-headers-5.4.0-65-generic
+  linux-headers-5.4.0-66-generic linux-hwe-5.4-headers-5.4.0-65 linux-hwe-5.4-headers-5.4.0-66 linux-image-4.15.0-136-generic linux-image-4.15.0-137-generic linux-image-4.15.0-139-generic linux-image-5.4.0-65-generic
+  linux-image-5.4.0-66-generic linux-modules-4.15.0-136-generic linux-modules-4.15.0-137-generic linux-modules-4.15.0-139-generic linux-modules-5.4.0-65-generic linux-modules-5.4.0-66-generic linux-modules-extra-4.15.0-136-generic
+  linux-modules-extra-4.15.0-137-generic linux-modules-extra-4.15.0-139-generic linux-modules-extra-5.4.0-65-generic linux-modules-extra-5.4.0-66-generic
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  dh-python libpython3-dev libpython3.6-dev python3.6-dev
+The following NEW packages will be installed:
+  dh-python libpython3-dev libpython3.6-dev python3-dev python3.6-dev
+0 upgraded, 5 newly installed, 0 to remove and 4 not upgraded.
+Need to get 45.5 MB of archives.
+After this operation, 77.2 MB of additional disk space will be used.
+Do you want to continue? [Y/n] 
+Get:1 http://archive.ubuntu.com/ubuntu bionic/main amd64 dh-python all 3.20180325ubuntu2 [89.2 kB]
+Get:2 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpython3.6-dev amd64 3.6.9-1~18.04ubuntu1.4 [44.9 MB]
+Get:3 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpython3-dev amd64 3.6.7-1~18.04 [7,328 B]                                                                                                                              <br />
+Get:4 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3.6-dev amd64 3.6.9-1~18.04ubuntu1.4 [508 kB]                                                                                                                       <br />
+Get:5 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-dev amd64 3.6.7-1~18.04 [1,288 B]                                                                                                                                 <br />
+Fetched 45.5 MB in 15s (3,136 kB/s)                                                                                                                                                                                                        <br />
+Selecting previously unselected package dh-python.
+(Reading database ... 660059 files and directories currently installed.)
+Preparing to unpack .../dh-python_3.20180325ubuntu2_all.deb ...
+Unpacking dh-python (3.20180325ubuntu2) ...
+Selecting previously unselected package libpython3.6-dev:amd64.
+Preparing to unpack .../libpython3.6-dev_3.6.9-1~18.04ubuntu1.4_amd64.deb ...
+Unpacking libpython3.6-dev:amd64 (3.6.9-1~18.04ubuntu1.4) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../libpython3-dev_3.6.7-1~18.04_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.6.7-1~18.04) ...
+Selecting previously unselected package python3.6-dev.
+Preparing to unpack .../python3.6-dev_3.6.9-1~18.04ubuntu1.4_amd64.deb ...
+Unpacking python3.6-dev (3.6.9-1~18.04ubuntu1.4) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../python3-dev_3.6.7-1~18.04_amd64.deb ...
+Unpacking python3-dev (3.6.7-1~18.04) ...
+Setting up libpython3.6-dev:amd64 (3.6.9-1~18.04ubuntu1.4) ...
+Setting up python3.6-dev (3.6.9-1~18.04ubuntu1.4) ...
+Setting up dh-python (3.20180325ubuntu2) ...
+Setting up libpython3-dev:amd64 (3.6.7-1~18.04) ...
+Setting up python3-dev (3.6.7-1~18.04) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+lfmiller@Grayson:~$ pip3 install maixpy3
+Defaulting to user installation because normal site-packages is not writeable
+Collecting maixpy3
+  Using cached MaixPy3-0.3.0.tar.gz (10.0 MB)
+Requirement already satisfied: numpy in ./.local/lib/python3.6/site-packages (from maixpy3) (1.19.5)
+Collecting opencv-python==4.1.2.30
+  Using cached opencv_python-4.1.2.30-cp36-cp36m-manylinux1_x86_64.whl (28.3 MB)
+Collecting opencv-contrib-python==4.1.2.30
+  Using cached opencv_contrib_python-4.1.2.30-cp36-cp36m-manylinux1_x86_64.whl (34.3 MB)
+Requirement already satisfied: Pillow in ./.local/lib/python3.6/site-packages (from maixpy3) (8.1.2)
+Requirement already satisfied: rpyc in ./.local/lib/python3.6/site-packages (from maixpy3) (5.0.1)
+Requirement already satisfied: gpiod in ./.local/lib/python3.6/site-packages (from maixpy3) (1.4.0)
+Collecting evdev
+  Using cached evdev-1.4.0.tar.gz (26 kB)
+Collecting spidev
+  Using cached spidev-3.5.tar.gz (10 kB)
+Requirement already satisfied: pyserial in ./.local/lib/python3.6/site-packages (from maixpy3) (3.5)
+Requirement already satisfied: plumbum in ./.local/lib/python3.6/site-packages (from rpyc-&gt;maixpy3) (1.7.0)
+Building wheels for collected packages: maixpy3, evdev, spidev
+  Building wheel for maixpy3 (setup.py) ... done
+  Created wheel for maixpy3: filename=MaixPy3-0.3.0-cp36-cp36m-linux_x86_64.whl size=110290 sha256=5e36ab3cd4c891fcfdc6bb1cae4b3b4d51255ca9fc9b3f3f5fb34b61c12e3723
+  Stored in directory: /home/lfmiller/.cache/pip/wheels/9f/93/1e/0fb7cd6695a84c7283b92de8ec79af2a63940632923aa6ba8d
+  Building wheel for evdev (setup.py) ... done
+  Created wheel for evdev: filename=evdev-1.4.0-cp36-cp36m-linux_x86_64.whl size=94737 sha256=e210811b0cb3e2a7e694eb5aedd5c2fe6a7b2bfd7d3f852fbb69aafc5c8a068a
+  Stored in directory: /home/lfmiller/.cache/pip/wheels/98/8e/ac/532b682660ad51e2ea6da8a1d4e2f591ba4f64b3095eb7c8e3
+  Building wheel for spidev (setup.py) ... done
+  Created wheel for spidev: filename=spidev-3.5-cp36-cp36m-linux_x86_64.whl size=38504 sha256=0bd7f286bbcf1a7e3264ed5119e7eea7da52ffadb127f13006cca1c9ee1c96f3
+  Stored in directory: /home/lfmiller/.cache/pip/wheels/09/ca/de/ba252f9f72cea10837dac30c0c374f0fc3a784e55c87d02175
+Successfully built maixpy3 evdev spidev
+Installing collected packages: spidev, opencv-python, opencv-contrib-python, evdev, maixpy3
+  Attempting uninstall: opencv-python
+    Found existing installation: opencv-python 4.5.1.48
+    Uninstalling opencv-python-4.5.1.48:
+      Successfully uninstalled opencv-python-4.5.1.48
+  Attempting uninstall: opencv-contrib-python
+    Found existing installation: opencv-contrib-python 4.5.1.48
+    Uninstalling opencv-contrib-python-4.5.1.48:
+      Successfully uninstalled opencv-contrib-python-4.5.1.48
+Successfully installed evdev-1.4.0 maixpy3-0.3.0 opencv-contrib-python-4.1.2.30 opencv-python-4.1.2.30 spidev-3.5
+lfmiller@Grayson:~$ </p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Telebit&trade; Remote | a [Root](https://rootprojects.org) project - Random Wire!</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/Arduino/Arduino_Mesh/">Arduino Mesh</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/Arduino/firmata/">Firmata</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/Arduino/tutorials/">Arduino Advanced Tutorials</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Smart Response XE Devices</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/Arduino/smartresponsexe/">Tutorial (needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/Smart_Response_XE/">More Information (needs updated)</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../tutorials/useSTM32asAnArduino/">Setup STM32 for use with Arduino IDE (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP IDF</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/esp-idf/setup/">Setup (needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/esp-idf/esp32s2/">ESP32 S2 (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI (needs updated)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/FPGA_Tang_Nano/fpgas/">General Information (needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/FPGA_Tang_Nano/learnFPGAs/">Learn FPGA (needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+            
+<li >
+    <a href="/tutorials/FPGA_Tang_Nano/info.md">Tang Nano (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/MQTT-Services/brokers/">Brokers</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/MQTT-Services/MQTT_Bridge_setup/">Bridge Setup (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit (AI Camera Info)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/Maix-Amigo-Help/">Maix Amigo</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/azuresphere/">Azure Sphere General Information</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">Github Learn By Doing</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/M5Stack/">M5Stack Tutorials (out dated)</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/OnionWiki/">Omega Onion</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">Robots (needs updated)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI RP2040</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rp2040/arduino_nano_rp2040/">Arduino Nano RP2040</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Wio Terminal</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/wioterminal/mqtt_intercom/">MQTT Intercom (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/BareConductiveTouch/">Bare Conductive Touch Board (needs updated)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Chrome Books (ChromeOS)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/chromeOS/">Chrome OS General Information (Needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/CloudReadyForOldChromeBooks/">Cloud Ready for Old Chrome Books (needs upated)</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/InstallChromeOSonOldDesktop/">Install ChromeOS on Old Desktops (needs update)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/create_InteractiveFiction_and_ebooks_with_markdown/">Create Interactive Fiction with Markdown (needs updated)</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/xenonmesh/">Particle Mesh Information (needs updated)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">APRS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../hamradio/aprs/">APRS Info</a>
+</li>
+            
+<li >
+    <a href="../../hamradio/more_APRS/">More</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../hamradio/bandplan/">Band Plan</a>
+</li>
+                                    
+<li >
+    <a href="../../hamradio/dapnet/">Dapnet (Amatuer Pager)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DMR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../hamradio/dmr/">Information</a>
+</li>
+            
+<li >
+    <a href="../../hamradio/dmrnets/">Nets</a>
+</li>
+            
+<li >
+    <a href="../../hamradio/dmrsms/">Send SMS</a>
+</li>
+            
+<li >
+    <a href="../../hamradio/k4usd_network/">K4USD Network Information</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../hamradio/digitalinformation/">Digital Information</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry Pi Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../hamradio/hamvoip/">Allstar Link</a>
+</li>
+            
+<li >
+    <a href="../../hamradio/hamclock/">Hamclock</a>
+</li>
+            
+<li >
+    <a href="../../hamradio/raspberryPi/">Ham Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MMDVM Hotspot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../hamradio/hotspot/">Setup</a>
+</li>
+            
+<li >
+    <a href="../../hamradio/hotspothardware/">Hardware</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../hamradio/arduino/">Arduino Shields</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Aredn Broadband Hamnet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../hamradio/aredn_broadband_hamnet/">AREDN Info</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../hamradio/atv/">Amatuer TV</a>
+</li>
+                                    
+<li >
+    <a href="../../hamradio/QSL/">Virtual QSL cards</a>
+</li>
+                                    
+<li >
+    <a href="../../hamradio/ham/">What do amatuer modes sound like</a>
+</li>
+                                    
+<li >
+    <a href="../../hamradio/NCPacket/">North Carolina Packet</a>
+</li>
+                                    
+<li >
+    <a href="../../hamradio/new_packet_radio/">New Packet Radio</a>
+</li>
+                                    
+<li >
+    <a href="../../hamradio/contacts/">Contacts</a>
+</li>
+                                    
+<li >
+    <a href="../../hamradio/homeQTH/">Home QTH Information</a>
+</li>
+                                    
+<li >
+    <a href="../../hamradio/gmrs/">GMRS Live feeds</a>
+</li>
+                                    
+<li >
+    <a href="../../hamradio/shtfradio/">SHTF Radio Info</a>
+</li>
+                                    
+<li >
+    <a href="../../hamradio/offgridcommunication/">Off Grid Communication Devices</a>
+</li>
+                                    
+<li >
+    <a href="../../hamradio/peanut/">Peanut APP</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">LoRa (LoRaHam/LoRaAPS)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../hamradio/lora_radio/">Projects</a>
+</li>
+            
+<li >
+    <a href="../../hamradio/moreLoRa/">More Projects</a>
+</li>
+            
+<li >
+    <a href="../../hamradio/lorameshinfo/">Mesh Projects</a>
+</li>
+            
+<li >
+    <a href="../../hamradio/lora_ideas/">General</a>
+</li>
+            
+<li >
+    <a href="../../hamradio/LoRaHam/">LoRaHam/LoraMador/LoraAPS</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../hamradio/wxinfo/">WX Stuff</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../hamradio/trisquare/">Trisquare Radios</a>
+</li>
+            
+<li >
+    <a href="../../hamradio/weirdmessengers/">Weird Messengers</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batman (1966)</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Green Hornet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../greenhornet/greenhornet/">Info</a>
+</li>
+            
+<li >
+    <a href="../greenhornet/familytree/">Family Tree</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../pythagoras/">Pythagoras</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../greek/">Greek Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">My Cars</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../books/">Free eBooks</a>
+</li>
+            
+<li >
+    <a href="../CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../InteractiveFiction/">Interactive Fiction</a>
+</li>
+            
+<li >
+    <a href="../surplusstore/">Electronics Surplus</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#telebit-remote-a-root-project">Telebit&trade; Remote | a Root project</a></li>
+        <li class="main "><a href="#break-out-of-localhost">Break out of localhost.</a></li>
+            <li><a href="#features">Features</a></li>
+        <li class="main "><a href="#examples">Examples</a></li>
+        <li class="main "><a href="#install">Install</a></li>
+            <li><a href="#mac-linux">Mac &amp; Linux</a></li>
+            <li><a href="#windows-nodejs">Windows &amp; Node.js</a></li>
+        <li class="main "><a href="#remote-usage">Remote Usage</a></li>
+            <li><a href="#using-ssh">Using SSH</a></li>
+        <li class="main "><a href="#daemon-usage-non-global">Daemon Usage (non-global)</a></li>
+        <li class="main "><a href="#choosing-a-relay">Choosing A Relay</a></li>
+        <li class="main "><a href="#check-logs">Check Logs</a></li>
+        <li class="main "><a href="#uninstall">Uninstall</a></li>
+        <li class="main "><a href="#browser-library">Browser Library</a></li>
+        <li class="main "><a href="#license">LICENSE</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="telebit-remote-a-root-project">Telebit&trade; Remote | a <a href="https://rootprojects.org">Root</a> project</h1>
+<p>Because friends don't let friends localhost&trade;</p>
+<p>| <strong>Telebit Remote</strong>
+| <a href="https://git.coolaj86.com/coolaj86/telebit-relay.js">Telebit Relay</a>
+| <a href="https://telebit.cloud/sclient">sclient</a>
+|</p>
+<p><img align="center" src="https://git.coolaj86.com/coolaj86/telebit.js/raw/branch/master/usr/share/docs/terminal-example-1.png"></p>
+<h1 id="break-out-of-localhost">Break out of localhost.</h1>
+<p>If you need to get bits from here to there, Telebit gets the job done.</p>
+<p>Install Telebit Remote on any device - your laptop, raspberry pi, whatever -
+and now you can access that device from anywhere, even securely in a web browser.</p>
+<p>How does it work?
+It's a net server that uses a relay to allow multiplexed incoming connections
+on any external port.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>[x] Show your mom the web app you're working on</li>
+<li>[x] Access your Raspberry Pi from behind a firewall</li>
+<li>[x] Watch Netflix without region restrictions while traveling</li>
+<li>[x] SSH over HTTPS on networks with restricted ports or protocols</li>
+<li>[x] Access your wife's laptop while she's on a flight</li>
+</ul>
+<h1 id="examples">Examples</h1>
+<p>You do this:</p>
+<pre><code>curl -fsSL https://get.telebit.io | bash
+</code></pre>
+<p>You get this:</p>
+<pre><code>~/telebit http 3000
+&gt; Forwarding lucky-duck-42.telebit.cloud =&gt; localhost:3000
+
+~/telebit http ~/sites/example.com/
+&gt; Serving ~/sites/example.com/ as lucky-duck-42.telebit.cloud
+</code></pre>
+<p>And this:</p>
+<pre><code>~/telebit tcp 5050
+&gt; Forwarding telebit.cloud:1337 =&gt; localhost:5050
+</code></pre>
+<p>And even this:</p>
+<pre><code>~/telebit ssh auto
+&gt; Forwarding ssh telebit.cloud -p 1337 =&gt; localhost:22
+&gt; Forwarding ssh+https (openssl proxy) =&gt; localhost:22
+</code></pre>
+<p>No privileged ports. No sudo. End-to-end encryption.</p>
+<p>Fastest way to test a site, share a file, and pair over ssh.</p>
+<h1 id="install">Install</h1>
+<h2 id="mac-linux">Mac &amp; Linux</h2>
+<p>Open Terminal and run this install script:</p>
+<pre><code>curl -fsSL https://get.telebit.io | bash
+</code></pre>
+
+<!--
+
+<pre><code>bash &lt;( curl -fsSL https://get.telebit.io )
+</code></pre>
+
+
+<small>
+Note: **fish**, **zsh**, and other **non-bash** users should do this
+
+
+<pre><code>curl -fsSL https://get.telebit.io/ &gt; get.sh; bash get.sh
+</code></pre>
+
+</small>
+-->
+
+<p>What does the installer do?</p>
+<ul>
+<li>install Telebit Remote to <code>~/Applications/telebit/</code></li>
+<li>symlink the executable to <code>~/telebit</code> for convenience</li>
+<li>create the appropriate system launcher file<ul>
+<li><code>/etc/systemd/system/telebit.service</code></li>
+<li><code>~/Library/LaunchAgents/cloud.telebit.remote.plist</code></li>
+</ul>
+</li>
+<li>create local user config<ul>
+<li><code>~/.config/telebit/telebit.yml</code></li>
+<li><code>~/.local/share/telebit</code></li>
+</ul>
+</li>
+</ul>
+<p>Of course, feel free to inspect it before you run it: <code>curl -fsSL https://get.telebit.io</code></p>
+<p><strong>You can customize the installation</strong>:</p>
+<pre><code class="bash">export NODEJS_VER=v10.2                   # v10.2 is tested working, but we can test other versions
+export TELEBIT_VERSION=master             # git tag or branch to install from
+export TELEBIT_USERSPACE=no               # install as a system service (launchd, systemd only)
+export TELEBIT_PATH=/opt/telebit
+export TELEBIT_USER=telebit
+export TELEBIT_GROUP=telebit
+curl -fsSL https://get.telebit.io/ | bash
+</code></pre>
+
+<p>That will change the bundled version of node.js is bundled with Telebit Relay
+and the path to which Telebit Relay installs.</p>
+<h2 id="windows-nodejs">Windows &amp; Node.js</h2>
+<ol>
+<li>Install <a href="https://nodejs.org">node.js</a></li>
+<li>Open <em>Node.js</em></li>
+<li>Run the command <code>npm install -g telebit</code></li>
+<li>Copy the example daemon config to your user folder <code>.config/telebit/telebitd.yml</code> (such as <code>/Users/John/.config/telebit/telebitd.yml</code>)</li>
+<li>Copy the example remote config to your user folder <code>.config/telebit/telebit.yml</code> (such as <code>/Users/John/.config/telebit/telebit.yml</code>)</li>
+<li>Change the email address</li>
+<li>Run <code>npx telebit init</code> and follow the instructions</li>
+<li>Run <code>npx telebit list</code></li>
+</ol>
+<p><strong>Note</strong>: Use node.js <strong>v10.2.1</strong></p>
+<p>(there are specific bugs in each of
+v8.x,
+<a href="https://github.com/nodejs/node/issues/20241">v9.x</a>,
+v10.0,
+and v10.3
+that each cause telebit to crash)</p>
+<h1 id="remote-usage">Remote Usage</h1>
+<pre><code># commands
+telebit &lt;command&gt;
+
+# domain and port control
+telebit &lt;service&gt; &lt;handler&gt; [servername] [options ...]
+</code></pre>
+
+<p>Examples:</p>
+<pre><code>telebit status                          # whether enabled or disabled
+telebit enable                          # disallow incoming connections
+telebit disable                         # allow incoming connections
+telebit restart                         # kill daemon and allow system launcher to restart it
+
+telebit list                            # list rules for servernames and ports
+
+                       ################
+                       #     HTTP     #
+                       ################
+
+telebit http &lt;handler&gt; [servername] [opts]
+
+telebit http none                       # remove all https handlers
+telebit http 3000                       # forward all https traffic to port 3000
+telebit http /module/path               # load a node module to handle all https traffic
+
+telebit http none example.com           # remove https handler from example.com
+telebit http 3001 example.com           # forward https traffic for example.com to port 3001
+telebit http /module/path example.com   # forward https traffic for example.com to port 3001
+
+
+                       ################
+                       #     TCP      #
+                       ################
+
+telebit tcp &lt;handler&gt; [servername] [opts]
+
+telebit tcp none                        # remove all tcp handlers
+telebit tcp 5050                        # forward all tcp to port 5050
+telebit tcp /module/path                # handle all tcp with a node module
+
+telebit tcp none 6565                   # remove tcp handler from external port 6565
+telebit tcp 5050 6565                   # forward external port 6565 to local 5050
+telebit tcp /module/path 6565           # handle external port 6565 with a node module
+
+telebit ssh disable                     # disable ssh access
+telebit ssh 22                          # port-forward all ssh connections to port 22
+
+telebit save                            # save http and tcp configuration changes
+</code></pre>
+
+<h3 id="using-ssh">Using SSH</h3>
+<p>SSH over HTTPS</p>
+<pre><code>ssh -o ProxyCommand='openssl s_client -connect %h:443 -servername %h -quiet' lucky-duck-42.telebit.cloud
+</code></pre>
+
+<p>SSH over non-standard port</p>
+<pre><code>ssh lucky-duck-42.telebit.cloud -p 3031
+</code></pre>
+
+<h1 id="daemon-usage-non-global">Daemon Usage (non-global)</h1>
+<pre><code class="bash">~/Applications/bin/node ~/Applications/bin/telebitd.js --config ~/.config/telebit/telebitd.yml
+</code></pre>
+
+<p>Options</p>
+<p><code>~/.config/telebit/telebitd.yml:</code></p>
+<pre><code>email: 'jon@example.com'          # must be valid (for certificate recovery and security alerts)
+agree_tos: true                   # agree to the Telebit, Greenlock, and Let's Encrypt TOSes
+relay: wss://telebit.cloud        # a Telebit Relay instance
+community_member: true            # receive infrequent relevant but non-critical updates
+telemetry: true                   # contribute to project telemetric data
+secret: ''                        # Secret with which to sign Tokens for authorization
+#token: ''                         # A signed Token for authorization
+ssh_auto: 22                      # forward ssh-looking packets, from any connection, to port 22
+servernames:                      # servernames that will be forwarded here
+  example.com: {}
+</code></pre>
+
+<h1 id="choosing-a-relay">Choosing A Relay</h1>
+<p>You can create a free or paid account at <a href="https://telebit.cloud">https://telebit.cloud</a>
+or you can run <a href="https://git.coolaj86.com/coolaj86/telebitd.js">Telebit Relay</a>
+open source on a VPS (Vultr, Digital Ocean)
+or your Raspberry Pi at home (with port-forwarding).</p>
+<p>Only connect to Telebit Relays that you trust.</p>
+<!--
+## Important Defaults
+
+The default behaviors work great for newbies,
+but can be confusing or annoying to experienced networking veterans.
+
+See the **Advanced Configuration** section below for more details.
+
+
+<pre><code>redirect:
+  example.com/foo: /bar
+  '*': whatever.com/
+vhost:                            # securely serve local sites from this path (or false)
+  example.com: /srv/example.com   # (uses template string, i.e. /var/www/:hostname/public)
+  '*': /srv/www/:hostname
+reverse_proxy: /srv/
+  example.com: 3000
+  '*': 3000
+terminate_tls:
+  'example.com': 3000
+  '*': 3000
+tls:
+  'example.com': 8443
+  '*': 8443
+port_forward:
+  2020: 2020
+  '*': 4040
+
+greenlock:
+  store: le-store-certbot         # certificate storage plugin
+  config_dir: etc/acme            # directory for ssl certificates
+</code></pre>
+
+
+Using Telebit with node.js
+--------------------------
+
+Telebit has two parts:
+  * the local server
+  * the relay service
+
+This repository is for the local server, which you run on the computer or device that you would like to access.
+
+This is the portion that runs on your computer
+You will need both Telebit (this, telebit.js) and a Telebit Relay
+(such as [telebitd.js](https://git.coolaj86.com/coolaj86/telebitd.js)).
+
+You can **integrate telebit.js into your existing codebase** or use the **standalone CLI**.
+
+* CLI
+* Node.js Library
+* Browser Library
+
+Telebit CLI
+-----------
+
+Installs Telebit Remote as `telebit`
+(for those that regularly use `telebit` but still like commandline completion).
+
+### Install
+
+
+<pre><code class="bash">npm install -g telebit
+</code></pre>
+
+
+
+<pre><code class="bash">npm install -g 'https://git.coolaj86.com/coolaj86/telebit.js.git#v1'
+</code></pre>
+
+
+Or if you want to bow down to the kings of the centralized dictator-net:
+
+How to use Telebit Remote with your own instance of Telebit Relay:
+
+
+<pre><code class="bash">telebitd \
+  --locals &lt;&lt;external domain name&gt;&gt; \
+  --relay wss://&lt;&lt;tunnel domain&gt;&gt;:&lt;&lt;tunnel port&gt;&gt; \
+  --secret &lt;&lt;128-bit hex key&gt;&gt;
+</code></pre>
+
+
+
+<pre><code class="bash">telebitd --locals john.example.com --relay wss://tunnel.example.com:443 --secret abc123
+</code></pre>
+
+
+
+<pre><code class="bash">telebitd \
+  --locals &lt;&lt;protocol&gt;&gt;:&lt;&lt;external domain name&gt;&gt;:&lt;&lt;local port&gt;&gt; \
+  --relay wss://&lt;&lt;tunnel domain&gt;&gt;:&lt;&lt;tunnel port&gt;&gt; \
+  --secret &lt;&lt;128-bit hex key&gt;&gt;
+</code></pre>
+
+
+
+<pre><code class="bash">telebitd \
+  --locals http:john.example.com:3000,https:john.example.com \
+  --relay wss://tunnel.example.com:443 \
+  --secret abc123
+</code></pre>
+
+
+
+<pre><code>--secret          the same secret used by the Telebit Relay (for authentication)
+--locals          comma separated list of &lt;proto&gt;:&lt;servername&gt;:&lt;port&gt; to which
+                  incoming http and https should be forwarded
+--relay        the domain or ip address at which you are running Telebit Relay
+-k, --insecure    ignore invalid ssl certificates from relay
+</code></pre>
+
+
+Node.js Library
+=======
+
+### Example
+
+
+<pre><code class="javascript">var Telebit = require('telebit');
+
+Telebit.connect({
+  relay: 'wss://tunnel.example.com'
+, token: '...'
+, locals: [
+    // defaults to sending http to local port 80 and https to local port 443
+    { hostname: 'doe.net' }
+
+    // sends both http and https to local port 3000 (httpolyglot)
+  , { protocol: 'https', hostname: 'john.doe.net', port: 3000 }
+
+    // send http to local port 4080 and https to local port 8443
+  , { protocol: 'https', hostname: 'jane.doe.net', port: 4080 }
+  , { protocol: 'https', hostname: 'jane.doe.net', port: 8443 }
+  ]
+
+, net: require('net')
+, insecure: false
+});
+</code></pre>
+
+
+* You can get sneaky with `net` and provide a `createConnection` that returns a `stream.Duplex`.
+
+### Token
+
+
+<pre><code class="javascript">var tokenData = { domains: [ 'doe.net', 'john.doe.net', 'jane.doe.net' ] }
+var secret = 'shhhhh';
+var token = jwt.sign(tokenData, secret);
+</code></pre>
+
+
+### net
+
+Let's say you want to handle http requests in-process
+or decrypt https before passing it to the local http handler.
+
+You'll need to create a pair of streams to connect between the
+local handler and the tunnel handler.
+
+You could do a little magic like this:
+
+
+<pre><code class="js">Telebit.connect({
+  // ...
+, net: {
+  createConnection: function (info, cb) {
+    // data is the hello packet / first chunk
+    // info = { data, servername, port, host, remoteAddress: { family, address, port } }
+
+    var streamPair = require('stream-pair');
+
+    // here &quot;reader&quot; means the socket that looks like the connection being accepted
+    var writer = streamPair.create();
+    // here &quot;writer&quot; means the remote-looking part of the socket that driving the connection
+    var reader = writer.other;
+    // duplex = { write, push, end, events: [ 'readable', 'data', 'error', 'end' ] };
+
+    reader.remoteFamily = info.remoteFamily;
+    reader.remoteAddress = info.remoteAddress;
+    reader.remotePort = info.remotePort;
+
+    // socket.local{Family,Address,Port}
+    reader.localFamily = 'IPv4';
+    reader.localAddress = '127.0.01';
+    reader.localPort = info.port;
+
+    httpsServer.emit('connection', reader);
+
+    if (cb) {
+      process.nextTick(cb);
+    }
+
+    return writer;
+  }
+});
+</code></pre>
+
+
+Advanced Configuration
+======================
+
+There is no configuration for these yet,
+but we believe it is important to add them.
+
+### http to https
+
+By default http connections are redirected to https.
+
+If for some reason you need raw access to unencrypted http
+you'll need to set it manually.
+
+Proposed configuration:
+
+
+<pre><code>insecure_http:
+  proxy: true         # add X-Forward-* headers
+  port: 3000          # connect to port 3000
+  hostnames:          # only these hostnames will be left insecure
+    - example.com
+</code></pre>
+
+
+**Note**: In the future unencrypted connections will only be allowed
+on self-hosted and paid-hosted Telebit Relays. We don't want the
+legal liability of transmitting your data in the clear, thanks. :p
+
+### TLS Termination (Secure SSL decryption)
+
+Telebit is designed for end-to-end security.
+
+For convenience the Telebit Remote client uses Greenlock to handle all
+HTTPS connections and then connect to a local webserver with the correct proxy headers.
+
+However, if you want to handle the encrypted connection directly, you can:
+
+Proposed Configuration:
+
+
+<pre><code>tls:
+  example.com: 3000   # specific servername
+  '*': 3000           # all servernames
+  '!': 3000           # missing servername
+</code></pre>
+
+
+TODO
+====
+
+Install for user
+  * https://wiki.archlinux.org/index.php/Systemd/User
+  * https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html
+    * `sudo launchctl load -w ~/Library/LaunchAgents/cloud.telebit.remote`
+    * https://serverfault.com/questions/194832/how-to-start-stop-restart-launchd-services-from-the-command-line
+-->
+
+<h1 id="check-logs">Check Logs</h1>
+<p><strong>Linux</strong>:</p>
+<pre><code>SYSTEMD_LOG_LEVEL=debug journalctl -xef --user-unit=telebit
+</code></pre>
+
+<p><strong>macOS</strong>:</p>
+<pre><code>tail -f ~/local/share/telebit/var/log/info.log
+</code></pre>
+
+<pre><code>tail -f ~/.local/share/telebit/var/log/error.log
+</code></pre>
+
+<h1 id="uninstall">Uninstall</h1>
+<p><strong>Linux</strong>:</p>
+<pre><code>systemctl --user disable telebit; systemctl --user stop telebit
+rm -f ~/.config/systemd/user/telebit.service
+rm -rf ~/telebit ~/Applications/telebit
+rm -rf ~/.config/telebit ~/.local/share/telebit
+</code></pre>
+
+<p><strong>macOS</strong>:</p>
+<pre><code>launchctl unload -w ~/Library/LaunchAgents/cloud.telebit.remote.plist
+rm -f ~/Library/LaunchAgents/cloud.telebit.remote.plist
+rm -rf ~/telebit ~/Applications/telebit
+rm -rf ~/.config/telebit ~/.local/share/telebit
+</code></pre>
+
+<h1 id="browser-library">Browser Library</h1>
+<p>This is implemented with websockets, so you should be able to</p>
+<h1 id="license">LICENSE</h1>
+<p>Copyright 2016-2018+ AJ ONeal</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

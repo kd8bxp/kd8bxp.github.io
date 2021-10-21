@@ -1,0 +1,6 @@
+ATTRS{serial}=="497215501C9D8848"
+ATTRS{product}=="Nano RP2040 Connect"
+ATTRS{idProduct}=="005e"
+SUBSYSTEMS=="usb"
+ATTRS{idVendor}=="1d6b"
+

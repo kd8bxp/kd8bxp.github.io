@@ -1,0 +1,6 @@
+https://blog.perquin.com/blog/roomba-serial-port/
+https://edu.irobot.com/learning-library/create-2-oi-spec-1
+https://docs.racket-lang.org/roomba/index.html
+
+irobot root
+

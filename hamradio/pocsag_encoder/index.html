@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Pocsag encoder - Random Wire!</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Random Wire!</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/Arduino/Arduino_Mesh/">Arduino Mesh</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/Arduino/firmata/">Firmata</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/Arduino/tutorials/">Arduino Advanced Tutorials</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Smart Response XE Devices</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/Arduino/smartresponsexe/">Tutorial (needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/Smart_Response_XE/">More Information (needs updated)</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../tutorials/useSTM32asAnArduino/">Setup STM32 for use with Arduino IDE (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP IDF</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/esp-idf/setup/">Setup (needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/esp-idf/esp32s2/">ESP32 S2 (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/blink/blink/">Blink</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/document/">Document Projects</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">HiCat Livera Docs</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/livera/">Documentation</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/api/">API Guide</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/livera/robotAssemGuide/">Robot Assembily Guide</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI (needs updated)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/1.54inTFTGameScreen/tutorial/">1.54" TFT Touch Screen</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/OpenCV/opencv/">Raspberry PI Zero W OpenCV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/restrictedshell/">Restricted Shell</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/RaspberryPi/jupyter/">Setup Jupyter Notebook</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">FPGA Boards</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/FPGA_Tang_Nano/fpgas/">General Information (needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/FPGA_Tang_Nano/learnFPGAs/">Learn FPGA (needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/ArduinoMKRVidor4000_fpga_board/">Arduino MKR Vidor 4000</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/mojov3fpga/">Mojo V3 FPGA</a>
+</li>
+            
+<li >
+    <a href="/tutorials/FPGA_Tang_Nano/info.md">Tang Nano (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/TI/resources/">TI Launchpad Resources</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/ESP-MESH/ESP-MESH/">ESP-MESH Board</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MQTT Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/MQTT-Services/brokers/">Brokers</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/MQTT-Services/MQTT_Bridge_setup/">Bridge Setup (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Tessel</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/Tessel/readme/">Resources</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/syncthing/">Syncthing</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cozmo SDK</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/CozmoInfo/">Cozmo Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/CozmoSDKDocs/SDK/adb/">ADB</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Sipeed Maix Bit (AI Camera Info)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/info/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/M5StickV/">M5StickV</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/SipeedMaixBit/Sipeed_Maixduino/">Sipeed Maixduino</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/Maix-Amigo-Help/">Maix Amigo</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/azuresphere/">Azure Sphere General Information</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">Github Learn By Doing</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/M5Stack/">M5Stack Tutorials (out dated)</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/OnionWiki/">Omega Onion</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">Robots (needs updated)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI RP2040</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rp2040/arduino_nano_rp2040/">Arduino Nano RP2040</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Wio Terminal</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/wioterminal/mqtt_intercom/">MQTT Intercom (needs updated)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/BareConductiveTouch/">Bare Conductive Touch Board (needs updated)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Chrome Books (ChromeOS)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/chromeOS/">Chrome OS General Information (Needs updated)</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/CloudReadyForOldChromeBooks/">Cloud Ready for Old Chrome Books (needs upated)</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/InstallChromeOSonOldDesktop/">Install ChromeOS on Old Desktops (needs update)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../tutorials/create_InteractiveFiction_and_ebooks_with_markdown/">Create Interactive Fiction with Markdown (needs updated)</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials/xenonmesh/">Particle Mesh Information (needs updated)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Arduino</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/arduino/chatterbot/">Chatter Bot</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-4x4-keypad-matrix-rotary-encoder/">4x4 Keypad Matrix</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-arduino-vga-out/">Arduino VGA</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-bmp180-digital-barometric-pressur/">BMP180 Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-fs1000a-433mhz-transmitters/">FS1000a 433mhz Transmitters</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-hc-05-bluetooth-device/">HC-05 Bluetooth</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-magnetic-reed-switch-water-sensor/">Magnetic Reed Switch Water Sensor</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-mifare-rfid-reader-rc522/">Mifare RFID reader RC522</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-nokia-5110-lcd/">Nokia 5110 LCD</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-pin-control-over-ethernet-oled-de/">Pin Control over Ethernet w/OLED</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-skynet-im/">Skynet IM</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/arduino-project-the-spo-512-speech-synthesizer/">SPO-512 Speech Synthesizer</a>
+</li>
+            
+<li >
+    <a href="../../projects/arduino/QVGA-DISPLAY/QVGA-Display2/">QVGA Display</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP8266</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp8266/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ESP32</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/esp32/">Temp</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">TI LaunchPad</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/TILaunchPad/ti-multi-task/">TI Launchpad MS432 Multi-Task Demo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry PI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/RaspberryPI/services/">General Information</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/">PIDuino Setup</a>
+</li>
+            
+<li >
+    <a href="../../projects/RaspberryPI/tunnelservices/">Raspberry PI Tunnel Services</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/other/project-hot-wheels-10-525ghz-radar-gun/">Hot Wheels 10.524Ghz Radar Gun</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robot Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Robot Chassis Kits</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/chassis-kits/Actobotics/">Actobotics</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Robot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/herojr/">Hero Jr Project</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Hero Jr Star Wars Day Dec 2015</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/">General Info</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Demo/">Midpointe Library Dec 12 Demo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Outline_Script_for_Star_Wars_Day_Hero_Jr/">Outline of Program</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/Star_Wars_Hero_Jr_Punch_List/">Punch List</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/HeroJr-StarWarsDay/pictures_from_Star_Wars_Day/">Pictures</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">2W & 4W Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/robots/robotstart/">Getting Started</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/L298MotorDrive/">L298 Motor Driver</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot/">BittyBot</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/BittyBot2Library/">BittyBot 2</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/CompactRoverLibrary/">Compact Rover</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">SunFounder Robots</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/SunFounder_PISmartCar/">PISmartCar</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/robot/RobotNavigationusingRFID/">Robot Indoor Navigation using RFID</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Anki Vector</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/Vector_Commands/">Command List</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../projects/InternetControlledRobots/">Internet Controlled Robots</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Robot Projects (Not Mine)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../projects/robot/anki_vector_cozmo/">Anki Vector and Cozmo</a>
+</li>
+            
+<li >
+    <a href="../../projects/robot/Karotz/">Karotz</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ham Radio <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">APRS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../aprs/">APRS Info</a>
+</li>
+            
+<li >
+    <a href="../more_APRS/">More</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../bandplan/">Band Plan</a>
+</li>
+                                    
+<li >
+    <a href="../dapnet/">Dapnet (Amatuer Pager)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DMR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../dmr/">Information</a>
+</li>
+            
+<li >
+    <a href="../dmrnets/">Nets</a>
+</li>
+            
+<li >
+    <a href="../dmrsms/">Send SMS</a>
+</li>
+            
+<li >
+    <a href="../k4usd_network/">K4USD Network Information</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../digitalinformation/">Digital Information</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Raspberry Pi Projects</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hamvoip/">Allstar Link</a>
+</li>
+            
+<li >
+    <a href="../hamclock/">Hamclock</a>
+</li>
+            
+<li >
+    <a href="../raspberryPi/">Ham Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MMDVM Hotspot</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hotspot/">Setup</a>
+</li>
+            
+<li >
+    <a href="../hotspothardware/">Hardware</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../arduino/">Arduino Shields</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Aredn Broadband Hamnet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../aredn_broadband_hamnet/">AREDN Info</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../atv/">Amatuer TV</a>
+</li>
+                                    
+<li >
+    <a href="../QSL/">Virtual QSL cards</a>
+</li>
+                                    
+<li >
+    <a href="../ham/">What do amatuer modes sound like</a>
+</li>
+                                    
+<li >
+    <a href="../NCPacket/">North Carolina Packet</a>
+</li>
+                                    
+<li >
+    <a href="../new_packet_radio/">New Packet Radio</a>
+</li>
+                                    
+<li >
+    <a href="../contacts/">Contacts</a>
+</li>
+                                    
+<li >
+    <a href="../homeQTH/">Home QTH Information</a>
+</li>
+                                    
+<li >
+    <a href="../gmrs/">GMRS Live feeds</a>
+</li>
+                                    
+<li >
+    <a href="../shtfradio/">SHTF Radio Info</a>
+</li>
+                                    
+<li >
+    <a href="../offgridcommunication/">Off Grid Communication Devices</a>
+</li>
+                                    
+<li >
+    <a href="../peanut/">Peanut APP</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">LoRa (LoRaHam/LoRaAPS)</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../lora_radio/">Projects</a>
+</li>
+            
+<li >
+    <a href="../moreLoRa/">More Projects</a>
+</li>
+            
+<li >
+    <a href="../lorameshinfo/">Mesh Projects</a>
+</li>
+            
+<li >
+    <a href="../lora_ideas/">General</a>
+</li>
+            
+<li >
+    <a href="../LoRaHam/">LoRaHam/LoraMador/LoraAPS</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../wxinfo/">WX Stuff</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../trisquare/">Trisquare Radios</a>
+</li>
+            
+<li >
+    <a href="../weirdmessengers/">Weird Messengers</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../comingsoon/">Sherlock Holmes</a>
+</li>
+                                    
+<li >
+    <a href="../../other/pp/">Pen and Paper RPG & Heroclix Games</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Movies/TV Shows & OTR</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">X Minus One</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">The Orville</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/theorville/comics/">Comics</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Planetary Union Central</a>
+</li>
+            
+<li >
+    <a href="../../other/theorville/wiki/">Fan Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Forbidden Planet (C-57D)</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batman (1966)</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Green Hornet</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/greenhornet/greenhornet/">Info</a>
+</li>
+            
+<li >
+    <a href="../../other/greenhornet/familytree/">Family Tree</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DC Comics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">Comics</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">TV Shows</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../comingsoon/">The Flash</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Arrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Supergirl</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Legends of Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Batwoman</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Constantine</a>
+</li>
+    </ul>
+  </li>
+            
+<li >
+    <a href="../../comingsoon/">Movies</a>
+</li>
+            
+<li >
+    <a href="../../comingsoon/">Egyptian Gods</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../comingsoon/">Lord of the Rings</a>
+</li>
+                                    
+<li >
+    <a href="../../other/pythagoras/">Pythagoras</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">Noris Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../other/greek/">Greek Mythology</a>
+</li>
+                                    
+<li >
+    <a href="../../comingsoon/">My Cars</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">More Stuff</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../other/stuff/">Stuff</a>
+</li>
+            
+<li >
+    <a href="../../other/books/">Free eBooks</a>
+</li>
+            
+<li >
+    <a href="../../other/CPU_Cryptocurrancy/">Crptocurrancy</a>
+</li>
+            
+<li >
+    <a href="../../other/InteractiveFiction/">Interactive Fiction</a>
+</li>
+            
+<li >
+    <a href="../../other/surplusstore/">Electronics Surplus</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../about/">About Me</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#define-pocsag_preamble_codeword-0xaaaaaaaa">define POCSAG_PREAMBLE_CODEWORD    0xAAAAAAAA</a></li>
+        <li class="main "><a href="#define-pocsag_idle_codeword-0x7a89c197">define POCSAG_IDLE_CODEWORD        0x7A89C197</a></li>
+        <li class="main "><a href="#define-pocsag_synch_codeword-0x7cd215d8">define POCSAG_SYNCH_CODEWORD        0x7CD215D8</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>This articial from: https://www.codeproject.com/Articles/13189/POCSAG-Encoder</p>
+<p>Introduction
+We have available many communication technologies to communicate with each other. Every technology has its advantages and disadvantages. One of the popular technologies that has been used for many years, in many industries, is the pager. The pager uses a protocol named POCSAG or Post Office Code Standardization Advisory Group code. If you search Google for POCSAG Encoder/Decoder, you will find many devices from various companies. This article is an effort for doing the same task using only software code. For this purpose, I used my previous article, BCH 21,31, for implementing a BCH Error Correction Code that is part of the POCSAG protocol that we are going to see in the following sections.</p>
+<p>I grabbed most of the information about the POCSAG protocol from Brad Dye's Paging Information Resource website. The website has many useful information for various wireless technologies including pager.</p>
+<p>I also wrote the code for sending the encoded message to the end user using a special modem. The modem connects to the serial port of a computer and sends the message on the air through a transmitter.</p>
+<p>POCSAG Protocol
+A. General
+The basic signaling pattern used in many pagers is a sequence of coded binary data using the Post Office Code Standardization Advisory Group (POCSAG) code. The POCSAG code is a synchronous paging format that allows pages to be transmitted in a single-batch structure. The POCSAG code provides improved battery-saving capability and an increased code capacity.
+The POCSAG code format consists of a preamble and one or more batches of codewords. Each batch comprises a 32-bit frame synchronization code, and eight 64-bit address frames of two 32-bit addresses or idle codewords each. The frame synchronization code marks the start of the batch of codewords.</p>
+<p>B. Preamble Structure
+Figure 2 shows the signal format. As you see, the signal contains several codewords (Synchronization, Preamble, Address, Message, and Idle).</p>
+<p>Signal Format</p>
+<p>The preamble shown in Figure 2, consists of 576 bits of an alternating 101010 pattern transmitted at a bit rate of 512, 1200, or 2400 bps. The decoder uses the preamble both to determine if the data received is a POCSAG signal, and for synchronization with the stream of data. Every codeword has 32 bits, and contains several fields. The bits are a type of codeword (Address or Message), Address/Message body, Function bits, Parity check bits, and Even Parity bit. Figure 3 shows the concept. In following sections, we learn how to create the codewords.</p>
+<p>Codeword Format</p>
+<p>C. Batch Structure
+A batch consists of a frame synchronization code followed by 8 frames of two address codewords per frames (16 address codewords per batch). In order to maintain the proper batch structure, each frame is filled with two address codewords, or two idle codewords, or two message codewords, or any appropriate combination of the three codeword types.</p>
+<p>D. Frame Synchronization Code Structure
+The frame synchronization (FS) code is a unique reserved word that is used to identify the beginning of each batch. The FS code comprises the 32 bits: 01111100110100100001010111011000 or simply 0x7CD215D8.</p>
+<p>E. Address Codeword Structure
+The structure of an address codeword is shown in Figure 4. An address codeword's first bit (bit 1) is always a zero. Bits 2 through 19 are the address bits. The pager looks at these bits to find its own unique address. Each POCSAG codeword is capable of providing address information for four different paging sources (address 1 through address 4). These addresses are determined by combinations of the values of bits 20 and 21 (the source identifier bits); these combinations are shown in Figure 4. Bits 22 through 31 are the parity check bits, and bit 32 is the even parity bit.</p>
+<p>Address Codeword</p>
+<p>The combination of the code plug's three pre-coded frame location bits and the address codeword's 18 address bits provides over two million different assignable codes. In this combination, the frame location bits are the least-significant bits, and the address bits are the most-significant bits.</p>
+<p>F. Message Codeword Structure
+The structure of a message codeword is shown in Figure 3. A message codeword always starts with a 1 in bit 1, and always follows directly after the address. Each message codeword replaces an address codeword in the batch.</p>
+<p>G. Idle Codeword Structure
+The idle codeword is a unique, reserved codeword used to take the place of an address in any frame that would not otherwise be filled with 64 bits. Thus, if a frame contains only an address, an idle codeword will be added to complete the 64-bit frame. The idle codeword comprises the 32 bits: 01111010100010011100000110010111, or simply 0x7A89C197.</p>
+<p>POCSAG protocol in detail
+POCSAG as defined in the standard (original POCSAG), is 512 bits per second direct FSK (not AFSK) of the carrier wave with +- 4.5 KHz shift (less deviation than that is used in some US systems). Data is NRZ coded, with the higher frequency representing 0 (space) and the lower one representing 1 (mark).</p>
+<p>The basic unit of data in a POCSAG message is the codeword which is always a 32 bit long entity. The most significant bit of a codeword is transmitted first, followed immediately by the next most significant bit, and so forth. The data is NRZ, so that mark and space values (plus and minus voltages) as sampled on the output of the receiver discriminator at a 512 Hz rate correspond directly to bits in the codeword starting with the MSB.</p>
+<p>The first (MSB) bit of every POCSAG codeword (bit 31) indicates whether the codeword is an address codeword (pager address) (bit 31 = 0) or a message codeword (bit 31 = 1). The two codeword types have different internal structures.</p>
+<p>Message codewords (bit 31 = 1) use the 20 bits starting at bit 30 (bit 30-11) as message data. Address codewords (bit 31 = 0) use 18 bits starting at bit 30 as address (bits 30-13) and bits 12 and 11 as function bits which indicate the type and format of the page. Bits 10 through 1 of both types of codewords are the bits of a BCH (31,21) block ECC code computed over the first 31 bits of the codeword, and bit 0 of both codeword types is an even parity bit.</p>
+<p>The BCH ECC code used provides a 6 bit hamming distance between all valid codewords in the possible set (that is, every valid 32 bit codeword differs from every other one in at least 6 bits). This makes one or two bit error correction of codewords possible, and provides a robust error detection capability (very low chance of false pages). The generating polynomial for the (31,21) BCH code is x<strong>10 + x</strong>9 + x<strong>8 + x</strong>6 + x<strong>5 + x</strong>3 + 1. I suggest you to take a look at my other article BCH 21, 31 for detailed information.</p>
+<p>Codewords are transmitted in groups of 16 (called batches), and each batch is preceded by a special 17th codeword which contains a fixed frame synchronization pattern. The magic word is 0x7CD215D8.</p>
+<p>Batches of codewords in a transmission are preceded by a start of transmission preamble of reversals (10101010101 pattern) which must be at least 576 bits long. Thus, a transmission (paging burst) consists of a carrier turnon during which it is modulated with 512 baud reversals (the preamble pattern), followed by at least 576/512 seconds worth of actual preamble, and then a sync codeword (0x7CD215D8), followed by 16 data/address codewords, another sync codeword, 16 more data/address codewords, and so forth until the traffic is completely transmitted. All 16 of the last codewords of a transmission are always sent before the carrier is shut off, and if there is no message to be sent in them, the idle codeword (0x7A89C197) is sent.</p>
+<p>A message to a pager consists of an address codeword in the proper two codeword frame within the batch to match the recipient's frame assignment (based on the low three bits of the recipient's 21 bit effective address), and between 0 and n of the immediately following codewords which contain the message text. A message is terminated by either another address codeword or an idle codeword. Idle codewords have the special hex value of 0x7A89C197. A message with a long text may potentially spill over between two or more 17 codeword batches.</p>
+<p>Alphanumeric messages are encoded in 7 bit ASCII characters packed into the 20 bit data area of a message codeword (bits 30-11). Since four seven bit characters are 21 rather than 20 bits, and the designers of the standard did not want to waste transmission time, they chose to pack the first 20 bits of an ASCII message into the first codeword, the next 20 bits of a message into the next codeword, and so forth. This means that a 7 bit ASCII character of a message that falls on a boundary can and will be split between two codewords, and that the alignment of character boundaries in a particular alpha message codeword depends on which codeword it is of a message. Within a codeword, 7 bit characters are packed from left to right (MSB to LSB). The LSB of an ASCII character is sent first (is the MSB in the codeword) as per standard ASCII transmission conventions; so viewed as bits inside a codeword, the characters are bit reversed.</p>
+<p>Code
+The code uses the above technique to calculate the encoded message as well as uses BCH 21,31.</p>
+<p>Shrink ▲   Copy Code#include "7BitASCII.h"</p>
+<h1 id="define-pocsag_preamble_codeword-0xaaaaaaaa">define POCSAG_PREAMBLE_CODEWORD    0xAAAAAAAA</h1>
+<h1 id="define-pocsag_idle_codeword-0x7a89c197">define POCSAG_IDLE_CODEWORD        0x7A89C197</h1>
+<h1 id="define-pocsag_synch_codeword-0x7cd215d8">define POCSAG_SYNCH_CODEWORD        0x7CD215D8</h1>
+<p>union  Packet
+{
+    int  iPacket;
+    char cPacket[4];
+};</p>
+<p>typedef struct tagASCII7Bit
+{
+    char Letter;
+    char Bits[8];
+} ASCII7Bit;</p>
+<p>extern ASCII7Bit ASCII7BitTable[128];</p>
+<p>void CPOCSAGDlg::OnCalculate() 
+{
+    UpdateData(TRUE);</p>
+<pre><code>int i;
+int iPOCSAGMsg[68];
+CBCHEncoder m_bch;
+
+int iReciever=atoi(m_Reciever.GetBuffer(0));
+
+//Reset the codewords
+for (i=0; i&lt;68; i++)
+    iPOCSAGMsg[i]=POCSAG_IDLE_CODEWORD;
+
+//Initilizing Synch Codewords
+for (i=0; i&lt;68; i+=17)
+    iPOCSAGMsg[i]=POCSAG_SYNCH_CODEWORD;
+
+//compute address codeword
+int iStartFrame=iReciever%8;
+
+int iAddress=iReciever &gt;&gt; 3;
+iAddress=iAddress&lt;&lt;2;
+iAddress|=0x3;
+iAddress=iAddress&lt;&lt;11;
+
+m_bch.SetData(iAddress);
+m_bch.Encode();
+int iAddressEnc=m_bch.GetEncodedData();
+
+iPOCSAGMsg[iStartFrame*2+1]=iAddressEnc;
+
+//computer message codeword
+CString TempBits;
+int iLen=m_Message.GetLength();
+char cMessage[2048];
+ZeroMemory(cMessage, 2048);
+strcpy(cMessage, m_Message.GetBuffer(0));
+
+for (i=0; i&lt;iLen; i++)
+{
+    char c=cMessage[i];
+
+    for (int j=0; j&lt;128; j++)
+        if (ASCII7BitTable[j].Letter==c)
+        {
+            CString TempStr=ASCII7BitTable[j].Bits;
+            TempStr.MakeReverse();
+            TempBits+=TempStr;
+            break;
+        }
+}
+
+//EOT = End of Transmission
+CString TempStr=ASCII7BitTable[4].Bits;
+TempStr.MakeReverse();
+TempBits+=TempStr;
+
+//now we have bits of message!
+int iMessageCodewords=(iLen+1)*7/20;
+
+if (iMessageCodewords*20!=(iLen+1)*7)
+    iMessageCodewords++;
+
+int iRemainBit=iMessageCodewords*20-7*(iLen+1);
+float fRemain=ceil((float) iRemainBit/7);
+iRemainBit=(int) fRemain;
+
+for (i=0; i&lt;iRemainBit; i++)
+{
+    TempStr=ASCII7BitTable[4].Bits;
+    TempStr.MakeReverse();
+    TempBits+=TempStr;
+}
+
+iRemainBit=TempBits.GetLength()%20;
+
+//must remove iRemainBits from right of string
+TempBits=TempBits.Left(TempBits.GetLength()-iRemainBit);
+
+std::bitset&lt;2100&gt; MsgBits(TempBits.GetBuffer(0));
+
+int k=TempBits.GetLength()-1;
+
+int iCodeword=1;
+
+for (i=k; i&gt;=0; i-=20)
+{
+    int iMsgCode=1&lt;&lt;31;
+    //0x80000000
+
+    for (int j=0; j&lt;20; j++)
+    {
+        if (i-j&gt;=0)
+            iMsgCode|=MsgBits[i-j]&lt;&lt;(30-j);
+    }
+
+    m_bch.SetData(iMsgCode);
+    m_bch.Encode();
+
+    iMsgCode=m_bch.GetEncodedData();
+
+    if ((iStartFrame*2+1+iCodeword)%17==0)
+        iCodeword++;
+
+    iPOCSAGMsg[iStartFrame*2+1+iCodeword]=iMsgCode;
+
+    iCodeword++;
+}
+
+//now update display
+CString szRes;
+CString szTemp;
+for (i=0; i&lt;68; i++)
+{
+    szTemp.Format("%X   ", iPOCSAGMsg[i]);
+    szRes+=szTemp;
+
+    if (i%17==0)
+        szRes+=CString("\r\n");
+
+    if (i%17==8 || i%17==16)
+        szRes+=CString("\r\n");            
+}
+
+m_EncodedMessage=szRes;
+
+UpdateData(FALSE);
+</code></pre>
+<p>}
+Enjoy!</p>
+<p>License
+This article has no explicit license attached to it but may contain usage terms in the article text or the download files themselves. If in doubt please contact the author via the discussion board below.</p>
+<p>A list of licenses authors might use can be found here</p>
+<p>Share
+About the Author</p>
+<p>A. Riazi
+CEO Misbah3Com
+Iran (Islamic Republic of) Iran (Islamic Republic of)
+I was born in Shiraz, a very beautiful famous city in Iran. I started programming when I was 12 years old with GWBASIC. Since now, I worked with various programming languages from Basic, Foxpro, C/C++, Visual Basic, Pascal to MATLAB and now Visual C++.
+I graduated from Iran University of Science &amp; Technology in Communication Eng., and now work as a system programmer for a telecomm...
+show more</p>
+<p>Comments and Discussions</p>
+<p>You must Sign In to use this message board.
+Search Comments
+Submit
+Spacing
+Relaxed
+  Layout
+Normal
+  Per page
+25</p>
+<p>First Prev Next
+Question
+Soundcard sending? Pin  Member  Videogamer555   4-Feb-15 13:40 
+Question
+Can numeric POCSAG pages be encoded? Pin    Member  Member 11154260 3-Nov-14 21:13 
+Question
+IS IT NORMAL CODEWORD WITH ONLY 16 BITS? Pin    Member  Member 10408568 18-Nov-13 1:42 
+Answer
+Re: IS IT NORMAL CODEWORD WITH ONLY 16 BITS? Pin    Member  Member 10408568 18-Nov-13 1:48 
+General
+My vote of 5 Pin    professional    Amir Mohammad Nasrollahi    9-Aug-13 21:43 
+Question
+POCSAG Encoder Pin  Member  tgahner 18-Dec-12 22:15 
+General
+My vote of 5 Pin    professional    Manoj Kumar Choubey 26-Feb-12 20:57 
+General
+POCSAG Encoder Circuit Pin  Member  Member 5406779  2-Dec-09 2:43 
+Question
+Not working??? Pin  Member  Member 3001485  20-Oct-09 3:21 
+Question
+Software Encoder code not working Pin   Member  SAK_2000    3-May-07 5:51 
+Answer
+Re: Software Encoder code not working Pin   professional    A. Riazi    6-May-07 3:17 
+General
+Re: Software Encoder code not working Pin   Member  SAK_2000    6-May-07 21:32 
+General
+Re: Software Encoder code not working Pin   Member  satfrx  12-Jul-11 4:52 
+Answer
+Re: Software Encoder code not working Pin   professional    Amir Mohammad Nasrollahi    9-Aug-13 21:44 
+General
+POCSAG Encoders Pin Member  stephenvs   8-Apr-07 23:44 
+General
+Replace Glenyare Paging Terminal by Software Pin    Member  stephenvs   8-Apr-07 22:40 
+General
+Application Pin Member  unitrunker  23-Feb-06 19:10 
+General
+Re: Application Pin professional    A. Riazi    23-Feb-06 23:43 
+Last Visit: 31-Dec-99 19:00     Last Update: 6-Mar-21 23:34 Refresh 1</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
